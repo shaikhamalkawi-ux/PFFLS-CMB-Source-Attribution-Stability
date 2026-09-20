@@ -40,6 +40,7 @@ KEEP:
 - 6 × 121 abundance / one-sigma uncertainty pairs, no imputation
 - Welby control clean-room reproduction
 - NWSOWHL = fit-only winner
+- exact Welby/NIST same-sample interval crosswalk is confirmed
 
 HOLD:
 - profile-resolved radiocarbon external-accuracy ranking
@@ -49,10 +50,41 @@ HOLD:
 Reason:
 the original CMB-to-fM(CMB) mapping underlying Chapter 7 was not recovered unambiguously.
 
-## Editorial decision
-**NO-GO for a new manuscript version from this branch.**
+## Cycle 01 closure
 
-Reopen only for:
+Cycle 01 external field-validation audit was independently reviewed, corrected, and merged through PR #3.
+
+Final Cycle 01 campaign-level decision:
+- KEEP campaigns: 0
+- HOLD campaigns: 6
+- REMOVE campaigns: 1
+- overall decision: **HOLD / NO-GO for manuscript revision**
+
+The locked manuscript baseline was not changed.
+
+## Active work — Cycle 02
+
+**Cycle 02 is active and focuses only on Fairbanks, Alaska.**
+
+GitHub task:
+`tasks/CODEX_CYCLE_02_FAIRBANKS.md`
+
+Issue:
+**#4 — Codex Cycle 02 — Fairbanks profile-resolved external-validation recovery**
+
+Primary missing evidence:
+1. sample-level receptor chemistry;
+2. receptor uncertainties;
+3. exact final profile/species selectors;
+4. exact same-sample radiocarbon / levoglucosan crosswalk;
+5. unambiguous CMB-to-reference endpoint mapping.
+
+Cycle 02 is evidence recovery only. It does not authorize a manuscript revision.
+
+## Editorial decision
+**NO-GO for a new manuscript version from Cycle 01.**
+
+Reopen the manuscript only for:
 1. recovery of the original reproducible CMB-side radiocarbon transformation;
 2. a genuinely profile-resolved independent field dataset;
 3. a substantive new scientific result that passes the gates; or
