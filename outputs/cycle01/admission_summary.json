@@ -14,7 +14,6 @@
       "status": "HOLD",
       "admissible": false,
       "failed_or_partial_gates": [
-        "external_reference_same_sample",
         "unambiguous_endpoint_mapping",
         "reproducible_now"
       ]
