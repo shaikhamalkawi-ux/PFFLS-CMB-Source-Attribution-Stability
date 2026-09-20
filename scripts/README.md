@@ -14,3 +14,10 @@ Cycle 02 adds `extract_cycle02_fairbanks.py`. It recovers the published
 Appendix C day-level EPA/OMNI estimates and joins State Building dates to the
 43-species EPA AirData records. The join is intentionally labeled as a
 candidate reconstruction, not as proof of the historical CMB input vector.
+
+Cycle 03 adds:
+
+- `audit_cycle03_evidence.py`, which verifies out-of-repository source hashes,
+  rebuilds the three exact/subset crosswalks, and enforces the ten-gate rule;
+- `build_cycle03_package.py`, which writes the deterministic review ZIP,
+  internal artifact manifest, and ZIP SHA-256 sidecar.
