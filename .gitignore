@@ -1,0 +1,33 @@
+# Third-party / restricted / raw source material
+raw/
+data/raw/
+third_party/
+external_sources/
+*.mdb
+*.accdb
+
+# Manuscript binaries and private review packages
+manuscript/private/
+private/
+*.docx
+*.pdf
+*.zip
+
+# Large/generated runtime artifacts
+outputs/tmp/
+tmp/
+.cache/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local environments
+.venv/
+venv/
+.env
