@@ -1,5 +1,8 @@
 # Tests
 
+`test_cycle02_fairbanks.py` checks the day-table parser and the fail-closed
+classification of EPA-versus-OMNI as profile-system sensitivity.
+
 Required test categories:
 - exact-case regression;
 - numerical tolerance checks;

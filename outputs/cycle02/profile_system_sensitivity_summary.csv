@@ -1,0 +1,4 @@
+site,n_both_valid,mean_epa_wood_smoke_ug_m3,mean_omni_wood_smoke_ug_m3,mean_omni_minus_epa_ug_m3,n_omni_lower_than_epa,mean_omni_no2_fuel_oil_ug_m3,interpretation
+north_pole,21,15.010,13.640,-1.370,17,2.060,"profile-system sensitivity only"
+peger_road,26,10.620,8.560,-2.060,18,4.550,"profile-system sensitivity only"
+state_building,47,15.990,13.850,-2.150,26,3.500,"profile-system sensitivity only"
