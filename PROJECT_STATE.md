@@ -92,41 +92,45 @@ EPA-versus-OMNI does not isolate source-profile choice because the source univer
 
 Fairbanks is retained as a strong profile-system sensitivity / provenance case, not as external validation of the fit-favored profile.
 
-## Active work — Cycle 03 remaining evidence recovery
+## Cycle 03 closure — remaining evidence recovery
 
-Cycle 03 is active through:
+Cycle 03 is complete on branch `codex/cycle-03-remaining-evidence-recovery`.
 
-- GitHub task: `tasks/CODEX_CYCLE_03_REMAINING_EVIDENCE.md`
-- GitHub Issue #6
-- Drive instruction: `01_TO_CODEX/CODEX_CYCLE_03_REMAINING_EVIDENCE`
-- Drive workspace: `09_CYCLE03_REMAINING_EVIDENCE`
+Verified return package:
+`PFFLS_CODEX_CYCLE03_REMAINING_EVIDENCE_RETURN.zip`
 
-### External requests already sent by the user
+SHA-256:
+`bdab2d54d04ae8d9f20e15792d956562bfa12e0124d7c4456b3f41b0b5b2b4e7`
 
-These must be treated as **PENDING RESPONSE**, not as failed evidence:
+QA:
 
-1. Palmer/Ward request for the Fairbanks sample-level levoglucosan/radiocarbon spreadsheet — SENT.
-2. Watson/Chow request for the original NFRAQS CMB-to-fM(CMB) mapping — SENT.
+- deterministic ZIP hash across two independent builds: PASS;
+- ZIP integrity: PASS;
+- internal artifact manifest: 20/20 PASS;
+- repository tests: 17/17 PASS.
 
-Do not duplicate those requests unless a materially different custodian/archive is found.
+Candidate decision:
 
-### Cycle 03 Track A
+- KEEP: 0;
+- HOLD: 3 — Fairbanks 2011/2012, Barrow 2012/2013, APHH-Beijing;
+- REMOVE from external-validation lane: 1 — Chengdu 2018;
+- overall: **HOLD / NO-GO for manuscript revision**.
 
-Attempt to recover the original Fairbanks CMB electronic package from public/official archives.
+Strongest recovery:
 
-If recovery requires a government public-record request:
-- prepare the full ADEC request and compact web-form version;
-- identify the correct agency/unit/contact/portal;
-- do not submit it.
+- An archived 1 March 2013 ADEC/University of Montana report supplies 39 exact site/date radiocarbon rows; 37 also have published CMB wood-smoke percentages.
+- On those 37 rows, CMB is above the published radiocarbon interval on 32, inside on 4, and below on 1. Mean signed difference from the interval midpoint is +27.86 percentage points; midpoint MAE is 28.51 percentage points.
+- This remains a published-system comparison, not a profile-choice test: native receptor/error/profile/selector/control files are absent, and the radiocarbon conversion itself uses an OMNI hybrid-profile carbon fraction.
+- Barrow has four exact weekly-interval CMB/radiocarbon rows, but no filter IDs or native CMB package. Radiocarbon-derived contemporary EC also informed the wood-profile selection, creating direct external-reference leakage.
+- APHH identifies the same 25 radiocarbon samples and the final CMB selector, but publishes CMB only as four site/season group means, not daily outputs.
+- Chengdu has a named gasoline-profile sensitivity landscape but no independent source-specific external reference; retain it as context only.
 
-### Cycle 03 Track B
+No public Fairbanks native electronic CMB package was recovered. A full and compact ADEC public-records request was drafted for the Air Non-Point and Mobile Sources Program, with AMQA coordination, but **not sent**.
 
-Screen for a complete independent profile-resolved external-validation dataset, starting with:
-- Barrow, Alaska 2012–2013;
-- APHH-Beijing;
-- Chengdu source-profile-sensitivity data.
+The two user-sent investigator requests remain **SENT / PENDING** and are not negative evidence:
 
-Apply the full fail-closed admission rule. A candidate is KEEP only if receptor values/uncertainties, source profiles/uncertainties, exact selector, CMB implementation, same-sample independent reference, unambiguous endpoint mapping, frozen same-family alternatives, and present reproducibility are all complete.
+1. Palmer/Ward Fairbanks sample-level levoglucosan/radiocarbon spreadsheet.
+2. Watson/Chow original NFRAQS CMB-to-fM(CMB) mapping.
 
 ## Manuscript boundary
 

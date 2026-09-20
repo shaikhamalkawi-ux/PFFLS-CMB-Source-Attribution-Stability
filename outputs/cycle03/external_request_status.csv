@@ -1,0 +1,4 @@
+request_id,records,status,initiated_by,negative_evidence,next_action,duplication_boundary
+palmer_ward_fairbanks_spreadsheet,"Fairbanks sample-level levoglucosan/radiocarbon spreadsheet",SENT / PENDING,user,no,"Preserve any reply and original attachments before analysis","Do not resend to Palmer/Ward unless a materially different record or custodian is identified"
+watson_chow_nfraqs_mapping,"Original NFRAQS CMB-to-fM(CMB) mapping",SENT / PENDING,user,no,"Preserve any reply and original attachments before analysis","Do not resend to Watson/Chow unless a materially different record or custodian is identified"
+adec_fairbanks_electronic_package,"ADEC-held native electronic Fairbanks CMB project package",DRAFT ONLY / NOT SENT,Codex,no,"User may review and submit the separate public-records draft","Different government custodian and archive; request targets native CMB files rather than duplicating investigator correspondence"

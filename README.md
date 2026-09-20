@@ -78,7 +78,9 @@ Use retrieval scripts, hashes, provenance records, and derived non-infringing ou
 
 ## Codex workflow
 
-Read [CODEX.md](CODEX.md) and [tasks/CODEX_CYCLE_01.md](tasks/CODEX_CYCLE_01.md) before making changes.
+Read [CODEX.md](CODEX.md), `PROJECT_STATE.md`, and the active task under
+`tasks/` before making changes. Cycle 03 is documented in
+`tasks/CODEX_CYCLE_03_REMAINING_EVIDENCE.md` and `outputs/cycle03/`.
 
 Codex should work through branches / pull requests and must never promote a HOLD result into a manuscript claim.
 

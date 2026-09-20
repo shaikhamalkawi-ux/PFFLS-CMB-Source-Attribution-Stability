@@ -1,0 +1,91 @@
+{
+  "admission": {
+    "candidate_count": 4,
+    "disposition_counts": {
+      "HOLD": 3,
+      "KEEP": 0,
+      "REMOVE": 1
+    },
+    "manuscript_change_authorized": false,
+    "overall_decision": "HOLD"
+  },
+  "crosswalks": {
+    "aphh_exact_radiocarbon_subset_rows": 25,
+    "barrow_exact_interval_rows": 4,
+    "fairbanks_cmb_vs_14c_interval": {
+      "above": 32,
+      "below": 1,
+      "inside": 4
+    },
+    "fairbanks_mae_to_14c_midpoint_pp": "28.51",
+    "fairbanks_mean_cmb_minus_14c_midpoint_pp": "27.86",
+    "fairbanks_reported_cmb_rows": 37,
+    "fairbanks_table12_rows": 39
+  },
+  "schema_version": 1,
+  "source_file_verification": [
+    {
+      "bytes": 16428674,
+      "file": "BARRETT-DISSERTATION-2016.pdf",
+      "md5": "a0d4fcd1b559be6ebb10e95f8c48fa42",
+      "sha256": "abfbac7f88ff8f73ef2724b988e3418c8515950ada4ace5526293b03f9288853",
+      "status": "verified"
+    },
+    {
+      "bytes": 21633,
+      "file": "APHH_Beijing_radiocarbon_extended_Gelencser.xlsx",
+      "md5": "f1be3a5a0cb61ff9f753254506e8ee81",
+      "sha256": "ac2e725312e8339db3770583280b55768336f324d727b3bfaecd8b6aed90cd6f",
+      "status": "verified"
+    },
+    {
+      "bytes": 2216864,
+      "file": "Barrow_2015_ACS_supporting_information.pdf",
+      "md5": "a2f9068e8e32c347b65756668b78e1e3",
+      "sha256": "14aa663cb2a1b0d8c83d5c8249f47234123bde349bff48090cb03971d1087a65",
+      "status": "verified"
+    },
+    {
+      "bytes": 2250685,
+      "file": "Barrett_2015_ESandT_Supporting_Information_official_ACS.pdf",
+      "md5": "2982a3584952ab02062abc4ea920766d",
+      "sha256": "05484065cba94746e4f048d6dd34d5c9cbf16552d876428f9c2801fb446fc165",
+      "status": "verified"
+    },
+    {
+      "bytes": 29568,
+      "file": "Chengdu_organic_components_PM25.xlsx",
+      "md5": "1dddd55281b5a84abc3504386daebda9",
+      "sha256": "daa48d6e1c8f0aa3ee0ae2f70d75922445f657eec91fa9cbdc6fc57c9cbad021",
+      "status": "verified"
+    },
+    {
+      "bytes": 864441,
+      "file": "DOE-SC-ARM-14-017_BBCSI_Final_Report.pdf",
+      "md5": "314b5c885d47bef9b5d367152ce451c2",
+      "sha256": "be4152fa7b41671d65838c13336ec31f3d96d1ae1cf863b39bbe76f2a9196d25",
+      "status": "verified"
+    },
+    {
+      "bytes": 797536,
+      "file": "Fairbanks_CMB_Report_Univ_MT_Final_030113.pdf",
+      "md5": "ab2761ae663b1d3e59dc938f1ff9c8f2",
+      "sha256": "d546f2eec1fe69f871302cee0ec01190fa5add438875a83b1b08b0e98e1d1c03",
+      "status": "verified"
+    },
+    {
+      "bytes": 721836,
+      "file": "Tian_Chengdu_CMB_preprint.pdf",
+      "md5": "13bd1775a2ed1f722c030d141bcfebac",
+      "sha256": "cc74f7341a50d215040fabab4570e8ffa276278b9944734df40cdbd1689e9226",
+      "status": "verified"
+    },
+    {
+      "bytes": 966170,
+      "file": "Xu_2021_APHH_Beijing_multi_method.pdf",
+      "md5": "2a8c3bc7a031c118c60e46e103732431",
+      "sha256": "fb1759c07dc3813bfc256173892742e3c4093442d0d972cb37bde531fe4d6d3b",
+      "status": "verified"
+    }
+  ]
+}
