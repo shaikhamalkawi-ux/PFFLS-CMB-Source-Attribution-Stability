@@ -134,10 +134,21 @@ The two user-sent investigator requests remain **SENT / PENDING** and are not ne
 
 ## Manuscript boundary
 
-Retain **PFFLS R4.3.30R3nR7-AE** unchanged during Cycle 03.
+Retain **PFFLS R4.3.30R3nR7-AE** unchanged.
 
-Cycle 03 does not authorize a new manuscript baseline. If a complete case passes, return the scientific evidence package first for independent review.
+Cycle 03 was independently reviewed and merged through PR #7 as an evidence/audit record only. It does not authorize a new manuscript baseline.
+
+## Current status
+
+There is **no active scientific revision cycle**.
+
+Pending external evidence:
+1. Palmer/Ward Fairbanks sample-level levoglucosan/radiocarbon spreadsheet — SENT / PENDING.
+2. Watson/Chow original NFRAQS CMB-to-fM(CMB) mapping — SENT / PENDING.
+3. ADEC Fairbanks native CMB electronic package request — DRAFT ONLY / NOT SENT.
+
+Reopen scientific work only if one of those pending records arrives, another complete profile-resolved external-validation dataset is found, or an editor/reviewer requests new work.
 
 ## Editorial decision
 
-Cycle 01 and Cycle 02 remain reproducibility/evidence-audit records and do not create a new manuscript baseline.
+Cycles 01, 02, and 03 remain reproducibility/evidence-audit records and do not create a new manuscript baseline.
