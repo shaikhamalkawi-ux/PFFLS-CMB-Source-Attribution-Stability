@@ -40,7 +40,7 @@ KEEP:
 - 6 × 121 abundance / one-sigma uncertainty pairs, no imputation
 - Welby control clean-room reproduction
 - NWSOWHL = fit-only winner
-- exact Welby/NIST same-sample interval crosswalk is confirmed
+- exact Welby/NIST same-sample interval crosswalk confirmed
 
 HOLD:
 - profile-resolved radiocarbon external-accuracy ranking
@@ -54,38 +54,59 @@ the original CMB-to-fM(CMB) mapping underlying Chapter 7 was not recovered unamb
 
 Cycle 01 external field-validation audit was independently reviewed, corrected, and merged through PR #3.
 
-Final Cycle 01 campaign-level decision:
+Final campaign-level decision:
 - KEEP campaigns: 0
 - HOLD campaigns: 6
 - REMOVE campaigns: 1
 - overall decision: **HOLD / NO-GO for manuscript revision**
 
-The locked manuscript baseline was not changed.
+## Cycle 02 closure — Fairbanks
 
-## Active work — Cycle 02
+Cycle 02 Fairbanks evidence recovery was independently reviewed and merged through PR #5.
 
-**Cycle 02 is active and focuses only on Fairbanks, Alaska.**
+Verified return package:
+`PFFLS_CODEX_CYCLE02_FAIRBANKS_RETURN_20260920.zip`
 
-GitHub task:
-`tasks/CODEX_CYCLE_02_FAIRBANKS.md`
+SHA-256:
+`bd329dc222f80a864f95c4354a159e7ffd852975f9af2d0b54fc4bbf043a2e85`
 
-Issue:
-**#4 — Codex Cycle 02 — Fairbanks profile-resolved external-validation recovery**
+QA:
+- ZIP integrity PASS
+- internal artifact manifest 18/18 PASS
+- Cycle 02 tests 4/4 PASS
+- repository tests 9/9 PASS
 
-Primary missing evidence:
-1. sample-level receptor chemistry;
-2. receptor uncertainties;
-3. exact final profile/species selectors;
-4. exact same-sample radiocarbon / levoglucosan crosswalk;
-5. unambiguous CMB-to-reference endpoint mapping.
+Recovered evidence:
+- 294 Appendix C daily CMB rows;
+- 107 exact EPA/OMNI site-date pairs;
+- 94 pairs valid in both systems;
+- 47 State Building AQS/SASS mass links matching Appendix C at displayed precision;
+- partial State Building receptor chemistry recovery;
+- nine numerical OMNI profiles, including four residential-wood profiles.
 
-Cycle 02 is evidence recovery only. It does not authorize a manuscript revision.
+Scientific decision:
+**HOLD / NO-GO for manuscript revision.**
+
+Why:
+EPA-versus-OMNI does not isolate source-profile choice because the source universe changes, including No. 2 fuel oil and vehicle treatment. The public record also lacks the exact per-sample receptor-uncertainty vectors, final selectors, sample-level radiocarbon/levoglucosan crosswalk, and complete reproducible control required by the admission protocol.
+
+Fairbanks is retained as a strong profile-system sensitivity / provenance case, not as external validation of the fit-favored profile.
+
+## Current status
+
+There is **no active scientific revision cycle**.
+
+Do not open a new manuscript version merely for polishing or to reuse Cycle 01/02 HOLD material.
+
+The next scientifically justified trigger is recovery of at least one decisive missing artifact:
+1. the original NFRAQS CMB-side radiocarbon transformation;
+2. the Fairbanks CMB electronic package containing per-sample receptor uncertainties, final fitting species/profile IDs, and control outputs;
+3. the Palmer/Busby sample-level spreadsheet mapping site/date/filter IDs to levoglucosan and radiocarbon values;
+4. another genuinely profile-resolved independent field dataset; or
+5. an explicit reviewer/editor request.
 
 ## Editorial decision
-**NO-GO for a new manuscript version from Cycle 01.**
 
-Reopen the manuscript only for:
-1. recovery of the original reproducible CMB-side radiocarbon transformation;
-2. a genuinely profile-resolved independent field dataset;
-3. a substantive new scientific result that passes the gates; or
-4. an explicit reviewer/editor request.
+Retain **PFFLS R4.3.30R3nR7-AE** unchanged.
+
+Cycle 01 and Cycle 02 remain reproducibility/evidence-audit records and do not create a new manuscript baseline.
