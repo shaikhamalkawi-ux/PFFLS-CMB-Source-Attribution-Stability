@@ -92,21 +92,48 @@ EPA-versus-OMNI does not isolate source-profile choice because the source univer
 
 Fairbanks is retained as a strong profile-system sensitivity / provenance case, not as external validation of the fit-favored profile.
 
-## Current status
+## Active work — Cycle 03 remaining evidence recovery
 
-There is **no active scientific revision cycle**.
+Cycle 03 is active through:
 
-Do not open a new manuscript version merely for polishing or to reuse Cycle 01/02 HOLD material.
+- GitHub task: `tasks/CODEX_CYCLE_03_REMAINING_EVIDENCE.md`
+- GitHub Issue #6
+- Drive instruction: `01_TO_CODEX/CODEX_CYCLE_03_REMAINING_EVIDENCE`
+- Drive workspace: `09_CYCLE03_REMAINING_EVIDENCE`
 
-The next scientifically justified trigger is recovery of at least one decisive missing artifact:
-1. the original NFRAQS CMB-side radiocarbon transformation;
-2. the Fairbanks CMB electronic package containing per-sample receptor uncertainties, final fitting species/profile IDs, and control outputs;
-3. the Palmer/Busby sample-level spreadsheet mapping site/date/filter IDs to levoglucosan and radiocarbon values;
-4. another genuinely profile-resolved independent field dataset; or
-5. an explicit reviewer/editor request.
+### External requests already sent by the user
+
+These must be treated as **PENDING RESPONSE**, not as failed evidence:
+
+1. Palmer/Ward request for the Fairbanks sample-level levoglucosan/radiocarbon spreadsheet — SENT.
+2. Watson/Chow request for the original NFRAQS CMB-to-fM(CMB) mapping — SENT.
+
+Do not duplicate those requests unless a materially different custodian/archive is found.
+
+### Cycle 03 Track A
+
+Attempt to recover the original Fairbanks CMB electronic package from public/official archives.
+
+If recovery requires a government public-record request:
+- prepare the full ADEC request and compact web-form version;
+- identify the correct agency/unit/contact/portal;
+- do not submit it.
+
+### Cycle 03 Track B
+
+Screen for a complete independent profile-resolved external-validation dataset, starting with:
+- Barrow, Alaska 2012–2013;
+- APHH-Beijing;
+- Chengdu source-profile-sensitivity data.
+
+Apply the full fail-closed admission rule. A candidate is KEEP only if receptor values/uncertainties, source profiles/uncertainties, exact selector, CMB implementation, same-sample independent reference, unambiguous endpoint mapping, frozen same-family alternatives, and present reproducibility are all complete.
+
+## Manuscript boundary
+
+Retain **PFFLS R4.3.30R3nR7-AE** unchanged during Cycle 03.
+
+Cycle 03 does not authorize a new manuscript baseline. If a complete case passes, return the scientific evidence package first for independent review.
 
 ## Editorial decision
-
-Retain **PFFLS R4.3.30R3nR7-AE** unchanged.
 
 Cycle 01 and Cycle 02 remain reproducibility/evidence-audit records and do not create a new manuscript baseline.
