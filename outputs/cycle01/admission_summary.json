@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "stop_rule": "KEEP requires all eight objects plus a profile-choice test and reproducibility",
+  "candidate_count": 7,
+  "source_count": 16,
+  "keep_count": 0,
+  "hold_count": 6,
+  "remove_count": 1,
+  "cycle_decision": "HOLD",
+  "candidates": [
+    {
+      "candidate_id": "nfraqs_1996_1997",
+      "campaign": "Northern Front Range Air Quality Study, Denver",
+      "status": "HOLD",
+      "admissible": false,
+      "failed_or_partial_gates": [
+        "external_reference_same_sample",
+        "unambiguous_endpoint_mapping",
+        "reproducible_now"
+      ]
+    },
+    {
+      "candidate_id": "libby_2003_2004",
+      "campaign": "Libby, Montana PM2.5 source-apportionment campaign",
+      "status": "HOLD",
+      "admissible": false,
+      "failed_or_partial_gates": [
+        "receptor_vector",
+        "receptor_uncertainty",
+        "numerical_source_profiles",
+        "source_profile_uncertainty",
+        "exact_selector",
+        "cmb_implementation",
+        "unambiguous_endpoint_mapping",
+        "reproducible_now"
+      ]
+    },
+    {
+      "candidate_id": "fairbanks_2008_2009",
+      "campaign": "Fairbanks, Alaska wood-smoke source-apportionment campaign",
+      "status": "HOLD",
+      "admissible": false,
+      "failed_or_partial_gates": [
+        "receptor_vector",
+        "receptor_uncertainty",
+        "exact_selector",
+        "external_reference_same_sample",
+        "unambiguous_endpoint_mapping",
+        "reproducible_now"
+      ]
+    },
+    {
+      "candidate_id": "school_bus_2005",
+      "campaign": "Seattle diesel school-bus self-pollution campaign",
+      "status": "HOLD",
+      "admissible": false,
+      "failed_or_partial_gates": [
+        "receptor_vector",
+        "receptor_uncertainty",
+        "numerical_source_profiles",
+        "source_profile_uncertainty",
+        "source_profile_choice_test",
+        "reproducible_now"
+      ]
+    },
+    {
+      "candidate_id": "tennessee_valley_2004",
+      "campaign": "Tennessee Valley carbonaceous-aerosol campaign",
+      "status": "HOLD",
+      "admissible": false,
+      "failed_or_partial_gates": [
+        "receptor_vector",
+        "receptor_uncertainty",
+        "numerical_source_profiles",
+        "source_profile_uncertainty",
+        "exact_selector",
+        "cmb_implementation",
+        "external_reference_same_sample",
+        "unambiguous_endpoint_mapping",
+        "source_profile_choice_test",
+        "reproducible_now"
+      ]
+    },
+    {
+      "candidate_id": "shenzhen_2011",
+      "campaign": "Shenzhen Universiade PM2.5 campaign",
+      "status": "HOLD",
+      "admissible": false,
+      "failed_or_partial_gates": [
+        "receptor_vector",
+        "receptor_uncertainty",
+        "numerical_source_profiles",
+        "source_profile_uncertainty",
+        "exact_selector",
+        "cmb_implementation",
+        "external_reference_same_sample",
+        "unambiguous_endpoint_mapping",
+        "source_profile_choice_test",
+        "reproducible_now"
+      ]
+    },
+    {
+      "candidate_id": "fresno_2002_2003",
+      "campaign": "Fresno Supersite CMB campaign",
+      "status": "REMOVE",
+      "admissible": false,
+      "failed_or_partial_gates": [
+        "receptor_vector",
+        "receptor_uncertainty",
+        "numerical_source_profiles",
+        "source_profile_uncertainty",
+        "exact_selector",
+        "cmb_implementation",
+        "external_reference_same_sample",
+        "unambiguous_endpoint_mapping",
+        "reproducible_now"
+      ]
+    }
+  ]
+}
