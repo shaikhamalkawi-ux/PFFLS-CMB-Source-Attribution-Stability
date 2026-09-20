@@ -1,0 +1,11 @@
+target,location_or_method,result,scientific_effect
+Ward_daily_outputs,"ADEC Ward 2013 Appendix C pages 98-171",recovered,"Daily source-contribution estimates and standard errors are exact"
+State_Building_receptor_values,"EPA AirData daily SPEC 2008 and 2009",partial_recovery,"45 of 47 valid CMB dates recovered; 32 have all 43 report species and 13 have 38"
+State_Building_sample_identity,"EPA AirData parameter 88502 POC 6 versus Appendix C PM2.5 mass",strong_linkage,"47 available dates match the published SASS mass to report precision"
+receptor_uncertainties,"ADEC report; EPA AirData daily files",not_found,"Per-species per-sample uncertainty gate remains open"
+Palmer_raw_levoglucosan_spreadsheet,"ADEC current site; Google Drive search; exact-phrase web search; Internet Archive folder inventory",not_found,"Exact site/date external-reference crosswalk remains open"
+Busby_supplement,"AAQR article page and PDF; DOI-linked search",not_found,"Publication exposes counts and regressions but not sample IDs or daily paired values"
+radiocarbon_sample_crosswalk,"Busby article and ADEC reports",not_found,"The random subset cannot be mapped to Appendix C days"
+OMNI_profiles,"Ward Appendix A",recovered,"Nine numerical vectors are public; four are wood profiles"
+EPA_profiles,"Ward Table 1 and discussion",descriptions_only,"Exact historical vectors and uncertainties remain unverified; Missoula Profile 56 is not printed"
+exact_final_CMB_selector,"Ward methods; discussion; Appendix C",not_found,"Profile and fitting-species choices per sample remain unknown"
