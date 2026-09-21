@@ -21,3 +21,10 @@ Cycle 03 adds:
   rebuilds the three exact/subset crosswalks, and enforces the ten-gate rule;
 - `build_cycle03_package.py`, which writes the deterministic review ZIP,
   internal artifact manifest, and ZIP SHA-256 sidecar.
+
+Issue #8 outreach adds:
+
+- `validate_outreach_package.py`, which fail-closes status, provenance,
+  contact, request-scope, and manuscript-boundary checks; and
+- `build_outreach_package.py`, which writes the deterministic outreach review
+  ZIP, internal manifest, and ZIP SHA-256 sidecar.

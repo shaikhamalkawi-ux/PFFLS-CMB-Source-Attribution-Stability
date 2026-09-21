@@ -10,3 +10,9 @@ decision is HOLD; see `cycle01/README.md` for the review order.
 Cycle 02's Fairbanks recovery is in `cycle02/`. Cycle 03's remaining-evidence
 audit is in `cycle03/`; it closes HOLD with no manuscript change and adds exact
 Fairbanks, Barrow, and APHH crosswalks plus an unsent ADEC request draft.
+
+The Issue #8 administrative evidence-recovery package is in `outreach03/`.
+It preserves the two investigator requests as user-reported SENT / PENDING but
+unverified, while assigning the controlled status BLOCKED_USER_ACTION because
+no provider-side confirmation is present. It does not resend them. The ADEC
+request also remains BLOCKED_USER_ACTION and was not sent.

@@ -17,3 +17,8 @@ logic, source hashes, and the repository's final HOLD decision.
 `test_cycle03_evidence.py` locks the ten-gate HOLD result, Fairbanks Table 12
 counts and arithmetic, Barrow leakage boundary, APHH aggregate-only boundary,
 source identities, pending-request semantics, and the manuscript lock.
+
+`test_outreach_package.py` verifies the complete Issue #8 return package,
+including exact contact addresses, non-duplicative SENT / PENDING semantics,
+the ADEC user-action block, technical request scope, official-source records,
+the locked manuscript baseline, and deterministic packaging.

@@ -1,0 +1,28 @@
+Outreach 03 verification record
+Date: 2026-09-21
+Runtime: Python 3.12.14 (bundled Codex workspace runtime)
+
+Full repository suite
+Command: python -m unittest discover -s tests -p "test_*.py" -v
+Result: PASS — 25/25 tests
+
+Outreach validator
+Command: python scripts/validate_outreach_package.py
+Result: PASS
+- required package files: 18
+- request rows: 3
+- controlled status: BLOCKED_USER_ACTION (3/3)
+- provider confirmations available: 0
+- Codex transmissions: 0
+- official contacts verified: 8/8
+- source-inventory rows: 15
+- manuscript change authorized: false
+- direct transmission authorized: false
+
+Deterministic packaging
+Result: PASS
+- two independent temporary builds produced identical ZIP SHA-256 values
+- both SHA-256 sidecars matched their ZIPs
+- ZIP integrity test returned no bad member
+- every SHA256SUMS.txt entry matched its archived payload
+- archived member set matched the expected package set
