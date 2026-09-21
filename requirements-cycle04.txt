@@ -1,0 +1,2 @@
+# Cycle 04 is tested with CPython 3.12.14.
+# Runtime and test dependencies: Python standard library only.

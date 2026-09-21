@@ -1,0 +1,16 @@
+# Keep the new Cycle 04 audit package byte-stable across checkouts.
+/.gitattributes text eol=lf
+/requirements-cycle04.txt text eol=lf
+/tasks/CODEX_CYCLE_04_SUBMISSION_CANDIDATE_RECONSTRUCTION.md text eol=lf
+/outputs/cycle04/** text eol=lf
+/scripts/validate_cycle04_submission_gate.py text eol=lf
+/scripts/build_cycle04_package.py text eol=lf
+/tests/test_cycle04_submission_gate.py text eol=lf
+/tests/test_cycle04_package_local.py text eol=lf
+
+# These legacy manifests were created from CRLF bytes. Pin the exact tracked
+# inputs so their historical byte identities remain portable across checkouts.
+/tasks/CODEX_CYCLE_02_FAIRBANKS.md text eol=crlf
+/tasks/CODEX_CYCLE_03_REMAINING_EVIDENCE.md text eol=crlf
+/outputs/cycle03/admission_audit.json text eol=crlf
+/tasks/CODEX_OUTREACH_THREE_EVIDENCE_REQUESTS.md text eol=crlf

@@ -1,0 +1,118 @@
+{
+  "anchor_extraction": {
+    "normalized_text_sha256": "78945c92360bf2087311591975c68f62bd84abc4ce39bf3f47c5c51d82e71a01",
+    "page_count": 27,
+    "visual_qa": "PASS_AS_HISTORICAL_ANCHOR"
+  },
+  "baseline": "PFFLS R4.3.30R3nR7-AE",
+  "baseline_promoted": false,
+  "baseline_search": {
+    "candidate_artifact_count": 0,
+    "exact_artifact_found": false,
+    "result_snapshot_hashes_verified": 16,
+    "scope_boundary": "accessible_storage_only",
+    "search_record_count": 16
+  },
+  "candidate_delta": {
+    "anchor": "R3l",
+    "baseline_identity_claimed": false,
+    "document_type": "section_level_delta",
+    "independent_review_required": true
+  },
+  "central_results_recomputed": false,
+  "claim_traceability": {
+    "claim_count": 13,
+    "lock_keep_count": 13,
+    "recomputation_hold_count": 13
+  },
+  "decision_documents": {
+    "adec_submission_authorized": false,
+    "manuscript_change_authorized": false,
+    "overall_decision": "HOLD_WITH_EXACT_BLOCKERS"
+  },
+  "exact_blockers": [
+    "exact_R3nR7_AE_binary_and_source_missing",
+    "JRC_core_computational_archive_missing",
+    "EPA_core_computational_archive_missing",
+    "authoritative_editable_main_and_supplement_missing",
+    "repository_identifier_and_licence_unresolved",
+    "cycle01_current_tree_manifest_known_stale",
+    "target_journal_and_author_submission_metadata_missing"
+  ],
+  "historical_inventory": {
+    "exact_baseline_artifact_count": 0,
+    "historical_anchor": "R3l",
+    "historical_anchor_sha256": "681c04cc0d95a0b819b42f1403f601d0b0d7d1418aa9b9eff1a567615ca6eb8c",
+    "historical_artifact_count": 7
+  },
+  "legacy_manifest_audit": {
+    "cycle01": {
+      "entry_count": 19,
+      "mismatched": [
+        "CODEX.md",
+        "PROJECT_STATE.md",
+        "README.md",
+        "outputs/cycle01/admission_summary.json",
+        "outputs/cycle01/candidate_campaigns.csv"
+      ],
+      "missing": []
+    },
+    "cycle02": {
+      "entry_count": 18,
+      "mismatched": [],
+      "missing": []
+    },
+    "cycle03": {
+      "entry_count": 20,
+      "mismatched": [],
+      "missing": []
+    },
+    "outreach03": {
+      "entry_count": 22,
+      "mismatched": [],
+      "missing": []
+    }
+  },
+  "locked_results": {
+    "baseline_promoted": false,
+    "claim_count": 13,
+    "epa_claim_count": 8,
+    "jrc_claim_count": 5,
+    "recomputed_claim_count": 0
+  },
+  "manuscript_change_authorized": false,
+  "output_files": {
+    "allowed_output_file_count": 17,
+    "required_core_file_count": 14,
+    "restricted_artifact_count": 0,
+    "unexpected_file_count": 0
+  },
+  "overall_status": "HOLD_WITH_EXACT_BLOCKERS",
+  "project_state": {
+    "adec_request": "DRAFT_ONLY_NOT_SENT",
+    "baseline": "PFFLS R4.3.30R3nR7-AE",
+    "issue8": "CLOSED",
+    "issue9": "OPEN_CONTINUOUS_MANDATE",
+    "pr10": "MERGED"
+  },
+  "readiness": {
+    "blocked_gate_count": 10,
+    "gate_count": 17,
+    "overall_status": "HOLD_WITH_EXACT_BLOCKERS"
+  },
+  "reproducibility_gaps": {
+    "gap_count": 9,
+    "pending_external_channel_count": 2,
+    "pending_external_register_row_count": 1,
+    "submission_blocker_count": 7
+  },
+  "reviewed_static_content": {
+    "identity_match_count": 17,
+    "reviewed_file_count": 17
+  },
+  "schema_version": "1.1",
+  "tests": {
+    "status": "PASS",
+    "tests_run": 53
+  }
+}

@@ -124,15 +124,20 @@ For each computational task:
 
 ## Current mandate
 
-Start with:
-- `tasks/CODEX_CYCLE_01.md`;
-- GitHub Issue #1;
-- the master Drive handoff.
+Work under `tasks/CODEX_CONTINUOUS_TO_SUBMISSION.md` and GitHub Issue #9. Read
+`PROJECT_STATE.md`, the active Cycle 04 task, open issues/PRs, and the latest
+Drive returns before acting.
 
-But you are authorized to pursue a stronger scientifically justified direction if the evidence indicates it will materially strengthen the paper.
+The current highest-value task is a fail-closed submission-candidate
+reconstruction and reproducibility gate. Search accessible storage for the
+exact R3nR7-AE artifact first. If it remains unavailable, do not rename or
+silently substitute an older manuscript; use the best-supported historical
+version only as a hashed reconstruction anchor and return a clearly labeled
+candidate delta for independent review. Preserve every locked result and claim
+boundary. Mark central results as not independently recomputed wherever their
+exact computational archive is absent.
 
-When a cycle is complete:
-1. open a GitHub pull request;
-2. place the complete return package in `02_FROM_CODEX/`;
-3. include manuscript candidate/patch, supplement, scripts, tests, environment, derived outputs, source inventory, SHA-256 manifest, KEEP/HOLD/REMOVE report, changelog, and editorial recommendation as applicable;
-4. do not present the candidate as the new locked manuscript until ChatGPT/editor review.
+PR #10 is merged and Issue #8 is closed. Do not resend the Palmer/Ward or
+Watson/Chow requests, and do not send the ADEC public-records request. Open a PR
+for Cycle 04, upload its full return package and SHA-256 sidecar to
+`02_FROM_CODEX/`, and do not merge or promote a new baseline.

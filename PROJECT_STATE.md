@@ -140,24 +140,31 @@ Cycle 03 was independently reviewed and merged through PR #7 as an evidence/audi
 
 ## Current status
 
-There is **no active scientific revision cycle**.
+PR #10 has been merged and Issue #8 is closed. The outreach package remains an
+administrative evidence-recovery record only; it did not alter the manuscript
+or scientific baseline. Codex did not send any request. The ADEC public-records
+request remains **DRAFT ONLY / NOT SENT**.
 
-Issue #8 administrative outreach is packaged on branch
-`codex/outreach-three-evidence-requests` for independent review. This is an
-evidence-recovery action only, not a scientific cycle or manuscript revision.
-No message was sent by Codex. The Palmer/Ward and Watson/Chow requests retain
-their **USER-REPORTED SENT / PENDING — UNVERIFIED** external state; because no
-provider-side confirmation is present, their controlled package status is
-`BLOCKED_USER_ACTION`. The ADEC request is finalized for user action but remains
-unsent.
+GitHub Issue #9, the continuous Codex mandate, remains open. Cycle 04 is the
+current workstream under that mandate: an audited submission-candidate
+reconstruction and reproducibility gate. Its purpose is to search for the exact
+locked artifact, document manuscript lineage, produce a clearly labeled delta
+from the best-supported historical anchor if the exact artifact remains
+unavailable, and fail closed on unreproducible claims.
 
-Pending external evidence:
-1. Palmer/Ward Fairbanks sample-level levoglucosan/radiocarbon spreadsheet — SENT / PENDING.
-2. Watson/Chow original NFRAQS CMB-to-fM(CMB) mapping — SENT / PENDING.
-3. ADEC Fairbanks native CMB electronic package request — DRAFT ONLY / NOT SENT.
+Pending external evidence remains live, not negative evidence:
 
-Reopen scientific work only if one of those pending records arrives, another complete profile-resolved external-validation dataset is found, or an editor/reviewer requests new work.
+1. Palmer/Ward Fairbanks sample-level levoglucosan/radiocarbon spreadsheet — **USER-REPORTED SENT / PENDING — UNVERIFIED**.
+2. Watson/Chow original NFRAQS CMB-to-fM(CMB) mapping — **USER-REPORTED SENT / PENDING — UNVERIFIED**.
+3. ADEC Fairbanks native CMB electronic package request — **DRAFT ONLY / NOT SENT**.
+
+The locked baseline remains **PFFLS R4.3.30R3nR7-AE**. No Cycle 04 candidate,
+delta, or package may be treated as that baseline or merged into it without
+independent review and explicit authorization.
 
 ## Editorial decision
 
-Cycles 01, 02, and 03 remain reproducibility/evidence-audit records and do not create a new manuscript baseline.
+Cycles 01–03 and the Issue #8 outreach package remain
+reproducibility/evidence-audit records. Cycle 04 is a candidate reconstruction
+and reproducibility gate only. None creates or promotes a new manuscript
+baseline.
