@@ -4,9 +4,11 @@
 
 This cycle operates under GitHub Issue #9 and
 `tasks/CODEX_CONTINUOUS_TO_SUBMISSION.md`. Its purpose is to resolve the most
-important internal barrier to a submission-ready paper: the exact locked
-R3nR7-AE artifact and the central JRC/EPA computational archive are not present
-in the accessible repository or Drive bridge.
+important internal submission barrier: the exact locked R3nR7-AE artifact and
+editable source are not present in the accessible repository or Drive bridge.
+The central JRC/EPA computational archives are also not currently accessible;
+that absence must be recorded as an archival reproducibility limitation without
+silently reopening the accepted scientific lock as a new submission requirement.
 
 The locked baseline remains:
 
