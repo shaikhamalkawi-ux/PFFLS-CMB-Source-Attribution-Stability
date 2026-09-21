@@ -12,7 +12,10 @@ baseline.
 The central JRC and EPA results remain locked exactly as reported. Cycle 04
 verified their presence and consistency in the R3l historical anchor, but did
 not independently recompute them because the exact row-level inputs, selectors,
-code, and outputs were not recovered from the repository or Drive bridge.
+code, and outputs were not recovered from the repository or Drive bridge. That
+missing raw archive is recorded as an archival reproducibility limitation; it
+does **not** silently reopen the previously accepted scientific lock as a new
+submission requirement.
 
 ## Review order
 
@@ -34,20 +37,29 @@ code, and outputs were not recovered from the repository or Drive bridge.
 `historical_manuscript_inventory.csv` is the Cycle 04 source/provenance
 inventory. It records identities only; no historical PDF is redistributed.
 
-## Exact blockers
+## Current submission blockers
 
 1. The authoritative R3nR7-AE manuscript/supplement binary and editable source
    are absent from accessible storage.
-2. The JRC row-level computational archive is absent.
-3. The EPA row-level substitution archive is absent.
-4. A complete manuscript source that can be compiled and redlined is absent.
-5. The repository DOI/licence promised by the historical data/code statement is
-   unresolved.
-6. The target journal, final author metadata, and author-only declarations are
-   not supplied.
-7. Cycle 01's committed current-tree manifest has five known mismatches on this
-   branch (four pre-existing plus the Cycle 04 `CODEX.md` state update) and must
-   not be silently described as current-tree verification.
+2. A complete manuscript source that can be compiled, redlined, and subjected
+   to the final full-text audit is absent.
+3. The repository DOI/URL and licence promised by the historical data/code
+   statement are unresolved.
+4. The target journal/package requirements and final author-controlled metadata
+   and declarations are unresolved.
+
+## Non-blocking archival reproducibility gaps
+
+- The JRC row-level computational archive is not currently accessible.
+- The EPA row-level substitution archive is not currently accessible.
+- Cycle 01's committed manifest represents an earlier snapshot and has known
+  current-tree mismatches. This is archival housekeeping debt, not a manuscript
+  science gate.
+
+These gaps must remain explicit. The central results must not be described as
+independently recomputed or fully raw-data reproducible unless the archives are
+recovered, but their current absence does not by itself invalidate or reopen the
+accepted R3nR7-AE scientific lock.
 
 ## What this cycle does establish
 
