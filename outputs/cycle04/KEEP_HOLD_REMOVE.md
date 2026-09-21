@@ -4,9 +4,9 @@
 
 **HOLD_WITH_EXACT_BLOCKERS**
 
-Cycle 04 does not recover the exact locked manuscript or independently
-recompute the central results. It creates a safe, machine-checked boundary for
-independent review.
+Cycle 04 does not recover the exact locked manuscript and does not independently
+recompute the central results. It creates a safe, machine-checked submission
+readiness boundary without reopening already accepted science.
 
 ## KEEP
 
@@ -16,6 +16,10 @@ independent review.
   baseline.
 - The exact numerical and interpretive locks in `LOCKED_RESULTS.json`.
 - The claim-to-evidence ledger, including `recomputed_from_raw = no`.
+- The missing JRC/EPA raw computational archives as explicit archival
+  reproducibility limitations, not newly created manuscript science blockers.
+- Cycle 01 manifest drift as archival snapshot/housekeeping debt rather than a
+  submission-science blocker.
 - The minimal R3l-based delta and its provenance labels.
 - The fail-closed validator, allowlisted deterministic builder, tests, and
   third-party-file boundary.
@@ -26,13 +30,23 @@ independent review.
 ## HOLD
 
 - The candidate delta until independent review.
-- Any full manuscript or Supplement reconstruction.
-- Any statement that the central JRC/EPA results were independently reproduced.
-- Any claim that the repository provides the complete data/code archive.
+- Any full manuscript or Supplement reconstruction from historical fragments.
+- Any statement that the central JRC/EPA results were independently recomputed
+  or that the complete raw data/code archive is currently available.
 - Baseline promotion or a new manuscript version.
-- Journal formatting, cover letter, declarations, and submission.
-- Repair or reinterpretation of the stale Cycle 01 current-tree manifest until
-  archival snapshot semantics are decided explicitly.
+- Submission until the exact/authoritative manuscript artifact or editable
+  source is recovered or a separately labeled reconstruction is explicitly
+  authorized and reviewed.
+- Final repository DOI/URL/licence, venue-specific packaging, and author-only
+  metadata/declarations.
+
+## HOLD_FUTURE / archival improvement
+
+- Recover the JRC/EPA computational archives if a future editor/reviewer,
+  repository policy, or verification task requires independent raw
+  recomputation.
+- Repair Cycle 01 current-tree manifest semantics only through an explicit,
+  separately versioned housekeeping action if desired.
 
 ## REMOVE
 
