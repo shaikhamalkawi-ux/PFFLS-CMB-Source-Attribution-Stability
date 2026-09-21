@@ -21,6 +21,18 @@ No scientific result changed.
   every proposed change.
 - Added fail-closed validation, deterministic packaging, and regression tests.
 
+## Independent-review correction
+
+The first Cycle 04 draft classified the missing JRC/EPA raw computational
+archives and the stale Cycle 01 current-tree manifest as new submission
+blockers. Independent review corrected that classification. They remain explicit
+archival reproducibility/housekeeping limitations, but they do not silently
+reopen the accepted R3nR7-AE science as a new mandatory submission gate.
+
+Current blocking items are the missing authoritative manuscript artifact/editable
+source plus repository identifier/licence, venue-specific package requirements,
+and author-controlled metadata/declarations.
+
 ## Administrative state reflected
 
 - PR #10 is merged.
