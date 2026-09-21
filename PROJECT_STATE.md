@@ -138,19 +138,36 @@ Retain **PFFLS R4.3.30R3nR7-AE** unchanged.
 
 Cycle 03 was independently reviewed and merged through PR #7 as an evidence/audit record only. It does not authorize a new manuscript baseline.
 
+## Cycle 04 closure — submission-candidate reconstruction gate
+
+Cycle 04 was independently reviewed, corrected, and merged through PR #11.
+
+Verified corrected return package:
+`PFFLS_CODEX_CYCLE04_SUBMISSION_GATE_RETURN.zip`
+
+SHA-256:
+`3b3148ded65a64f2ab000cc57964ada6dbf4f77d2af1b49b7a65a6882b55894e`
+
+QA:
+- corrected package-local validator PASS;
+- corrected extracted-package tests 6/6 PASS;
+- corrected artifact manifest 22/22 PASS;
+- ZIP integrity PASS.
+
+Decision:
+**HOLD_WITH_EXACT_BLOCKERS**, with no manuscript baseline change.
+
+Current submission blockers are limited to:
+1. exact R3nR7-AE manuscript/supplement binary and editable source unavailable in accessible storage;
+2. authoritative editable Main/Supplement source unavailable for final compile/redline/full-text audit;
+3. final repository DOI/URL and licence unresolved;
+4. target-journal/package requirements and author-controlled metadata/declarations unresolved.
+
+The missing JRC/EPA raw computational archives remain explicit **non-blocking archival reproducibility limitations**. Cycle 01 current-tree manifest drift remains **archival housekeeping/snapshot debt**. Neither silently reopens the accepted R3nR7-AE scientific lock.
+
 ## Current status
 
-PR #10 has been merged and Issue #8 is closed. The outreach package remains an
-administrative evidence-recovery record only; it did not alter the manuscript
-or scientific baseline. Codex did not send any request. The ADEC public-records
-request remains **DRAFT ONLY / NOT SENT**.
-
-GitHub Issue #9, the continuous Codex mandate, remains open. Cycle 04 is the
-current workstream under that mandate: an audited submission-candidate
-reconstruction and reproducibility gate. Its purpose is to search for the exact
-locked artifact, document manuscript lineage, produce a clearly labeled delta
-from the best-supported historical anchor if the exact artifact remains
-unavailable, and fail closed on unreproducible claims.
+GitHub Issue #9, the continuous Codex mandate, remains open.
 
 Pending external evidence remains live, not negative evidence:
 
@@ -158,13 +175,16 @@ Pending external evidence remains live, not negative evidence:
 2. Watson/Chow original NFRAQS CMB-to-fM(CMB) mapping — **USER-REPORTED SENT / PENDING — UNVERIFIED**.
 3. ADEC Fairbanks native CMB electronic package request — **DRAFT ONLY / NOT SENT**.
 
-The locked baseline remains **PFFLS R4.3.30R3nR7-AE**. No Cycle 04 candidate,
-delta, or package may be treated as that baseline or merged into it without
-independent review and explicit authorization.
+The locked baseline remains **PFFLS R4.3.30R3nR7-AE**.
 
 ## Editorial decision
 
-Cycles 01–03 and the Issue #8 outreach package remain
-reproducibility/evidence-audit records. Cycle 04 is a candidate reconstruction
-and reproducibility gate only. None creates or promotes a new manuscript
+Cycles 01–04 and the Issue #8 outreach package remain reproducibility,
+lineage, and evidence-audit records. None creates or promotes a new manuscript
 baseline.
+
+Under Issue #9, Codex should continue autonomously with the next highest-value
+task that can materially move the paper toward a submission-ready state,
+prioritizing authoritative manuscript/source recovery and the remaining
+repository/venue/author-controlled submission items without reopening locked
+science absent new admissible evidence or an editor/reviewer request.
