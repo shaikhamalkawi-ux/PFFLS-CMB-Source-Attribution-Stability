@@ -28,3 +28,15 @@ Issue #8 outreach adds:
   contact, request-scope, and manuscript-boundary checks; and
 - `build_outreach_package.py`, which writes the deterministic outreach review
   ZIP, internal manifest, and ZIP SHA-256 sidecar.
+
+Cycle 04 adds:
+
+- `validate_cycle04_submission_gate.py`, which locks the baseline identity,
+  reported JRC/EPA numbers, claim boundary, lineage, HOLD blockers, legacy
+  manifest state, and project-state semantics. Its `--package-local` mode
+  validates an extracted return ZIP without legacy repository files; and
+- `build_cycle04_package.py`, which validates first and then builds an
+  allowlisted, fixed-timestamp, stored-member ZIP. Normal builds are
+  non-mutating; `--refresh-manifest` is required to update the tracked Cycle 04
+  manifest deliberately. Every build is extracted and package-locally validated
+  before success is returned.

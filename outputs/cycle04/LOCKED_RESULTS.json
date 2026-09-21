@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "baseline": {
+    "id": "PFFLS R4.3.30R3nR7-AE",
+    "title": "Source Attribution Can Change Despite Favorable Fit Diagnostics: Evidence from Source-Profile Choice in Chemical Mass Balance",
+    "binary_status": "MISSING_FROM_ACCESSIBLE_STORAGE",
+    "source_status": "MISSING_FROM_ACCESSIBLE_STORAGE",
+    "promoted_by_cycle04": false
+  },
+  "historical_anchor": {
+    "version": "R3l",
+    "sha256": "681c04cc0d95a0b819b42f1403f601d0b0d7d1418aa9b9eff1a567615ca6eb8c",
+    "identity": "HISTORICAL_ANCHOR_NOT_BASELINE"
+  },
+  "global_status": "LOCKED_REPORTED_NOT_RECOMPUTABLE",
+  "claims": [
+    {"id": "JRC_DAILY_SAMPLES", "layer": "JRC", "metric": "daily_samples", "value": 364, "recomputed_from_raw": false, "reproduction_status": "BLOCKED_MISSING_CORE_ARCHIVE"},
+    {"id": "JRC_SPECIES", "layer": "JRC", "metric": "species", "value": 38, "recomputed_from_raw": false, "reproduction_status": "BLOCKED_MISSING_CORE_ARCHIVE"},
+    {"id": "JRC_PROFILE_SETS", "layer": "JRC", "metric": "frozen_profile_sets", "value": 12, "recomputed_from_raw": false, "reproduction_status": "BLOCKED_MISSING_CORE_ARCHIVE"},
+    {"id": "JRC_COMPARISONS", "layer": "JRC", "metric": "prespecified_one_profile_comparisons", "value": 30, "recomputed_from_raw": false, "reproduction_status": "BLOCKED_MISSING_CORE_ARCHIVE"},
+    {"id": "JRC_DISCORDANCE", "layer": "JRC", "metric": "primary_lower_mean_reduced_chi_square_discordances", "value": 9, "denominator_claim_id": "JRC_COMPARISONS", "recomputed_from_raw": false, "reproduction_status": "BLOCKED_MISSING_CORE_ARCHIVE"},
+    {"id": "EPA_ELIGIBLE", "layer": "EPA", "metric": "eligible_substitutions", "value": 345, "recomputed_from_raw": false, "reproduction_status": "BLOCKED_MISSING_CORE_ARCHIVE"},
+    {"id": "EPA_CONVERGED", "layer": "EPA", "metric": "converged", "value": 323, "recomputed_from_raw": false, "reproduction_status": "BLOCKED_MISSING_CORE_ARCHIVE"},
+    {"id": "EPA_TWO_DIAGNOSTIC", "layer": "EPA", "metric": "preserved_r2_and_reduced_chi_square_ranges", "value": 283, "recomputed_from_raw": false, "reproduction_status": "BLOCKED_MISSING_CORE_ARCHIVE"},
+    {"id": "EPA_ORDERING", "layer": "EPA", "metric": "ordering_changes_within_two_diagnostic_set", "value": 133, "denominator_claim_id": "EPA_TWO_DIAGNOSTIC", "recomputed_from_raw": false, "reproduction_status": "BLOCKED_MISSING_CORE_ARCHIVE"},
+    {"id": "EPA_LARGEST", "layer": "EPA", "metric": "largest_source_changes_within_two_diagnostic_set", "value": 62, "denominator_claim_id": "EPA_TWO_DIAGNOSTIC", "recomputed_from_raw": false, "reproduction_status": "BLOCKED_MISSING_CORE_ARCHIVE"},
+    {"id": "EPA_STRICT_SUBSET", "layer": "EPA", "metric": "also_preserved_percent_mass", "value": 26, "recomputed_from_raw": false, "reproduction_status": "BLOCKED_MISSING_CORE_ARCHIVE"},
+    {"id": "EPA_STRICT_ORDERING", "layer": "EPA", "metric": "ordering_changes_within_strict_subset", "value": 10, "denominator_claim_id": "EPA_STRICT_SUBSET", "recomputed_from_raw": false, "reproduction_status": "BLOCKED_MISSING_CORE_ARCHIVE"},
+    {"id": "EPA_STRICT_LARGEST", "layer": "EPA", "metric": "largest_source_changes_within_strict_subset", "value": 2, "denominator_claim_id": "EPA_STRICT_SUBSET", "recomputed_from_raw": false, "reproduction_status": "BLOCKED_MISSING_CORE_ARCHIVE"}
+  ],
+  "claim_boundary": {
+    "epa_evidence_type": "REFERENCE_FREE_FIELD_DATA_SENSITIVITY",
+    "field_experiment": false,
+    "external_accuracy_validation": false,
+    "identifies_environmentally_correct_profile": false,
+    "best_fit_identifies_truth": false
+  }
+}

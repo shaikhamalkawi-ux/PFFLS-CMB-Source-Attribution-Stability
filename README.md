@@ -79,12 +79,14 @@ Use retrieval scripts, hashes, provenance records, and derived non-infringing ou
 ## Codex workflow
 
 Read [CODEX.md](CODEX.md), `PROJECT_STATE.md`, and the active task under
-`tasks/` before making changes. Cycle 03 is documented in
-`tasks/CODEX_CYCLE_03_REMAINING_EVIDENCE.md` and `outputs/cycle03/`. The
-administrative evidence-recovery package requested by Issue #8 is documented
-in `tasks/CODEX_OUTREACH_THREE_EVIDENCE_REQUESTS.md` and
-`outputs/outreach03/`. It does not revise the manuscript or open a new
-scientific cycle.
+`tasks/` before making changes. Continuous execution is governed by
+`tasks/CODEX_CONTINUOUS_TO_SUBMISSION.md` and GitHub Issue #9. The Issue #8
+outreach package was merged through PR #10 and Issue #8 is closed; it did not
+revise the manuscript, and the ADEC public-records request remains unsent.
+Cycle 04 is documented in
+`tasks/CODEX_CYCLE_04_SUBMISSION_CANDIDATE_RECONSTRUCTION.md` and
+`outputs/cycle04/`. It is a fail-closed baseline-recovery, candidate-delta, and
+reproducibility-gate cycle—not authorization to replace the locked manuscript.
 
 Codex should work through branches / pull requests and must never promote a HOLD result into a manuscript claim.
 
@@ -93,3 +95,6 @@ Codex should work through branches / pull requests and must never promote a HOLD
 **NO-GO for a new manuscript version from the NFRAQS external-validation branch.**
 
 Retain **PFFLS R4.3.30R3nR7-AE** until genuinely new admissible science or a real reviewer/editor request justifies reopening the manuscript.
+
+Cycle 04 may produce only a clearly labeled candidate delta and audit package
+for independent review; it does not establish a new baseline.

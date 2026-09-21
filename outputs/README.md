@@ -16,3 +16,9 @@ It preserves the two investigator requests as user-reported SENT / PENDING but
 unverified, while assigning the controlled status BLOCKED_USER_ACTION because
 no provider-side confirmation is present. It does not resend them. The ADEC
 request also remains BLOCKED_USER_ACTION and was not sent.
+
+Cycle 04's audited submission-candidate reconstruction gate is in `cycle04/`.
+It records the unsuccessful exact-baseline search, uses R3l only as a hashed
+historical anchor, locks every central count, and closes
+`HOLD_WITH_EXACT_BLOCKERS`. It contains a section-level candidate delta, not a
+replacement manuscript or new baseline.

@@ -1,0 +1,33 @@
+{
+  "anchor_version": "R3l",
+  "filename": "PFFLS_R4_3_30R3l_AE_Manuscript_and_Supplement.pdf",
+  "drive_file_id": "1EZOrRc0syIBa6OQdalVtBqfvsmQHa2nu",
+  "bytes": 795081,
+  "sha256": "681c04cc0d95a0b819b42f1403f601d0b0d7d1418aa9b9eff1a567615ca6eb8c",
+  "exact_locked_baseline": false,
+  "observed_title": "Source Attribution Can Change Despite Acceptable Fit: Evidence from Source-Profile Choice in Chemical Mass Balance",
+  "pdf_metadata": {
+    "pages": 27,
+    "page_size": "612 x 792 pts (letter)",
+    "pdf_version": "1.7",
+    "encrypted": false,
+    "form": "none"
+  },
+  "text_audit": {
+    "tool": "pdftotext",
+    "tool_version": "24.04.0",
+    "mode": "-layout",
+    "normalization": "join extracted lines with LF; collapse all whitespace runs to one ASCII space; strip; UTF-8; SHA-256",
+    "normalized_character_count": 72864,
+    "normalized_text_sha256": "78945c92360bf2087311591975c68f62bd84abc4ce39bf3f47c5c51d82e71a01",
+    "extracted_text_redistributed": false
+  },
+  "visual_qa": {
+    "rendered_pages": 27,
+    "inspected_pages": 27,
+    "result": "PASS_AS_HISTORICAL_ANCHOR",
+    "observations": "No obvious clipping, overlap, broken tables, black boxes, or broken equations were observed in the rendered pages.",
+    "scope_boundary": "This QA does not establish identity with R3nR7-AE and does not validate the underlying calculations."
+  },
+  "checked_date": "2026-09-21"
+}

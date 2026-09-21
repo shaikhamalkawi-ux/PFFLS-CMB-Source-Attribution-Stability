@@ -22,3 +22,14 @@ source identities, pending-request semantics, and the manuscript lock.
 including exact contact addresses, non-duplicative SENT / PENDING semantics,
 the ADEC user-action block, technical request scope, official-source records,
 the locked manuscript baseline, and deterministic packaging.
+
+`test_cycle04_submission_gate.py` regression-checks all 13 reported claims,
+rejects baseline promotion and false recomputation, tests the historical anchor
+identity, preserves live pending evidence, audits known legacy-manifest state,
+rejects restricted or unexpected files, and verifies exact deterministic ZIP
+membership without mutating the tracked manifest.
+
+`test_cycle04_package_local.py` carries a literal claim-schema oracle separate
+from the validator and runs inside both the full checkout and the extracted
+return package. The builder's integration tests exercise the exact-tree
+package-local validator after extraction.
