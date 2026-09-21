@@ -66,20 +66,20 @@ EXPECTED_CANDIDATE_SHA256 = (
 EXPECTED_REVIEWED_STATIC_SHA256 = {
     ".gitattributes": "53a57c423556328e906465e0a18c8d3fbe1ac9d8d3cd267ab027244ede3045d5",
     "requirements-cycle04.txt": "bbe749e9ee4041fc88b03993741c82f3220a28a957178b2b844eb7a54dd8e219",
-    "tasks/CODEX_CYCLE_04_SUBMISSION_CANDIDATE_RECONSTRUCTION.md": "06fa0c5e47bb95f61452cf48d7c429871a7e1727c6abf71dd1de2dd4285b413c",
-    "outputs/cycle04/README.md": "66caffa134f4d0580be658ee614d2911fadf8a4e514edc0267c05c51c683df4e",
+    "tasks/CODEX_CYCLE_04_SUBMISSION_CANDIDATE_RECONSTRUCTION.md": "14df1c74f17a117223cec1cbc2fa08cebe140a54c968c608e0355186e57ce663",
+    "outputs/cycle04/README.md": "f05514548a8274366ed09546892120553b01e87d78efef6287320680980c4b20",
     "outputs/cycle04/baseline_search_manifest.csv": "42a1713c133e9e19dc56df9dc3b56e447727aa83de1506510333483120b55b49",
     "outputs/cycle04/historical_manuscript_inventory.csv": "893093a1381bf21050226ac9aa908dddcbdf5616077deb6c04a6f61ee8816b3e",
     "outputs/cycle04/historical_anchor_extraction.json": "8208b0e31883bdcde35360a38d154c94a720b59a5d1be162a659fecabc54455f",
     "outputs/cycle04/LOCKED_RESULTS.json": "2c54b438a3d5b00be1526ec99f7e5374662afe8f3debb946d04bf2161c034242",
     "outputs/cycle04/claim_evidence_traceability.csv": "f00367bac2e202fab13d3c1bf8b204ab4dee305d94aa2c25e876a230052127d7",
-    "outputs/cycle04/reproducibility_gap_register.csv": "54fa5819d988470d495660ec32c76a78d894fe5ba0bcc270cd67f9a21f3ba660",
+    "outputs/cycle04/reproducibility_gap_register.csv": "dcd04284cce0e6f109118d2a2ca0c3e4175dcc59e5db6e518025ff7d437a1f2b",
     "outputs/cycle04/LINEAGE_DECISION.md": "7453fce51c5b0a0da8e2a886d94617f3ad4a982e23ff280ec19c2b44f92e3e65",
     "outputs/cycle04/CANDIDATE_DELTA_FROM_R3l_NOT_BASELINE.md": "9be0a8bc9c653b7c9517f947b145947fcb82c9a1cf2106bcd088b361d329d5e2",
-    "outputs/cycle04/SUBMISSION_READINESS_MATRIX.csv": "d2349f44670f54ac025a1ec58b1b4c6cd34448bd80be46b7afd05050ba233d44",
-    "outputs/cycle04/KEEP_HOLD_REMOVE.md": "fea14dc0abc4fdcfb36ff947ce82eb82249119bbe387959fc07355bf77d5fc3e",
-    "outputs/cycle04/SCIENTIFIC_CHANGELOG.md": "1c38ff01fbc0d577f36b61434d48374edcf41d1fc3621809d59941b249161bd2",
-    "outputs/cycle04/EDITORIAL_RECOMMENDATION.md": "1cc57cdbe9cfaf9722ec38a2f7c60508d80d82acd76171dc841bd536eb9e3c6d",
+    "outputs/cycle04/SUBMISSION_READINESS_MATRIX.csv": "80a87d872c8acf7cd42b2debca61d321979222a13f00d0a3b0ade00ba33ca07a",
+    "outputs/cycle04/KEEP_HOLD_REMOVE.md": "c5ff9505d1633982b3706662a762ddddda7ad2f072cb33195faa89344739e933",
+    "outputs/cycle04/SCIENTIFIC_CHANGELOG.md": "5ce3472643d77def4b807943b5e80c771fa7c251175b47008a197db08f66ccd1",
+    "outputs/cycle04/EDITORIAL_RECOMMENDATION.md": "02ab455d68e280c2961c05926d9b9942ab230320166124205dd441b69839f632",
     "outputs/cycle04/reproduction.md": "c29b3549c57b75aadbe6c73bb75a4081e7ccea83119dcb0b197a15222373dce5",
 }
 
@@ -92,6 +92,12 @@ class Cycle04PackageLocalTests(unittest.TestCase):
         self.assertFalse(report["central_results_recomputed"])
         self.assertEqual(report["baseline_search"]["candidate_artifact_count"], 0)
         self.assertEqual(report["reproducibility_gaps"]["pending_external_channel_count"], 2)
+        self.assertEqual(report["reproducibility_gaps"]["submission_blocker_count"], 4)
+        self.assertEqual(report["reproducibility_gaps"]["nonblocking_archival_gap_count"], 3)
+        self.assertEqual(report["readiness"]["blocked_gate_count"], 6)
+        self.assertEqual(report["readiness"]["nonblocking_limitation_gate_count"], 4)
+        self.assertEqual(len(report["exact_blockers"]), 4)
+        self.assertEqual(len(report["nonblocking_archival_reproducibility_gaps"]), 3)
 
     def test_claim_values_and_schema_match_independent_literal_oracle(self):
         path = ROOT / "outputs" / "cycle04" / "LOCKED_RESULTS.json"
