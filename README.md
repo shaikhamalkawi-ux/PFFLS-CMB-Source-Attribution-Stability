@@ -85,8 +85,10 @@ outreach package was merged through PR #10 and Issue #8 is closed; it did not
 revise the manuscript, and the ADEC public-records request remains unsent.
 Cycle 04 is documented in
 `tasks/CODEX_CYCLE_04_SUBMISSION_CANDIDATE_RECONSTRUCTION.md` and
-`outputs/cycle04/`. It is a fail-closed baseline-recovery, candidate-delta, and
-reproducibility-gate cycle—not authorization to replace the locked manuscript.
+`outputs/cycle04/`. It was independently corrected and merged through PR #11
+as a lineage/submission-readiness audit. It does not replace the locked
+manuscript. Missing JRC/EPA raw archives remain documented reproducibility
+limitations rather than newly reopened submission-science gates.
 
 Codex should work through branches / pull requests and must never promote a HOLD result into a manuscript claim.
 
@@ -96,5 +98,7 @@ Codex should work through branches / pull requests and must never promote a HOLD
 
 Retain **PFFLS R4.3.30R3nR7-AE** until genuinely new admissible science or a real reviewer/editor request justifies reopening the manuscript.
 
-Cycle 04 may produce only a clearly labeled candidate delta and audit package
-for independent review; it does not establish a new baseline.
+Cycle 04 is closed. The locked baseline remains R3nR7-AE. Continuous work now
+proceeds under Issue #9 toward authoritative manuscript/source recovery,
+repository/venue/author-controlled submission items, and any genuinely new
+admissible evidence returned through pending outreach channels.
