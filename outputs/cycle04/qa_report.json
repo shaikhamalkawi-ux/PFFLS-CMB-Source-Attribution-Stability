@@ -32,11 +32,8 @@
   },
   "exact_blockers": [
     "exact_R3nR7_AE_binary_and_source_missing",
-    "JRC_core_computational_archive_missing",
-    "EPA_core_computational_archive_missing",
     "authoritative_editable_main_and_supplement_missing",
     "repository_identifier_and_licence_unresolved",
-    "cycle01_current_tree_manifest_known_stale",
     "target_journal_and_author_submission_metadata_missing"
   ],
   "historical_inventory": {
@@ -81,6 +78,11 @@
     "recomputed_claim_count": 0
   },
   "manuscript_change_authorized": false,
+  "nonblocking_archival_reproducibility_gaps": [
+    "JRC_core_computational_archive_missing",
+    "EPA_core_computational_archive_missing",
+    "cycle01_current_tree_manifest_known_stale"
+  ],
   "output_files": {
     "allowed_output_file_count": 17,
     "required_core_file_count": 14,
@@ -96,15 +98,17 @@
     "pr10": "MERGED"
   },
   "readiness": {
-    "blocked_gate_count": 10,
+    "blocked_gate_count": 6,
     "gate_count": 17,
+    "nonblocking_limitation_gate_count": 4,
     "overall_status": "HOLD_WITH_EXACT_BLOCKERS"
   },
   "reproducibility_gaps": {
     "gap_count": 9,
+    "nonblocking_archival_gap_count": 3,
     "pending_external_channel_count": 2,
     "pending_external_register_row_count": 1,
-    "submission_blocker_count": 7
+    "submission_blocker_count": 4
   },
   "reviewed_static_content": {
     "identity_match_count": 17,
