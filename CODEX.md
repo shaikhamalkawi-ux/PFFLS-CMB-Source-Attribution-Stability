@@ -124,20 +124,32 @@ For each computational task:
 
 ## Current mandate
 
-Work under `tasks/CODEX_CONTINUOUS_TO_SUBMISSION.md` and GitHub Issue #9. Read
-`PROJECT_STATE.md`, the active Cycle 04 task, open issues/PRs, and the latest
-Drive returns before acting.
+Work continuously under `tasks/CODEX_CONTINUOUS_TO_SUBMISSION.md` and GitHub
+Issue #9. Read `PROJECT_STATE.md`, open issues/PRs, and the latest Drive returns
+before acting.
 
-The current highest-value task is a fail-closed submission-candidate
-reconstruction and reproducibility gate. Search accessible storage for the
-exact R3nR7-AE artifact first. If it remains unavailable, do not rename or
-silently substitute an older manuscript; use the best-supported historical
-version only as a hashed reconstruction anchor and return a clearly labeled
-candidate delta for independent review. Preserve every locked result and claim
-boundary. Mark central results as not independently recomputed wherever their
-exact computational archive is absent.
+Cycle 04 is closed and merged through PR #11 after independent correction.
+The exact R3nR7-AE artifact/editable source remains unavailable in accessible
+storage. R3l remains historical-anchor-only and must never be relabeled as the
+baseline.
 
-PR #10 is merged and Issue #8 is closed. Do not resend the Palmer/Ward or
-Watson/Chow requests, and do not send the ADEC public-records request. Open a PR
-for Cycle 04, upload its full return package and SHA-256 sidecar to
-`02_FROM_CODEX/`, and do not merge or promote a new baseline.
+The missing JRC/EPA raw computational archives remain explicit reproducibility
+limitations, but they are **not** a newly created mandatory submission-science
+gate. Keep `recomputed_from_raw = false` and never claim full raw-data
+reproducibility unless those archives are recovered.
+
+Choose the next highest-value task autonomously. Priority should be given to:
+1. authoritative R3nR7-AE manuscript/source recovery or a separately named,
+   explicitly authorized reconstruction path if exact recovery proves impossible;
+2. final repository DOI/URL and licence;
+3. target-journal/package requirements;
+4. final author metadata and author-approved declarations;
+5. any genuinely new admissible evidence returned through the pending outreach
+   channels.
+
+Do not resend Palmer/Ward or Watson/Chow while their requests remain pending.
+Do not send the ADEC public-records request without the required user identity
+and truthful legal certification.
+
+Open a PR and return a Drive package for each meaningful work unit. Do not
+promote or merge a new manuscript baseline without independent review.
