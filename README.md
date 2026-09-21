@@ -80,7 +80,11 @@ Use retrieval scripts, hashes, provenance records, and derived non-infringing ou
 
 Read [CODEX.md](CODEX.md), `PROJECT_STATE.md`, and the active task under
 `tasks/` before making changes. Cycle 03 is documented in
-`tasks/CODEX_CYCLE_03_REMAINING_EVIDENCE.md` and `outputs/cycle03/`.
+`tasks/CODEX_CYCLE_03_REMAINING_EVIDENCE.md` and `outputs/cycle03/`. The
+administrative evidence-recovery package requested by Issue #8 is documented
+in `tasks/CODEX_OUTREACH_THREE_EVIDENCE_REQUESTS.md` and
+`outputs/outreach03/`. It does not revise the manuscript or open a new
+scientific cycle.
 
 Codex should work through branches / pull requests and must never promote a HOLD result into a manuscript claim.
 

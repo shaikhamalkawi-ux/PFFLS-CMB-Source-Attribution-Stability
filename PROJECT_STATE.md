@@ -142,6 +142,15 @@ Cycle 03 was independently reviewed and merged through PR #7 as an evidence/audi
 
 There is **no active scientific revision cycle**.
 
+Issue #8 administrative outreach is packaged on branch
+`codex/outreach-three-evidence-requests` for independent review. This is an
+evidence-recovery action only, not a scientific cycle or manuscript revision.
+No message was sent by Codex. The Palmer/Ward and Watson/Chow requests retain
+their **USER-REPORTED SENT / PENDING — UNVERIFIED** external state; because no
+provider-side confirmation is present, their controlled package status is
+`BLOCKED_USER_ACTION`. The ADEC request is finalized for user action but remains
+unsent.
+
 Pending external evidence:
 1. Palmer/Ward Fairbanks sample-level levoglucosan/radiocarbon spreadsheet — SENT / PENDING.
 2. Watson/Chow original NFRAQS CMB-to-fM(CMB) mapping — SENT / PENDING.
