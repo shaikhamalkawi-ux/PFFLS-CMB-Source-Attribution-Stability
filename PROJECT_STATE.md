@@ -169,10 +169,10 @@ The missing JRC/EPA raw computational archives remain explicit **non-blocking ar
 
 GitHub Issue #9, the continuous Codex mandate, remains open.
 
-Pending external evidence remains live, not negative evidence:
+Pending external evidence / correspondence status:
 
-1. Palmer/Ward Fairbanks sample-level levoglucosan/radiocarbon spreadsheet — **USER-REPORTED SENT / PENDING — UNVERIFIED**.
-2. Watson/Chow original NFRAQS CMB-to-fM(CMB) mapping — **USER-REPORTED SENT / PENDING — UNVERIFIED**.
+1. Palmer/Ward Fairbanks sample-level levoglucosan/radiocarbon spreadsheet — **RESPONSE RECEIVED / DATA LOCATION IN PROGRESS**. Tony Ward asked for the exact report so the group can locate the correct spreadsheet.
+2. Watson/Chow NFRAQS CMB-to-fM(CMB) mapping — **ANSWERED / DRI NOT ANALYSIS CUSTODIAN**. John Watson stated that DRI provided archived filter remnants to Klinedinst and Currie but did not participate in the radiocarbon analysis/reporting; the relevant article is Klinedinst & Currie (1999), ES&T 33, 4146–4154. The recovery target therefore shifts to NIST/Klinedinst-Currie archival records.
 3. ADEC Fairbanks native CMB electronic package request — **DRAFT ONLY / NOT SENT**.
 
 The locked baseline remains **PFFLS R4.3.30R3nR7-AE**.
@@ -188,3 +188,15 @@ task that can materially move the paper toward a submission-ready state,
 prioritizing authoritative manuscript/source recovery and the remaining
 repository/venue/author-controlled submission items without reopening locked
 science absent new admissible evidence or an editor/reviewer request.
+
+
+## Correspondence update — 2026-09-22
+
+### Fairbanks
+Tony Ward replied and asked which Fairbanks report/spreadsheet is being requested. The target was clarified as Christopher P. Palmer, *Fairbanks, Alaska PM2.5 Organic Composition and Source Apportionment Research Study — Final Report*, August 10, 2012, Section 2.2, which states that raw levoglucosan results were supplied in a site/date spreadsheet. Fairbanks remains a live recovery path.
+
+### NFRAQS
+John G. Watson replied that DRI supplied remnants of archived NFRAQS filters to Donna B. Klinedinst and Lloyd A. Currie but did not participate in the radiocarbon analysis/reporting. He identified:
+Klinedinst, D.B.; Currie, L.A. (1999). *Direct Quantification of PM2.5 Fossil and Biomass Carbon within the Northern Front Range Air Quality Study's Domain*. Environmental Science & Technology 33, 4146–4154. DOI 10.1021/es990355m.
+
+Disposition: stop treating Watson/Chow as the likely custodian of the missing radiocarbon-side analysis. Redirect archival recovery to NIST records associated with Klinedinst/Currie and the 1999/2000 NFRAQS radiocarbon work. This correspondence does not itself recover the historical CMB-to-radiocarbon transformation and does not promote the NFRAQS external-validation endpoint.
