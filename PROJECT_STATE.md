@@ -200,3 +200,55 @@ John G. Watson replied that DRI supplied remnants of archived NFRAQS filters to 
 Klinedinst, D.B.; Currie, L.A. (1999). *Direct Quantification of PM2.5 Fossil and Biomass Carbon within the Northern Front Range Air Quality Study's Domain*. Environmental Science & Technology 33, 4146–4154. DOI 10.1021/es990355m.
 
 Disposition: stop treating Watson/Chow as the likely custodian of the missing radiocarbon-side analysis. Redirect archival recovery to NIST records associated with Klinedinst/Currie and the 1999/2000 NFRAQS radiocarbon work. This correspondence does not itself recover the historical CMB-to-radiocarbon transformation and does not promote the NFRAQS external-validation endpoint.
+
+
+## Authoritative R3nR7 recovery — supersedes Cycle 04 source blocker
+
+The exact locked R3nR7-AE journal-stage lineage was recovered from the project Library and copied into the active Drive bridge. The R3l reconstruction lane is archival only and must not be used for submission.
+
+Authoritative identities:
+- Journal-stage package SHA-256: `0ed951cb0e3bb31c4bf500fa72322561ee4876e6c437b28e0e13140a3fbf83d6`
+- Overleaf source SHA-256: `f4d06310a0fafe77815c76351ca85ed68a77f07ece937042265cd8c2c4c4512d`
+- Full-delivery package SHA-256: `e36d1a2b650cf33cd396736c00f7c5ad20237f742f3ef0afe92d49df50f9eee9`
+
+The authoritative package confirms the locked field-data positioning and all locked JRC/EPA results. The prior Cycle 04 statements that the exact R3nR7-AE binary/editable source were unavailable are therefore superseded.
+
+## Final submission freeze — 2026-09-22
+
+The user explicitly authorized completion without waiting for additional Fairbanks or NFRAQS records. Pending/partial correspondence is frozen as non-blocking background evidence for this submission. No new external-accuracy result is added.
+
+Target journal: **Atmospheric Environment**.
+
+The authoritative R3nR7-AE source was finalized with one editorially necessary journal-facing change only: the Data Availability statement now states that the public-safe publication-derived consistency/provenance package accompanies the submission and accurately limits its role to derived consistency verification rather than a source-native rerun of every JRC/EPA fit. No scientific result, equation meaning, candidate universe, selector, or claim boundary changed.
+
+Final QA:
+- publication-derived scientific verifier: **14/14 PASS**
+- reproducibility SHA manifest: **15/15 PASS**
+- JRC edge rebuild: 30 edges and 9 lower-chi-square discordances reproduced
+- bibliography: **49/49 cited**, 0 missing citation keys, 0 uncited records
+- identified Main: **15 pages**
+- anonymous Main: **14 pages**
+- Supplement: **14 pages**
+- combined Main + Supplement: **29 pages**
+- undefined references/citations: **0**
+- overfull boxes: **0**
+- Type 3 fonts: **0**
+- substantive Main/Supplement exact duplicates: **0**
+- substantive Main/Supplement near duplicates >=0.90: **0**
+- internal-development residue scan: clean
+- clean-source compile/render parity: **0 changed pages** for identified Main, anonymous Main, and Supplement
+- final journal ZIP integrity: PASS; internal manifest **17/17 PASS**
+- final complete working ZIP integrity: PASS; internal manifest **22/22 PASS**
+
+Final packages:
+- `PFFLS_R4_3_30R3nR7_AE_AtmosphericEnvironment_SUBMISSION_READY_AUTHOR_ATTESTATIONS_ONLY.zip`
+  - SHA-256: `e45552c6f441ac9f2e86bfa8416f2e33a5317d455d6630b2266f7c12f609e74f`
+- `PFFLS_R4_3_30R3nR7_AE_AtmosphericEnvironment_COMPLETE_WORKING_PACKAGE.zip`
+  - SHA-256: `5fa7da24db0d4f8b232fc4e9be9ca304b3f5292ee155b78b69b4eca3d2f017be`
+
+Google Drive location:
+`PFFLS_4_CODEX_BRIDGE/13_FINAL_SUBMISSION_PACKAGE/`
+
+Scientific/editorial execution status: **COMPLETE WITH CURRENT EVIDENCE**.
+
+The only remaining actions before clicking Submit are human author attestations and live portal fields: final all-author approval/order, CRediT, available ORCIDs, final declarations/funding confirmations, originality/concurrent-submission confirmation, permissions, AI-declaration confirmation, and any portal-requested reviewer suggestions. These are not scientific-analysis blockers and must not be inferred.
