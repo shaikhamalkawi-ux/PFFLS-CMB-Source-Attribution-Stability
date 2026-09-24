@@ -1,0 +1,3 @@
+test_received_fairbanks.py text eol=lf
+test_received_fairbanks_package.py text eol=lf
+test_cycle02_fairbanks.py text eol=lf

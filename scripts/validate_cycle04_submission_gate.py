@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
-"""Fail-closed validation for the Cycle 04 submission-candidate gate.
+"""Fail-closed validation for the historical Cycle 04 submission-candidate gate.
 
 The successful scientific outcome may be HOLD.  Validation fails only when the
 audited record drifts from the locked numbers, evidence boundaries, provenance,
 or package restrictions.
+
+The reported baseline, blockers, and administrative state belong to the frozen
+Cycle 04 record, not today's project state. Later evidence and author-approved
+versions must not be rewritten to reproduce the historical audit.
 """
 
 from __future__ import annotations
@@ -854,34 +858,28 @@ def validate_legacy_manifests(root: Path) -> dict[str, Any]:
 
 
 def validate_project_state(root: Path) -> dict[str, Any]:
-    required = {
-        "README.md": (
+    """Validate the archived administrative snapshot, not mutable live prose.
+
+    Keep this function/report name for existing package consumers. The reviewed
+    Cycle 04 changelog is the authoritative snapshot for these historical values;
+    root-level project documents legitimately advance after a cycle closes.
+    """
+    relative = "outputs/cycle04/SCIENTIFIC_CHANGELOG.md"
+    snapshot = root / relative
+    if _sha256(snapshot) != REVIEWED_STATIC_SHA256[relative]:
+        raise ValueError(f"reviewed static content changed: {relative}")
+    _require_fragments(
+        snapshot,
+        (
             LOCKED_BASELINE,
-            "Issue #9",
-            "PR #10",
+            "PR #10 is merged",
             "Issue #8 is closed",
-            "ADEC public-records request remains unsent",
-            "Cycle 04",
-        ),
-        "PROJECT_STATE.md": (
-            LOCKED_BASELINE,
-            "PR #10 has been merged",
-            "Issue #8 is closed",
-            "Issue #9",
+            "Issue #9 remains open",
             "DRAFT ONLY / NOT SENT",
             "USER-REPORTED SENT / PENDING — UNVERIFIED",
             "Cycle 04",
         ),
-        "CODEX.md": (
-            LOCKED_BASELINE,
-            "Issue #9",
-            "PR #10 is merged",
-            "do not send the ADEC public-records request",
-            "Cycle 04",
-        ),
-    }
-    for relative, fragments in required.items():
-        _require_fragments(root / relative, fragments)
+    )
     _require_fragments(
         root / ".gitattributes",
         (

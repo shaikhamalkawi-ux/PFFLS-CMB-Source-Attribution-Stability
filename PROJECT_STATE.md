@@ -1,7 +1,24 @@
 # PFFLS 4 — Project State
 
-## Locked baseline
-**PFFLS R4.3.30R3nR7-AE — Field-Data Positioning and Final Editorial Closure**
+## Current scientific submission baseline
+**PFFLS R4.3.30R3nR8-AE — Protocol Closure**
+
+The later protocol-closure entry supersedes the earlier R3nR7 pointer. The exact R3nR7 source was recovered before R3nR8; older missing-source statements below are historical. The 2026-09-25 author-update PDF is a separately labeled review candidate, not a new scientific baseline.
+
+## Latest independent Fairbanks audit — 2026-09-25
+
+See `outputs/received_fairbanks/AUDIT_REPORT.md` and its reproducible aggregate. This audit supersedes the unqualified 53-row native-bracket characterization in the historical 2026-09-24 entry below, without deleting that record.
+
+- **52 complete native conversion brackets**: 24 State Building, 13 North Pole, 15 Peger; EPA/OMNI/tie closeness counts 17/32/3; mean interval distances 32.35/24.73 pp using published Appendix C PM denominators.
+- **53 partial-fill sensitivity**: fills one missing endpoint only where the other exists; it reconstructs earlier cohort and relation counts but is not a complete-native analysis. EPA distance is 33.13 pp, not the earlier 33.14 pp; OMNI 25.71 pp.
+- **54 full-derived sensitivity**: additionally reconstructs a wholly absent bracket from positive marker inputs. The cause of source blank cells is unknown; no values are clipped to 100%.
+- The 12 radiocarbon matches and three dual-marker dates reproduce. Prior 13.73/13.36 pp radiocarbon distances use native summary-workbook PM denominators; published Appendix C PM gives 13.72/13.34 pp. Both are explicitly reported, not mixed.
+- Corrected revised-OMNI Peger autos/diesel/fuel-oil column mapping in the public Appendix C parser: 26 rows, 108 cells. Wood-smoke outputs and original EPA/OMNI comparisons are unchanged.
+- **KEEP** secondary historical marker concordance and reproducibility; **HOLD** profile-choice accuracy validation or a unique system winner; **REMOVE** unqualified native-n=53 and the old revised-Peger column assignment.
+
+The user's requested author candidate removes Azmi Alazzam, Said Badreddine, Eyad Adnan, and Bakeel Hussein; adds Mohammed Alhagyan with the supplied UAEU Mathematical Sciences affiliation; preserves the first two authors; and retains the specific Palmer/Ward/Turner acknowledgement. Scientific manuscript results and supplement remain unchanged. Final author consent, contributions, and submission declarations are not inferred.
+
+No scientific baseline promotion, merge, ADEC records request, collaborator email, or journal submission is authorized by this audit return.
 
 Title:
 **Source Attribution Can Change Despite Favorable Fit Diagnostics: Evidence from Source-Profile Choice in Chemical Mass Balance**
@@ -260,7 +277,9 @@ The three author protocols on contribution-first framing, reader-facing mathemat
 
 R3nR8 is not a science rebuild. It removes off-story supplementary material from the older PFFLS line, adds equation labels and minor symbol/domain/denominator clarification, and keeps the paper centered on the single source-profile-choice question plus safeguards. Main numerical tokens were preserved 339/339 with no additions or removals. The connected reference set remains 30 (>25 protocol minimum). Main/Supplement visual, citation, equation, duplication, residue, and production QA passed. The locked JRC/EPA numerical results and claim boundaries are unchanged.
 
-## Fairbanks investigator data received and audited — 2026-09-24
+## Historical Fairbanks investigator-data audit — 2026-09-24
+
+**Superseded in part by the 2026-09-25 independent audit above:** retain this entry as the prior review record. Its 53-row claim requires a partial-endpoint reconstruction and must not be reused as a complete-native analysis. Exact factors, small numerical differences, and PM-denominator conventions are documented in the new audit.
 
 Christopher P. Palmer supplied two original historical Excel files from the Fairbanks organic-composition work:
 - `Fairbanks summary 08-11_cpp.xlsx`, SHA-256 `973917d6c504f25980938a8a45da62ce766099734e053a65882c2c05391d8ee7`

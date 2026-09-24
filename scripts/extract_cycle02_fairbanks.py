@@ -59,6 +59,14 @@ REVISED_OMNI_FIELDS = (
     "wood_smoke",
     "wood_smoke_se",
 )
+# Ward p. 122 puts autos/diesel before fuel oil, unlike State Building
+# pp. 114-115. Keep the input layout separate from the canonical CSV order.
+PEGER_REVISED_OMNI_FIELDS = (
+    *EPA_FIELDS[:-2],
+    "no2_fuel_oil",
+    "no2_fuel_oil_se",
+    *EPA_FIELDS[-2:],
+)
 ALL_RESULT_FIELDS = REVISED_OMNI_FIELDS
 
 
@@ -79,7 +87,7 @@ TABLES = (
     TableSpec("north_pole", "omni", 117, 117, OMNI_FIELDS),
     TableSpec("peger_road", "epa", 120, 120, EPA_FIELDS),
     TableSpec("peger_road", "omni", 121, 121, OMNI_FIELDS),
-    TableSpec("peger_road", "omni_revised", 122, 122, REVISED_OMNI_FIELDS),
+    TableSpec("peger_road", "omni_revised", 122, 122, PEGER_REVISED_OMNI_FIELDS),
 )
 
 
