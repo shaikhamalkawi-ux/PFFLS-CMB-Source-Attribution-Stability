@@ -47,15 +47,9 @@ A null result, discordant result, or HOLD is valid.
 
 Read `PROJECT_STATE.md` before making any scientific change.
 
-The active manuscript baseline is **PFFLS R4.3.30R3nR7-AE**.
+The active scientific submission baseline is **PFFLS R4.3.30R3nR8-AE**, as recorded in the later protocol-closure entry of `PROJECT_STATE.md`. The exact R3nR7 source was recovered before that update; the original bridge's missing-source warning is historical, not a current blocker.
 
-The exact R3nR7-AE manuscript/supplement binary was not available when the Drive bridge was assembled. Historical versions in `05_MANUSCRIPT_HISTORY/` are **not** the active baseline.
-
-Before editing manuscript prose:
-1. search accessible Drive/project storage for the exact R3nR7-AE manuscript/source package;
-2. if found, copy it into `00_ACTIVE_BASELINE/` and record its SHA-256;
-3. if not found, do **not** silently treat an older manuscript as R3nR7-AE;
-4. you may still prepare a clearly labeled candidate reconstruction or exact patch/delta for editor review.
+Before editing manuscript prose, verify the exact input source and SHA-256. Historical versions in `05_MANUSCRIPT_HISTORY/` are not interchangeable with the active baseline. Prepare a clearly labeled candidate and delta for review; never promote a candidate silently. The 2026-09-25 user-requested author update and Fairbanks independent audit are review candidates, not a new scientific baseline. See `outputs/received_fairbanks/` for the current cohort correction and claim boundaries.
 
 ## Git workflow
 

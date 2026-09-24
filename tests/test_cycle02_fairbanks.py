@@ -9,6 +9,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from extract_cycle02_fairbanks import (  # noqa: E402
     EPA_FIELDS,
+    TABLES,
     TableSpec,
     build_crosswalk,
     parse_appendix_table,
@@ -16,6 +17,28 @@ from extract_cycle02_fairbanks import (  # noqa: E402
 
 
 class FairbanksExtractionTests(unittest.TestCase):
+    def test_peger_revised_omni_uses_its_published_column_order(self):
+        spec = next(
+            table for table in TABLES
+            if table.site == "peger_road" and table.system == "omni_revised"
+        )
+        # Exact Ward Appendix C p. 122 rows: autos, diesel, then fuel oil.
+        rows = parse_appendix_table(
+            "2/5/09 48.0 3.8 0.7 3.1 0.6 7.4 3.1 0.0 0.0 19.9 3.0 17.8 5.3\n"
+            "3/11/09 16.6 1.3 0.3 2.1 0.2 0.0 0.0 2.4 1.0 3.6 1.1 6.8 1.2\n",
+            spec,
+        )
+        source_fields = (
+            "autos", "autos_se", "diesel", "diesel_se",
+            "no2_fuel_oil", "no2_fuel_oil_se", "wood_smoke", "wood_smoke_se",
+        )
+        expected = (
+            ("7.4", "3.1", "0.0", "0.0", "19.9", "3.0", "17.8", "5.3"),
+            ("0.0", "0.0", "2.4", "1.0", "3.6", "1.1", "6.8", "1.2"),
+        )
+        for row, values in zip(rows, expected):
+            self.assertEqual(tuple(row[field] for field in source_fields), values)
+
     def test_appendix_row_with_estimates_and_standard_errors(self):
         spec = TableSpec("state_building", "epa", 110, 111, EPA_FIELDS)
         rows = parse_appendix_table(
@@ -72,6 +95,17 @@ class FairbanksExtractionTests(unittest.TestCase):
             mass = list(csv.DictReader(handle))
 
         self.assertEqual(len(daily), 294)
+        peger_revised = next(
+            row for row in daily
+            if row["site"] == "peger_road"
+            and row["system"] == "omni_revised"
+            and row["date"] == "2009-02-05"
+        )
+        self.assertEqual(peger_revised["autos"], "7.4")
+        self.assertEqual(peger_revised["autos_se"], "3.1")
+        self.assertEqual(peger_revised["diesel"], "0.0")
+        self.assertEqual(peger_revised["no2_fuel_oil"], "19.9")
+        self.assertEqual(peger_revised["no2_fuel_oil_se"], "3.0")
         self.assertEqual(len(crosswalk), 107)
         self.assertEqual(
             sum(

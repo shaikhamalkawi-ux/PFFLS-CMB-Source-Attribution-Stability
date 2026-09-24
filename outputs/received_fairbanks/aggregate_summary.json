@@ -1,0 +1,481 @@
+{
+  "both_markers": {
+    "brackets_disjoint": 2,
+    "brackets_overlap": 1,
+    "n": 3
+  },
+  "decision": {
+    "baseline_change_authorized": false,
+    "profile_choice_external_validation": "HOLD",
+    "secondary_marker_concordance": "KEEP"
+  },
+  "exclusions": {
+    "levoglucosan": {
+      "no_exact_original_CMB_pair": 172,
+      "source_marker_outputs_missing_or_flagged": 17
+    },
+    "radiocarbon": {
+      "at_least_one_CMB_system_invalid": 2,
+      "no_exact_original_CMB_pair": 12,
+      "source_marker_outputs_missing_or_flagged": 335
+    }
+  },
+  "formula_audit": {
+    "cache_comparisons": 455,
+    "cache_difference_gt_1e_9_n": 0,
+    "formula_expected_counts": {
+      "fine": 228,
+      "omni": 227
+    },
+    "formula_present_counts": {
+      "fine": 228,
+      "omni": 227
+    },
+    "max_absolute_cache_difference_pp": "0.000000000000"
+  },
+  "inventory": {
+    "both_valid_original_CMB_pairs": 94,
+    "levoglucosan_native_date_rows": 241,
+    "levoglucosan_native_date_rows_by_site": {
+      "north_pole": 68,
+      "peger_road": 62,
+      "rams": 33,
+      "state_building": 78
+    },
+    "levoglucosan_text_date_candidates": 3,
+    "original_CMB_site_date_pairs": 107,
+    "published_CMB_rows": 294,
+    "radiocarbon_intervals": 26,
+    "radiocarbon_intervals_by_site": {
+      "north_pole": 5,
+      "peger_road": 5,
+      "rams": 2,
+      "state_building": 14
+    },
+    "summary_native_date_rows": 361,
+    "summary_native_date_rows_by_site": {
+      "north_pole": 81,
+      "peger_road": 79,
+      "rams": 61,
+      "state_building": 140
+    }
+  },
+  "levoglucosan_comparison": {
+    "by_site": {
+      "north_pole": 13,
+      "peger_road": 15,
+      "state_building": 24
+    },
+    "closer_to_interval": {
+      "epa": 17,
+      "omni": 32,
+      "tie": 3
+    },
+    "epa": {
+      "mass_absolute_difference_max_ug_m3": "0.040000",
+      "mass_comparisons_n": 52,
+      "mass_difference_le_0_04_n": 52,
+      "mean_interval_distance_pp": "32.345350",
+      "mean_interval_distance_pp_2dp": "32.35",
+      "mean_midpoint_absolute_difference_pp": "37.622931",
+      "mean_midpoint_absolute_difference_pp_2dp": "37.62",
+      "mean_midpoint_signed_difference_pp": "37.359120",
+      "mean_midpoint_signed_difference_pp_2dp": "37.36",
+      "relation_counts": {
+        "above": 49,
+        "below": 0,
+        "inside": 3
+      }
+    },
+    "filter_ids_present": 0,
+    "n": 52,
+    "omni": {
+      "mass_absolute_difference_max_ug_m3": "0.040000",
+      "mass_comparisons_n": 52,
+      "mass_difference_le_0_04_n": 52,
+      "mean_interval_distance_pp": "24.725521",
+      "mean_interval_distance_pp_2dp": "24.73",
+      "mean_midpoint_absolute_difference_pp": "29.277357",
+      "mean_midpoint_absolute_difference_pp_2dp": "29.28",
+      "mean_midpoint_signed_difference_pp": "28.474125",
+      "mean_midpoint_signed_difference_pp_2dp": "28.47",
+      "relation_counts": {
+        "above": 42,
+        "below": 0,
+        "inside": 10
+      }
+    }
+  },
+  "limitations": [
+    "EPA and OMNI differ in source universe/treatment; no isolated source-profile substitution",
+    "Per-alternative final selectors, fit diagnostics, and source-native CMB control remain unrecovered",
+    "OMNI levoglucosan factor depends partly on OMNI source experiments; no independent accuracy winner",
+    "Site/date and PM checks support identity but do not replace absent historical filter IDs",
+    "Sparse radiocarbon overlap and nonuniform marker preference prevent a uniform accuracy conclusion",
+    "Received workbooks and detailed derived rows are private pending redistribution clarification"
+  ],
+  "methods": {
+    "cmb_percent": "100 * published wood_smoke_ug_m3 / published pm25_mass_ug_m3",
+    "conversion_factors": {
+      "Fine": "9.01",
+      "OMNI": "13.27",
+      "cells": "F3:G4 in each levoglucosan site sheet"
+    },
+    "inclusion": "Both original EPA and OMNI rows valid and source-native cached marker bounds numeric; levoglucosan comparison additionally requires strictly positive levoglucosan and PM; radiocarbon comparison uses reported derived bounds, with strictly positive summary PM additionally required only for its alternate-denominator sensitivity",
+    "interval_distance": "max(low - estimate, estimate - high, 0)",
+    "join": "Exact normalized site and native Excel calendar date; no fuzzy date shift or imputation",
+    "limits": "Fine/OMNI marker columns are conversion estimates, not CMB runs; bracket is not a confidence interval; no limits converted to zero",
+    "marker_percent": "100 * CF * 0.001 * levoglucosan_ng_m3 / measured_pm25_ug_m3",
+    "mass_check": "Reported as diagnostic only; no mass tolerance filters are applied to achieve counts",
+    "midpoint_error": "estimate - (low + high)/2; MAE averaged separately from interval distance",
+    "missing_outputs": "Positive marker input does not authorize filling blank native woodsmoke-output cells; such recomputation is a separately labeled sensitivity",
+    "omni_13_3": "Not the numerical factor used in the primary analysis; tested separately in the explicitly labeled rounded-factor sensitivity",
+    "radiocarbon_cells": "Sheet 1: I=max, J=min, % PM2.5 from woodsmoke, not raw 14C",
+    "ties": "Exact equality of unrounded interval distances",
+    "uncertainty": "Published CMB standard errors retained privately, not propagated into marker brackets"
+  },
+  "radiocarbon_comparison": {
+    "by_site": {
+      "north_pole": 2,
+      "peger_road": 1,
+      "state_building": 9
+    },
+    "closer_to_interval": {
+      "epa": 7,
+      "omni": 4,
+      "tie": 1
+    },
+    "epa": {
+      "mass_absolute_difference_max_ug_m3": "0.008883",
+      "mass_comparisons_n": 12,
+      "mass_difference_le_0_04_n": 12,
+      "mean_interval_distance_pp": "13.722044",
+      "mean_interval_distance_pp_2dp": "13.72",
+      "mean_midpoint_absolute_difference_pp": "17.751037",
+      "mean_midpoint_absolute_difference_pp_2dp": "17.75",
+      "mean_midpoint_signed_difference_pp": "16.216902",
+      "mean_midpoint_signed_difference_pp_2dp": "16.22",
+      "relation_counts": {
+        "above": 8,
+        "below": 1,
+        "inside": 3
+      }
+    },
+    "filter_ids_present": 0,
+    "n": 12,
+    "omni": {
+      "mass_absolute_difference_max_ug_m3": "0.008883",
+      "mass_comparisons_n": 12,
+      "mass_difference_le_0_04_n": 12,
+      "mean_interval_distance_pp": "13.344728",
+      "mean_interval_distance_pp_2dp": "13.34",
+      "mean_midpoint_absolute_difference_pp": "17.492537",
+      "mean_midpoint_absolute_difference_pp_2dp": "17.49",
+      "mean_midpoint_signed_difference_pp": "8.031517",
+      "mean_midpoint_signed_difference_pp_2dp": "8.03",
+      "relation_counts": {
+        "above": 7,
+        "below": 3,
+        "inside": 2
+      }
+    }
+  },
+  "schema_version": 1,
+  "sensitivity_analyses": {
+    "levoglucosan_CMB_normalized_by_marker_workbook_PM": {
+      "by_site": {
+        "north_pole": 13,
+        "peger_road": 15,
+        "state_building": 24
+      },
+      "closer_to_interval": {
+        "epa": 17,
+        "omni": 32,
+        "tie": 3
+      },
+      "epa": {
+        "mass_absolute_difference_max_ug_m3": "0.040000",
+        "mass_comparisons_n": 52,
+        "mass_difference_le_0_04_n": 52,
+        "mean_interval_distance_pp": "32.347426",
+        "mean_interval_distance_pp_2dp": "32.35",
+        "mean_midpoint_absolute_difference_pp": "37.625008",
+        "mean_midpoint_absolute_difference_pp_2dp": "37.63",
+        "mean_midpoint_signed_difference_pp": "37.361196",
+        "mean_midpoint_signed_difference_pp_2dp": "37.36",
+        "relation_counts": {
+          "above": 49,
+          "below": 0,
+          "inside": 3
+        }
+      },
+      "filter_ids_present": 0,
+      "n": 52,
+      "omni": {
+        "mass_absolute_difference_max_ug_m3": "0.040000",
+        "mass_comparisons_n": 52,
+        "mass_difference_le_0_04_n": 52,
+        "mean_interval_distance_pp": "24.724620",
+        "mean_interval_distance_pp_2dp": "24.72",
+        "mean_midpoint_absolute_difference_pp": "29.279445",
+        "mean_midpoint_absolute_difference_pp_2dp": "29.28",
+        "mean_midpoint_signed_difference_pp": "28.476213",
+        "mean_midpoint_signed_difference_pp_2dp": "28.48",
+        "relation_counts": {
+          "above": 42,
+          "below": 0,
+          "inside": 10
+        }
+      }
+    },
+    "levoglucosan_recompute_all_positive_inputs": {
+      "comparison": {
+        "by_site": {
+          "north_pole": 14,
+          "peger_road": 15,
+          "state_building": 25
+        },
+        "closer_to_interval": {
+          "epa": 18,
+          "omni": 33,
+          "tie": 3
+        },
+        "epa": {
+          "mass_absolute_difference_max_ug_m3": "0.040000",
+          "mass_comparisons_n": 54,
+          "mass_difference_le_0_04_n": 54,
+          "mean_interval_distance_pp": "33.845720",
+          "mean_interval_distance_pp_2dp": "33.85",
+          "mean_midpoint_absolute_difference_pp": "39.523618",
+          "mean_midpoint_absolute_difference_pp_2dp": "39.52",
+          "mean_midpoint_signed_difference_pp": "35.427379",
+          "mean_midpoint_signed_difference_pp_2dp": "35.43",
+          "relation_counts": {
+            "above": 50,
+            "below": 1,
+            "inside": 3
+          }
+        },
+        "filter_ids_present": 0,
+        "n": 54,
+        "omni": {
+          "mass_absolute_difference_max_ug_m3": "0.040000",
+          "mass_comparisons_n": 54,
+          "mass_difference_le_0_04_n": 54,
+          "mean_interval_distance_pp": "26.520453",
+          "mean_interval_distance_pp_2dp": "26.52",
+          "mean_midpoint_absolute_difference_pp": "31.499485",
+          "mean_midpoint_absolute_difference_pp_2dp": "31.50",
+          "mean_midpoint_signed_difference_pp": "26.957878",
+          "mean_midpoint_signed_difference_pp_2dp": "26.96",
+          "relation_counts": {
+            "above": 43,
+            "below": 1,
+            "inside": 10
+          }
+        }
+      },
+      "meaning": "Derive missing woodsmoke bounds arithmetically; not the received native-output dataset",
+      "newly_computed_native_missing_output_rows": 2,
+      "newly_computed_rows_lower_bound_above_100_percent": 1
+    },
+    "levoglucosan_recompute_partially_present_brackets_only": {
+      "comparison": {
+        "by_site": {
+          "north_pole": 14,
+          "peger_road": 15,
+          "state_building": 24
+        },
+        "closer_to_interval": {
+          "epa": 18,
+          "omni": 32,
+          "tie": 3
+        },
+        "epa": {
+          "mass_absolute_difference_max_ug_m3": "0.040000",
+          "mass_comparisons_n": 53,
+          "mass_difference_le_0_04_n": 53,
+          "mean_interval_distance_pp": "33.132109",
+          "mean_interval_distance_pp_2dp": "33.13",
+          "mean_midpoint_absolute_difference_pp": "38.312001",
+          "mean_midpoint_absolute_difference_pp_2dp": "38.31",
+          "mean_midpoint_signed_difference_pp": "38.053167",
+          "mean_midpoint_signed_difference_pp_2dp": "38.05",
+          "relation_counts": {
+            "above": 50,
+            "below": 0,
+            "inside": 3
+          }
+        },
+        "filter_ids_present": 0,
+        "n": 53,
+        "omni": {
+          "mass_absolute_difference_max_ug_m3": "0.040000",
+          "mass_comparisons_n": 53,
+          "mass_difference_le_0_04_n": 53,
+          "mean_interval_distance_pp": "25.706365",
+          "mean_interval_distance_pp_2dp": "25.71",
+          "mean_midpoint_absolute_difference_pp": "30.174205",
+          "mean_midpoint_absolute_difference_pp_2dp": "30.17",
+          "mean_midpoint_signed_difference_pp": "29.386128",
+          "mean_midpoint_signed_difference_pp_2dp": "29.39",
+          "relation_counts": {
+            "above": 43,
+            "below": 0,
+            "inside": 10
+          }
+        }
+      },
+      "meaning": "Fill a missing native endpoint only where the other endpoint exists; exclude wholly absent native bounds; diagnostic reconstruction of the historical 53-row statement, not primary",
+      "newly_computed_native_missing_output_rows": 1
+    },
+    "levoglucosan_rounded_OMNI_CF_13_3_native_complete_rows": {
+      "by_site": {
+        "north_pole": 13,
+        "peger_road": 15,
+        "state_building": 24
+      },
+      "closer_to_interval": {
+        "epa": 17,
+        "omni": 32,
+        "tie": 3
+      },
+      "epa": {
+        "mass_absolute_difference_max_ug_m3": "0.040000",
+        "mass_comparisons_n": 52,
+        "mass_difference_le_0_04_n": 52,
+        "mean_interval_distance_pp": "32.275906",
+        "mean_interval_distance_pp_2dp": "32.28",
+        "mean_midpoint_absolute_difference_pp": "37.586824",
+        "mean_midpoint_absolute_difference_pp_2dp": "37.59",
+        "mean_midpoint_signed_difference_pp": "37.318767",
+        "mean_midpoint_signed_difference_pp_2dp": "37.32",
+        "relation_counts": {
+          "above": 49,
+          "below": 0,
+          "inside": 3
+        }
+      },
+      "filter_ids_present": 0,
+      "n": 52,
+      "omni": {
+        "mass_absolute_difference_max_ug_m3": "0.040000",
+        "mass_comparisons_n": 52,
+        "mass_difference_le_0_04_n": 52,
+        "mean_interval_distance_pp": "24.671386",
+        "mean_interval_distance_pp_2dp": "24.67",
+        "mean_midpoint_absolute_difference_pp": "29.252788",
+        "mean_midpoint_absolute_difference_pp_2dp": "29.25",
+        "mean_midpoint_signed_difference_pp": "28.433772",
+        "mean_midpoint_signed_difference_pp_2dp": "28.43",
+        "relation_counts": {
+          "above": 42,
+          "below": 0,
+          "inside": 10
+        }
+      }
+    },
+    "radiocarbon_CMB_normalized_by_summary_workbook_PM": {
+      "by_site": {
+        "north_pole": 2,
+        "peger_road": 1,
+        "state_building": 9
+      },
+      "closer_to_interval": {
+        "epa": 7,
+        "omni": 4,
+        "tie": 1
+      },
+      "epa": {
+        "mass_absolute_difference_max_ug_m3": "0.008883",
+        "mass_comparisons_n": 12,
+        "mass_difference_le_0_04_n": 12,
+        "mean_interval_distance_pp": "13.734751",
+        "mean_interval_distance_pp_2dp": "13.73",
+        "mean_midpoint_absolute_difference_pp": "17.762952",
+        "mean_midpoint_absolute_difference_pp_2dp": "17.76",
+        "mean_midpoint_signed_difference_pp": "16.228818",
+        "mean_midpoint_signed_difference_pp_2dp": "16.23",
+        "relation_counts": {
+          "above": 8,
+          "below": 1,
+          "inside": 3
+        }
+      },
+      "filter_ids_present": 0,
+      "n": 12,
+      "omni": {
+        "mass_absolute_difference_max_ug_m3": "0.008883",
+        "mass_comparisons_n": 12,
+        "mass_difference_le_0_04_n": 12,
+        "mean_interval_distance_pp": "13.357361",
+        "mean_interval_distance_pp_2dp": "13.36",
+        "mean_midpoint_absolute_difference_pp": "17.505170",
+        "mean_midpoint_absolute_difference_pp_2dp": "17.51",
+        "mean_midpoint_signed_difference_pp": "8.044150",
+        "mean_midpoint_signed_difference_pp_2dp": "8.04",
+        "relation_counts": {
+          "above": 7,
+          "below": 3,
+          "inside": 2
+        }
+      }
+    }
+  },
+  "source_flags": {
+    "levoglucosan": {
+      "fine_cache_flag:missing": 16,
+      "fine_cache_flag:numeric": 228,
+      "levoglucosan_flag:missing": 11,
+      "levoglucosan_flag:numeric": 231,
+      "levoglucosan_flag:zero": 2,
+      "omni_cache_flag:missing": 17,
+      "omni_cache_flag:numeric": 227,
+      "pm25_flag:missing": 2,
+      "pm25_flag:negative": 1,
+      "pm25_flag:numeric": 241
+    },
+    "summary": {
+      "ec_flag:missing": 11,
+      "ec_flag:negative": 3,
+      "ec_flag:numeric": 328,
+      "ec_flag:source_text_flag": 19,
+      "ec_uncertainty_flag:missing": 11,
+      "ec_uncertainty_flag:numeric": 332,
+      "ec_uncertainty_flag:source_text_flag": 18,
+      "levoglucosan_flag:missing": 132,
+      "levoglucosan_flag:numeric": 181,
+      "levoglucosan_flag:zero": 48,
+      "oc_flag:missing": 11,
+      "oc_flag:numeric": 331,
+      "oc_flag:source_text_flag": 19,
+      "oc_uncertainty_flag:missing": 11,
+      "oc_uncertainty_flag:numeric": 332,
+      "oc_uncertainty_flag:source_text_flag": 18,
+      "pm25_flag:missing": 11,
+      "pm25_flag:negative": 1,
+      "pm25_flag:numeric": 336,
+      "pm25_flag:source_text_flag": 13,
+      "pm25_uncertainty_flag:missing": 11,
+      "pm25_uncertainty_flag:negative": 1,
+      "pm25_uncertainty_flag:numeric": 336,
+      "pm25_uncertainty_flag:source_text_flag": 13,
+      "radiocarbon_high_flag:missing": 326,
+      "radiocarbon_high_flag:numeric": 26,
+      "radiocarbon_high_flag:source_less_than_error_flag": 9,
+      "radiocarbon_low_flag:missing": 335,
+      "radiocarbon_low_flag:numeric": 26
+    }
+  },
+  "source_identity": {
+    "private_zip_sha256": "e0498220b12ef493bd3d3a16fa27c17becefd8495f0123463a78053cc85d05ac",
+    "published_CMB_csv": {
+      "filename": "appendix_c_2008_2009_daily.csv",
+      "sha256": "42400f44d257a8802989726e6b63886f6f9f39c1f2d4e87849f8c8d2a29ab040"
+    },
+    "workbooks": {
+      "Fairbanks summary 08-11_cpp.xlsx": "973917d6c504f25980938a8a45da62ce766099734e053a65882c2c05391d8ee7",
+      "LevoglucosanResults_final1.xlsx": "1541b1102f49fec9d461fbfb9c3095c13d7b8a23cbce54c81f1744fe7572691a"
+    }
+  }
+}

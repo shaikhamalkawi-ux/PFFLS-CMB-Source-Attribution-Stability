@@ -24,6 +24,7 @@ from validate_cycle04_submission_gate import (  # noqa: E402
     EXPECTED_CYCLE01_MISMATCHES,
     LOCKED_BASELINE,
     validate_artifact_manifest,
+    validate_project_state,
     validate_repository,
 )
 
@@ -31,6 +32,45 @@ from validate_cycle04_submission_gate import (  # noqa: E402
 class Cycle04SubmissionGateTests(unittest.TestCase):
     def setUp(self):
         self.output = ROOT / "outputs" / "cycle04"
+
+    def test_archived_state_does_not_require_obsolete_live_project_prose(self):
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            historical = repo / "outputs" / "cycle04"
+            historical.mkdir(parents=True)
+            shutil.copy2(
+                self.output / "SCIENTIFIC_CHANGELOG.md",
+                historical / "SCIENTIFIC_CHANGELOG.md",
+            )
+            shutil.copy2(ROOT / ".gitattributes", repo / ".gitattributes")
+            # Root documents are intentionally absent: this validates only the
+            # historical snapshot, not today's manuscript or outreach status.
+            self.assertEqual(
+                validate_project_state(repo),
+                {
+                    "pr10": "MERGED",
+                    "issue8": "CLOSED",
+                    "issue9": "OPEN_CONTINUOUS_MANDATE",
+                    "adec_request": "DRAFT_ONLY_NOT_SENT",
+                    "baseline": LOCKED_BASELINE,
+                },
+            )
+
+    def test_archived_state_still_rejects_changed_historical_prose(self):
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            historical = repo / "outputs" / "cycle04"
+            historical.mkdir(parents=True)
+            snapshot = historical / "SCIENTIFIC_CHANGELOG.md"
+            snapshot.write_text(
+                (self.output / "SCIENTIFIC_CHANGELOG.md")
+                .read_text(encoding="utf-8")
+                .replace("DRAFT ONLY / NOT SENT", "SENT"),
+                encoding="utf-8",
+                newline="\n",
+            )
+            with self.assertRaisesRegex(ValueError, "reviewed static content changed"):
+                validate_project_state(repo)
 
     def copy_repository(self, destination: Path) -> Path:
         target = destination / "repository"

@@ -1,0 +1,3 @@
+audit_received_fairbanks.py text eol=lf
+build_received_fairbanks_return.py text eol=lf
+extract_cycle02_fairbanks.py text eol=lf
