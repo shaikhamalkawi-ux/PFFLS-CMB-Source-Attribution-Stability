@@ -252,3 +252,54 @@ Google Drive location:
 Scientific/editorial execution status: **COMPLETE WITH CURRENT EVIDENCE**.
 
 The only remaining actions before clicking Submit are human author attestations and live portal fields: final all-author approval/order, CRediT, available ORCIDs, final declarations/funding confirmations, originality/concurrent-submission confirmation, permissions, AI-declaration confirmation, and any portal-requested reviewer suggestions. These are not scientific-analysis blockers and must not be inferred.
+
+
+## Protocol closure — R3nR8 supersedes R3nR7 as active submission baseline
+
+The three author protocols on contribution-first framing, reader-facing mathematical transparency, and final pre-submission auditing were applied to the authoritative R3nR7-AE source. The resulting active baseline is **PFFLS R4.3.30R3nR8-AE — Protocol Closure**.
+
+R3nR8 is not a science rebuild. It removes off-story supplementary material from the older PFFLS line, adds equation labels and minor symbol/domain/denominator clarification, and keeps the paper centered on the single source-profile-choice question plus safeguards. Main numerical tokens were preserved 339/339 with no additions or removals. The connected reference set remains 30 (>25 protocol minimum). Main/Supplement visual, citation, equation, duplication, residue, and production QA passed. The locked JRC/EPA numerical results and claim boundaries are unchanged.
+
+## Fairbanks investigator data received and audited — 2026-09-24
+
+Christopher P. Palmer supplied two original historical Excel files from the Fairbanks organic-composition work:
+- `Fairbanks summary 08-11_cpp.xlsx`, SHA-256 `973917d6c504f25980938a8a45da62ce766099734e053a65882c2c05391d8ee7`
+- `LevoglucosanResults_final1.xlsx`, SHA-256 `1541b1102f49fec9d461fbfb9c3095c13d7b8a23cbce54c81f1744fe7572691a`
+
+The received mail/attachment ZIP SHA-256 is `e0498220b12ef493bd3d3a16fa27c17becefd8495f0123463a78053cc85d05ac`.
+
+The spreadsheets close the previously missing site/date external-marker crosswalk gate. The levoglucosan workbook contains 241 dated rows across State Building, North Pole, Peger Road, and RAMS. The summary workbook contains 361 dated rows and 26 rows with published radiocarbon wood-smoke intervals. The 2008/09 matched rows lack filter IDs, but sample identity is strongly anchored by site/date and PM2.5 mass: all 53 exact CMB–levoglucosan matches agree with the frozen Appendix C PM2.5 mass to within 0.04 µg/m3.
+
+### Exact sample-level CMB–levoglucosan comparison
+
+There are **53** exact both-valid EPA/OMNI CMB site/date matches with recovered levoglucosan data: 24 State Building, 14 North Pole, and 15 Peger Road.
+
+Using the spreadsheet's Fine-CF=9.01 to OMNI-CF≈13.3 wood-smoke conversion-factor bracket (a conversion-factor bracket, **not** a confidence interval):
+- EPA CMB: 3/53 inside, 50/53 above, 0 below; mean distance outside bracket 33.14 percentage points.
+- OMNI CMB: 10/53 inside, 43/53 above, 0 below; mean distance outside bracket 25.71 percentage points.
+- OMNI is closer on 32/53 dates, EPA on 18/53, tie on 3/53.
+
+This must **not** be interpreted as OMNI being validated as more accurate. The OMNI and EPA CMB systems do not share a fixed source universe/treatment, and the OMNI levoglucosan conversion factor itself uses, in part, OMNI-generated source-filter information.
+
+### Exact sample-level CMB–radiocarbon comparison
+
+There are **12** exact 2008/09 both-valid CMB site/date matches with recovered radiocarbon wood-smoke intervals:
+- EPA CMB: 3 inside, 8 above, 1 below; mean interval distance 13.73 pp; midpoint MAE 17.76 pp.
+- OMNI CMB: 2 inside, 7 above, 3 below; mean interval distance 13.36 pp; midpoint MAE 17.51 pp.
+- EPA is closer to the radiocarbon interval on 7/12 dates, OMNI on 4/12, tie on 1/12.
+
+The direction therefore differs from the levoglucosan comparison. Only three exact dates contain both positive levoglucosan and radiocarbon marker structures; the two marker intervals overlap on one of the three dates and do not overlap on two.
+
+### Evidence-gate decision
+
+**KEEP** the Palmer spreadsheets as secondary sample-level historical field-marker concordance evidence and provenance.
+**HOLD** any claim that Fairbanks externally validates profile-choice accuracy, identifies a unique CMB-system winner, or establishes environmental truth.
+
+Reasons:
+1. EPA versus OMNI is a profile-system comparison with different source universes/treatments, not an isolated one-profile substitution.
+2. Per-alternative final selectors and fit diagnostics are not recovered in these spreadsheets.
+3. Levoglucosan-to-wood-smoke mapping is conversion-factor dependent and the OMNI factor is not fully independent of OMNI source experiments.
+4. Radiocarbon overlap is sparse.
+5. The independent-marker structures themselves do not yield a uniform system preference.
+
+**Manuscript disposition:** do not open R3nR9 solely for these files. R3nR8 remains the active submission baseline. The Fairbanks result is retained as reviewer-response / secondary-evidence reserve unless an editor/reviewer asks for it or a later complete frozen-profile/selector package closes the target validation gate.
