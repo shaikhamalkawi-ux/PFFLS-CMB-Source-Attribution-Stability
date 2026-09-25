@@ -1,0 +1,7 @@
+Release environment recorded 2026-08-22
+Python: 3.13.5
+Platform: Linux-6.18.35-x86_64-with-glibc2.41
+pandas: 2.2.3
+matplotlib: 3.10.8
+TeX: pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)
+Bibliography program: bibtex8

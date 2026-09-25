@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Profile-Choice Traceability Record",
+  "type": "object",
+  "required": [
+    "edge_id",
+    "receptor_dataset_version",
+    "source_family",
+    "profile_a_id",
+    "profile_b_id",
+    "common_species_basis",
+    "fixed_other_profiles",
+    "selector_name",
+    "fit_favored_endpoint",
+    "reference_status",
+    "discordance",
+    "input_hashes",
+    "code_version",
+    "environment"
+  ],
+  "properties": {
+    "edge_id": {
+      "type": "string"
+    },
+    "receptor_dataset_version": {
+      "type": "string"
+    },
+    "source_family": {
+      "type": "string"
+    },
+    "profile_a_id": {
+      "type": "string"
+    },
+    "profile_b_id": {
+      "type": "string"
+    },
+    "profile_a_provenance": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "profile_b_provenance": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "common_species_basis": {
+      "type": "string"
+    },
+    "fixed_other_profiles": {
+      "type": "string"
+    },
+    "selector_name": {
+      "type": "string"
+    },
+    "selector_value_a": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "selector_value_b": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "fit_favored_endpoint": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reference_status": {
+      "type": "string"
+    },
+    "reference_distance_a": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "reference_distance_b": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "reference_closer_endpoint": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "discordance": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "selection_regret_pp": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "ordering_changed": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "largest_source_changed": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "convergence_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "percent_mass_retained": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "input_hashes": {
+      "type": "object"
+    },
+    "code_version": {
+      "type": "string"
+    },
+    "environment": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}
