@@ -1,0 +1,647 @@
+{
+  "audit_date": "2026-09-26",
+  "configuration_sha256": "6d3b10b2090526e3f15e987cc1b796fb02736570e2b3284738001956cacadc39",
+  "audit_script_sha256": "42c327b7ef629077bf1f11d1562ccee500a9192b236a1add771ff522070d1c09",
+  "configuration": {
+    "version": "1.0.0",
+    "data_archive": "sjvf_data.zip",
+    "receptor_member": "ADsjvf.txt",
+    "profile_member": "PRsjvf.txt",
+    "receptor_filter": {
+      "ID": "FRESNO",
+      "SIZE": "FINE"
+    },
+    "expected_receptor_count": 35,
+    "source_selector_member": "PRsjvf.sel",
+    "source_selector_zero_based_column": 22,
+    "central_initial_sources": [
+      "SOIL03",
+      "BAMAJC",
+      "SFCRUC",
+      "MOVES2",
+      "AMSUL",
+      "AMNIT",
+      "NANO3"
+    ],
+    "species_selector_member": "SPsjvf.sel",
+    "species_selector_zero_based_column": 20,
+    "identical_species_selector_column": 24,
+    "species": [
+      "N3IC",
+      "S4IC",
+      "N4TC",
+      "KPAC",
+      "NAAC",
+      "ECTC",
+      "OCTC",
+      "ALXC",
+      "SIXC",
+      "CLXC",
+      "KPXC",
+      "CAXC",
+      "TIXC",
+      "VAXC",
+      "CRXC",
+      "MNXC",
+      "FEXC",
+      "NIXC",
+      "BRXC",
+      "PBXC"
+    ],
+    "max_iterations": 20,
+    "relative_tolerance": 0.01,
+    "relative_denominator": "abs(new contribution); exact zero unchanged passes, changed-to-zero fails",
+    "initial_contributions": "zero for every fresh fit",
+    "numeric_precision": "float64",
+    "linear_solver": "numpy.linalg.lstsq, rcond=None; fail on rank deficiency",
+    "diagnostic_variance": "effective variance used in the final least-squares solve, not recomputed afterward",
+    "central_controller": "fit; if converged remove the most negative source and restart from zero; stop when nonnegative; if nonconverged stop and mark unresolved, no source pruning from unconverged outputs",
+    "alternative_controller": "replace the eligible source in the final central retained set; no pruning and no nonnegativity constraint",
+    "alternative_descriptor_rules": {
+      "SOIL03": "PAVED ROAD excluding UNPAVED",
+      "BAMAJC": "CORDWOOD",
+      "SFCRUC": "CRUDE BOILER",
+      "MOVES2": "SID begins MOVES"
+    },
+    "expected_alternatives": {
+      "SOIL03": [
+        "SOIL08",
+        "SOIL12",
+        "SOIL29"
+      ],
+      "BAMAJC": [
+        "MAFISC",
+        "MAMAJC"
+      ],
+      "SFCRUC": [
+        "CHCRUC"
+      ],
+      "MOVES2": [
+        "MOVES1",
+        "MOVES3",
+        "MOVES4",
+        "MOVES5"
+      ]
+    },
+    "fit_filter": {
+      "R2": [
+        0.8,
+        1.0
+      ],
+      "reduced_chi2": [
+        0.0,
+        4.0
+      ],
+      "percent_mass_stricter": [
+        80.0,
+        120.0
+      ]
+    },
+    "ranking": "consistent central source slots; compare all pairwise signs and unique largest-source identity; ties recorded, not broken",
+    "ranking_rounding_check_decimals": 5,
+    "case_identity": {
+      "ID": "FRESNO",
+      "DATE": "05/10/89",
+      "DUR": "24",
+      "STHOUR": "0",
+      "SIZE": "FINE"
+    },
+    "case_numeric_agreement": "round clean-room result to six decimal places and compare with published six-decimal value; no tuning",
+    "configuration_basis": [
+      "R3nR8 Main equations/methods and Supplement EPA alternatives, attrition and worked-case sections.",
+      "Released SPsjvf.sel arrays 2/4 are identical 20-species arrays; PRsjvf.sel array 3 uniquely uses the declared SOIL03 central slot.",
+      "EPA-CMB82DLLsrc.zip/CMB82a.for lines 542-545, 623-632, 724-736, 1004-1025: zero initialization, EVLS, stopping and diagnostics.",
+      "Existing reviewed NFRAQS clean-room EVLS implementation used for method inspection only, not imported."
+    ],
+    "limitations": [
+      "This is a Python float64 clean-room implementation, not execution of the original EPA float32 Fortran/Delphi program.",
+      "Original manuscript executable ledger and exact historical code remain unrecovered.",
+      "Source precision, empty cells, raw uncertainty fields and sample/source selectors are not tuned to outcomes."
+    ]
+  },
+  "input_inventory": [
+    {
+      "archive": "sjvf_data.zip",
+      "bytes": 160602,
+      "sha256": "3ca5bb3d4273e40f9c0f65a11f60e86fadafb525a086a046a9ef29a171fd229f",
+      "members": [
+        {
+          "name": "SPsjvf.sel",
+          "bytes": 1518,
+          "sha256": "f4bde2568e282327e1cc5a0093e15b8cd2793be5227340b4020e2409eb416878"
+        },
+        {
+          "name": "ADsjvf.txt",
+          "bytes": 109858,
+          "sha256": "49db3300d44991b10c4fc1d041daa7d97428e58d9e2fc9e7bb10036bffe760f0"
+        },
+        {
+          "name": "PRsjvf.txt",
+          "bytes": 24164,
+          "sha256": "d46ba365514a99cd394207a94a4413dc10f6da368a4cb01f6ba39a1b653eb0ac"
+        },
+        {
+          "name": "ADsjvf.wks",
+          "bytes": 185412,
+          "sha256": "2a199792b0670c9f09fd97fb50b649b4c9ea3c93942fb1b2a13ddaea2f4b8112"
+        },
+        {
+          "name": "PRsjvf.wks",
+          "bytes": 52149,
+          "sha256": "bedc9b900c8d07031970cce257b456d0e559f85d9e288c580a3d75a74fa34e5e"
+        },
+        {
+          "name": "ADsjvf.dbf",
+          "bytes": 100198,
+          "sha256": "1865c9ce25554b2233f6176c2881cc3e0bb674f5bccf3a3d610c2a8e1c44adcd"
+        },
+        {
+          "name": "PRsjvf.dbf",
+          "bytes": 25912,
+          "sha256": "9b613b8aa56b752bf7bfec0c072d96c67fafc9eb5834a49cdc30af42c9e418c2"
+        },
+        {
+          "name": "INsjvf.in8",
+          "bytes": 58,
+          "sha256": "3c7e06a3fbd41bb1cd45198587abf33c05d99c6c399bb3ed939656f8c2e662e5"
+        },
+        {
+          "name": "ADsjvf.csv",
+          "bytes": 75252,
+          "sha256": "c123ed195cab1b5fd3050efc6e9be819c2dcc1828b4e8643c772826095269215"
+        },
+        {
+          "name": "PRsjvf.csv",
+          "bytes": 24108,
+          "sha256": "99513270cdfa13197a688e4e920f537a6edf2a5569d2600516d2397a760aef91"
+        },
+        {
+          "name": "ADsjvf.sel",
+          "bytes": 7828,
+          "sha256": "c64288f7bbdd1d4aab566b9fee580335be29333b6d0cba291fa89855f92ac2a6"
+        },
+        {
+          "name": "PRsjvf.sel",
+          "bytes": 5239,
+          "sha256": "b9ba1164beb23d3509cd8bbe1497a9849d62aedc192c4dd90296bb73a4d0afce"
+        }
+      ]
+    },
+    {
+      "archive": "pacs_data.zip",
+      "bytes": 4684,
+      "sha256": "e83d859f6a794504271ff4e84704787fe8b7a03e87940e6dcb105e560a7fef4f",
+      "members": [
+        {
+          "name": "PRport.txt",
+          "bytes": 16125,
+          "sha256": "1dae3f208ee28e71a24937bf7a94b0264ddc7a36f21cecebbd433430aca6e1e6"
+        },
+        {
+          "name": "PRport.sel",
+          "bytes": 338,
+          "sha256": "ae0006b6b1d0d028bd1bb065dc0a5db21cea399172d34ba35612563cdc701116"
+        },
+        {
+          "name": "ADport.txt",
+          "bytes": 2936,
+          "sha256": "7db7fb0e43af9caf21759366640dd63f2078a446d06f9693bf357786fcf217c5"
+        },
+        {
+          "name": "ADport.sel",
+          "bytes": 215,
+          "sha256": "53072e6cc02872784c21a8b0e5e0f99ae688dfcc8aaa50b0fe02367e6962d9ba"
+        },
+        {
+          "name": "INport.in8",
+          "bytes": 58,
+          "sha256": "c494b0533e1018e30561643fb38ff1f74e2520a63d5e41353739a82e737621c4"
+        },
+        {
+          "name": "SPport.sel",
+          "bytes": 1435,
+          "sha256": "b0b1e76419dbc999e637f33723601dce00429e5a9ebc0ad4794e43f340f3ee78"
+        }
+      ]
+    },
+    {
+      "archive": "epa-cmb82test.zip",
+      "bytes": 163981,
+      "sha256": "f653311c3b9d0b89611a337b625e77d82d35650c852f5df8d7cb10c76f86d7ff",
+      "members": [
+        {
+          "name": "PRsjvf.csv",
+          "bytes": 24108,
+          "sha256": "99513270cdfa13197a688e4e920f537a6edf2a5569d2600516d2397a760aef91"
+        },
+        {
+          "name": "PRsjvf.dbf",
+          "bytes": 25912,
+          "sha256": "9b613b8aa56b752bf7bfec0c072d96c67fafc9eb5834a49cdc30af42c9e418c2"
+        },
+        {
+          "name": "PRsjvf.sel",
+          "bytes": 5239,
+          "sha256": "b9ba1164beb23d3509cd8bbe1497a9849d62aedc192c4dd90296bb73a4d0afce"
+        },
+        {
+          "name": "PRsjvf.txt",
+          "bytes": 24164,
+          "sha256": "d46ba365514a99cd394207a94a4413dc10f6da368a4cb01f6ba39a1b653eb0ac"
+        },
+        {
+          "name": "PRsjvf.wks",
+          "bytes": 52149,
+          "sha256": "bedc9b900c8d07031970cce257b456d0e559f85d9e288c580a3d75a74fa34e5e"
+        },
+        {
+          "name": "PRsjvfBF.sel",
+          "bytes": 5256,
+          "sha256": "b4153ce33aa68d02bc527be201fc80a138d4d7566b1064eb73f8a59184eb8ecb"
+        },
+        {
+          "name": "SPsjvf.sel",
+          "bytes": 1518,
+          "sha256": "f4bde2568e282327e1cc5a0093e15b8cd2793be5227340b4020e2409eb416878"
+        },
+        {
+          "name": "SPsjvfBF.sel",
+          "bytes": 1518,
+          "sha256": "8b73ff2adc57a4a999bdbeede73e38c4b231ca606e8b62be620164f2915c3222"
+        },
+        {
+          "name": "ADsjvf.csv",
+          "bytes": 75252,
+          "sha256": "c123ed195cab1b5fd3050efc6e9be819c2dcc1828b4e8643c772826095269215"
+        },
+        {
+          "name": "ADsjvf.dbf",
+          "bytes": 100198,
+          "sha256": "1865c9ce25554b2233f6176c2881cc3e0bb674f5bccf3a3d610c2a8e1c44adcd"
+        },
+        {
+          "name": "ADsjvf.sel",
+          "bytes": 7828,
+          "sha256": "c64288f7bbdd1d4aab566b9fee580335be29333b6d0cba291fa89855f92ac2a6"
+        },
+        {
+          "name": "ADsjvf.txt",
+          "bytes": 109858,
+          "sha256": "49db3300d44991b10c4fc1d041daa7d97428e58d9e2fc9e7bb10036bffe760f0"
+        },
+        {
+          "name": "ADsjvf.wks",
+          "bytes": 185412,
+          "sha256": "2a199792b0670c9f09fd97fb50b649b4c9ea3c93942fb1b2a13ddaea2f4b8112"
+        },
+        {
+          "name": "ADsjvfBF.sel",
+          "bytes": 7826,
+          "sha256": "450c01bd4a8973519be09a292ea806d3302dceaaee70dc1dc84682058031f7ec"
+        },
+        {
+          "name": "INsjvf.in8",
+          "bytes": 58,
+          "sha256": "3c7e06a3fbd41bb1cd45198587abf33c05d99c6c399bb3ed939656f8c2e662e5"
+        },
+        {
+          "name": "INsjvfBF.in8",
+          "bytes": 66,
+          "sha256": "6f5cbe29ac765da4f509990a430c67afef7f2c56dabfad1a014c2afb22ce80f2"
+        },
+        {
+          "name": "INsjvf-csv.in8",
+          "bytes": 58,
+          "sha256": "88260b7ea83ffc4f1b2299bb20ada850f8c7fed45bfbd8a33ca1bd793f140473"
+        },
+        {
+          "name": "INsjvf-dbf.in8",
+          "bytes": 58,
+          "sha256": "6024706b2f8213fb6e7d978745973653a5354854db609dc92968e888909c8d4b"
+        },
+        {
+          "name": "INsjvf-wks.in8",
+          "bytes": 58,
+          "sha256": "0f7f2894b4bdfa2bfea430ddc96926db0a283171fd6627bee93880ca3a022b4c"
+        }
+      ]
+    },
+    {
+      "archive": "sourcecmb82.zip",
+      "bytes": 4542426,
+      "sha256": "44acea483c66cd5eb859340ecb7083fff18ab4b0401dde5d4f34972a22fbe8c9",
+      "members": [
+        {
+          "name": "EPA-CMB82src.zip",
+          "bytes": 289086,
+          "sha256": "b4c685752698ad265aa9a9cbc10829f6fc54227ae808affc55ad1c910767492f"
+        },
+        {
+          "name": "EPA-CMB82DLLsrc.zip",
+          "bytes": 4253096,
+          "sha256": "8d4805b1c0242c8000f51f1db5f2d468b6a60ff92d44c8b728e0cb1814623fef"
+        }
+      ],
+      "inspected_native_source": {
+        "path": "sourcecmb82.zip/EPA-CMB82DLLsrc.zip/CMB82a.for",
+        "bytes": 82510,
+        "sha256": "51121f45bcfc64b2883ae5824489dd1e610a3dcc60744e97862ab8d033b007f8",
+        "used_for": "Method inspection only; not executed or redistributed."
+      }
+    }
+  ],
+  "recovery_identity_verification": {
+    "status": "PASS",
+    "archives_checked": 4,
+    "members_checked": 39,
+    "recovery_record_sha256": "4f60826ae3e564af7b16bc07ca64a3cd7df2d89aa99e554ef239a1dcb844d6f2",
+    "performed_before_fitting": true
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "randomness": "none"
+  },
+  "input_summary": {
+    "receptor_rows_in_archive": 206,
+    "fine_profiles_in_archive": 55,
+    "fresno_fine_samples": 35,
+    "species": [
+      "N3IC",
+      "S4IC",
+      "N4TC",
+      "KPAC",
+      "NAAC",
+      "ECTC",
+      "OCTC",
+      "ALXC",
+      "SIXC",
+      "CLXC",
+      "KPXC",
+      "CAXC",
+      "TIXC",
+      "VAXC",
+      "CRXC",
+      "MNXC",
+      "FEXC",
+      "NIXC",
+      "BRXC",
+      "PBXC"
+    ],
+    "initial_source_ids": [
+      "SOIL03",
+      "BAMAJC",
+      "SFCRUC",
+      "MOVES2",
+      "AMSUL",
+      "AMNIT",
+      "NANO3"
+    ],
+    "alternatives": {
+      "SOIL03": [
+        "SOIL08",
+        "SOIL12",
+        "SOIL29"
+      ],
+      "BAMAJC": [
+        "MAFISC",
+        "MAMAJC"
+      ],
+      "SFCRUC": [
+        "CHCRUC"
+      ],
+      "MOVES2": [
+        "MOVES1",
+        "MOVES3",
+        "MOVES4",
+        "MOVES5"
+      ]
+    },
+    "species_arrays_2_and_4_identical": true
+  },
+  "worked_case": {
+    "sample_identity": {
+      "ID": "FRESNO",
+      "DATE": "05/10/89",
+      "DUR": "24",
+      "STHOUR": "0",
+      "SIZE": "FINE"
+    },
+    "source_native_reconstruction": true,
+    "control_retained_sources": [
+      "SOIL03",
+      "BAMAJC",
+      "MOVES2",
+      "AMSUL",
+      "AMNIT",
+      "NANO3"
+    ],
+    "control_controller_status": "COMPLETE_NONNEGATIVE",
+    "published_comparator_sha256": "27b5a28132de94a09db836c7ad8d62183f6888372f138be18d989c695cbd2e0d",
+    "all_five_runs_match_displayed_precision": true,
+    "comparison": [
+      {
+        "profile_id": "MOVES2",
+        "converged": true,
+        "metrics": {
+          "R2": 0.8467641670271921,
+          "reduced_chi2": 2.771766369366812,
+          "percent_mass": 98.26776396703755,
+          "MOVES_contribution_ug_m3": 0.9464653766035425
+        },
+        "difference_from_displayed": {
+          "R2": 1.6702719218830708e-07,
+          "reduced_chi2": 3.6936681224730705e-07,
+          "percent_mass": -3.296244699413364e-08,
+          "MOVES_contribution_ug_m3": 3.766035424623837e-07
+        },
+        "rounds_to_all_four_published_values": true,
+        "largest_source_category": "AMSUL",
+        "largest_source_matches": true,
+        "all_fields_match": true
+      },
+      {
+        "profile_id": "MOVES1",
+        "converged": true,
+        "metrics": {
+          "R2": 0.8680605562964293,
+          "reduced_chi2": 2.2950290999990264,
+          "percent_mass": 101.6790388444593,
+          "MOVES_contribution_ug_m3": 1.5560440484673277
+        },
+        "difference_from_displayed": {
+          "R2": -4.437035706628123e-07,
+          "reduced_chi2": 9.999902639279412e-08,
+          "percent_mass": -1.5554070387224783e-07,
+          "MOVES_contribution_ug_m3": 4.846732770680262e-08
+        },
+        "rounds_to_all_four_published_values": true,
+        "largest_source_category": "MOVES",
+        "largest_source_matches": true,
+        "all_fields_match": true
+      },
+      {
+        "profile_id": "MOVES3",
+        "converged": true,
+        "metrics": {
+          "R2": 0.8707785825276249,
+          "reduced_chi2": 2.29539972406225,
+          "percent_mass": 89.25946616524308,
+          "MOVES_contribution_ug_m3": 0.215546999128432
+        },
+        "difference_from_displayed": {
+          "R2": -4.174723751138032e-07,
+          "reduced_chi2": -2.7593774998280196e-07,
+          "percent_mass": 1.652430796639237e-07,
+          "MOVES_contribution_ug_m3": -8.715679844506496e-10
+        },
+        "rounds_to_all_four_published_values": true,
+        "largest_source_category": "AMSUL",
+        "largest_source_matches": true,
+        "all_fields_match": true
+      },
+      {
+        "profile_id": "MOVES4",
+        "converged": true,
+        "metrics": {
+          "R2": 0.8699283914345355,
+          "reduced_chi2": 2.129577497773441,
+          "percent_mass": 107.5329258200713,
+          "MOVES_contribution_ug_m3": 1.3653154055601588
+        },
+        "difference_from_displayed": {
+          "R2": 3.914345354516513e-07,
+          "reduced_chi2": 4.977734411326651e-07,
+          "percent_mass": -1.799287048243059e-07,
+          "MOVES_contribution_ug_m3": 4.0556015878934204e-07
+        },
+        "rounds_to_all_four_published_values": true,
+        "largest_source_category": "AMSUL",
+        "largest_source_matches": true,
+        "all_fields_match": true
+      },
+      {
+        "profile_id": "MOVES5",
+        "converged": true,
+        "metrics": {
+          "R2": 0.8737711761856266,
+          "reduced_chi2": 2.0478709711803584,
+          "percent_mass": 111.2889823183377,
+          "MOVES_contribution_ug_m3": 1.5965188854956494
+        },
+        "difference_from_displayed": {
+          "R2": 1.7618562664356574e-07,
+          "reduced_chi2": -2.8819641784139094e-08,
+          "percent_mass": 3.1833769753575325e-07,
+          "MOVES_contribution_ug_m3": -1.1450435066784337e-07
+        },
+        "rounds_to_all_four_published_values": true,
+        "largest_source_category": "MOVES",
+        "largest_source_matches": true,
+        "all_fields_match": true
+      }
+    ]
+  },
+  "full_aggregate": {
+    "status": "RECONSTRUCTED_MATCH",
+    "all_35_central_fits_completed": true,
+    "computed_counts": {
+      "eligible": 345,
+      "converged": 323,
+      "nonconverged": 22,
+      "two_diagnostic": 283,
+      "three_diagnostic": 26,
+      "ordering_converged": 167,
+      "largest_converged": 81,
+      "ordering_two_diagnostic": 133,
+      "largest_two_diagnostic": 62,
+      "ordering_three_diagnostic": 10,
+      "largest_three_diagnostic": 2
+    },
+    "reported_counts": {
+      "eligible": 345,
+      "converged": 323,
+      "nonconverged": 22,
+      "two_diagnostic": 283,
+      "three_diagnostic": 26,
+      "ordering_converged": 167,
+      "largest_converged": 81,
+      "ordering_two_diagnostic": 133,
+      "largest_two_diagnostic": 62,
+      "ordering_three_diagnostic": 10,
+      "largest_three_diagnostic": 2
+    },
+    "differences": {
+      "eligible": 0,
+      "converged": 0,
+      "nonconverged": 0,
+      "two_diagnostic": 0,
+      "three_diagnostic": 0,
+      "ordering_converged": 0,
+      "largest_converged": 0,
+      "ordering_two_diagnostic": 0,
+      "largest_two_diagnostic": 0,
+      "ordering_three_diagnostic": 0,
+      "largest_three_diagnostic": 0
+    },
+    "per_alternative_attrition": {
+      "SOIL08": {
+        "eligible": 35,
+        "converged": 35,
+        "nonconverged": 0
+      },
+      "SOIL12": {
+        "eligible": 35,
+        "converged": 35,
+        "nonconverged": 0
+      },
+      "SOIL29": {
+        "eligible": 35,
+        "converged": 35,
+        "nonconverged": 0
+      },
+      "MAFISC": {
+        "eligible": 35,
+        "converged": 22,
+        "nonconverged": 13
+      },
+      "MAMAJC": {
+        "eligible": 35,
+        "converged": 28,
+        "nonconverged": 7
+      },
+      "CHCRUC": {
+        "eligible": 30,
+        "converged": 30,
+        "nonconverged": 0
+      },
+      "MOVES1": {
+        "eligible": 35,
+        "converged": 35,
+        "nonconverged": 0
+      },
+      "MOVES3": {
+        "eligible": 35,
+        "converged": 34,
+        "nonconverged": 1
+      },
+      "MOVES4": {
+        "eligible": 35,
+        "converged": 35,
+        "nonconverged": 0
+      },
+      "MOVES5": {
+        "eligible": 35,
+        "converged": 34,
+        "nonconverged": 1
+      }
+    },
+    "rank_decision_disagreements_after_rounding_5dp": 0,
+    "converged_runs_with_top_tie_before_or_after_rounding": 0,
+    "source_native_recomputed": true,
+    "historical_original_execution_ledger_recovered": false
+  },
+  "private_ledger_sha256": "0e3c5c5b74e5f0838a95459ad348de6b49213be0898ff9627915e645881afa9f",
+  "public_scope": "Code, configuration, hashes, aggregate results and comparison with already-published worked-case summary only. No raw archive or full per-sample contribution ledger redistributed.",
+  "decision": "KEEP clean-room numerical reconstruction if matching; HOLD any assertion of original executable/ledger recovery or independent field accuracy. No manuscript/baseline modification."
+}

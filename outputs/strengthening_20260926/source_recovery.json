@@ -1,0 +1,257 @@
+{
+  "retrieved_at_utc": "2026-09-26T18:55:35.622644+00:00",
+  "purpose": "Source recovery and identity only; not an original-results reproduction",
+  "records": [
+    {
+      "name": "sjvf_data.zip",
+      "url": "https://www.epa.gov/sites/default/files/2020-10/sjvf_data.zip",
+      "landing_page": "https://www.epa.gov/scram/chemical-mass-balance-cmb-model",
+      "http_status": 200,
+      "final_url": "https://www.epa.gov/sites/default/files/2020-10/sjvf_data.zip",
+      "members": [
+        {
+          "name": "SPsjvf.sel",
+          "bytes": 1518,
+          "sha256": "f4bde2568e282327e1cc5a0093e15b8cd2793be5227340b4020e2409eb416878"
+        },
+        {
+          "name": "ADsjvf.txt",
+          "bytes": 109858,
+          "sha256": "49db3300d44991b10c4fc1d041daa7d97428e58d9e2fc9e7bb10036bffe760f0"
+        },
+        {
+          "name": "PRsjvf.txt",
+          "bytes": 24164,
+          "sha256": "d46ba365514a99cd394207a94a4413dc10f6da368a4cb01f6ba39a1b653eb0ac"
+        },
+        {
+          "name": "ADsjvf.wks",
+          "bytes": 185412,
+          "sha256": "2a199792b0670c9f09fd97fb50b649b4c9ea3c93942fb1b2a13ddaea2f4b8112"
+        },
+        {
+          "name": "PRsjvf.wks",
+          "bytes": 52149,
+          "sha256": "bedc9b900c8d07031970cce257b456d0e559f85d9e288c580a3d75a74fa34e5e"
+        },
+        {
+          "name": "ADsjvf.dbf",
+          "bytes": 100198,
+          "sha256": "1865c9ce25554b2233f6176c2881cc3e0bb674f5bccf3a3d610c2a8e1c44adcd"
+        },
+        {
+          "name": "PRsjvf.dbf",
+          "bytes": 25912,
+          "sha256": "9b613b8aa56b752bf7bfec0c072d96c67fafc9eb5834a49cdc30af42c9e418c2"
+        },
+        {
+          "name": "INsjvf.in8",
+          "bytes": 58,
+          "sha256": "3c7e06a3fbd41bb1cd45198587abf33c05d99c6c399bb3ed939656f8c2e662e5"
+        },
+        {
+          "name": "ADsjvf.csv",
+          "bytes": 75252,
+          "sha256": "c123ed195cab1b5fd3050efc6e9be819c2dcc1828b4e8643c772826095269215"
+        },
+        {
+          "name": "PRsjvf.csv",
+          "bytes": 24108,
+          "sha256": "99513270cdfa13197a688e4e920f537a6edf2a5569d2600516d2397a760aef91"
+        },
+        {
+          "name": "ADsjvf.sel",
+          "bytes": 7828,
+          "sha256": "c64288f7bbdd1d4aab566b9fee580335be29333b6d0cba291fa89855f92ac2a6"
+        },
+        {
+          "name": "PRsjvf.sel",
+          "bytes": 5239,
+          "sha256": "b9ba1164beb23d3509cd8bbe1497a9849d62aedc192c4dd90296bb73a4d0afce"
+        }
+      ],
+      "status": "RECOVERED",
+      "bytes": 160602,
+      "sha256": "3ca5bb3d4273e40f9c0f65a11f60e86fadafb525a086a046a9ef29a171fd229f",
+      "raw_redistributed": false,
+      "executed": false
+    },
+    {
+      "name": "pacs_data.zip",
+      "url": "https://www.epa.gov/sites/default/files/2020-10/pacs_data.zip",
+      "landing_page": "https://www.epa.gov/scram/chemical-mass-balance-cmb-model",
+      "http_status": 200,
+      "final_url": "https://www.epa.gov/sites/default/files/2020-10/pacs_data.zip",
+      "members": [
+        {
+          "name": "PRport.txt",
+          "bytes": 16125,
+          "sha256": "1dae3f208ee28e71a24937bf7a94b0264ddc7a36f21cecebbd433430aca6e1e6"
+        },
+        {
+          "name": "PRport.sel",
+          "bytes": 338,
+          "sha256": "ae0006b6b1d0d028bd1bb065dc0a5db21cea399172d34ba35612563cdc701116"
+        },
+        {
+          "name": "ADport.txt",
+          "bytes": 2936,
+          "sha256": "7db7fb0e43af9caf21759366640dd63f2078a446d06f9693bf357786fcf217c5"
+        },
+        {
+          "name": "ADport.sel",
+          "bytes": 215,
+          "sha256": "53072e6cc02872784c21a8b0e5e0f99ae688dfcc8aaa50b0fe02367e6962d9ba"
+        },
+        {
+          "name": "INport.in8",
+          "bytes": 58,
+          "sha256": "c494b0533e1018e30561643fb38ff1f74e2520a63d5e41353739a82e737621c4"
+        },
+        {
+          "name": "SPport.sel",
+          "bytes": 1435,
+          "sha256": "b0b1e76419dbc999e637f33723601dce00429e5a9ebc0ad4794e43f340f3ee78"
+        }
+      ],
+      "status": "RECOVERED",
+      "bytes": 4684,
+      "sha256": "e83d859f6a794504271ff4e84704787fe8b7a03e87940e6dcb105e560a7fef4f",
+      "raw_redistributed": false,
+      "executed": false
+    },
+    {
+      "name": "epa-cmb82test.zip",
+      "url": "https://www.epa.gov/sites/production/files/2020-10/epa-cmb82test.zip",
+      "landing_page": "https://www.epa.gov/scram/chemical-mass-balance-cmb-model",
+      "http_status": 200,
+      "final_url": "https://www.epa.gov/sites/default/files/2020-10/epa-cmb82test.zip",
+      "members": [
+        {
+          "name": "PRsjvf.csv",
+          "bytes": 24108,
+          "sha256": "99513270cdfa13197a688e4e920f537a6edf2a5569d2600516d2397a760aef91"
+        },
+        {
+          "name": "PRsjvf.dbf",
+          "bytes": 25912,
+          "sha256": "9b613b8aa56b752bf7bfec0c072d96c67fafc9eb5834a49cdc30af42c9e418c2"
+        },
+        {
+          "name": "PRsjvf.sel",
+          "bytes": 5239,
+          "sha256": "b9ba1164beb23d3509cd8bbe1497a9849d62aedc192c4dd90296bb73a4d0afce"
+        },
+        {
+          "name": "PRsjvf.txt",
+          "bytes": 24164,
+          "sha256": "d46ba365514a99cd394207a94a4413dc10f6da368a4cb01f6ba39a1b653eb0ac"
+        },
+        {
+          "name": "PRsjvf.wks",
+          "bytes": 52149,
+          "sha256": "bedc9b900c8d07031970cce257b456d0e559f85d9e288c580a3d75a74fa34e5e"
+        },
+        {
+          "name": "PRsjvfBF.sel",
+          "bytes": 5256,
+          "sha256": "b4153ce33aa68d02bc527be201fc80a138d4d7566b1064eb73f8a59184eb8ecb"
+        },
+        {
+          "name": "SPsjvf.sel",
+          "bytes": 1518,
+          "sha256": "f4bde2568e282327e1cc5a0093e15b8cd2793be5227340b4020e2409eb416878"
+        },
+        {
+          "name": "SPsjvfBF.sel",
+          "bytes": 1518,
+          "sha256": "8b73ff2adc57a4a999bdbeede73e38c4b231ca606e8b62be620164f2915c3222"
+        },
+        {
+          "name": "ADsjvf.csv",
+          "bytes": 75252,
+          "sha256": "c123ed195cab1b5fd3050efc6e9be819c2dcc1828b4e8643c772826095269215"
+        },
+        {
+          "name": "ADsjvf.dbf",
+          "bytes": 100198,
+          "sha256": "1865c9ce25554b2233f6176c2881cc3e0bb674f5bccf3a3d610c2a8e1c44adcd"
+        },
+        {
+          "name": "ADsjvf.sel",
+          "bytes": 7828,
+          "sha256": "c64288f7bbdd1d4aab566b9fee580335be29333b6d0cba291fa89855f92ac2a6"
+        },
+        {
+          "name": "ADsjvf.txt",
+          "bytes": 109858,
+          "sha256": "49db3300d44991b10c4fc1d041daa7d97428e58d9e2fc9e7bb10036bffe760f0"
+        },
+        {
+          "name": "ADsjvf.wks",
+          "bytes": 185412,
+          "sha256": "2a199792b0670c9f09fd97fb50b649b4c9ea3c93942fb1b2a13ddaea2f4b8112"
+        },
+        {
+          "name": "ADsjvfBF.sel",
+          "bytes": 7826,
+          "sha256": "450c01bd4a8973519be09a292ea806d3302dceaaee70dc1dc84682058031f7ec"
+        },
+        {
+          "name": "INsjvf.in8",
+          "bytes": 58,
+          "sha256": "3c7e06a3fbd41bb1cd45198587abf33c05d99c6c399bb3ed939656f8c2e662e5"
+        },
+        {
+          "name": "INsjvfBF.in8",
+          "bytes": 66,
+          "sha256": "6f5cbe29ac765da4f509990a430c67afef7f2c56dabfad1a014c2afb22ce80f2"
+        },
+        {
+          "name": "INsjvf-csv.in8",
+          "bytes": 58,
+          "sha256": "88260b7ea83ffc4f1b2299bb20ada850f8c7fed45bfbd8a33ca1bd793f140473"
+        },
+        {
+          "name": "INsjvf-dbf.in8",
+          "bytes": 58,
+          "sha256": "6024706b2f8213fb6e7d978745973653a5354854db609dc92968e888909c8d4b"
+        },
+        {
+          "name": "INsjvf-wks.in8",
+          "bytes": 58,
+          "sha256": "0f7f2894b4bdfa2bfea430ddc96926db0a283171fd6627bee93880ca3a022b4c"
+        }
+      ],
+      "status": "RECOVERED",
+      "bytes": 163981,
+      "sha256": "f653311c3b9d0b89611a337b625e77d82d35650c852f5df8d7cb10c76f86d7ff",
+      "raw_redistributed": false,
+      "executed": false
+    },
+    {
+      "name": "sourcecmb82.zip",
+      "url": "https://www.epa.gov/sites/production/files/2020-10/sourcecmb82.zip",
+      "landing_page": "https://www.epa.gov/scram/chemical-mass-balance-cmb-model",
+      "http_status": 200,
+      "final_url": "https://www.epa.gov/sites/default/files/2020-10/sourcecmb82.zip",
+      "members": [
+        {
+          "name": "EPA-CMB82src.zip",
+          "bytes": 289086,
+          "sha256": "b4c685752698ad265aa9a9cbc10829f6fc54227ae808affc55ad1c910767492f"
+        },
+        {
+          "name": "EPA-CMB82DLLsrc.zip",
+          "bytes": 4253096,
+          "sha256": "8d4805b1c0242c8000f51f1db5f2d468b6a60ff92d44c8b728e0cb1814623fef"
+        }
+      ],
+      "status": "RECOVERED",
+      "bytes": 4542426,
+      "sha256": "44acea483c66cd5eb859340ecb7083fff18ab4b0401dde5d4f34972a22fbe8c9",
+      "raw_redistributed": false,
+      "executed": false
+    }
+  ]
+}

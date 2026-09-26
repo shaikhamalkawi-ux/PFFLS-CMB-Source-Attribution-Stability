@@ -1,0 +1,6 @@
+extract_cycle02_fairbanks.py text eol=lf
+audit_strengthening_*.py text eol=lf
+audit_*_strengthening.py text eol=lf
+audit_reference_robustness.py text eol=lf
+recover_strengthening_sources.py text eol=lf
+build_strengthening_package.py text eol=lf

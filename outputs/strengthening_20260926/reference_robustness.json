@@ -1,0 +1,968 @@
+{
+  "analysis": "Exploratory, conditional publication-derived L1 reference-ranking certificates",
+  "decision": "KEEP conditional mathematical diagnostic; HOLD statistical reference-uncertainty claims",
+  "baseline_modified": false,
+  "recomputed_from_raw": false,
+  "reference_total_ug_m3": "43.09",
+  "reference_categories": [
+    "BioB",
+    "SO4",
+    "NO3",
+    "DUST",
+    "ROAD",
+    "SALT",
+    "TRA",
+    "INDU"
+  ],
+  "inputs": [
+    {
+      "file": "epa_fresno_1989_05_10_publication_summary.csv",
+      "rows": 5,
+      "columns": [
+        "profile_id",
+        "is_central",
+        "MOVES_contribution_ug_m3",
+        "R2",
+        "reduced_chi2",
+        "percent_mass",
+        "largest_source_category"
+      ],
+      "sha256": "27b5a28132de94a09db836c7ad8d62183f6888372f138be18d989c695cbd2e0d"
+    },
+    {
+      "file": "epa_primary_outcome_summary.csv",
+      "rows": 5,
+      "columns": [
+        "subset",
+        "n",
+        "any_ordering_change",
+        "largest_source_change"
+      ],
+      "sha256": "854dc843ddcf575a98fc5211f149b748ed2729953d5c415723673b663a820dac"
+    },
+    {
+      "file": "epa_profile_alternatives_and_attrition.csv",
+      "rows": 10,
+      "columns": [
+        "central",
+        "alternative",
+        "descriptor",
+        "archive_description",
+        "eligible",
+        "nonconverged",
+        "converged"
+      ],
+      "sha256": "ead12ad12b5ed2b894d91eaa2377971f882b21e315bad988e3439ddc2d9ffe68"
+    },
+    {
+      "file": "epa_profile_family_shift_summary.csv",
+      "rows": 4,
+      "columns": [
+        "profile_family",
+        "converged_n",
+        "median_shift_percent_ambient_PM",
+        "p90_shift_percent_ambient_PM"
+      ],
+      "sha256": "e8c997440a64e5b5ba308cc4d16c049d6c1cd4c25d3bfdcc19edf70dba3d5a1f"
+    },
+    {
+      "file": "jrc_12set_landscape.csv",
+      "rows": 12,
+      "columns": [
+        "profile_set",
+        "EL1_percent_reference_mass",
+        "mean_reduced_chi2",
+        "median_R2",
+        "all_three_pass_percent",
+        "nonconverged_samples",
+        "IL1_percent_mean_observed_PM"
+      ],
+      "sha256": "5a5e1d0c9c1afb231d8b0d56ae112e9e2333b2877c5c3722bbae6139b6168c6b"
+    },
+    {
+      "file": "jrc_campaign_point_reference.csv",
+      "rows": 8,
+      "columns": [
+        "reference_key",
+        "source_category",
+        "published_mean_ug_m3"
+      ],
+      "sha256": "43a37d73a2c607a71b648ca0a501c0b61dcaa682af361f14dc70e69a2cd88167"
+    },
+    {
+      "file": "jrc_common_sample_reported_summary.csv",
+      "rows": 1,
+      "columns": [
+        "analysis",
+        "shared_sample_count",
+        "lowest_mean_reduced_chi2_set",
+        "lowest_EL1_set",
+        "reported_spearman_EL1_mean_reduced_chi2",
+        "lower_chi2_discordant_comparisons",
+        "total_comparisons",
+        "status"
+      ],
+      "sha256": "cc19c437b6e0c71f2a5a12cdfceec7090cb281f44cdf482fa3d45b4fae596a9a"
+    },
+    {
+      "file": "jrc_controller_publication_summary.csv",
+      "rows": 12,
+      "columns": [
+        "profile_set",
+        "EL1_percent_reference_mass",
+        "mean_reduced_chi2",
+        "all_three_pass_percent",
+        "nonconverged_samples",
+        "IL1_percent_mean_observed_PM"
+      ],
+      "sha256": "a9c83f54aacd026f75341ef82103a0f075e15121504ce3129156c2e496ae5113"
+    },
+    {
+      "file": "jrc_profile_admission_crosswalk.csv",
+      "rows": 9,
+      "columns": [
+        "profile_family",
+        "records",
+        "complete_cells",
+        "primary_role"
+      ],
+      "sha256": "644e7c3909e043c7ad5002d07fecbfcc6166dfe1c82301087b7faaa8a3dcf12b"
+    },
+    {
+      "file": "jrc_profile_choice_edges_reconstructed.csv",
+      "rows": 30,
+      "columns": [
+        "edge_id",
+        "source_family",
+        "profile_a_id",
+        "profile_b_id",
+        "common_species_basis",
+        "fixed_other_profiles",
+        "selector_name",
+        "selector_value_a_published",
+        "selector_value_b_published",
+        "fit_favored_endpoint",
+        "reference_status",
+        "reference_distance_a_EL1_percent",
+        "reference_distance_b_EL1_percent",
+        "reference_closer_endpoint",
+        "discordance",
+        "selection_regret_pp_from_published_values",
+        "mean_reduced_chi2_gap_from_published_values",
+        "reconstruction_status"
+      ],
+      "sha256": "51f958564b32bbb938e6d3566a8c32d20ad15be5a616535dbaed2dce9c4e0859"
+    }
+  ],
+  "availability": {
+    "eight_component_reference_mean": true,
+    "eight_component_fitted_mean_vectors_in_inspected_public_archive": false,
+    "daily_reference_vectors_in_inspected_public_archive": false,
+    "joint_reference_covariance_in_inspected_public_archive": false,
+    "evidence": "CSV header/row inventory and publication-derived REPRODUCIBILITY_LIMITS.md; manuscript Supplement S10 explicitly says full allocation vectors are not included."
+  },
+  "assumptions": [
+    "Published error summaries correctly describe fixed fitted allocations at the displayed campaign reference.",
+    "Each underlying score lies within the declared reporting-precision envelope of its displayed score; the full-unit envelope is 0.01 percentage points per score.",
+    "The original reference is the displayed eight-vector with total 43.09 ug/m3; possible reference-rounding displacement is part of the perturbation budget, not an extra independent confidence interval.",
+    "Only the shared reference is perturbed; allocations, fit diagnostics, candidate universe, sample basis and selectors remain frozen.",
+    "Every perturbed reference has positive total. A common positive changed denominator preserves ordering but changes normalized error magnitudes."
+  ],
+  "mathematical_result": {
+    "bound": "|[||a-r'||_1-||b-r'||_1]-[||a-r||_1-||b-r||_1]| <= 2||r'-r||_1",
+    "certificate": "||r'-r||_1 < max(0, |e_a-e_b|-2b)*T0/200, where e_a,e_b,b are in percentage points",
+    "boundary": "Strict inequality. Equality does not certify strict ordering. The certificate is sufficient, not an exact or necessary reversal threshold."
+  },
+  "all_thirty_orderings_certificate": {
+    "sufficient_open_ball_radius_ug_m3": "0.047399",
+    "sufficient_open_ball_radius_percent_reference_total": "0.1100",
+    "consequence": "All thirty reference-ordering labels, hence the 9/30 discordance count, persist inside this open ball under the stated envelope assumptions."
+  },
+  "global_minimum_certificate": {
+    "profile_set": "W4-V2",
+    "sufficient_open_ball_radius_ug_m3": "0.206832",
+    "scope": "Preservation against all eleven other fixed candidates; a sufficient lower bound only."
+  },
+  "scenario_budgets": [
+    {
+      "scenario_l1_radius_percent_of_original_reference_total": "0",
+      "scenario_l1_radius_ug_m3": "0.00",
+      "certified_unchanged_reference_orderings": 30,
+      "guaranteed_discordances_at_least": 9,
+      "guaranteed_discordances_at_most": 9,
+      "unresolved_orderings": 0,
+      "interpretation": "Declared sensitivity budget, not estimated reference uncertainty; count bounds need not be attainable jointly."
+    },
+    {
+      "scenario_l1_radius_percent_of_original_reference_total": "0.1",
+      "scenario_l1_radius_ug_m3": "0.04309",
+      "certified_unchanged_reference_orderings": 30,
+      "guaranteed_discordances_at_least": 9,
+      "guaranteed_discordances_at_most": 9,
+      "unresolved_orderings": 0,
+      "interpretation": "Declared sensitivity budget, not estimated reference uncertainty; count bounds need not be attainable jointly."
+    },
+    {
+      "scenario_l1_radius_percent_of_original_reference_total": "0.5",
+      "scenario_l1_radius_ug_m3": "0.21545",
+      "certified_unchanged_reference_orderings": 22,
+      "guaranteed_discordances_at_least": 5,
+      "guaranteed_discordances_at_most": 13,
+      "unresolved_orderings": 8,
+      "interpretation": "Declared sensitivity budget, not estimated reference uncertainty; count bounds need not be attainable jointly."
+    },
+    {
+      "scenario_l1_radius_percent_of_original_reference_total": "1",
+      "scenario_l1_radius_ug_m3": "0.4309",
+      "certified_unchanged_reference_orderings": 20,
+      "guaranteed_discordances_at_least": 5,
+      "guaranteed_discordances_at_most": 15,
+      "unresolved_orderings": 10,
+      "interpretation": "Declared sensitivity budget, not estimated reference uncertainty; count bounds need not be attainable jointly."
+    },
+    {
+      "scenario_l1_radius_percent_of_original_reference_total": "2",
+      "scenario_l1_radius_ug_m3": "0.8618",
+      "certified_unchanged_reference_orderings": 15,
+      "guaranteed_discordances_at_least": 1,
+      "guaranteed_discordances_at_most": 16,
+      "unresolved_orderings": 15,
+      "interpretation": "Declared sensitivity budget, not estimated reference uncertainty; count bounds need not be attainable jointly."
+    }
+  ],
+  "edge_certificates": [
+    {
+      "edge_id": "E01",
+      "profile_a": "W3-V2",
+      "profile_b": "W4-V2",
+      "reference_closer_at_displayed_target": "W4-V2",
+      "fit_favored_frozen": "W3-V2",
+      "discordant_at_displayed_target": true,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "0.98",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "0.96",
+        "sufficient_open_ball_radius_ug_m3": "0.206832",
+        "sufficient_open_ball_radius_percent_reference_total": "0.48",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "0.98",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "0.970",
+        "sufficient_open_ball_radius_ug_m3": "0.2089865",
+        "sufficient_open_ball_radius_percent_reference_total": "0.485",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E02",
+      "profile_a": "W3-V2",
+      "profile_b": "W5-V2",
+      "reference_closer_at_displayed_target": "W3-V2",
+      "fit_favored_frozen": "W3-V2",
+      "discordant_at_displayed_target": false,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "1.27",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "1.25",
+        "sufficient_open_ball_radius_ug_m3": "0.2693125",
+        "sufficient_open_ball_radius_percent_reference_total": "0.625",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "1.27",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "1.260",
+        "sufficient_open_ball_radius_ug_m3": "0.271467",
+        "sufficient_open_ball_radius_percent_reference_total": "0.630",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E03",
+      "profile_a": "W3-V2",
+      "profile_b": "W6-V2",
+      "reference_closer_at_displayed_target": "W3-V2",
+      "fit_favored_frozen": "W3-V2",
+      "discordant_at_displayed_target": false,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "1.51",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "1.49",
+        "sufficient_open_ball_radius_ug_m3": "0.3210205",
+        "sufficient_open_ball_radius_percent_reference_total": "0.745",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "1.51",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "1.500",
+        "sufficient_open_ball_radius_ug_m3": "0.323175",
+        "sufficient_open_ball_radius_percent_reference_total": "0.750",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E04",
+      "profile_a": "W4-V2",
+      "profile_b": "W5-V2",
+      "reference_closer_at_displayed_target": "W4-V2",
+      "fit_favored_frozen": "W5-V2",
+      "discordant_at_displayed_target": true,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "2.25",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "2.23",
+        "sufficient_open_ball_radius_ug_m3": "0.4804535",
+        "sufficient_open_ball_radius_percent_reference_total": "1.115",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "2.25",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "2.240",
+        "sufficient_open_ball_radius_ug_m3": "0.482608",
+        "sufficient_open_ball_radius_percent_reference_total": "1.120",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E05",
+      "profile_a": "W4-V2",
+      "profile_b": "W6-V2",
+      "reference_closer_at_displayed_target": "W4-V2",
+      "fit_favored_frozen": "W6-V2",
+      "discordant_at_displayed_target": true,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "2.49",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "2.47",
+        "sufficient_open_ball_radius_ug_m3": "0.5321615",
+        "sufficient_open_ball_radius_percent_reference_total": "1.235",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "2.49",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "2.480",
+        "sufficient_open_ball_radius_ug_m3": "0.534316",
+        "sufficient_open_ball_radius_percent_reference_total": "1.240",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E06",
+      "profile_a": "W5-V2",
+      "profile_b": "W6-V2",
+      "reference_closer_at_displayed_target": "W5-V2",
+      "fit_favored_frozen": "W6-V2",
+      "discordant_at_displayed_target": true,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "0.24",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "0.22",
+        "sufficient_open_ball_radius_ug_m3": "0.047399",
+        "sufficient_open_ball_radius_percent_reference_total": "0.11",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "0.24",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "0.230",
+        "sufficient_open_ball_radius_ug_m3": "0.0495535",
+        "sufficient_open_ball_radius_percent_reference_total": "0.115",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E07",
+      "profile_a": "W3-V3",
+      "profile_b": "W4-V3",
+      "reference_closer_at_displayed_target": "W4-V3",
+      "fit_favored_frozen": "W3-V3",
+      "discordant_at_displayed_target": true,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "0.53",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "0.51",
+        "sufficient_open_ball_radius_ug_m3": "0.1098795",
+        "sufficient_open_ball_radius_percent_reference_total": "0.255",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "0.53",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "0.520",
+        "sufficient_open_ball_radius_ug_m3": "0.112034",
+        "sufficient_open_ball_radius_percent_reference_total": "0.260",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E08",
+      "profile_a": "W3-V3",
+      "profile_b": "W5-V3",
+      "reference_closer_at_displayed_target": "W3-V3",
+      "fit_favored_frozen": "W3-V3",
+      "discordant_at_displayed_target": false,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "0.27",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "0.25",
+        "sufficient_open_ball_radius_ug_m3": "0.0538625",
+        "sufficient_open_ball_radius_percent_reference_total": "0.125",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "0.27",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "0.260",
+        "sufficient_open_ball_radius_ug_m3": "0.056017",
+        "sufficient_open_ball_radius_percent_reference_total": "0.130",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E09",
+      "profile_a": "W3-V3",
+      "profile_b": "W6-V3",
+      "reference_closer_at_displayed_target": "W3-V3",
+      "fit_favored_frozen": "W3-V3",
+      "discordant_at_displayed_target": false,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "2.45",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "2.43",
+        "sufficient_open_ball_radius_ug_m3": "0.5235435",
+        "sufficient_open_ball_radius_percent_reference_total": "1.215",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "2.45",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "2.440",
+        "sufficient_open_ball_radius_ug_m3": "0.525698",
+        "sufficient_open_ball_radius_percent_reference_total": "1.220",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E10",
+      "profile_a": "W4-V3",
+      "profile_b": "W5-V3",
+      "reference_closer_at_displayed_target": "W4-V3",
+      "fit_favored_frozen": "W5-V3",
+      "discordant_at_displayed_target": true,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "0.80",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "0.78",
+        "sufficient_open_ball_radius_ug_m3": "0.168051",
+        "sufficient_open_ball_radius_percent_reference_total": "0.39",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "0.80",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "0.790",
+        "sufficient_open_ball_radius_ug_m3": "0.1702055",
+        "sufficient_open_ball_radius_percent_reference_total": "0.395",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E11",
+      "profile_a": "W4-V3",
+      "profile_b": "W6-V3",
+      "reference_closer_at_displayed_target": "W4-V3",
+      "fit_favored_frozen": "W6-V3",
+      "discordant_at_displayed_target": true,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "2.98",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "2.96",
+        "sufficient_open_ball_radius_ug_m3": "0.637732",
+        "sufficient_open_ball_radius_percent_reference_total": "1.48",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "2.98",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "2.970",
+        "sufficient_open_ball_radius_ug_m3": "0.6398865",
+        "sufficient_open_ball_radius_percent_reference_total": "1.485",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E12",
+      "profile_a": "W5-V3",
+      "profile_b": "W6-V3",
+      "reference_closer_at_displayed_target": "W5-V3",
+      "fit_favored_frozen": "W6-V3",
+      "discordant_at_displayed_target": true,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "2.18",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "2.16",
+        "sufficient_open_ball_radius_ug_m3": "0.465372",
+        "sufficient_open_ball_radius_percent_reference_total": "1.08",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "2.18",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "2.170",
+        "sufficient_open_ball_radius_ug_m3": "0.4675265",
+        "sufficient_open_ball_radius_percent_reference_total": "1.085",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E13",
+      "profile_a": "W3-V4",
+      "profile_b": "W4-V4",
+      "reference_closer_at_displayed_target": "W3-V4",
+      "fit_favored_frozen": "W3-V4",
+      "discordant_at_displayed_target": false,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "0.72",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "0.70",
+        "sufficient_open_ball_radius_ug_m3": "0.150815",
+        "sufficient_open_ball_radius_percent_reference_total": "0.35",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "0.72",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "0.710",
+        "sufficient_open_ball_radius_ug_m3": "0.1529695",
+        "sufficient_open_ball_radius_percent_reference_total": "0.355",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E14",
+      "profile_a": "W3-V4",
+      "profile_b": "W5-V4",
+      "reference_closer_at_displayed_target": "W3-V4",
+      "fit_favored_frozen": "W3-V4",
+      "discordant_at_displayed_target": false,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "0.99",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "0.97",
+        "sufficient_open_ball_radius_ug_m3": "0.2089865",
+        "sufficient_open_ball_radius_percent_reference_total": "0.485",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "0.99",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "0.980",
+        "sufficient_open_ball_radius_ug_m3": "0.211141",
+        "sufficient_open_ball_radius_percent_reference_total": "0.490",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E15",
+      "profile_a": "W3-V4",
+      "profile_b": "W6-V4",
+      "reference_closer_at_displayed_target": "W3-V4",
+      "fit_favored_frozen": "W3-V4",
+      "discordant_at_displayed_target": false,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "5.45",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "5.43",
+        "sufficient_open_ball_radius_ug_m3": "1.1698935",
+        "sufficient_open_ball_radius_percent_reference_total": "2.715",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "5.45",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "5.440",
+        "sufficient_open_ball_radius_ug_m3": "1.172048",
+        "sufficient_open_ball_radius_percent_reference_total": "2.720",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E16",
+      "profile_a": "W4-V4",
+      "profile_b": "W5-V4",
+      "reference_closer_at_displayed_target": "W4-V4",
+      "fit_favored_frozen": "W4-V4",
+      "discordant_at_displayed_target": false,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "0.27",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "0.25",
+        "sufficient_open_ball_radius_ug_m3": "0.0538625",
+        "sufficient_open_ball_radius_percent_reference_total": "0.125",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "0.27",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "0.260",
+        "sufficient_open_ball_radius_ug_m3": "0.056017",
+        "sufficient_open_ball_radius_percent_reference_total": "0.130",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E17",
+      "profile_a": "W4-V4",
+      "profile_b": "W6-V4",
+      "reference_closer_at_displayed_target": "W4-V4",
+      "fit_favored_frozen": "W4-V4",
+      "discordant_at_displayed_target": false,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "4.73",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "4.71",
+        "sufficient_open_ball_radius_ug_m3": "1.0147695",
+        "sufficient_open_ball_radius_percent_reference_total": "2.355",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "4.73",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "4.720",
+        "sufficient_open_ball_radius_ug_m3": "1.016924",
+        "sufficient_open_ball_radius_percent_reference_total": "2.360",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E18",
+      "profile_a": "W5-V4",
+      "profile_b": "W6-V4",
+      "reference_closer_at_displayed_target": "W5-V4",
+      "fit_favored_frozen": "W6-V4",
+      "discordant_at_displayed_target": true,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "4.46",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "4.44",
+        "sufficient_open_ball_radius_ug_m3": "0.956598",
+        "sufficient_open_ball_radius_percent_reference_total": "2.22",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "4.46",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "4.450",
+        "sufficient_open_ball_radius_ug_m3": "0.9587525",
+        "sufficient_open_ball_radius_percent_reference_total": "2.225",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E19",
+      "profile_a": "W3-V2",
+      "profile_b": "W3-V3",
+      "reference_closer_at_displayed_target": "W3-V2",
+      "fit_favored_frozen": "W3-V2",
+      "discordant_at_displayed_target": false,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "11.31",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "11.29",
+        "sufficient_open_ball_radius_ug_m3": "2.4324305",
+        "sufficient_open_ball_radius_percent_reference_total": "5.645",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "11.31",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "11.300",
+        "sufficient_open_ball_radius_ug_m3": "2.434585",
+        "sufficient_open_ball_radius_percent_reference_total": "5.650",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E20",
+      "profile_a": "W3-V2",
+      "profile_b": "W3-V4",
+      "reference_closer_at_displayed_target": "W3-V2",
+      "fit_favored_frozen": "W3-V2",
+      "discordant_at_displayed_target": false,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "15.54",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "15.52",
+        "sufficient_open_ball_radius_ug_m3": "3.343784",
+        "sufficient_open_ball_radius_percent_reference_total": "7.76",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "15.54",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "15.530",
+        "sufficient_open_ball_radius_ug_m3": "3.3459385",
+        "sufficient_open_ball_radius_percent_reference_total": "7.765",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E21",
+      "profile_a": "W3-V3",
+      "profile_b": "W3-V4",
+      "reference_closer_at_displayed_target": "W3-V3",
+      "fit_favored_frozen": "W3-V3",
+      "discordant_at_displayed_target": false,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "4.23",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "4.21",
+        "sufficient_open_ball_radius_ug_m3": "0.9070445",
+        "sufficient_open_ball_radius_percent_reference_total": "2.105",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "4.23",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "4.220",
+        "sufficient_open_ball_radius_ug_m3": "0.909199",
+        "sufficient_open_ball_radius_percent_reference_total": "2.110",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E22",
+      "profile_a": "W4-V2",
+      "profile_b": "W4-V3",
+      "reference_closer_at_displayed_target": "W4-V2",
+      "fit_favored_frozen": "W4-V2",
+      "discordant_at_displayed_target": false,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "11.76",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "11.74",
+        "sufficient_open_ball_radius_ug_m3": "2.529383",
+        "sufficient_open_ball_radius_percent_reference_total": "5.87",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "11.76",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "11.750",
+        "sufficient_open_ball_radius_ug_m3": "2.5315375",
+        "sufficient_open_ball_radius_percent_reference_total": "5.875",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E23",
+      "profile_a": "W4-V2",
+      "profile_b": "W4-V4",
+      "reference_closer_at_displayed_target": "W4-V2",
+      "fit_favored_frozen": "W4-V2",
+      "discordant_at_displayed_target": false,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "17.24",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "17.22",
+        "sufficient_open_ball_radius_ug_m3": "3.710049",
+        "sufficient_open_ball_radius_percent_reference_total": "8.61",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "17.24",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "17.230",
+        "sufficient_open_ball_radius_ug_m3": "3.7122035",
+        "sufficient_open_ball_radius_percent_reference_total": "8.615",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E24",
+      "profile_a": "W4-V3",
+      "profile_b": "W4-V4",
+      "reference_closer_at_displayed_target": "W4-V3",
+      "fit_favored_frozen": "W4-V3",
+      "discordant_at_displayed_target": false,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "5.48",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "5.46",
+        "sufficient_open_ball_radius_ug_m3": "1.176357",
+        "sufficient_open_ball_radius_percent_reference_total": "2.73",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "5.48",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "5.470",
+        "sufficient_open_ball_radius_ug_m3": "1.1785115",
+        "sufficient_open_ball_radius_percent_reference_total": "2.735",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E25",
+      "profile_a": "W5-V2",
+      "profile_b": "W5-V3",
+      "reference_closer_at_displayed_target": "W5-V2",
+      "fit_favored_frozen": "W5-V2",
+      "discordant_at_displayed_target": false,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "10.31",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "10.29",
+        "sufficient_open_ball_radius_ug_m3": "2.2169805",
+        "sufficient_open_ball_radius_percent_reference_total": "5.145",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "10.31",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "10.300",
+        "sufficient_open_ball_radius_ug_m3": "2.219135",
+        "sufficient_open_ball_radius_percent_reference_total": "5.150",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E26",
+      "profile_a": "W5-V2",
+      "profile_b": "W5-V4",
+      "reference_closer_at_displayed_target": "W5-V2",
+      "fit_favored_frozen": "W5-V2",
+      "discordant_at_displayed_target": false,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "15.26",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "15.24",
+        "sufficient_open_ball_radius_ug_m3": "3.283458",
+        "sufficient_open_ball_radius_percent_reference_total": "7.62",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "15.26",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "15.250",
+        "sufficient_open_ball_radius_ug_m3": "3.2856125",
+        "sufficient_open_ball_radius_percent_reference_total": "7.625",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E27",
+      "profile_a": "W5-V3",
+      "profile_b": "W5-V4",
+      "reference_closer_at_displayed_target": "W5-V3",
+      "fit_favored_frozen": "W5-V3",
+      "discordant_at_displayed_target": false,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "4.95",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "4.93",
+        "sufficient_open_ball_radius_ug_m3": "1.0621685",
+        "sufficient_open_ball_radius_percent_reference_total": "2.465",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "4.95",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "4.940",
+        "sufficient_open_ball_radius_ug_m3": "1.064323",
+        "sufficient_open_ball_radius_percent_reference_total": "2.470",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E28",
+      "profile_a": "W6-V2",
+      "profile_b": "W6-V3",
+      "reference_closer_at_displayed_target": "W6-V2",
+      "fit_favored_frozen": "W6-V2",
+      "discordant_at_displayed_target": false,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "12.25",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "12.23",
+        "sufficient_open_ball_radius_ug_m3": "2.6349535",
+        "sufficient_open_ball_radius_percent_reference_total": "6.115",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "12.25",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "12.240",
+        "sufficient_open_ball_radius_ug_m3": "2.637108",
+        "sufficient_open_ball_radius_percent_reference_total": "6.120",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E29",
+      "profile_a": "W6-V2",
+      "profile_b": "W6-V4",
+      "reference_closer_at_displayed_target": "W6-V2",
+      "fit_favored_frozen": "W6-V2",
+      "discordant_at_displayed_target": false,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "19.48",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "19.46",
+        "sufficient_open_ball_radius_ug_m3": "4.192657",
+        "sufficient_open_ball_radius_percent_reference_total": "9.73",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "19.48",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "19.470",
+        "sufficient_open_ball_radius_ug_m3": "4.1948115",
+        "sufficient_open_ball_radius_percent_reference_total": "9.735",
+        "strictly_positive_certificate": true
+      }
+    },
+    {
+      "edge_id": "E30",
+      "profile_a": "W6-V3",
+      "profile_b": "W6-V4",
+      "reference_closer_at_displayed_target": "W6-V3",
+      "fit_favored_frozen": "W6-V3",
+      "discordant_at_displayed_target": false,
+      "conservative_full_display_unit_envelope": {
+        "displayed_absolute_error_gap_pp": "7.23",
+        "score_error_bound_per_endpoint_pp": "0.01",
+        "guaranteed_gap_lower_bound_pp": "7.21",
+        "sufficient_open_ball_radius_ug_m3": "1.5533945",
+        "sufficient_open_ball_radius_percent_reference_total": "3.605",
+        "strictly_positive_certificate": true
+      },
+      "conditional_nearest_rounding_envelope": {
+        "displayed_absolute_error_gap_pp": "7.23",
+        "score_error_bound_per_endpoint_pp": "0.005",
+        "guaranteed_gap_lower_bound_pp": "7.220",
+        "sufficient_open_ball_radius_ug_m3": "1.555549",
+        "sufficient_open_ball_radius_percent_reference_total": "3.610",
+        "strictly_positive_certificate": true
+      }
+    }
+  ],
+  "excluded_interpretations": [
+    "No sampling confidence interval, p-value, probability of correctness or posterior is estimated.",
+    "The 20% synthetic-noise statement is not treated as uncertainty or a standard error of the campaign mean.",
+    "Failure to certify an ordering does not show it reverses, is wrong or is statistically insignificant.",
+    "No source covariance, day-level reference, fitted allocation vector or missing source profile is imputed.",
+    "No raw-data reproduction or external field-accuracy validation has been achieved by this diagnostic."
+  ],
+  "software": {
+    "python": "3.12.14",
+    "dependencies": "standard library only",
+    "randomness": "none",
+    "arithmetic": "Decimal from original CSV text"
+  }
+}

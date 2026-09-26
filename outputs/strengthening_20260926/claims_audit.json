@@ -1,0 +1,2272 @@
+{
+  "audit_version": "1.0.0",
+  "audit_date": "2026-09-26",
+  "scope": "Candidate strengthening audit; no baseline/manuscript/published-archive edits.",
+  "evidence_scope_note": "The false raw-reconstruction flags and missing-input lists below refer only to the frozen publication-derived archive assessed by THIS script. A later separate native-input clean-room reconstruction is documented in EPA_NATIVE_RECONSTRUCTION.md and epa_native_reconstruction.json; consult that report for the updated EPA reconstruction status.",
+  "source_relative_path": "outputs/publication_archive_20260926/publication_derived",
+  "environment": {
+    "python": "3.12.14",
+    "dependencies": "standard library only",
+    "randomness": "none; exhaustive deterministic enumeration"
+  },
+  "integrity": {
+    "status": "PASS",
+    "verified_entries": 20,
+    "manifest_sha256": "b2e466157104c77da7c8d5346a5f62d4926f00b50532200ad37473ddb3cd63c4",
+    "entries": [
+      {
+        "path": "code/reproduce_publication_derived_data.py",
+        "sha256": "309664b24f214df99138c8ec1249aa9d09f36fd39911c6d7e3beec0a0bd70468"
+      },
+      {
+        "path": "code/verify_release.py",
+        "sha256": "bc5bfcc95ee8712666c3c16c03f731ca4e54e402c26aaf60a5c50eb0b2b3fd06"
+      },
+      {
+        "path": "code/verify_supplementary_consistency.py",
+        "sha256": "5c2da37f0982fc9ed1ed5c20e3b66358d34ed18624d34d8a95b4a2c39e876250"
+      },
+      {
+        "path": "derived_data/epa_fresno_1989_05_10_publication_summary.csv",
+        "sha256": "27b5a28132de94a09db836c7ad8d62183f6888372f138be18d989c695cbd2e0d"
+      },
+      {
+        "path": "derived_data/epa_primary_outcome_summary.csv",
+        "sha256": "854dc843ddcf575a98fc5211f149b748ed2729953d5c415723673b663a820dac"
+      },
+      {
+        "path": "derived_data/epa_profile_alternatives_and_attrition.csv",
+        "sha256": "ead12ad12b5ed2b894d91eaa2377971f882b21e315bad988e3439ddc2d9ffe68"
+      },
+      {
+        "path": "derived_data/epa_profile_family_shift_summary.csv",
+        "sha256": "e8c997440a64e5b5ba308cc4d16c049d6c1cd4c25d3bfdcc19edf70dba3d5a1f"
+      },
+      {
+        "path": "derived_data/jrc_12set_landscape.csv",
+        "sha256": "5a5e1d0c9c1afb231d8b0d56ae112e9e2333b2877c5c3722bbae6139b6168c6b"
+      },
+      {
+        "path": "derived_data/jrc_campaign_point_reference.csv",
+        "sha256": "43a37d73a2c607a71b648ca0a501c0b61dcaa682af361f14dc70e69a2cd88167"
+      },
+      {
+        "path": "derived_data/jrc_common_sample_reported_summary.csv",
+        "sha256": "cc19c437b6e0c71f2a5a12cdfceec7090cb281f44cdf482fa3d45b4fae596a9a"
+      },
+      {
+        "path": "derived_data/jrc_controller_publication_summary.csv",
+        "sha256": "a9c83f54aacd026f75341ef82103a0f075e15121504ce3129156c2e496ae5113"
+      },
+      {
+        "path": "derived_data/jrc_profile_admission_crosswalk.csv",
+        "sha256": "644e7c3909e043c7ad5002d07fecbfcc6166dfe1c82301087b7faaa8a3dcf12b"
+      },
+      {
+        "path": "derived_data/jrc_profile_choice_edges_reconstructed.csv",
+        "sha256": "51f958564b32bbb938e6d3566a8c32d20ad15be5a616535dbaed2dce9c4e0859"
+      },
+      {
+        "path": "derived_data/profile_choice_traceability_record.schema.json",
+        "sha256": "e0149bed0696725a9eb2e4c3c8f705acc24eeb7161ab97fc1f28a8342e5f71f4"
+      },
+      {
+        "path": "EDITORIAL_EXTENSION_SCOPE.md",
+        "sha256": "1daf8ae9332b1c59dc69ee783843f20a9424305633e0bbaeafa24f345a6636cf"
+      },
+      {
+        "path": "environment.txt",
+        "sha256": "8746971bf08357b4a1d4d3831baf58166528c0c2e82b4e3009b271b84391915a"
+      },
+      {
+        "path": "README.md",
+        "sha256": "fcdbc36f05dbc0631ec2225d1340e3bb149229045e863b9c9bd05b2528389f3e"
+      },
+      {
+        "path": "RELEASE_SCOPE.md",
+        "sha256": "0f7e9c935e15408634f60fe95441ebba000dfc40131475bf93aedec5484595c5"
+      },
+      {
+        "path": "REPRODUCIBILITY_LIMITS.md",
+        "sha256": "f3409b3a0334dda289624ff5d8f0658abc7f8483b16593b558b74afa4fc5a661"
+      },
+      {
+        "path": "SOURCE_ACQUISITION_AND_PROVENANCE.md",
+        "sha256": "eca19f11f6891d5dfef316d5c51d6c6c633ee33c563896f4d5ef87525766d9f7"
+      }
+    ],
+    "meaning": "Byte integrity only; hashes do not authenticate scientific truth."
+  },
+  "jrc_primary": {
+    "profile_count": 12,
+    "comparisons": 30,
+    "discordances": 9,
+    "discordant_edge_ids": [
+      "E01",
+      "E04",
+      "E05",
+      "E06",
+      "E07",
+      "E10",
+      "E11",
+      "E12",
+      "E18"
+    ],
+    "by_family": {
+      "Wood": {
+        "comparisons": 18,
+        "discordances": 9
+      },
+      "Vehicle": {
+        "comparisons": 12,
+        "discordances": 0
+      }
+    },
+    "node_degrees": {
+      "W3-V2": 5,
+      "W3-V3": 5,
+      "W3-V4": 5,
+      "W4-V2": 5,
+      "W4-V3": 5,
+      "W4-V4": 5,
+      "W5-V2": 5,
+      "W5-V3": 5,
+      "W5-V4": 5,
+      "W6-V2": 5,
+      "W6-V3": 5,
+      "W6-V4": 5
+    },
+    "median_discordant_regret_pp_displayed": "2.18",
+    "maximum_discordant_regret_pp_displayed": "4.46",
+    "rounding_robust_comparisons": 30,
+    "minimum_chi_rounding_margin": "0.00030",
+    "minimum_error_rounding_margin_pp": "0.230",
+    "rounding_assumption": "Each displayed error is nearest-rounded to 0.01 pp and each mean reduced chi-square to 0.0001. Conservative closed half-last-place intervals are used. This is NOT reference/measurement uncertainty or a raw-fit validation.",
+    "recomputed_from_raw": false,
+    "evidence_level": "Reconstructed from publication-displayed set summaries.",
+    "edges": [
+      {
+        "edge_id": "E01",
+        "source_family": "Wood",
+        "profile_a_id": "W3-V2",
+        "profile_b_id": "W4-V2",
+        "fit_favored_endpoint": "W3-V2",
+        "reference_closer_endpoint": "W4-V2",
+        "discordance": true,
+        "regret_pp_displayed": "0.98",
+        "chi_gap_displayed": "0.0020",
+        "chi_order_margin_after_rounding": "0.00190",
+        "error_order_margin_pp_after_rounding": "0.970",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E02",
+        "source_family": "Wood",
+        "profile_a_id": "W3-V2",
+        "profile_b_id": "W5-V2",
+        "fit_favored_endpoint": "W3-V2",
+        "reference_closer_endpoint": "W3-V2",
+        "discordance": false,
+        "regret_pp_displayed": "0.00",
+        "chi_gap_displayed": "0.0009",
+        "chi_order_margin_after_rounding": "0.00080",
+        "error_order_margin_pp_after_rounding": "1.260",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E03",
+        "source_family": "Wood",
+        "profile_a_id": "W3-V2",
+        "profile_b_id": "W6-V2",
+        "fit_favored_endpoint": "W3-V2",
+        "reference_closer_endpoint": "W3-V2",
+        "discordance": false,
+        "regret_pp_displayed": "0.00",
+        "chi_gap_displayed": "0.0004",
+        "chi_order_margin_after_rounding": "0.00030",
+        "error_order_margin_pp_after_rounding": "1.500",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E04",
+        "source_family": "Wood",
+        "profile_a_id": "W4-V2",
+        "profile_b_id": "W5-V2",
+        "fit_favored_endpoint": "W5-V2",
+        "reference_closer_endpoint": "W4-V2",
+        "discordance": true,
+        "regret_pp_displayed": "2.25",
+        "chi_gap_displayed": "0.0011",
+        "chi_order_margin_after_rounding": "0.00100",
+        "error_order_margin_pp_after_rounding": "2.240",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E05",
+        "source_family": "Wood",
+        "profile_a_id": "W4-V2",
+        "profile_b_id": "W6-V2",
+        "fit_favored_endpoint": "W6-V2",
+        "reference_closer_endpoint": "W4-V2",
+        "discordance": true,
+        "regret_pp_displayed": "2.49",
+        "chi_gap_displayed": "0.0016",
+        "chi_order_margin_after_rounding": "0.00150",
+        "error_order_margin_pp_after_rounding": "2.480",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E06",
+        "source_family": "Wood",
+        "profile_a_id": "W5-V2",
+        "profile_b_id": "W6-V2",
+        "fit_favored_endpoint": "W6-V2",
+        "reference_closer_endpoint": "W5-V2",
+        "discordance": true,
+        "regret_pp_displayed": "0.24",
+        "chi_gap_displayed": "0.0005",
+        "chi_order_margin_after_rounding": "0.00040",
+        "error_order_margin_pp_after_rounding": "0.230",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E07",
+        "source_family": "Wood",
+        "profile_a_id": "W3-V3",
+        "profile_b_id": "W4-V3",
+        "fit_favored_endpoint": "W3-V3",
+        "reference_closer_endpoint": "W4-V3",
+        "discordance": true,
+        "regret_pp_displayed": "0.53",
+        "chi_gap_displayed": "0.0063",
+        "chi_order_margin_after_rounding": "0.00620",
+        "error_order_margin_pp_after_rounding": "0.520",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E08",
+        "source_family": "Wood",
+        "profile_a_id": "W3-V3",
+        "profile_b_id": "W5-V3",
+        "fit_favored_endpoint": "W3-V3",
+        "reference_closer_endpoint": "W3-V3",
+        "discordance": false,
+        "regret_pp_displayed": "0.00",
+        "chi_gap_displayed": "0.0057",
+        "chi_order_margin_after_rounding": "0.00560",
+        "error_order_margin_pp_after_rounding": "0.260",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E09",
+        "source_family": "Wood",
+        "profile_a_id": "W3-V3",
+        "profile_b_id": "W6-V3",
+        "fit_favored_endpoint": "W3-V3",
+        "reference_closer_endpoint": "W3-V3",
+        "discordance": false,
+        "regret_pp_displayed": "0.00",
+        "chi_gap_displayed": "0.0047",
+        "chi_order_margin_after_rounding": "0.00460",
+        "error_order_margin_pp_after_rounding": "2.440",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E10",
+        "source_family": "Wood",
+        "profile_a_id": "W4-V3",
+        "profile_b_id": "W5-V3",
+        "fit_favored_endpoint": "W5-V3",
+        "reference_closer_endpoint": "W4-V3",
+        "discordance": true,
+        "regret_pp_displayed": "0.80",
+        "chi_gap_displayed": "0.0006",
+        "chi_order_margin_after_rounding": "0.00050",
+        "error_order_margin_pp_after_rounding": "0.790",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E11",
+        "source_family": "Wood",
+        "profile_a_id": "W4-V3",
+        "profile_b_id": "W6-V3",
+        "fit_favored_endpoint": "W6-V3",
+        "reference_closer_endpoint": "W4-V3",
+        "discordance": true,
+        "regret_pp_displayed": "2.98",
+        "chi_gap_displayed": "0.0016",
+        "chi_order_margin_after_rounding": "0.00150",
+        "error_order_margin_pp_after_rounding": "2.970",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E12",
+        "source_family": "Wood",
+        "profile_a_id": "W5-V3",
+        "profile_b_id": "W6-V3",
+        "fit_favored_endpoint": "W6-V3",
+        "reference_closer_endpoint": "W5-V3",
+        "discordance": true,
+        "regret_pp_displayed": "2.18",
+        "chi_gap_displayed": "0.0010",
+        "chi_order_margin_after_rounding": "0.00090",
+        "error_order_margin_pp_after_rounding": "2.170",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E13",
+        "source_family": "Wood",
+        "profile_a_id": "W3-V4",
+        "profile_b_id": "W4-V4",
+        "fit_favored_endpoint": "W3-V4",
+        "reference_closer_endpoint": "W3-V4",
+        "discordance": false,
+        "regret_pp_displayed": "0.00",
+        "chi_gap_displayed": "0.0093",
+        "chi_order_margin_after_rounding": "0.00920",
+        "error_order_margin_pp_after_rounding": "0.710",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E14",
+        "source_family": "Wood",
+        "profile_a_id": "W3-V4",
+        "profile_b_id": "W5-V4",
+        "fit_favored_endpoint": "W3-V4",
+        "reference_closer_endpoint": "W3-V4",
+        "discordance": false,
+        "regret_pp_displayed": "0.00",
+        "chi_gap_displayed": "0.0110",
+        "chi_order_margin_after_rounding": "0.01090",
+        "error_order_margin_pp_after_rounding": "0.980",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E15",
+        "source_family": "Wood",
+        "profile_a_id": "W3-V4",
+        "profile_b_id": "W6-V4",
+        "fit_favored_endpoint": "W3-V4",
+        "reference_closer_endpoint": "W3-V4",
+        "discordance": false,
+        "regret_pp_displayed": "0.00",
+        "chi_gap_displayed": "0.0098",
+        "chi_order_margin_after_rounding": "0.00970",
+        "error_order_margin_pp_after_rounding": "5.440",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E16",
+        "source_family": "Wood",
+        "profile_a_id": "W4-V4",
+        "profile_b_id": "W5-V4",
+        "fit_favored_endpoint": "W4-V4",
+        "reference_closer_endpoint": "W4-V4",
+        "discordance": false,
+        "regret_pp_displayed": "0.00",
+        "chi_gap_displayed": "0.0017",
+        "chi_order_margin_after_rounding": "0.00160",
+        "error_order_margin_pp_after_rounding": "0.260",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E17",
+        "source_family": "Wood",
+        "profile_a_id": "W4-V4",
+        "profile_b_id": "W6-V4",
+        "fit_favored_endpoint": "W4-V4",
+        "reference_closer_endpoint": "W4-V4",
+        "discordance": false,
+        "regret_pp_displayed": "0.00",
+        "chi_gap_displayed": "0.0005",
+        "chi_order_margin_after_rounding": "0.00040",
+        "error_order_margin_pp_after_rounding": "4.720",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E18",
+        "source_family": "Wood",
+        "profile_a_id": "W5-V4",
+        "profile_b_id": "W6-V4",
+        "fit_favored_endpoint": "W6-V4",
+        "reference_closer_endpoint": "W5-V4",
+        "discordance": true,
+        "regret_pp_displayed": "4.46",
+        "chi_gap_displayed": "0.0012",
+        "chi_order_margin_after_rounding": "0.00110",
+        "error_order_margin_pp_after_rounding": "4.450",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E19",
+        "source_family": "Vehicle",
+        "profile_a_id": "W3-V2",
+        "profile_b_id": "W3-V3",
+        "fit_favored_endpoint": "W3-V2",
+        "reference_closer_endpoint": "W3-V2",
+        "discordance": false,
+        "regret_pp_displayed": "0.00",
+        "chi_gap_displayed": "0.0176",
+        "chi_order_margin_after_rounding": "0.01750",
+        "error_order_margin_pp_after_rounding": "11.300",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E20",
+        "source_family": "Vehicle",
+        "profile_a_id": "W3-V2",
+        "profile_b_id": "W3-V4",
+        "fit_favored_endpoint": "W3-V2",
+        "reference_closer_endpoint": "W3-V2",
+        "discordance": false,
+        "regret_pp_displayed": "0.00",
+        "chi_gap_displayed": "0.0203",
+        "chi_order_margin_after_rounding": "0.02020",
+        "error_order_margin_pp_after_rounding": "15.530",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E21",
+        "source_family": "Vehicle",
+        "profile_a_id": "W3-V3",
+        "profile_b_id": "W3-V4",
+        "fit_favored_endpoint": "W3-V3",
+        "reference_closer_endpoint": "W3-V3",
+        "discordance": false,
+        "regret_pp_displayed": "0.00",
+        "chi_gap_displayed": "0.0027",
+        "chi_order_margin_after_rounding": "0.00260",
+        "error_order_margin_pp_after_rounding": "4.220",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E22",
+        "source_family": "Vehicle",
+        "profile_a_id": "W4-V2",
+        "profile_b_id": "W4-V3",
+        "fit_favored_endpoint": "W4-V2",
+        "reference_closer_endpoint": "W4-V2",
+        "discordance": false,
+        "regret_pp_displayed": "0.00",
+        "chi_gap_displayed": "0.0219",
+        "chi_order_margin_after_rounding": "0.02180",
+        "error_order_margin_pp_after_rounding": "11.750",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E23",
+        "source_family": "Vehicle",
+        "profile_a_id": "W4-V2",
+        "profile_b_id": "W4-V4",
+        "fit_favored_endpoint": "W4-V2",
+        "reference_closer_endpoint": "W4-V2",
+        "discordance": false,
+        "regret_pp_displayed": "0.00",
+        "chi_gap_displayed": "0.0276",
+        "chi_order_margin_after_rounding": "0.02750",
+        "error_order_margin_pp_after_rounding": "17.230",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E24",
+        "source_family": "Vehicle",
+        "profile_a_id": "W4-V3",
+        "profile_b_id": "W4-V4",
+        "fit_favored_endpoint": "W4-V3",
+        "reference_closer_endpoint": "W4-V3",
+        "discordance": false,
+        "regret_pp_displayed": "0.00",
+        "chi_gap_displayed": "0.0057",
+        "chi_order_margin_after_rounding": "0.00560",
+        "error_order_margin_pp_after_rounding": "5.470",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E25",
+        "source_family": "Vehicle",
+        "profile_a_id": "W5-V2",
+        "profile_b_id": "W5-V3",
+        "fit_favored_endpoint": "W5-V2",
+        "reference_closer_endpoint": "W5-V2",
+        "discordance": false,
+        "regret_pp_displayed": "0.00",
+        "chi_gap_displayed": "0.0224",
+        "chi_order_margin_after_rounding": "0.02230",
+        "error_order_margin_pp_after_rounding": "10.300",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E26",
+        "source_family": "Vehicle",
+        "profile_a_id": "W5-V2",
+        "profile_b_id": "W5-V4",
+        "fit_favored_endpoint": "W5-V2",
+        "reference_closer_endpoint": "W5-V2",
+        "discordance": false,
+        "regret_pp_displayed": "0.00",
+        "chi_gap_displayed": "0.0304",
+        "chi_order_margin_after_rounding": "0.03030",
+        "error_order_margin_pp_after_rounding": "15.250",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E27",
+        "source_family": "Vehicle",
+        "profile_a_id": "W5-V3",
+        "profile_b_id": "W5-V4",
+        "fit_favored_endpoint": "W5-V3",
+        "reference_closer_endpoint": "W5-V3",
+        "discordance": false,
+        "regret_pp_displayed": "0.00",
+        "chi_gap_displayed": "0.0080",
+        "chi_order_margin_after_rounding": "0.00790",
+        "error_order_margin_pp_after_rounding": "4.940",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E28",
+        "source_family": "Vehicle",
+        "profile_a_id": "W6-V2",
+        "profile_b_id": "W6-V3",
+        "fit_favored_endpoint": "W6-V2",
+        "reference_closer_endpoint": "W6-V2",
+        "discordance": false,
+        "regret_pp_displayed": "0.00",
+        "chi_gap_displayed": "0.0219",
+        "chi_order_margin_after_rounding": "0.02180",
+        "error_order_margin_pp_after_rounding": "12.240",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E29",
+        "source_family": "Vehicle",
+        "profile_a_id": "W6-V2",
+        "profile_b_id": "W6-V4",
+        "fit_favored_endpoint": "W6-V2",
+        "reference_closer_endpoint": "W6-V2",
+        "discordance": false,
+        "regret_pp_displayed": "0.00",
+        "chi_gap_displayed": "0.0297",
+        "chi_order_margin_after_rounding": "0.02960",
+        "error_order_margin_pp_after_rounding": "19.470",
+        "rounding_robust": true
+      },
+      {
+        "edge_id": "E30",
+        "source_family": "Vehicle",
+        "profile_a_id": "W6-V3",
+        "profile_b_id": "W6-V4",
+        "fit_favored_endpoint": "W6-V3",
+        "reference_closer_endpoint": "W6-V3",
+        "discordance": false,
+        "regret_pp_displayed": "0.00",
+        "chi_gap_displayed": "0.0078",
+        "chi_order_margin_after_rounding": "0.00770",
+        "error_order_margin_pp_after_rounding": "7.220",
+        "rounding_robust": true
+      }
+    ],
+    "matches_frozen_reconstructed_ledger": true
+  },
+  "jrc_R2_precision": {
+    "displayed_midrank_rho": 0.927725666496,
+    "displayed_tie_groups": [
+      [
+        "W3-V3",
+        "W4-V3",
+        "W5-V3"
+      ],
+      [
+        "W5-V4",
+        "W6-V4"
+      ]
+    ],
+    "all_weak_refinements": 39,
+    "strict_refinements": 12,
+    "possible_rho_range": [
+      0.902097902098,
+      0.937062937063
+    ],
+    "strict_rho_range": [
+      0.902097902098,
+      0.937062937063
+    ],
+    "refinements_rounding_to_reported": 3,
+    "strict_refinements_rounding_to_reported": 3,
+    "reported_value_compatible_with_rounding": true,
+    "reported_value_independently_verified": false,
+    "interpretation": "Possible rank configurations, NOT recovered latent values or probabilities. Within each displayed R-squared tie, enumerate every weak order; distinct displayed values retain their order under consistent nearest rounding. The actual unrounded order and correlation remain unavailable.",
+    "refinements": [
+      {
+        "rho": 0.927725666496,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W3-V3",
+            "W4-V3",
+            "W5-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4",
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.929600516069,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W3-V3",
+            "W4-V3",
+            "W5-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4"
+          ],
+          [
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.922558087917,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W3-V3",
+            "W4-V3",
+            "W5-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W6-V4"
+          ],
+          [
+            "W5-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.933339078744,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W3-V3",
+            "W4-V3"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4",
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.935202835232,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W3-V3",
+            "W4-V3"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4"
+          ],
+          [
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.928197570548,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W3-V3",
+            "W4-V3"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W6-V4"
+          ],
+          [
+            "W5-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.912286317569,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W3-V3",
+            "W5-V3"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4",
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.914187041182,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W3-V3",
+            "W5-V3"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4"
+          ],
+          [
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.907181776498,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W3-V3",
+            "W5-V3"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W6-V4"
+          ],
+          [
+            "W5-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.922812698157,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W4-V3",
+            "W5-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4",
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.924694938207,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W4-V3",
+            "W5-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4"
+          ],
+          [
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.917689673523,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W4-V3",
+            "W5-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W6-V4"
+          ],
+          [
+            "W5-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.928197570548,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4",
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.93006993007,
+        "strict_order": true,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4"
+          ],
+          [
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.923076923077,
+        "strict_order": true,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W6-V4"
+          ],
+          [
+            "W5-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.914187041182,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4",
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.916083916084,
+        "strict_order": true,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4"
+          ],
+          [
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.909090909091,
+        "strict_order": true,
+        "rounds_to_reported_0_909": true,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W6-V4"
+          ],
+          [
+            "W5-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.922812698157,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W4-V3",
+            "W5-V3"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4",
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.924694938207,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W4-V3",
+            "W5-V3"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4"
+          ],
+          [
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.917689673523,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W4-V3",
+            "W5-V3"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W6-V4"
+          ],
+          [
+            "W5-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.933339078744,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W3-V3",
+            "W5-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4",
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.935202835232,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W3-V3",
+            "W5-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4"
+          ],
+          [
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.928197570548,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W3-V3",
+            "W5-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W6-V4"
+          ],
+          [
+            "W5-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.935202835232,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4",
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.937062937063,
+        "strict_order": true,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4"
+          ],
+          [
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.93006993007,
+        "strict_order": true,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W6-V4"
+          ],
+          [
+            "W5-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.912286317569,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W3-V3",
+            "W4-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4",
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.914187041182,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W3-V3",
+            "W4-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4"
+          ],
+          [
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.907181776498,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W3-V3",
+            "W4-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W6-V4"
+          ],
+          [
+            "W5-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.907181776498,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4",
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.909090909091,
+        "strict_order": true,
+        "rounds_to_reported_0_909": true,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4"
+          ],
+          [
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.902097902098,
+        "strict_order": true,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W6-V4"
+          ],
+          [
+            "W5-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.928197570548,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4",
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.93006993007,
+        "strict_order": true,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4"
+          ],
+          [
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.923076923077,
+        "strict_order": true,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W6-V4"
+          ],
+          [
+            "W5-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.914187041182,
+        "strict_order": false,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4",
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.916083916084,
+        "strict_order": true,
+        "rounds_to_reported_0_909": false,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W5-V4"
+          ],
+          [
+            "W6-V4"
+          ]
+        ]
+      },
+      {
+        "rho": 0.909090909091,
+        "strict_order": true,
+        "rounds_to_reported_0_909": true,
+        "ascending_one_minus_R2_rank_blocks": [
+          [
+            "W6-V2"
+          ],
+          [
+            "W5-V2"
+          ],
+          [
+            "W4-V2"
+          ],
+          [
+            "W3-V2"
+          ],
+          [
+            "W5-V3"
+          ],
+          [
+            "W4-V3"
+          ],
+          [
+            "W3-V3"
+          ],
+          [
+            "W6-V3"
+          ],
+          [
+            "W3-V4"
+          ],
+          [
+            "W4-V4"
+          ],
+          [
+            "W6-V4"
+          ],
+          [
+            "W5-V4"
+          ]
+        ]
+      }
+    ]
+  },
+  "epa_aggregates": {
+    "arithmetic_status": "PASS",
+    "eligible": 345,
+    "converged": 323,
+    "nonconverged": 22,
+    "alternative_count": 10,
+    "reported_nested_subsets": [
+      {
+        "subset": "Converged substitutions",
+        "n": 323,
+        "ordering_changes": 167,
+        "largest_source_changes": 81
+      },
+      {
+        "subset": "Central + alternative R2 and reduced-chi2 in range",
+        "n": 283,
+        "ordering_changes": 133,
+        "largest_source_changes": 62
+      },
+      {
+        "subset": "Central + alternative R2, reduced-chi2, and percent mass in range",
+        "n": 26,
+        "ordering_changes": 10,
+        "largest_source_changes": 2
+      }
+    ],
+    "conditional_complement_arithmetic": [
+      {
+        "stratum": "Converged substitutions minus Central + alternative R2 and reduced-chi2 in range",
+        "n": 40,
+        "ordering_changes": 34,
+        "largest_source_changes": 19
+      },
+      {
+        "stratum": "Central + alternative R2 and reduced-chi2 in range minus Central + alternative R2, reduced-chi2, and percent mass in range",
+        "n": 257,
+        "ordering_changes": 123,
+        "largest_source_changes": 60
+      }
+    ],
+    "two_diagnostic_ordering_percent": 47.0,
+    "two_diagnostic_largest_percent": 21.9,
+    "conditional_assumptions": "Use the publication's asserted nested subsets and consistent source ordering with no top-source tie. Complement counts are arithmetic consequences, not recovered or invented row-level assignments.",
+    "row_level_event_labels_recomputed": false,
+    "recomputed_from_raw": false,
+    "missing_for_independent_recomputation": [
+      "Per-sample and per-alternative canonical IDs plus frozen model inputs/settings.",
+      "Unrounded central and alternative full-source contribution vectors.",
+      "Convergence labels and diagnostics defining each subset.",
+      "Deterministic tie handling and pairwise ordering/top-source event ledger."
+    ]
+  },
+  "decisions": {
+    "KEEP": [
+      "JRC 9/30 as a publication-summary reconstruction, robust to displayed rounding under the stated assumption.",
+      "EPA 133/283 and 62/283 as reported aggregate sensitivity counts whose arithmetic is internally consistent."
+    ],
+    "HOLD": [
+      "Independent source-native verification cannot be supplied by this publication-derived archive alone; see the separate EPA native reconstruction for later evidence.",
+      "Exact unrounded rho=0.909: compatible with rounding but not independently verified.",
+      "EPA row-level ordering/top-source classifications and true sample nesting cannot be checked by these aggregate tables alone; see the separate EPA native reconstruction."
+    ],
+    "REMOVE": [
+      "Any claim that summary arithmetic checks constitute a full raw-data rerun or field-accuracy validation.",
+      "Any inference that displayed rho=0.927726 proves the reported 0.909 is erroneous."
+    ]
+  }
+}
