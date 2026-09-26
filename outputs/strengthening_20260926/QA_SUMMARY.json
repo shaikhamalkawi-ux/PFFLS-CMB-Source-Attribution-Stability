@@ -1,0 +1,80 @@
+{
+  "status": "VERIFIED_FOR_INDEPENDENT_REVIEW",
+  "audit_date": "2026-09-26",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "openpyxl": "3.1.5",
+  "new_audit_tests": {
+    "total": 87,
+    "passed": 87,
+    "failed": 0,
+    "errors": 0,
+    "skipped_locally": 0,
+    "modules": {
+      "test_strengthening_claims": 20,
+      "test_reference_robustness": 19,
+      "test_epa_native_strengthening": 20,
+      "test_fairbanks_strengthening": 16,
+      "test_source_recovery": 6,
+      "test_strengthening_package": 6
+    },
+    "private_or_native_integration_tests": 13
+  },
+  "full_repository_suite": {
+    "command": "python -m unittest discover -s tests -v",
+    "tests": 140,
+    "passed": 135,
+    "failures": 1,
+    "errors": 4,
+    "all_green": false,
+    "affected_module": "test_cycle04_submission_gate",
+    "reason": "Historical validator requires old PROJECT_STATE literal status strings no longer present at the starting HEAD. New audit appends state; it does not remove those strings or alter the historical validator.",
+    "details": "LEGACY_TEST_STATUS.md"
+  },
+  "epa_native_reconstruction": {
+    "status": "RECONSTRUCTED_MATCH",
+    "native_sample_count": 35,
+    "eligible": 345,
+    "converged": 323,
+    "two_diagnostic": 283,
+    "ordering_changes": 133,
+    "largest_source_changes": 62,
+    "strict_subset": 26,
+    "worked_case_numeric_matches_at_six_decimals": 20,
+    "configuration_sha256": "6d3b10b2090526e3f15e987cc1b796fb02736570e2b3284738001956cacadc39",
+    "private_ledger_sha256": "0e3c5c5b74e5f0838a95459ad348de6b49213be0898ff9627915e645881afa9f",
+    "original_executable_or_ledger_recovered": false
+  },
+  "jrc": {
+    "publication_summary_discordances": 9,
+    "comparisons": 30,
+    "all_classifications_rounding_robust": true,
+    "source_native_rerun": false,
+    "actual_reference_uncertainty_validated": false,
+    "new_participant_download_or_terms_acceptance": false
+  },
+  "fairbanks": {
+    "complete_recorded_pairs": 52,
+    "partial_recomputation_sensitivity": 53,
+    "full_positive_input_recomputation_sensitivity": 54,
+    "radiocarbon_pairs": 12,
+    "existing_formula_checks": 684,
+    "bad_existing_formula_caches": 0,
+    "original_workbooks_modified": false,
+    "field_profile_choice_accuracy_validated": false
+  },
+  "preservation": {
+    "frozen_public_archive_manifest_entries_verified": 29,
+    "frozen_public_archive_total_files": 30,
+    "original_nested_manifest_entries_verified": 20,
+    "cycle02_three_files_equal_original_git_blob_bytes": true,
+    "root_gitattributes_changed": false,
+    "legacy_manifests_changed": false,
+    "manuscript_changed": false,
+    "baseline_changed": false,
+    "zenodo_changed": false,
+    "outreach_sent": false,
+    "journal_submitted": false,
+    "pr_merged": false
+  }
+}

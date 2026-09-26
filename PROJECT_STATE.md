@@ -303,3 +303,61 @@ Reasons:
 5. The independent-marker structures themselves do not yield a uniform system preference.
 
 **Manuscript disposition:** do not open R3nR9 solely for these files. R3nR8 remains the active submission baseline. The Fairbanks result is retained as reviewer-response / secondary-evidence reserve unless an editor/reviewer asks for it or a later complete frozen-profile/selector package closes the target validation gate.
+
+## Evidence-strengthening review — 2026-09-26 (supersedes Fairbanks counts above)
+
+The original Palmer workbooks were recovered and hash-verified again. Independent
+read-only extraction finds **52 complete recorded levoglucosan endpoint pairs**
+(State Building 24, North Pole 13, Peger Road 15), not 53 native complete pairs.
+The historical 53-row set requires filling one absent upper endpoint; recomputing
+all available positive inputs gives 54. Those are labeled sensitivity sets, not
+investigator-recorded outputs. The exact conversion factors are **9.01 and 13.27**.
+All 684 checked existing formula caches agree with independent arithmetic; the
+nine missing computable outputs are not cache errors.
+
+Using Appendix C PM denominators, the 52-row primary result is EPA 3 inside / 49
+above / 0 below and OMNI 10 / 42 / 0, with mean interval distances 32.345350 and
+24.725521 percentage points. OMNI is closer on 32 dates, EPA on 17, with 3 ties.
+The 12 radiocarbon comparisons are reproduced, with EPA closer on 7, OMNI on 4,
+and 1 tie. Their slightly different historical rounded distances used the summary
+workbook PM denominator; the new audit names and separates both choices.
+
+The unqualified historical claim of "53 original complete matches" is superseded.
+The old paragraph remains above only to preserve history. None of these counts
+is promoted into the main manuscript. The current manuscript explicitly states
+that the acknowledged Fairbanks data were not used in its reported analyses.
+
+The new publication-summary audit also reproduces **JRC 9/30** and proves that
+ordinary display rounding does not change any of its 30 classifications. A
+separate conditional L1-reference sensitivity certificate has been added; it is
+not a confidence interval or proof of robustness to actual reference uncertainty.
+The reported R-squared Spearman coefficient 0.909 is compatible with unrounded
+ranks, but its exact original value remains unverified.
+
+Further JRC participant download stopped at a visible DeltaSA use condition:
+uses outside DeltaSA performance assessment require prior JRC approval. Existing
+permission, if any, must be documented before further source-native use beyond
+that scope. No terms were accepted and no permission/outreach request was sent.
+
+See `outputs/strengthening_20260926/` for the separate review evidence and source
+recovery record. **R3nR8 remains the active baseline. No merge, baseline promotion,
+journal submission, private-data publication, or Zenodo replacement is authorized
+by this audit.**
+
+### EPA numerical reconstruction closed in the strengthening audit
+
+An independently implemented Python effective-variance least-squares reconstruction
+from the recovered official SJVF inputs exactly reproduces the published **345
+eligible / 323 converged / 283 two-diagnostic / 26 three-diagnostic** counts,
+**133/283 ordering changes and 62/283 largest-source changes**, every alternative's
+attrition, and all five worked-case rows at six decimal places. Settings were
+fixed before the first fit and were not tuned to the known targets. This is not
+a blinded replication, original-executable verification, recovery of the original
+historical execution ledger, or field-accuracy validation. PACS is inventoried but
+not rerun in this audit. The JRC source-native rerun remains unclosed.
+
+This supersedes the EPA-specific statement that only aggregate arithmetic can be
+checked, for this **new audit** only. The frozen Zenodo v1.0.0 package remains a
+publication-derived consistency package and has not been rewritten or replaced.
+Any manuscript Data Availability/supplement update should cite the reviewed new
+reconstruction separately, after independent approval.

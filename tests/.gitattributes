@@ -1,0 +1,5 @@
+test_cycle02_fairbanks.py text eol=lf
+test_strengthening_*.py text eol=lf
+test_*_strengthening.py text eol=lf
+test_reference_robustness.py text eol=lf
+test_source_recovery.py text eol=lf

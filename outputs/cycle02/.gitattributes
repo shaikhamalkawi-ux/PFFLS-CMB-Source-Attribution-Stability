@@ -1,0 +1,2 @@
+# Preserve this existing LF-hashed manifest input on Windows.
+appendix_c_2008_2009_daily.csv text eol=lf

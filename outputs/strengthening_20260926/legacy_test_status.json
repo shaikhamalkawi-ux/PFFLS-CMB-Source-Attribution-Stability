@@ -1,0 +1,475 @@
+{
+  "audit_date": "2026-09-26",
+  "head": "ebaed99aa9f7d2dec993fcfd11d62f3dd7eb95cf",
+  "environment": {
+    "python": "3.12.14",
+    "os": "Windows",
+    "core_autocrlf": "true"
+  },
+  "scope": "Historical pre-fix byte evidence and synthetic Git-archive EOL experiments; these do not reconstruct the original mixed-EOL checkout. Root has mechanically restored the three Cycle 02 files and pinned their EOL attributes; final actual-worktree suite status is separate.",
+  "files": [
+    {
+      "path": "outputs/cycle02/appendix_c_2008_2009_daily.csv",
+      "manifest_bytes": 26799,
+      "manifest_sha256": "9c7d225b394b19ba9354077a50bf24c3f77a3972064c42e8e090168da749b172",
+      "head_blob_bytes": 26799,
+      "head_blob_sha256": "9c7d225b394b19ba9354077a50bf24c3f77a3972064c42e8e090168da749b172",
+      "head_blob_crlf_count": 0,
+      "observed_pre_fix_bytes": 27094,
+      "observed_pre_fix_sha256": "540e305ce6704f62e09476c01ba76a3ebf8404644e6a769c3e3acffd0e2a6301",
+      "observed_pre_fix_crlf_count": 295,
+      "pre_fix_added_cr_bytes": 295,
+      "current_working_tree_bytes": 26799,
+      "current_working_tree_sha256": "9c7d225b394b19ba9354077a50bf24c3f77a3972064c42e8e090168da749b172",
+      "current_working_tree_crlf_count": 0,
+      "current_working_tree_equals_head_blob": true,
+      "head_blob_matches_manifest": true,
+      "working_tree_equals_head_after_crlf_to_lf_only": true
+    },
+    {
+      "path": "scripts/extract_cycle02_fairbanks.py",
+      "manifest_bytes": 15003,
+      "manifest_sha256": "33e79906b149082d1ac7bbcee5a451fe8655d7b6e557dc29c5748f5106c0d451",
+      "head_blob_bytes": 15003,
+      "head_blob_sha256": "33e79906b149082d1ac7bbcee5a451fe8655d7b6e557dc29c5748f5106c0d451",
+      "head_blob_crlf_count": 0,
+      "observed_pre_fix_bytes": 15428,
+      "observed_pre_fix_sha256": "594adfbc6fa1a0646acd4e3ec9d15009dc2eeda66954c97fbfc41f76d0941427",
+      "observed_pre_fix_crlf_count": 425,
+      "pre_fix_added_cr_bytes": 425,
+      "current_working_tree_bytes": 15003,
+      "current_working_tree_sha256": "33e79906b149082d1ac7bbcee5a451fe8655d7b6e557dc29c5748f5106c0d451",
+      "current_working_tree_crlf_count": 0,
+      "current_working_tree_equals_head_blob": true,
+      "head_blob_matches_manifest": true,
+      "working_tree_equals_head_after_crlf_to_lf_only": true
+    },
+    {
+      "path": "tests/test_cycle02_fairbanks.py",
+      "manifest_bytes": 3512,
+      "manifest_sha256": "a5a5e74ee189a77cbec98ceb180a18957cb342889d51048ef9ce1ac77c00956a",
+      "head_blob_bytes": 3512,
+      "head_blob_sha256": "a5a5e74ee189a77cbec98ceb180a18957cb342889d51048ef9ce1ac77c00956a",
+      "head_blob_crlf_count": 0,
+      "observed_pre_fix_bytes": 3603,
+      "observed_pre_fix_sha256": "d869c25e8ceb17c5e8d6f2f16f2a4736b216abc643b96be3c48291b08dbae6c7",
+      "observed_pre_fix_crlf_count": 91,
+      "pre_fix_added_cr_bytes": 91,
+      "current_working_tree_bytes": 3512,
+      "current_working_tree_sha256": "a5a5e74ee189a77cbec98ceb180a18957cb342889d51048ef9ce1ac77c00956a",
+      "current_working_tree_crlf_count": 0,
+      "current_working_tree_equals_head_blob": true,
+      "head_blob_matches_manifest": true,
+      "working_tree_equals_head_after_crlf_to_lf_only": true
+    }
+  ],
+  "git_attributes": [
+    "outputs/cycle02/appendix_c_2008_2009_daily.csv: text: set",
+    "outputs/cycle02/appendix_c_2008_2009_daily.csv: eol: lf",
+    "scripts/extract_cycle02_fairbanks.py: text: set",
+    "scripts/extract_cycle02_fairbanks.py: eol: lf",
+    "tests/test_cycle02_fairbanks.py: text: set",
+    "tests/test_cycle02_fairbanks.py: eol: lf"
+  ],
+  "head_archive_without_auto_conversion": {
+    "returncode": 1,
+    "tests_run": 22,
+    "passed": 17,
+    "failed": 1,
+    "errors": 4,
+    "skipped": 0,
+    "problem_messages": [
+      "AssertionError: \"qa_report.json is stale\" does not match \"Cycle 01 known-stale set changed: expected=['CODEX.md', 'PROJECT_STATE.md', 'README.md', 'outputs/cycle01/admission_summary.json', 'outputs/cycle01/candidate_campaigns.csv'], actual=['CODEX.md', 'PROJECT_STATE.md', 'README.md', 'tasks/CODEX_CYCLE_01.md']\"",
+      "ValueError: Cycle 01 known-stale set changed: expected=['CODEX.md', 'PROJECT_STATE.md', 'README.md', 'outputs/cycle01/admission_summary.json', 'outputs/cycle01/candidate_campaigns.csv'], actual=['CODEX.md', 'PROJECT_STATE.md', 'README.md', 'tasks/CODEX_CYCLE_01.md']"
+    ],
+    "tests": [
+      {
+        "test": "test_baseline_promotion_is_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_baseline_promotion_is_rejected",
+        "status": "ok"
+      },
+      {
+        "test": "test_builder_fails_on_manifest_drift_without_mutating_it",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_builder_fails_on_manifest_drift_without_mutating_it",
+        "status": "ok"
+      },
+      {
+        "test": "test_builder_fails_on_missing_allowlisted_file",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_builder_fails_on_missing_allowlisted_file",
+        "status": "ERROR"
+      },
+      {
+        "test": "test_builder_fails_on_stale_qa_snapshot",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_builder_fails_on_stale_qa_snapshot",
+        "status": "FAIL"
+      },
+      {
+        "test": "test_builder_is_deterministic_and_members_are_exact",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_builder_is_deterministic_and_members_are_exact",
+        "status": "ERROR"
+      },
+      {
+        "test": "test_builder_rejects_destination_inside_controlled_output",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_builder_rejects_destination_inside_controlled_output",
+        "status": "ok"
+      },
+      {
+        "test": "test_candidate_identity_warning_is_mandatory",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_candidate_identity_warning_is_mandatory",
+        "status": "ok"
+      },
+      {
+        "test": "test_claim_metric_and_denominator_mutation_is_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_claim_metric_and_denominator_mutation_is_rejected",
+        "status": "ok"
+      },
+      {
+        "test": "test_claim_registry_has_exact_expected_values",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_claim_registry_has_exact_expected_values",
+        "status": "ok"
+      },
+      {
+        "test": "test_exact_tree_rejects_unallowlisted_root_pyc",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_exact_tree_rejects_unallowlisted_root_pyc",
+        "status": "ok"
+      },
+      {
+        "test": "test_explicit_false_accuracy_and_baseline_claims_are_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_explicit_false_accuracy_and_baseline_claims_are_rejected",
+        "status": "ok"
+      },
+      {
+        "test": "test_historical_hash_drift_is_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_historical_hash_drift_is_rejected",
+        "status": "ok"
+      },
+      {
+        "test": "test_legacy_manifest_audit_records_known_state",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_legacy_manifest_audit_records_known_state",
+        "status": "ERROR"
+      },
+      {
+        "test": "test_locked_number_mutation_is_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_locked_number_mutation_is_rejected",
+        "status": "ok"
+      },
+      {
+        "test": "test_pending_external_channel_cannot_be_closed_silently",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_pending_external_channel_cannot_be_closed_silently",
+        "status": "ok"
+      },
+      {
+        "test": "test_readiness_cannot_be_promoted",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_readiness_cannot_be_promoted",
+        "status": "ok"
+      },
+      {
+        "test": "test_repository_closes_hold_with_exact_blockers",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_repository_closes_hold_with_exact_blockers",
+        "status": "ERROR"
+      },
+      {
+        "test": "test_restricted_or_unexpected_output_is_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_restricted_or_unexpected_output_is_rejected",
+        "status": "ok"
+      },
+      {
+        "test": "test_reviewed_scientific_and_provenance_text_cannot_drift",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_reviewed_scientific_and_provenance_text_cannot_drift",
+        "status": "ok"
+      },
+      {
+        "test": "test_search_result_count_and_snapshot_hash_are_locked",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_search_result_count_and_snapshot_hash_are_locked",
+        "status": "ok"
+      },
+      {
+        "test": "test_unverified_baseline_search_hit_is_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_unverified_baseline_search_hit_is_rejected",
+        "status": "ok"
+      },
+      {
+        "test": "test_unverified_recomputation_is_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_unverified_recomputation_is_rejected",
+        "status": "ok"
+      }
+    ]
+  },
+  "synthetic_head_crlf_representation": {
+    "returncode": 1,
+    "tests_run": 22,
+    "passed": 17,
+    "failed": 1,
+    "errors": 4,
+    "skipped": 0,
+    "problem_messages": [
+      "AssertionError: \"qa_report.json is stale\" does not match \"Cycle 01 known-stale set changed: expected=['CODEX.md', 'PROJECT_STATE.md', 'README.md', 'outputs/cycle01/admission_summary.json', 'outputs/cycle01/candidate_campaigns.csv'], actual=['CODEX.md', 'PROJECT_STATE.md', 'README.md', 'outputs/cycle01/BASELINE_SEARCH.md', 'outputs/cycle01/EDITORIAL_RECOMMENDATION.md', 'outputs/cycle01/KEEP_HOLD_REMOVE.md', 'outputs/cycle01/README.md', 'outputs/cycle01/SCIENTIFIC_CHANGELOG.md', 'outputs/cycle01/admission_report.md', 'outputs/cycle01/admission_summary.json', 'outputs/cycle01/candidate_campaigns.csv', 'outputs/cycle01/reproduction.md', 'outputs/cycle01/source_inventory.csv', 'requirements-cycle01.txt', 'scripts/build_cycle01_package.py', 'scripts/fetch_cycle01_sources.py', 'scripts/validate_cycle01_evidence.py', 'tests/test_cycle01_evidence.py']\"",
+      "ValueError: Cycle 01 known-stale set changed: expected=['CODEX.md', 'PROJECT_STATE.md', 'README.md', 'outputs/cycle01/admission_summary.json', 'outputs/cycle01/candidate_campaigns.csv'], actual=['CODEX.md', 'PROJECT_STATE.md', 'README.md', 'outputs/cycle01/BASELINE_SEARCH.md', 'outputs/cycle01/EDITORIAL_RECOMMENDATION.md', 'outputs/cycle01/KEEP_HOLD_REMOVE.md', 'outputs/cycle01/README.md', 'outputs/cycle01/SCIENTIFIC_CHANGELOG.md', 'outputs/cycle01/admission_report.md', 'outputs/cycle01/admission_summary.json', 'outputs/cycle01/candidate_campaigns.csv', 'outputs/cycle01/reproduction.md', 'outputs/cycle01/source_inventory.csv', 'requirements-cycle01.txt', 'scripts/build_cycle01_package.py', 'scripts/fetch_cycle01_sources.py', 'scripts/validate_cycle01_evidence.py', 'tests/test_cycle01_evidence.py']"
+    ],
+    "tests": [
+      {
+        "test": "test_baseline_promotion_is_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_baseline_promotion_is_rejected",
+        "status": "ok"
+      },
+      {
+        "test": "test_builder_fails_on_manifest_drift_without_mutating_it",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_builder_fails_on_manifest_drift_without_mutating_it",
+        "status": "ok"
+      },
+      {
+        "test": "test_builder_fails_on_missing_allowlisted_file",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_builder_fails_on_missing_allowlisted_file",
+        "status": "ERROR"
+      },
+      {
+        "test": "test_builder_fails_on_stale_qa_snapshot",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_builder_fails_on_stale_qa_snapshot",
+        "status": "FAIL"
+      },
+      {
+        "test": "test_builder_is_deterministic_and_members_are_exact",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_builder_is_deterministic_and_members_are_exact",
+        "status": "ERROR"
+      },
+      {
+        "test": "test_builder_rejects_destination_inside_controlled_output",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_builder_rejects_destination_inside_controlled_output",
+        "status": "ok"
+      },
+      {
+        "test": "test_candidate_identity_warning_is_mandatory",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_candidate_identity_warning_is_mandatory",
+        "status": "ok"
+      },
+      {
+        "test": "test_claim_metric_and_denominator_mutation_is_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_claim_metric_and_denominator_mutation_is_rejected",
+        "status": "ok"
+      },
+      {
+        "test": "test_claim_registry_has_exact_expected_values",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_claim_registry_has_exact_expected_values",
+        "status": "ok"
+      },
+      {
+        "test": "test_exact_tree_rejects_unallowlisted_root_pyc",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_exact_tree_rejects_unallowlisted_root_pyc",
+        "status": "ok"
+      },
+      {
+        "test": "test_explicit_false_accuracy_and_baseline_claims_are_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_explicit_false_accuracy_and_baseline_claims_are_rejected",
+        "status": "ok"
+      },
+      {
+        "test": "test_historical_hash_drift_is_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_historical_hash_drift_is_rejected",
+        "status": "ok"
+      },
+      {
+        "test": "test_legacy_manifest_audit_records_known_state",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_legacy_manifest_audit_records_known_state",
+        "status": "ERROR"
+      },
+      {
+        "test": "test_locked_number_mutation_is_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_locked_number_mutation_is_rejected",
+        "status": "ok"
+      },
+      {
+        "test": "test_pending_external_channel_cannot_be_closed_silently",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_pending_external_channel_cannot_be_closed_silently",
+        "status": "ok"
+      },
+      {
+        "test": "test_readiness_cannot_be_promoted",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_readiness_cannot_be_promoted",
+        "status": "ok"
+      },
+      {
+        "test": "test_repository_closes_hold_with_exact_blockers",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_repository_closes_hold_with_exact_blockers",
+        "status": "ERROR"
+      },
+      {
+        "test": "test_restricted_or_unexpected_output_is_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_restricted_or_unexpected_output_is_rejected",
+        "status": "ok"
+      },
+      {
+        "test": "test_reviewed_scientific_and_provenance_text_cannot_drift",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_reviewed_scientific_and_provenance_text_cannot_drift",
+        "status": "ok"
+      },
+      {
+        "test": "test_search_result_count_and_snapshot_hash_are_locked",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_search_result_count_and_snapshot_hash_are_locked",
+        "status": "ok"
+      },
+      {
+        "test": "test_unverified_baseline_search_hit_is_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_unverified_baseline_search_hit_is_rejected",
+        "status": "ok"
+      },
+      {
+        "test": "test_unverified_recomputation_is_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_unverified_recomputation_is_rejected",
+        "status": "ok"
+      }
+    ]
+  },
+  "same_synthetic_crlf_tree_three_cycle02_lf_restored": {
+    "returncode": 1,
+    "tests_run": 22,
+    "passed": 17,
+    "failed": 1,
+    "errors": 4,
+    "skipped": 0,
+    "problem_messages": [
+      "AssertionError: \"qa_report.json is stale\" does not match \"Cycle 01 known-stale set changed: expected=['CODEX.md', 'PROJECT_STATE.md', 'README.md', 'outputs/cycle01/admission_summary.json', 'outputs/cycle01/candidate_campaigns.csv'], actual=['CODEX.md', 'PROJECT_STATE.md', 'README.md', 'outputs/cycle01/BASELINE_SEARCH.md', 'outputs/cycle01/EDITORIAL_RECOMMENDATION.md', 'outputs/cycle01/KEEP_HOLD_REMOVE.md', 'outputs/cycle01/README.md', 'outputs/cycle01/SCIENTIFIC_CHANGELOG.md', 'outputs/cycle01/admission_report.md', 'outputs/cycle01/admission_summary.json', 'outputs/cycle01/candidate_campaigns.csv', 'outputs/cycle01/reproduction.md', 'outputs/cycle01/source_inventory.csv', 'requirements-cycle01.txt', 'scripts/build_cycle01_package.py', 'scripts/fetch_cycle01_sources.py', 'scripts/validate_cycle01_evidence.py', 'tests/test_cycle01_evidence.py']\"",
+      "ValueError: Cycle 01 known-stale set changed: expected=['CODEX.md', 'PROJECT_STATE.md', 'README.md', 'outputs/cycle01/admission_summary.json', 'outputs/cycle01/candidate_campaigns.csv'], actual=['CODEX.md', 'PROJECT_STATE.md', 'README.md', 'outputs/cycle01/BASELINE_SEARCH.md', 'outputs/cycle01/EDITORIAL_RECOMMENDATION.md', 'outputs/cycle01/KEEP_HOLD_REMOVE.md', 'outputs/cycle01/README.md', 'outputs/cycle01/SCIENTIFIC_CHANGELOG.md', 'outputs/cycle01/admission_report.md', 'outputs/cycle01/admission_summary.json', 'outputs/cycle01/candidate_campaigns.csv', 'outputs/cycle01/reproduction.md', 'outputs/cycle01/source_inventory.csv', 'requirements-cycle01.txt', 'scripts/build_cycle01_package.py', 'scripts/fetch_cycle01_sources.py', 'scripts/validate_cycle01_evidence.py', 'tests/test_cycle01_evidence.py']"
+    ],
+    "tests": [
+      {
+        "test": "test_baseline_promotion_is_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_baseline_promotion_is_rejected",
+        "status": "ok"
+      },
+      {
+        "test": "test_builder_fails_on_manifest_drift_without_mutating_it",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_builder_fails_on_manifest_drift_without_mutating_it",
+        "status": "ok"
+      },
+      {
+        "test": "test_builder_fails_on_missing_allowlisted_file",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_builder_fails_on_missing_allowlisted_file",
+        "status": "ERROR"
+      },
+      {
+        "test": "test_builder_fails_on_stale_qa_snapshot",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_builder_fails_on_stale_qa_snapshot",
+        "status": "FAIL"
+      },
+      {
+        "test": "test_builder_is_deterministic_and_members_are_exact",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_builder_is_deterministic_and_members_are_exact",
+        "status": "ERROR"
+      },
+      {
+        "test": "test_builder_rejects_destination_inside_controlled_output",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_builder_rejects_destination_inside_controlled_output",
+        "status": "ok"
+      },
+      {
+        "test": "test_candidate_identity_warning_is_mandatory",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_candidate_identity_warning_is_mandatory",
+        "status": "ok"
+      },
+      {
+        "test": "test_claim_metric_and_denominator_mutation_is_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_claim_metric_and_denominator_mutation_is_rejected",
+        "status": "ok"
+      },
+      {
+        "test": "test_claim_registry_has_exact_expected_values",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_claim_registry_has_exact_expected_values",
+        "status": "ok"
+      },
+      {
+        "test": "test_exact_tree_rejects_unallowlisted_root_pyc",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_exact_tree_rejects_unallowlisted_root_pyc",
+        "status": "ok"
+      },
+      {
+        "test": "test_explicit_false_accuracy_and_baseline_claims_are_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_explicit_false_accuracy_and_baseline_claims_are_rejected",
+        "status": "ok"
+      },
+      {
+        "test": "test_historical_hash_drift_is_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_historical_hash_drift_is_rejected",
+        "status": "ok"
+      },
+      {
+        "test": "test_legacy_manifest_audit_records_known_state",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_legacy_manifest_audit_records_known_state",
+        "status": "ERROR"
+      },
+      {
+        "test": "test_locked_number_mutation_is_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_locked_number_mutation_is_rejected",
+        "status": "ok"
+      },
+      {
+        "test": "test_pending_external_channel_cannot_be_closed_silently",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_pending_external_channel_cannot_be_closed_silently",
+        "status": "ok"
+      },
+      {
+        "test": "test_readiness_cannot_be_promoted",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_readiness_cannot_be_promoted",
+        "status": "ok"
+      },
+      {
+        "test": "test_repository_closes_hold_with_exact_blockers",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_repository_closes_hold_with_exact_blockers",
+        "status": "ERROR"
+      },
+      {
+        "test": "test_restricted_or_unexpected_output_is_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_restricted_or_unexpected_output_is_rejected",
+        "status": "ok"
+      },
+      {
+        "test": "test_reviewed_scientific_and_provenance_text_cannot_drift",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_reviewed_scientific_and_provenance_text_cannot_drift",
+        "status": "ok"
+      },
+      {
+        "test": "test_search_result_count_and_snapshot_hash_are_locked",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_search_result_count_and_snapshot_hash_are_locked",
+        "status": "ok"
+      },
+      {
+        "test": "test_unverified_baseline_search_hit_is_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_unverified_baseline_search_hit_is_rejected",
+        "status": "ok"
+      },
+      {
+        "test": "test_unverified_recomputation_is_rejected",
+        "qualified": "test_cycle04_submission_gate.Cycle04SubmissionGateTests.test_unverified_recomputation_is_rejected",
+        "status": "ok"
+      }
+    ]
+  },
+  "audit_script_modified_current_worktree_or_manifests": false,
+  "root_restored_current_cycle02_bytes_to_head": true,
+  "historical_full_suite_observation": {
+    "tests_run": 114,
+    "passed": 109,
+    "failures_plus_errors": 5,
+    "provenance": "Full-suite run reported by the root agent before forthcoming EPA-native tests; this audit independently replays the affected legacy suite only."
+  },
+  "actual_worktree_post_eol_fix_observation": {
+    "tests_run": 22,
+    "passed": 17,
+    "failed": 1,
+    "errors": 4,
+    "provenance": "Root-reported actual Cycle 04 run after targeted EOL restoration; not another synthetic archive experiment.",
+    "current_blocker": "Historical validator requires literal PROJECT_STATE status phrases that do not match current project state.",
+    "missing_legacy_literals": [
+      "PR #10 has been merged",
+      "Issue #8 is closed",
+      "USER-REPORTED SENT / PENDING — UNVERIFIED"
+    ],
+    "disposition": "Do not insert obsolete status phrases or weaken the frozen validator merely to make legacy tests pass. Report this historical-gate failure separately from passing new numerical tests."
+  },
+  "interpretation": "The three Cycle 02 manifest hashes match HEAD Git bytes, and explicit CRLF expansion exactly reproduces their pre-fix hashes. A separate legacy Cycle 01 known-stale-set assertion is itself EOL-sensitive under no automatic conversion. Therefore generic canonical-HEAD portability and the targeted Windows fix are distinct questions; all three suite outcomes are reported separately.",
+  "limitations": [
+    "Git archive is invoked with per-command core.autocrlf=false/core.eol=lf and the three file hashes verified against Git blobs; it is not an actual Windows checkout or dependency reinstall.",
+    "The synthetic CRLF replay uses explicit core.autocrlf=true/core.eol=crlf plus committed attributes. It does NOT reconstruct the actual mixed-EOL checkout. Its targeted correction changes exactly three disposable Cycle 02 files to HEAD blob bytes, but earlier Cycle 01 failures still prevent a causal replay of the original five Cycle 02-related failures.",
+    "Legacy Cycle 04 readiness assertions encode that historical cycle, not the current manuscript's submission status.",
+    "Any later-added tests require a fresh total; the 114-test observation is not a final package-wide count."
+  ]
+}

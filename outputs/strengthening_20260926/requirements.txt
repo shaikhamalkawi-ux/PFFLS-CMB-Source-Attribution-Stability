@@ -1,0 +1,4 @@
+# The claim and reference audits use only the Python standard library.
+# The private Fairbanks audit needs openpyxl; the EPA clean-room audit needs numpy.
+openpyxl==3.1.5
+numpy==2.3.5
