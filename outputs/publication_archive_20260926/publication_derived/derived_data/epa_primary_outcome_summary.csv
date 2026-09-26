@@ -1,0 +1,6 @@
+subset,n,any_ordering_change,largest_source_change
+Eligible substitutions,345,,
+Converged substitutions,323,167.0,81.0
+Central + alternative R2 and reduced-chi2 in range,283,133.0,62.0
+"Central + alternative R2, reduced-chi2, and percent mass in range",26,10.0,2.0
+Nonconverged,22,,
