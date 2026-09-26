@@ -1,0 +1,19 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright 2026 Ghassan O. Malkawi, Ahmed Abdelaziz Elsayed, Mohammed Alhagyan,
+and Bakeel Hussein, to the extent of their respective rights.
+
+The author-owned data and documentation identified in ../LICENSE_SCOPE.md
+are licensed under Creative Commons Attribution 4.0 International.
+
+Official license deed:
+https://creativecommons.org/licenses/by/4.0/
+
+Official legal code, which governs the license:
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+This file is a license notice, not a replacement or modification of the
+official legal code. Please retain attribution, identify changes, and provide
+the license link when reusing licensed material as required by the license.
+No endorsement is granted. No rights over excluded third-party material are
+asserted; see ../LICENSE_SCOPE.md.

@@ -1,0 +1,3 @@
+# Direct dependency used by the reconstruction and original verifier.
+# Verified with Python 3.12.14; supplementary verifier uses only the standard library.
+pandas==3.0.1

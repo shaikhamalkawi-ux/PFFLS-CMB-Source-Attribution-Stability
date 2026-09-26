@@ -1,0 +1,10 @@
+profile_family,records,complete_cells,primary_role
+Ammonium nitrate,1 / 2,2 / 38,nitrate 2 fixed
+Ammonium sulfate,1 / 2,2 / 38,sulfate 2 fixed
+Sea salt,1 / 2,6 / 38,sea salt 2 fixed
+Wood burning,1 / 2 / 3-6,21 / 21 / 38 each,wood 3-6 varied
+Vehicle exhaust,1 / 2-4,15 / 38 each,vehicle 2-4 varied
+Crustal material,1 / 2,16 / 38,crustal 2 fixed
+Road dust,1 / 2,38 / 24,road dust 1 fixed
+Industrial,1 / 2,38 / 25,industrial 1 fixed
+Fossil fuel combustion,1,38,excluded: no separate Round-2 reference category
