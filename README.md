@@ -56,6 +56,20 @@ The fit-only winner in that branch is **NWSOWHL**. This is **not** an external-a
 
 Libby remains useful contextual field evidence but is not profile-resolved enough for the same rerun.
 
+## Public data and verification-code archive
+
+The bounded publication-derived consistency and provenance package, version
+1.0.0, is published on [Zenodo (10.5281/zenodo.22976190)](https://doi.org/10.5281/zenodo.22976190).
+The exact matching [GitHub snapshot](https://github.com/shaikhamalkawi-ux/PFFLS-CMB-Source-Attribution-Stability/tree/9de6f7884cce5d9fea0374acd8ac6c28615dafaa/outputs/publication_archive_20260926)
+contains the original verification code (MIT) and author-owned derived data
+and documentation (CC BY 4.0). See its `LICENSE_SCOPE.md`: third-party rights
+are retained, and these licences do not cover the remainder of this repository.
+
+The archive passes 14 base and 25 supplementary consistency checks. It is not
+a complete original CMB rerun or independent field-accuracy validation.
+Private Fairbanks spreadsheets and manuscript files are not deposited.
+This data/code publication does not promote a new scientific baseline.
+
 ## Repository role
 
 This repository is intended for:
