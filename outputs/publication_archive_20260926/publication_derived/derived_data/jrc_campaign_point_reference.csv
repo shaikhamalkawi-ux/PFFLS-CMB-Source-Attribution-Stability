@@ -1,0 +1,9 @@
+reference_key,source_category,published_mean_ug_m3
+BioB,Biomass/wood burning,4.33
+SO4,Ammonium sulfate,7.12
+NO3,Ammonium nitrate,12.69
+DUST,Crustal dust,4.01
+ROAD,Road dust,2.68
+SALT,Sea salt,0.52
+TRA,Vehicle exhaust,6.63
+INDU,Industrial/point sources,5.11

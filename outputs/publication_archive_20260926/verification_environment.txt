@@ -1,0 +1,24 @@
+Curated archive verification environment
+Verification date: 2026-09-26
+Python: 3.12.14
+Python architecture/compiler: 64 bit (AMD64), MSC v.1944
+Platform: Windows-11-10.0.22631-SP0
+pandas: 3.0.1
+
+Commands (run from the curated archive root):
+python publication_derived/code/reproduce_publication_derived_data.py
+python publication_derived/code/verify_release.py
+python publication_derived/code/verify_supplementary_consistency.py
+
+Observed results:
+PASS: Reconstruction: 30 comparisons and 9 lower-chi-square discordances.
+PASS: Original verifier: 14/14 publication-summary arithmetic checks.
+PASS: Original nested SHA-256 manifest: 20/20 entries.
+PASS: Supplementary verifier: 25/25 publication-summary consistency checks.
+PASS: All 21 nested files byte-identical to the preserved source after execution.
+
+This is the current consistency-check environment, not the environment of
+the unavailable original source-native CMB runs. The historical environment
+record is retained unchanged at publication_derived/environment.txt.
+No LaTeX distribution, CMB executable, external web service, or private/raw
+dataset is needed to run the three included scripts.

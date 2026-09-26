@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "Please cite this curated archive when reusing the supplied publication-derived summaries or consistency code. Cite the research article separately."
+type: dataset
+title: "Publication-derived consistency and provenance package for Source Attribution Can Change Despite Favorable Fit Diagnostics: Evidence from Source-Profile Choice in Chemical Mass Balance"
+version: 1.0.0
+doi: 10.5281/zenodo.22976190
+date-released: 2026-09-26
+authors:
+  - family-names: Malkawi
+    given-names: Ghassan O.
+    affiliation: "Faculty of Computer Information Science, Higher Colleges of Technology, Al Ain, Abu Dhabi, United Arab Emirates"
+    orcid: "https://orcid.org/0000-0002-5320-7561"
+  - family-names: Elsayed
+    given-names: Ahmed Abdelaziz
+    affiliation: "Department of Computer Engineering and Computational Sciences, School of Engineering, Applied Science and Technology, Canadian University Dubai, City Walk, Dubai, United Arab Emirates"
+  - family-names: Alhagyan
+    given-names: Mohammed
+    affiliation: "Department of Mathematical Sciences, College of Science, United Arab Emirates University, Al Ain, United Arab Emirates"
+    orcid: "https://orcid.org/0000-0003-4090-6125"
+  - family-names: Hussein
+    given-names: Bakeel
+    affiliation: "Department of Applied Engineering, Sana'a Community College, Sana'a, Yemen"
+repository-code: "https://github.com/shaikhamalkawi-ux/PFFLS-CMB-Source-Attribution-Stability"
+license:
+  - CC-BY-4.0
+  - MIT
+abstract: >-
+  Curated publication-derived summary tables, reconstruction and consistency
+  verification code, source provenance, and explicit reproducibility limits for
+  a chemical mass balance source-profile-choice study. The archive preserves
+  the released 21-file publication-derived package and adds scoped licensing,
+  citation metadata, and current verification instructions. The checks reproduce
+  reported summary arithmetic; they do not independently rerun the original
+  source-native JRC or EPA CMB fits or establish environmental allocation accuracy.
+  Private Fairbanks materials, third-party source binaries, the manuscript, and
+  journal submission documents are excluded. CC BY 4.0 applies to author-owned
+  data/documentation, and MIT applies to original software as specified in
+  LICENSE_SCOPE.md; third-party rights are not relicensed.
+keywords:
+  - chemical mass balance
+  - source apportionment
+  - source profiles
+  - fit diagnostics
+  - publication-derived data
+  - consistency verification
