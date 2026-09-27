@@ -1,0 +1,32 @@
+{
+  "status": "COMPLETED_PROOF_ONLY_AUDIT",
+  "new_interpretation_review": "PENDING_INDEPENDENT_ACTUAL_RECORD_REPLAY",
+  "configuration_sha256": "eb76edf1493a94e7aae172039ea636f47557f0e98f102865036e702a9d6a005b",
+  "private_ledger_sha256": "b4148121cec2e76b91a6ed4ec8f5818c9d2118b2eaac9f80e56df7bf61854c80",
+  "completed_utc": "2026-09-26T21:27:35.225835+00:00",
+  "numerical_solver_calls": 0,
+  "original_Stage3_HOLD_preserved": true,
+  "all_initial_samples": 35,
+  "inherited_witnessed_nonunique_unions": 34,
+  "targeted_union_result": {
+    "status": "POSTHOC_CERTIFIED_UNIQUE_UNION_LEADER_ABOVE_ORIGINAL_MARGIN",
+    "expected_systems": 120,
+    "components_checked": 120,
+    "component_status_counts": {
+      "EXACT_INFEASIBLE": 72,
+      "EXACT_FEASIBLE_ALL_MARGIN_PREMISES": 48
+    },
+    "feasible_component_leaders": [
+      "vehicle"
+    ],
+    "threshold_relations": {
+      "ABOVE": 288
+    },
+    "bounds_checked": 288
+  },
+  "bound_attempts_prespecified": 288,
+  "valid_bounds_checked": 288,
+  "unavailable_due_to_invalid_premises": 0,
+  "minimum_bound_over_original_delta_rounded": 46354.66135190746,
+  "limits": "Separate post-hoc algebraic proof completion from existing exact Farkas multipliers; known linear inequality reasoning; same independent boxes and original threshold. No new measurements, LPs, fit, uncertainty assumptions, confidence coverage or environmental truth."
+}

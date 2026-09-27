@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "verification_utc_date": "2026-09-26",
+  "scope": "Separate no-scoring delivery-input restoration, not a new scientific experiment",
+  "helper": "scripts/reconstruct_truth_inputs.py",
+  "helper_sha256": "3e83b7cbc475a0f651148eb75f9836245054e1a791e5a2002dfae622416bbe41",
+  "tests": "tests/test_reconstruct_truth_inputs.py",
+  "tests_sha256": "8f60d436cb955ec172120343b56a806129d0e2657d472bf36bbd62771df0edba",
+  "synthetic_test_command": "python -m unittest discover -s tests -p test_reconstruct_truth_inputs.py -v",
+  "synthetic_tests_passed": 18,
+  "synthetic_test_exit_code": 0,
+  "tested_safety_properties": [
+    "original configuration, input-manifest, gate and implementation drift rejected",
+    "array key, shape, dtype, value, object-array and NPZ-byte drift rejected before writing",
+    "existing targets refused even when identical; no overwrite",
+    "exclusive creation of absent target and exact readback",
+    "verify-only does not regenerate or write",
+    "in-memory reconstruction mode does not create a target",
+    "generator RNG state mismatch rejected",
+    "reader/generator reconstruction route invokes neither fit_family nor score"
+  ],
+  "actual_original_release_in_memory_reconstruction": {
+    "status": "RECONSTRUCTION_VERIFIED_IN_MEMORY_NO_WRITE",
+    "all_array_keys_shapes_dtypes_and_hashes_match": true,
+    "array_count": 15,
+    "rng_states_match": true,
+    "complete_compressed_npz_hash_matches": true,
+    "exit_code": 0
+  },
+  "original_existing_npz_verify_only": {"status": "EXISTING_INPUTS_VERIFIED_NO_WRITE", "exit_code": 0},
+  "isolated_absent_target_restore": {
+    "status": "MISSING_INPUTS_EXCLUSIVELY_RESTORED",
+    "directory": "tmp/truth_restore_check_b74ac9b8bd2d4dbb85cc196ff52d45d2",
+    "preexisting_files": "copies of the three original frozen metadata JSON files only; NPZ absent",
+    "independent_powershell_Get_FileHash_matches_original": true,
+    "subsequent_helper_verify_only": "PASS",
+    "exit_code": 0,
+    "do_not_package_this_tmp_directory": true
+  },
+  "identities": {
+    "unchanged_original_producer_sha256": "023d4c74f3dd91711e55144c9831059ed622afae3975b5bf64b1b792ea06b1ad",
+    "unchanged_original_tests_sha256": "5bcc685d35cec71daf11be792f50761277c896d508a35b0a5acdcf514187e8bc",
+    "unchanged_original_results_sha256": "e4bf45de87335c853edc15170e3a8706a1540797069766fed552fe5ead49362b",
+    "original_configuration_sha256": "8b77f98045f0ffd608de37b357c65107bbdb333d119b13bc22b614fe25e048c9",
+    "original_input_manifest_sha256": "2f1134357b78d61f40dac63e0749961a889c2d608085ecf5e8a3de65e031fed2",
+    "original_test_gate_sha256": "b9de39401b8a014bb92185a48cc6c1704b4c203686ea070603b8fdd4a784279d",
+    "original_and_restored_npz_sha256": "78ec90aa3adb31c7d4e83237bcec79643579161d9e6407d9479995ed494581c1",
+    "licensed_release_archive_sha256": "e4f6e055a3db15e22f7c0c449a84d2d23a1f86270d658ff3f1a63fc435367501"
+  },
+  "new_fits": 0,
+  "new_scores": 0,
+  "frozen_original_records_changed": false,
+  "original_npz_removed_or_replaced": false,
+  "new_Stage3_wrapper_created": false,
+  "package_raw_array_exclusion_retained": true,
+  "public_dataset_attribution_metadata_exact_object_match_to_original": true,
+  "public_dataset_attribution_creator_count": 11,
+  "claim_limit": "Successful exact restoration of the archived inputs does not alter the benchmark's null profile-union benefit, selective reporting tradeoffs, or lack of independent environmental source truth"
+}

@@ -1,0 +1,702 @@
+{
+  "candidate_branch": "codex/decision-certificates-20260926",
+  "created_utc": "2026-09-27T00:07:45.326776+00:00",
+  "entry_point": "outputs/decision_research_20260926/REVIEW_CANDIDATE_STATUS.md",
+  "exclusions": [
+    "all raw input archives",
+    "private sample and proof ledgers",
+    "matrices and proof vectors",
+    "manuscripts and frozen publication archives",
+    "correspondence and credentials",
+    "article fulltexts and institution-access notes",
+    "owner paths, session and delivery records"
+  ],
+  "files": {
+    ".gitattributes": {
+      "bytes": 1097,
+      "licence_scope": "PRE_EXISTING_TERMS_UNCHANGED",
+      "sha256": "7ab10cb2a30faf728bcb6d83b1754fa86752eb4504ecd311ae82c2397980008d"
+    },
+    "outputs/decision_research_20260926/BENCHMARK_GAP_SEARCH.md": {
+      "bytes": 11224,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "eea21dbe105c88d3c655441f71fa91d1e9690a4ceae3ac285a75da2d2a291b1f"
+    },
+    "outputs/decision_research_20260926/CANDIDATE_AND_COLD_GATE_RELEASE_REVIEW.md": {
+      "bytes": 6144,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "2c496127efc6f8be0a846a6f619e0f836db4d8bd16ea169912904f320f5bf8be"
+    },
+    "outputs/decision_research_20260926/CANDIDATE_MANUSCRIPT_INSERTS.md": {
+      "bytes": 6067,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "8f6d4ad74844b6b15c4ef8d525fdc49143287e58577a4498189ea60bb6c961ab"
+    },
+    "outputs/decision_research_20260926/COLD_FIELD_EXECUTION_ROOT_APPROVAL.md": {
+      "bytes": 3246,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "1a8ceee1cb65ca389b06a9068e1e3fee966a1e4c59fdbddb47be257944444a6e"
+    },
+    "outputs/decision_research_20260926/COLD_FIELD_INDEPENDENT_REVIEW.md": {
+      "bytes": 4809,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "c7ace9a802a11558bfb5da7d7889d9b869bf2088df2cbcfdc5c4c5e3a8eb47c5"
+    },
+    "outputs/decision_research_20260926/COLD_PORTABILITY_RELEASE_REVIEW.md": {
+      "bytes": 4610,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "31575647c77e65f2b9cf2751d1e28a3edf5b32c52645f2a0c16330ee5aaa805e"
+    },
+    "outputs/decision_research_20260926/COLD_PORTABILITY_ROOT_DECISION.md": {
+      "bytes": 3317,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "7fede98bd7f789ba8f228667912be15c80e592195b508859c4ca01fecfd8078e"
+    },
+    "outputs/decision_research_20260926/COLD_PORTABILITY_STATIC_REVIEW.md": {
+      "bytes": 5507,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "71968c8989eeb99b3d16890c0aa66202e9b6d8a3dc902652d3c96dfed13a3de2"
+    },
+    "outputs/decision_research_20260926/COLD_PREPARED_INDEPENDENT_REVIEW.md": {
+      "bytes": 3403,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "9bc2f7dbeb762dace4855d2c1b5d174ad281dc6b587a669f0b1e1cdda43f19ce"
+    },
+    "outputs/decision_research_20260926/COLD_PRODUCER_STATIC_REVIEW.md": {
+      "bytes": 5993,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "b6f4c82896e372380342955da107400727d328c3c27a6bd90dda4d1efa2bcc95"
+    },
+    "outputs/decision_research_20260926/COLD_REPRODUCTION_GUIDE.md": {
+      "bytes": 8369,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "e727ca1efd42e565193d03382957902665ba1704e01af627bdc4ff38096e3166"
+    },
+    "outputs/decision_research_20260926/COLD_RUN_RECORD_SCHEMA.md": {
+      "bytes": 16980,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "eac3516951fd6a795ee1e48271a8023f8470d40cc7556d2a0449789237bb9752"
+    },
+    "outputs/decision_research_20260926/COLD_RUN_REPRODUCTION_PROPOSAL.md": {
+      "bytes": 12360,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "d83392e843e409aade87a3dfd050c0da81448fcf9720be3dc828cd17820f9dca"
+    },
+    "outputs/decision_research_20260926/COLD_RUN_ROOT_DECISION.md": {
+      "bytes": 2639,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "5e2c78c80cad04d8f28e39c4e35aea2aed8c608ab0bb31cde1dcdb2467a4d23a"
+    },
+    "outputs/decision_research_20260926/EVLS_2025_METHODS_AUDIT.md": {
+      "bytes": 7482,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "078ccb5116a814c3ea040b6e0a53548c8376680ea8b25f77ab30053ad94cf330"
+    },
+    "outputs/decision_research_20260926/FINAL_SCIENTIFIC_DISPOSITION.md": {
+      "bytes": 10469,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "d1612d83f62909076ac98fbb02c61bbb64d980f14e7bc865731d8696e1ed0cac"
+    },
+    "outputs/decision_research_20260926/HISTORICAL_LP_PRIOR_ART_NOTE.md": {
+      "bytes": 2471,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "959831101fcb26b832e30e01f9a12de1312de06667b03369b702704eee367090"
+    },
+    "outputs/decision_research_20260926/INDEPENDENT_WITNESS_AUDIT.md": {
+      "bytes": 10945,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "19d603e34b784ba5ae1f35250bdb006c00d1929a75bd310d03be6c25ae705e33"
+    },
+    "outputs/decision_research_20260926/INTERVAL_FARKAS_INDEPENDENT_REVIEW.md": {
+      "bytes": 8531,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "278b058223802dcebb160737c2a430c43f7e4ee7e28a3f09bb6f495fa5848a6f"
+    },
+    "outputs/decision_research_20260926/INTERVAL_FEASIBILITY_PROPOSAL.md": {
+      "bytes": 18995,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "43f9e40550b8a8f452f5d46732187809c888f38e972d15431af2357d9b88d589"
+    },
+    "outputs/decision_research_20260926/INTERVAL_INDEPENDENT_REVIEW.md": {
+      "bytes": 31833,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "7ca7f7b3415eabb02aed31d7c1f16fd512a709efa614ba1a74ba5cdc53894ac3"
+    },
+    "outputs/decision_research_20260926/LICENSE_CODE_MIT.txt": {
+      "bytes": 1083,
+      "licence_scope": "MIT",
+      "sha256": "4f00b65cc36c64381dddc73fb5aa0f73bb0d1b8318263d78ee5fd29ea394912a"
+    },
+    "outputs/decision_research_20260926/LICENSE_SCOPE.md": {
+      "bytes": 2677,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "91760a7bc5cd4b65d8c6e7bc024786fc0fa9713fb47cdfec0a444a26888d0549"
+    },
+    "outputs/decision_research_20260926/MATHEMATICAL_AUDIT.md": {
+      "bytes": 13771,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "9ec6414ae317d1830f418668f038edcbda032d005bd15095d01217609d0992ff"
+    },
+    "outputs/decision_research_20260926/MEASUREMENT_DESIGN_PLAN.md": {
+      "bytes": 3206,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "15b5cc93c466fdd12e1bdc7f973bc2c10e32434ad915be396c83d6bf4629cb7f"
+    },
+    "outputs/decision_research_20260926/NEW_COLD_RELEASE_CONTENT_REVIEW.md": {
+      "bytes": 6264,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "455846b824b4bad92af4008aaf036abd7c7ad564b2d816dcc15ccfb30725ab8a"
+    },
+    "outputs/decision_research_20260926/NEW_QA_ARTIFACTS_RELEASE_REVIEW.md": {
+      "bytes": 4546,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "ba91864514f3e0d4ebae921dccd21dbaeae0393c21bb1be22253f51d3e0f3f70"
+    },
+    "outputs/decision_research_20260926/NOVELTY_AUDIT.md": {
+      "bytes": 19496,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "f403efd70e888684ba0ed8b3dceb7dd840bd140ef74187e53cd1923152c800ff"
+    },
+    "outputs/decision_research_20260926/ORDINARY_CONTRAST_BASELINE_PLAN.md": {
+      "bytes": 3485,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "3bdb140ff571c179c4dd31eae71d703738405d4b815a5451be622d64315690b3"
+    },
+    "outputs/decision_research_20260926/ORDINARY_CONTRAST_INDEPENDENT_REVIEW.md": {
+      "bytes": 8204,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "6f0054cc0e8b50e7552d9a8670f7da12cdde9697ab9ac2c68c1b9714956cf24d"
+    },
+    "outputs/decision_research_20260926/ORDINARY_CONTRAST_REPORT.md": {
+      "bytes": 1384,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "052d012799c321b97e14bbacf722266403942657234009648812f90c17d4f565"
+    },
+    "outputs/decision_research_20260926/PUBLIC_CLEANROOM_FINAL_QA.md": {
+      "bytes": 4134,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "64a34807ab2aeb5199cf33a3a3eb60e73658bb1b2db53da1678d1b8e4c86cd76"
+    },
+    "outputs/decision_research_20260926/PUBLIC_CLEANROOM_QA.md": {
+      "bytes": 3858,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "3e1e7362aec4efcbd183096d2dd8fd6f5ba5fb1f53bfc48efe025b36d6a004bf"
+    },
+    "outputs/decision_research_20260926/PUBLIC_PR_SCIENTIFIC_GATE.md": {
+      "bytes": 11128,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "838a176bed560bfc1a459e564513b452f69547bb56534eb08065c4aa1a86300f"
+    },
+    "outputs/decision_research_20260926/README_PUBLIC_REVIEW.md": {
+      "bytes": 11016,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "4471934643b64e64367e6b8a2b655f287632910593efd07d9b20cbb4a7721b35"
+    },
+    "outputs/decision_research_20260926/RECENT_PRIOR_ART_ADDENDUM.md": {
+      "bytes": 2797,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "8393fc57c048c4eb08cddcbbe2ff806834d0e112033b21734b9f7892a19cddee"
+    },
+    "outputs/decision_research_20260926/REVIEW_CANDIDATE_STATUS.md": {
+      "bytes": 6004,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "48ca44c19ccef31f8391d541bf0c49b15ed0befcd68e451a9d19ed24b1ef1bc1"
+    },
+    "outputs/decision_research_20260926/TRACER_RECESSION_VERIFICATION_NOTE.md": {
+      "bytes": 2602,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "42554341b15a514b5f9a796c5b0401e0269f05f23d6aaafd6b929b4236d72585"
+    },
+    "outputs/decision_research_20260926/TRUTH_BENCHMARK_AUDIT.md": {
+      "bytes": 22895,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "5b5ad892f2ca2c44e498deab3e34118d67b85bad8e96ba08e72e5fdac6675ac0"
+    },
+    "outputs/decision_research_20260926/TRUTH_BOOTSTRAP_STATIC_REVIEW.md": {
+      "bytes": 3934,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "d8071d392b50288940467895ec2e899d7314255701616b9e75edc7a3d9885f71"
+    },
+    "outputs/decision_research_20260926/TRUTH_INDEPENDENT_REVIEW.md": {
+      "bytes": 20326,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "7e6eca6e0e548dcd29926389c4b82bc942ad5ec24fb4703be696893a086745f7"
+    },
+    "outputs/decision_research_20260926/TRUTH_ROOT_IMPLEMENTATION_REVIEW.md": {
+      "bytes": 3038,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "f247cf37fb78935682f702a79bcc138e07816fe0257dccaaa724f07b339a809c"
+    },
+    "outputs/decision_research_20260926/benchmark_gap_sources.json": {
+      "bytes": 7517,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "ba4be6e057cabf35f45dd8b8d311936f93a51481c2f7b23833c0fd806097d501"
+    },
+    "outputs/decision_research_20260926/cold_field_independent_verification.json": {
+      "bytes": 1554,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "5c8417f3fcaecac24a43b8b5ce346c5fb2e71878529d950efcf2bbaf797e2c9d"
+    },
+    "outputs/decision_research_20260926/cold_implementation_qa.json": {
+      "bytes": 4838,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "50d51185b64c32e249b5da4e6bc3dccf168724fc990214501c8a6b603d44242e"
+    },
+    "outputs/decision_research_20260926/cold_implementation_qa_v2.json": {
+      "bytes": 6555,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "e0108358c61e1d62a06e09767475b0953fee9ec4d633198e6ce3aa00fbbd5a8a"
+    },
+    "outputs/decision_research_20260926/cold_prepared_independent_verification.json": {
+      "bytes": 1364,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "89613daf01c812f0cdd04baaa72e0e0673be0e28973798c380854de4fadfd7af"
+    },
+    "outputs/decision_research_20260926/interval_certificate_verification.json": {
+      "bytes": 1803,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "755aedb25b16763ef80f90a36b8b01e24f862300183407189f15ad75920f07b1"
+    },
+    "outputs/decision_research_20260926/interval_configuration.json": {
+      "bytes": 3786,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "9ad8d7a42075fe3c4821336dfcbea9ae545daa05d70dd85ce5668eceb5aa6f5a"
+    },
+    "outputs/decision_research_20260926/interval_farkas_certificate_verification.json": {
+      "bytes": 1460,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "a258f8961ef1ab86575c705fb785f65550313318e201b41cf234b9d99608cb89"
+    },
+    "outputs/decision_research_20260926/interval_farkas_configuration.json": {
+      "bytes": 6481,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "eb76edf1493a94e7aae172039ea636f47557f0e98f102865036e702a9d6a005b"
+    },
+    "outputs/decision_research_20260926/interval_farkas_protocol_PROPOSED.md": {
+      "bytes": 5630,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "f67d9288b8ed6e546c01f7a24af1993b37bb4a95b78a7bd1b5b4222a69391783"
+    },
+    "outputs/decision_research_20260926/interval_farkas_report.md": {
+      "bytes": 1642,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "825814c8a0b5fec32429f39ac44d97d93dde7fd5ea6db0ea4ef2a4ad97db4445"
+    },
+    "outputs/decision_research_20260926/interval_farkas_results.json": {
+      "bytes": 1401,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "c337b9a24b294a8cd048bac4dccac737bd975c63b10ee9e3b178a5eab22e3de7"
+    },
+    "outputs/decision_research_20260926/interval_geometry.json": {
+      "bytes": 13643,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "62e5ca81e947901cff0ed1476b16c871cfa8faa5428f0c550b2f037d0dc5227c"
+    },
+    "outputs/decision_research_20260926/interval_geometry.md": {
+      "bytes": 4457,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "313334de3e1adfefefc6548210cd658367d5d94bf87cc0634f98d7e551bc91a0"
+    },
+    "outputs/decision_research_20260926/interval_implementation_corrections.md": {
+      "bytes": 1983,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "0a1257e97e6d3f0c5abe6b62c2b3cd85c89ea21e80d15cce685d06076ed7d3c5"
+    },
+    "outputs/decision_research_20260926/interval_ray_report.md": {
+      "bytes": 2611,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "14d5c5e70e840282a6ed7b7dd0f9d1bf31a7bcee3c4077b5cb9d1c07d93b515d"
+    },
+    "outputs/decision_research_20260926/interval_ray_results.json": {
+      "bytes": 11350,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "d8fcc8aa82e810c62bbc502d3ecdac2a131896fd209b49db63e70edd22031db5"
+    },
+    "outputs/decision_research_20260926/interval_report.md": {
+      "bytes": 4378,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "f40cd8d9140cc40a213db5f719c595bdc8db7a7beaaeb18ba7e24dc73730448b"
+    },
+    "outputs/decision_research_20260926/interval_results.json": {
+      "bytes": 18534,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "14751cf3683999c4fab06e652487c3f3f4fcf69867177e4723cb1d145da4fbda"
+    },
+    "outputs/decision_research_20260926/interval_stage1.json": {
+      "bytes": 7073,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "fca11ad54ccc6bc617bbc03e42d44ddf4f581e1eb51e62eeec98c96a3d7303ac"
+    },
+    "outputs/decision_research_20260926/interval_stage3_protocol_PROPOSED.md": {
+      "bytes": 7831,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "4c3166d1b4dcd3d20a78f4269f8022ee81faf1420a830976ac49a213270bb77e"
+    },
+    "outputs/decision_research_20260926/interval_union_certificate_verification.json": {
+      "bytes": 110077,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "144ffcfb83b2a5ae615a0ca73c2144a43b678e4c0fb1cb80a60b37eca3794b68"
+    },
+    "outputs/decision_research_20260926/interval_union_configuration.json": {
+      "bytes": 23237,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "bba9d04eb6ffb20d55f754cfc4ad4876cb4c92af176aef39044d06ae54100e44"
+    },
+    "outputs/decision_research_20260926/interval_union_configuration_v2.json": {
+      "bytes": 24397,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "33f10f141aad7d8dc5f72bf7cfd06e89c7a2f61c839f1fd8f3b50477f086331a"
+    },
+    "outputs/decision_research_20260926/interval_union_gate.json": {
+      "bytes": 441,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "ea45a333b2e695b01e042181ef8a078740adc86facd3d12589b83a0e51735bbf"
+    },
+    "outputs/decision_research_20260926/interval_union_operational_correction.md": {
+      "bytes": 2514,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "e33435db20ad6864dd8a604eac027a68b873529cdb94634f8141e0d61492e094"
+    },
+    "outputs/decision_research_20260926/interval_union_report.md": {
+      "bytes": 1835,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "bf4de0baa9a903e2fd6cc3c3ebf751480ca2f6da68c2dae035daadca564fdd1d"
+    },
+    "outputs/decision_research_20260926/interval_union_results.json": {
+      "bytes": 1509,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "15b52d584de7f45919d3a16a0fe41bc9d7d2f9699c9ad24a169c3aee00dff855"
+    },
+    "outputs/decision_research_20260926/joint_profile_configuration.json": {
+      "bytes": 3048,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "f6aebb0bca2ef417ef6e8bff892ac2286b0a61e0fe47c62a5ae3608ab3c97314"
+    },
+    "outputs/decision_research_20260926/joint_profile_report.md": {
+      "bytes": 3249,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "71fea89ad8fb5413c1c2bb80baf0e059de25924f4b2af56217346aa8db36c0f1"
+    },
+    "outputs/decision_research_20260926/joint_profile_results.json": {
+      "bytes": 14194,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "a709192e82cfb440df2c13d56a1857c1ac95175e4a329c28aa02571df6540ef8"
+    },
+    "outputs/decision_research_20260926/measurement_configuration.json": {
+      "bytes": 2002,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "5a4ac50d31de131cba8317a6596571220e086a526e8762e5c7fa047144defc8e"
+    },
+    "outputs/decision_research_20260926/measurement_design.json": {
+      "bytes": 3801,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "e798591397490409ee86370a1e00fb632d246d297abe6e149ed55ee92fb8deaa"
+    },
+    "outputs/decision_research_20260926/measurement_report.md": {
+      "bytes": 3712,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "c2d101707ceac734660bfbb858165ac6ae4bc1a5a86567d37de38e6442956d2f"
+    },
+    "outputs/decision_research_20260926/measurement_results.json": {
+      "bytes": 23502,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "b9283296818d0dadbfab5281e2e9cabfbea262ec4ac73ce294db70832d202636"
+    },
+    "outputs/decision_research_20260926/novelty_sources.json": {
+      "bytes": 12171,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "b73e4a467cda03b92c81cf5521bd2594eb505d7b5112178aca24417a5ac816f3"
+    },
+    "outputs/decision_research_20260926/ordinary_contrast_configuration.json": {
+      "bytes": 816,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "940ce1326a09ec28279b5b8fcc16b69f738eaf1fbd467586e4f38c13c215bddc"
+    },
+    "outputs/decision_research_20260926/ordinary_contrast_results.json": {
+      "bytes": 20363,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "739a76b87ee1ed2d7e5d1e1c7311698b2bc4e56ff6e2ac05f0105aa1fc6fec41"
+    },
+    "outputs/decision_research_20260926/public_cleanroom_final_qa.json": {
+      "bytes": 31142,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "b20d058bad108fc65b0745230e0932466ac4adc39b22822d067e81a6806d318b"
+    },
+    "outputs/decision_research_20260926/public_cleanroom_qa.json": {
+      "bytes": 22777,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "ddaca8754e469f86d3b2bc271776fdd65500e0c1f1390c4d67f487867040b7c1"
+    },
+    "outputs/decision_research_20260926/tracer_recession_independent_verification.json": {
+      "bytes": 2137,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "46588d6c9dda24b94df104f0796d8215c4feb7c16750c5588408475a21b7405f"
+    },
+    "outputs/decision_research_20260926/truth_benchmark_sources.json": {
+      "bytes": 10033,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "f4530e2093f143f76d72536f18077bee729ecbc6fcc19094d16f671c5ca67bb0"
+    },
+    "outputs/decision_research_20260926/truth_bootstrap_verification.json": {
+      "bytes": 2926,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "b02553d5b16e9d71a07fdc21e3f1498816882cd39032dfd12ec7ffbc08c543fd"
+    },
+    "outputs/decision_research_20260926/truth_configuration_frozen.json": {
+      "bytes": 3761,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "8b77f98045f0ffd608de37b357c65107bbdb333d119b13bc22b614fe25e048c9"
+    },
+    "outputs/decision_research_20260926/truth_dataset_attribution.json": {
+      "bytes": 4300,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "9465fcc5b120d4708628d356576e96d180982e0d7214d5969ea293b2408f8b11"
+    },
+    "outputs/decision_research_20260926/truth_findings.md": {
+      "bytes": 7555,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "5eb8afb8812bdbfcfc06eebd8234342a7df107da061cb56b0aadc9ba7ae24928"
+    },
+    "outputs/decision_research_20260926/truth_input_freeze.json": {
+      "bytes": 4336,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "2f1134357b78d61f40dac63e0749961a889c2d608085ecf5e8a3de65e031fed2"
+    },
+    "outputs/decision_research_20260926/truth_protocol_v3.md": {
+      "bytes": 8161,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "006e367d6c565af585bd7bf50ff3067a85f25b3bde8c174cfbaca6e33f512c70"
+    },
+    "outputs/decision_research_20260926/truth_reconstruction_guide.md": {
+      "bytes": 6956,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "195df6bfb147fa6224ac653279431d0955dafae8c19b5d3ec0c71eee31e844a8"
+    },
+    "outputs/decision_research_20260926/truth_reconstruction_verification.json": {
+      "bytes": 3473,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "2fc03e9f73dfdf8b6eca0de691bae4865dfcec53ddc8510519c44cf85a2785ac"
+    },
+    "outputs/decision_research_20260926/truth_report.md": {
+      "bytes": 5622,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "472eae3dec6765cef0dc1b34092bf9bbddf3bef8bc2ba7ae22c6c83d28729095"
+    },
+    "outputs/decision_research_20260926/truth_results.json": {
+      "bytes": 235877,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "e4bf45de87335c853edc15170e3a8706a1540797069766fed552fe5ead49362b"
+    },
+    "outputs/decision_research_20260926/truth_saved_ledger_verification.json": {
+      "bytes": 701,
+      "licence_scope": "CC-BY-4.0",
+      "sha256": "a05fe4d3c6d53d1fddc6d784f0e0897089d2a5c8e1043d2751c26a38d78014b6"
+    },
+    "outputs/decision_research_20260926/truth_saved_ledger_verification.py": {
+      "bytes": 7278,
+      "licence_scope": "MIT",
+      "sha256": "831a89a9aca56c31996a25789c093607186da4c27c613cfce686884d568bbedd"
+    },
+    "scripts/.gitattributes": {
+      "bytes": 845,
+      "licence_scope": "PRE_EXISTING_TERMS_UNCHANGED",
+      "sha256": "35812d18dac4bc245e229081fe07ff3e9c361e6a166293351b2d2ce0a754bdb7"
+    },
+    "scripts/audit_decision_measurements.py": {
+      "bytes": 27970,
+      "licence_scope": "MIT",
+      "sha256": "da0a02667aa379ff8e484d0fb8da4efae4495617f362e689a35f0e2de2d56a54"
+    },
+    "scripts/audit_interval_decisions.py": {
+      "bytes": 34915,
+      "licence_scope": "MIT",
+      "sha256": "ecb4e8f01f4028eb0a43d85870b3f458b75fce91d8bad9bdddaa815c3597da93"
+    },
+    "scripts/audit_interval_farkas_margin.py": {
+      "bytes": 18475,
+      "licence_scope": "MIT",
+      "sha256": "b5a95a583c533e9dd28cccd6a2737de1bf4b06425b986cad2b20510fe84f54a0"
+    },
+    "scripts/audit_interval_geometry.py": {
+      "bytes": 16389,
+      "licence_scope": "MIT",
+      "sha256": "776c5f083e30f623e6e2691a9de115991f6d065925b467a3d2ef16bf45f262ea"
+    },
+    "scripts/audit_interval_profile_union.py": {
+      "bytes": 25433,
+      "licence_scope": "MIT",
+      "sha256": "d02e65ad5799f82b8960276d3c9eeee1e43c31cbcc78faddc22924d7431ff21b"
+    },
+    "scripts/audit_interval_ray_witnesses.py": {
+      "bytes": 15377,
+      "licence_scope": "MIT",
+      "sha256": "207f7a2f5529d67bbf176b9d43bf3b00c1090465d6e0be9e7f9b55c79f3f80c4"
+    },
+    "scripts/audit_joint_profile_decisions.py": {
+      "bytes": 20517,
+      "licence_scope": "MIT",
+      "sha256": "ce22dbc47e25f7b2e71929c308e3bcc2fc70b213b2952c4f1bbdd8fbb55abcab"
+    },
+    "scripts/audit_ordinary_contrasts.py": {
+      "bytes": 12505,
+      "licence_scope": "MIT",
+      "sha256": "02582945e9eda03d9706501febfa013f38ae89a189eeb2165a496036b3bb1def"
+    },
+    "scripts/audit_truth_decisions.py": {
+      "bytes": 45527,
+      "licence_scope": "MIT",
+      "sha256": "023d4c74f3dd91711e55144c9831059ed622afae3975b5bf64b1b792ea06b1ad"
+    },
+    "scripts/reconstruct_truth_inputs.py": {
+      "bytes": 6217,
+      "licence_scope": "MIT",
+      "sha256": "3e83b7cbc475a0f651148eb75f9836245054e1a791e5a2002dfae622416bbe41"
+    },
+    "scripts/reproduce_interval_union.py": {
+      "bytes": 33597,
+      "licence_scope": "MIT",
+      "sha256": "070980559bac2c3d7ea02882d47ebbd0a5b502fd39c10e815678faa983b966ac"
+    },
+    "scripts/test_decision_certificate_counterexamples.py": {
+      "bytes": 12581,
+      "licence_scope": "MIT",
+      "sha256": "888ddb1123bc57caf929497af074bf37e4035cf30a4c3cea8ce1973d0cabd420"
+    },
+    "scripts/verify_cold_interval_union.py": {
+      "bytes": 44070,
+      "licence_scope": "MIT",
+      "sha256": "0709e1e8ab72b846c124d57c145e438d63f6ad90c80dbf4391ab9548d8057e49"
+    },
+    "scripts/verify_interval_certificate_records.py": {
+      "bytes": 25095,
+      "licence_scope": "MIT",
+      "sha256": "53d1682413236b394fc24adae1d2dea75c2a621799947111e9a835a5afea1fed"
+    },
+    "scripts/verify_interval_farkas_records.py": {
+      "bytes": 13967,
+      "licence_scope": "MIT",
+      "sha256": "e71f43fd865e2b657109f32bd76f9f47786ab4d1a732315fdb0391c63ad17521"
+    },
+    "scripts/verify_interval_union_records.py": {
+      "bytes": 22407,
+      "licence_scope": "MIT",
+      "sha256": "2c68cb669ceaff1d95b419e517be4f96f32c37425f2529cab2f2a4ee437dbd5b"
+    },
+    "scripts/verify_tracer_recession_metadata.py": {
+      "bytes": 6930,
+      "licence_scope": "MIT",
+      "sha256": "ca4d834c78d33188f55fb7987ebef46a9d6ac303e93dbd42e050ad6c13d0469b"
+    },
+    "scripts/verify_truth_bootstrap.py": {
+      "bytes": 11277,
+      "licence_scope": "MIT",
+      "sha256": "e2bbe4b5eca29eedbc3f25ed9d21c3b1892c6bb16ba4933428108ad28b92cb12"
+    },
+    "tests/.gitattributes": {
+      "bytes": 597,
+      "licence_scope": "PRE_EXISTING_TERMS_UNCHANGED",
+      "sha256": "73ab140ecb2843779e35d11a46944b877d2050847375952d2c9b00799c0dd781"
+    },
+    "tests/test_cold_interval_union.py": {
+      "bytes": 36220,
+      "licence_scope": "MIT",
+      "sha256": "2d243738470dc01fe18af9bcd91587a7f9c2f317ed3069eff23f4d0352e17319"
+    },
+    "tests/test_cold_interval_union_records.py": {
+      "bytes": 42753,
+      "licence_scope": "MIT",
+      "sha256": "ee5413e360b2410a3f501cc0765511874a6571e920f3ee7d2fb5d5dadb11ad55"
+    },
+    "tests/test_decision_measurements.py": {
+      "bytes": 12795,
+      "licence_scope": "MIT",
+      "sha256": "11da0c2fcc65b3ec3c13fed4ea7b4c01d20d926e919bbd7b2f036499e76dd5b2"
+    },
+    "tests/test_interval_certificate_records.py": {
+      "bytes": 8244,
+      "licence_scope": "MIT",
+      "sha256": "aa448bd4647c68cb0d697843fa23fc11fb3b93213f56717c7aa018610821687c"
+    },
+    "tests/test_interval_decisions.py": {
+      "bytes": 16161,
+      "licence_scope": "MIT",
+      "sha256": "777862955c40b41a147886e701914840ff8eae6a061cd96a510f9e4de5e25033"
+    },
+    "tests/test_interval_farkas_margin.py": {
+      "bytes": 10159,
+      "licence_scope": "MIT",
+      "sha256": "88f1dd649e9bc8bda30da3535e056d9972d20b50380e93ec226dd8ba5c421b78"
+    },
+    "tests/test_interval_farkas_records.py": {
+      "bytes": 6656,
+      "licence_scope": "MIT",
+      "sha256": "be7601699af19041fde31dcc2660279f6aba45f24f3c00060f7597ef6aef5038"
+    },
+    "tests/test_interval_geometry.py": {
+      "bytes": 5086,
+      "licence_scope": "MIT",
+      "sha256": "d5e50cd63dddd49a8c5fcec3f320349d89ddc40653aff77ab132a15223afb1be"
+    },
+    "tests/test_interval_profile_union.py": {
+      "bytes": 9980,
+      "licence_scope": "MIT",
+      "sha256": "1370b1c1f6576548de09b16cd14df151f395c50349453cf0c7d467cc661e50c9"
+    },
+    "tests/test_interval_ray_witnesses.py": {
+      "bytes": 5302,
+      "licence_scope": "MIT",
+      "sha256": "0d89255535e40d9bd6182339c55f54a80e027b9dd4bd8ade145028fc69331467"
+    },
+    "tests/test_interval_union_records.py": {
+      "bytes": 7539,
+      "licence_scope": "MIT",
+      "sha256": "8b20b3fd06eaee2eaa5f7fb6e7ca740c936a46a788880ec9b552a618bc7d8859"
+    },
+    "tests/test_joint_profile_decisions.py": {
+      "bytes": 9927,
+      "licence_scope": "MIT",
+      "sha256": "777277b5bd4d3a33da1d5e9e2fa4bf6b02e6481f66e8ca8f8ae34a1eac2d0831"
+    },
+    "tests/test_ordinary_contrasts.py": {
+      "bytes": 3330,
+      "licence_scope": "MIT",
+      "sha256": "bc4d6d5679b1f4aeefdd009fed776d955a77059d75bd92ef8fe0d055ca837c94"
+    },
+    "tests/test_reconstruct_truth_inputs.py": {
+      "bytes": 10006,
+      "licence_scope": "MIT",
+      "sha256": "8f60d436cb955ec172120343b56a806129d0e2657d472bf36bbd62771df0edba"
+    },
+    "tests/test_tracer_recession_metadata.py": {
+      "bytes": 2554,
+      "licence_scope": "MIT",
+      "sha256": "e172456403f4cff6eb5d1deba854a639d3f0d303928539756d875c6d279e5784"
+    },
+    "tests/test_truth_bootstrap_records.py": {
+      "bytes": 3823,
+      "licence_scope": "MIT",
+      "sha256": "61a42672cf92e2efae4949f18d72f75115f6a6fe71e940dcd03786b6b4ed6558"
+    },
+    "tests/test_truth_decisions.py": {
+      "bytes": 20151,
+      "licence_scope": "MIT",
+      "sha256": "5bcc685d35cec71daf11be792f50761277c896d508a35b0a5acdcf514187e8bc"
+    }
+  },
+  "licence_notice": "outputs/decision_research_20260926/LICENSE_SCOPE.md",
+  "limitations": [
+    "No new baseline, merge, submission or human author approval.",
+    "Cold k=2 regeneration is tested; this is not every historical saved-proof or original-paper calculation.",
+    "Exact conditional decisions are not environmental truth, calibrated coverage or superiority.",
+    "Third-party input/software rights remain separate; see scoped licence notice."
+  ],
+  "manifest_licence": "CC-BY-4.0",
+  "manifest_self_exclusion": "This manifest is part of the release but excludes its own recursive digest; its bytes are identified by the containing Git commit and owner release-selection record.",
+  "payload_files": 134,
+  "pre_QA_allowlist_sha256": "83464e341aab0882b31041a99e18d6e585b3ad91682efaa9f88f52b5cfe96974",
+  "prerequisite_branch": "codex/evidence-strengthening-20260926",
+  "prerequisite_commit": "2437750f8223304231ab9afcc9ec4a54956c8d97",
+  "release_label": "decision-research-20260927-review-candidate",
+  "schema": "pffls_public_candidate_release_v1",
+  "status": "FROZEN_REVIEW_CANDIDATE_NOT_BASELINE_OR_SUBMISSION_APPROVAL"
+}

@@ -1,0 +1,95 @@
+{
+  "schema": "cold_implementation_qa_v2",
+  "recorded_utc": "2026-09-26T23:39:29+00:00",
+  "status": "PORTABILITY_IMPLEMENTATION_AND_SYNTHETIC_GATES_PASS",
+  "field_execution_authorization": "NOT_GRANTED_BY_THIS_QA",
+  "field_lp_calls_in_this_gate": 0,
+  "historical_private_ledgers_used": false,
+  "scope": "One exact recovery-metadata LF/CRLF portability exception; no scientific parameter or proof requirement changed. Fresh isolated preparation and new-reader native replay remain pending. Not a completed field reproduction or new-method claim.",
+  "preserved_first_candidate": {
+    "qa_path": "outputs/decision_research_20260926/cold_implementation_qa.json",
+    "qa_sha256": "50d51185b64c32e249b5da4e6bc3dccf168724fc990214501c8a6b603d44242e",
+    "static_review_path": "outputs/decision_research_20260926/COLD_PRODUCER_STATIC_REVIEW.md",
+    "static_review_sha256": "b6f4c82896e372380342955da107400727d328c3c27a6bd90dda4d1efa2bcc95",
+    "unchanged_original_qa_and_review_rechecked": true
+  },
+  "producer_tests": {
+    "execution": "EXECUTED_BY_PRODUCER_IMPLEMENTATION_AGENT",
+    "command": "python -m unittest discover -s tests -p test_cold_interval_union.py -v",
+    "status": "PASS",
+    "tests": 61,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "reported_unittest_runtime_seconds": 32.566,
+    "includes_synthetic_lp_calls": true,
+    "includes_actual_writer_to_independent_event_inventory_and_proof_replay": true,
+    "includes_both_exact_byte_forms_third_form_rejection_actual_provenance_and_variant_switch_tests": true
+  },
+  "independent_verifier_tests": {
+    "execution": "REPORTED_BY_INDEPENDENT_MATH_AUDITOR_NOT_RERUN_BY_PRODUCER_AGENT",
+    "command": "python -m unittest discover -s tests -p test_cold_interval_union_records.py -v",
+    "status": "PASS",
+    "tests": 61,
+    "reported_unittest_runtime_seconds": 20.064,
+    "field_lp_calls": 0
+  },
+  "native_metadata": {
+    "current_producer_status": "NATIVE_CRLF_METADATA_ONLY_RECHECK_PASS_NO_LP",
+    "new_independent_reader_native_replay": "PENDING_FRESH_ISOLATED_LF_PREPARED_MANIFEST_GATE",
+    "prior_independent_reader_match": "ALL_THREE_CANONICAL_DIGESTS_MATCHED_UNDER_PRESERVED_FIRST_CANDIDATE_NOT_A_NEW_READER_REPLAY",
+    "archives": 4,
+    "members": 39,
+    "samples": 35,
+    "species": 20,
+    "source_families": 7,
+    "tuples": 120,
+    "models": 4200,
+    "sample_order_sha256": "40ef641250f21051414ca5705aa8b4b47c83bd3694c5abb93d14d8f942c3110d",
+    "tuple_order_sha256": "fa7f43be39dc8532032e415f95c7bd7f4b6a58b4c0b97b7a5edb9ea49862db8d",
+    "ordered_model_sha256": "21d52f2300bc1b907f2470ecd2baf9a7b2d68854bb0904bcbe3e58378b6a4ee2"
+  },
+  "independent_static_review": {
+    "status": "PASS_NO_REMAINING_BLOCKER_IDENTIFIED",
+    "reviewer": "INDEPENDENT_JOINT_PROFILE_AGENT",
+    "path": "outputs/decision_research_20260926/COLD_PORTABILITY_STATIC_REVIEW.md",
+    "sha256": "71968c8989eeb99b3d16890c0aa66202e9b6d8a3dc902652d3c96dfed13a3de2",
+    "did_not_duplicate_test_execution": true
+  },
+  "approved_dependency_byte_variants": {
+    "outputs/strengthening_20260926/source_recovery.json": [
+      "4f60826ae3e564af7b16bc07ca64a3cd7df2d89aa99e554ef239a1dcb844d6f2",
+      "32762085a73ee0b5ad703bc68ab8194303ca0769c49494202343b622e356c0e2"
+    ]
+  },
+  "dependency_pin_semantics": "The dependencies map records actual current bytes. Only the listed recovery file permits the two diagnosed forms when constructing a new snapshot; every actual run manifest must pin its own exact consumed form consistently in dependencies and recovery provenance. All other paths remain exact-byte pinned. No generic normalization or third encoding is accepted.",
+  "required_next_gates": [
+    "A new isolated public-code snapshot retaining the original approved Git LF recovery bytes, not reusing the failed snapshot",
+    "Fresh no-LP preflight and immutable pre-solve manifest with actual deployed dependency hashes",
+    "New independent reader native metadata/model replay and review of that exact prepared manifest",
+    "Separate explicit hash-specific root execution approval",
+    "Independent no-LP proof replay of any subsequently generated field records"
+  ],
+  "dependency_count": 19,
+  "dependencies": {
+    "outputs/decision_research_20260926/COLD_PORTABILITY_ROOT_DECISION.md": "7fede98bd7f789ba8f228667912be15c80e592195b508859c4ca01fecfd8078e",
+    "outputs/decision_research_20260926/COLD_RUN_RECORD_SCHEMA.md": "eac3516951fd6a795ee1e48271a8023f8470d40cc7556d2a0449789237bb9752",
+    "outputs/decision_research_20260926/COLD_RUN_REPRODUCTION_PROPOSAL.md": "d83392e843e409aade87a3dfd050c0da81448fcf9720be3dc828cd17820f9dca",
+    "outputs/decision_research_20260926/COLD_RUN_ROOT_DECISION.md": "5e2c78c80cad04d8f28e39c4e35aea2aed8c608ab0bb31cde1dcdb2467a4d23a",
+    "outputs/decision_research_20260926/interval_configuration.json": "9ad8d7a42075fe3c4821336dfcbea9ae545daa05d70dd85ce5668eceb5aa6f5a",
+    "outputs/decision_research_20260926/joint_profile_configuration.json": "f6aebb0bca2ef417ef6e8bff892ac2286b0a61e0fe47c62a5ae3608ab3c97314",
+    "outputs/strengthening_20260926/source_recovery.json": "4f60826ae3e564af7b16bc07ca64a3cd7df2d89aa99e554ef239a1dcb844d6f2",
+    "scripts/audit_epa_native_strengthening.py": "42c327b7ef629077bf1f11d1562ccee500a9192b236a1add771ff522070d1c09",
+    "scripts/audit_interval_decisions.py": "ecb4e8f01f4028eb0a43d85870b3f458b75fce91d8bad9bdddaa815c3597da93",
+    "scripts/audit_interval_farkas_margin.py": "b5a95a583c533e9dd28cccd6a2737de1bf4b06425b986cad2b20510fe84f54a0",
+    "scripts/audit_interval_profile_union.py": "d02e65ad5799f82b8960276d3c9eeee1e43c31cbcc78faddc22924d7431ff21b",
+    "scripts/reproduce_interval_union.py": "070980559bac2c3d7ea02882d47ebbd0a5b502fd39c10e815678faa983b966ac",
+    "scripts/verify_cold_interval_union.py": "0709e1e8ab72b846c124d57c145e438d63f6ad90c80dbf4391ab9548d8057e49",
+    "scripts/verify_interval_certificate_records.py": "53d1682413236b394fc24adae1d2dea75c2a621799947111e9a835a5afea1fed",
+    "scripts/verify_interval_farkas_records.py": "e71f43fd865e2b657109f32bd76f9f47786ab4d1a732315fdb0391c63ad17521",
+    "scripts/verify_interval_union_records.py": "2c68cb669ceaff1d95b419e517be4f96f32c37425f2529cab2f2a4ee437dbd5b",
+    "tests/test_cold_interval_union.py": "2d243738470dc01fe18af9bcd91587a7f9c2f317ed3069eff23f4d0352e17319",
+    "tests/test_cold_interval_union_records.py": "ee5413e360b2410a3f501cc0765511874a6571e920f3ee7d2fb5d5dadb11ad55",
+    "tests/test_interval_decisions.py": "777862955c40b41a147886e701914840ff8eae6a061cd96a510f9e4de5e25033"
+  }
+}

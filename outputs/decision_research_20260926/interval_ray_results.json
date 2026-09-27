@@ -1,0 +1,369 @@
+{
+  "status": "PASS",
+  "analysis_type": "post-hoc constructive proof completion; no new LP, fit, input or uncertainty assumption",
+  "script_sha256": "207f7a2f5529d67bbf176b9d43bf3b00c1090465d6e0be9e7f9b55c79f3f80c4",
+  "private_index_sha256": "381d20db9a35e1e8a725b535b588a60291def382a6f3196a10ef4a4302b66d40",
+  "frozen_producer_results_sha256": "14751cf3683999c4fab06e652487c3f3f4fcf69867177e4723cb1d145da4fbda",
+  "frozen_geometry_results_sha256": "62e5ca81e947901cff0ed1476b16c871cfa8faa5428f0c550b2f037d0dc5227c",
+  "private_witness_ledger_sha256": "d57b3dade0ff1471fb05af4be087084983057e8618d11b7ed0ee210e14c8400f",
+  "unique_cases_read": 492,
+  "unique_cases_with_attempted_completion": 41,
+  "unique_pair_attempts": 229,
+  "unique_derived_status_counts": {
+    "NO_OPPOSITE_SIGN_IN_STORED_PROOFS": 65,
+    "EXACT_BOTH_ORDERINGS_COMPLETED": 164
+  },
+  "panels": [
+    {
+      "universe": "central_retained_bridge",
+      "k": 1,
+      "profile_mode": "fixed_profile",
+      "mass_mode": "historical_80_120_band",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 0,
+      "pair_attempts": 0,
+      "derived_status_counts": {},
+      "finite_ray_points_constructed": 0
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 1,
+      "profile_mode": "fixed_profile",
+      "mass_mode": "none",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 0,
+      "pair_attempts": 0,
+      "derived_status_counts": {},
+      "finite_ray_points_constructed": 0
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 1,
+      "profile_mode": "joint_intervals",
+      "mass_mode": "historical_80_120_band",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 0,
+      "pair_attempts": 0,
+      "derived_status_counts": {},
+      "finite_ray_points_constructed": 0
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 1,
+      "profile_mode": "joint_intervals",
+      "mass_mode": "none",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 0,
+      "pair_attempts": 0,
+      "derived_status_counts": {},
+      "finite_ray_points_constructed": 0
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 2,
+      "profile_mode": "fixed_profile",
+      "mass_mode": "historical_80_120_band",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 0,
+      "pair_attempts": 0,
+      "derived_status_counts": {},
+      "finite_ray_points_constructed": 0
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 2,
+      "profile_mode": "fixed_profile",
+      "mass_mode": "none",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 0,
+      "pair_attempts": 0,
+      "derived_status_counts": {},
+      "finite_ray_points_constructed": 0
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 2,
+      "profile_mode": "joint_intervals",
+      "mass_mode": "historical_80_120_band",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 0,
+      "pair_attempts": 0,
+      "derived_status_counts": {},
+      "finite_ray_points_constructed": 0
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 2,
+      "profile_mode": "joint_intervals",
+      "mass_mode": "none",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 0,
+      "pair_attempts": 0,
+      "derived_status_counts": {},
+      "finite_ray_points_constructed": 0
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 3,
+      "profile_mode": "fixed_profile",
+      "mass_mode": "historical_80_120_band",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 0,
+      "pair_attempts": 0,
+      "derived_status_counts": {},
+      "finite_ray_points_constructed": 0
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 3,
+      "profile_mode": "fixed_profile",
+      "mass_mode": "none",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 0,
+      "pair_attempts": 0,
+      "derived_status_counts": {},
+      "finite_ray_points_constructed": 0
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 3,
+      "profile_mode": "joint_intervals",
+      "mass_mode": "historical_80_120_band",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 0,
+      "pair_attempts": 0,
+      "derived_status_counts": {},
+      "finite_ray_points_constructed": 0
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 3,
+      "profile_mode": "joint_intervals",
+      "mass_mode": "none",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 35,
+      "pair_attempts": 197,
+      "derived_status_counts": {
+        "NO_OPPOSITE_SIGN_IN_STORED_PROOFS": 56,
+        "EXACT_BOTH_ORDERINGS_COMPLETED": 141
+      },
+      "finite_ray_points_constructed": 197
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 1,
+      "profile_mode": "fixed_profile",
+      "mass_mode": "historical_80_120_band",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 0,
+      "pair_attempts": 0,
+      "derived_status_counts": {},
+      "finite_ray_points_constructed": 0
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 1,
+      "profile_mode": "fixed_profile",
+      "mass_mode": "none",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 0,
+      "pair_attempts": 0,
+      "derived_status_counts": {},
+      "finite_ray_points_constructed": 0
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 1,
+      "profile_mode": "joint_intervals",
+      "mass_mode": "historical_80_120_band",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 0,
+      "pair_attempts": 0,
+      "derived_status_counts": {},
+      "finite_ray_points_constructed": 0
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 1,
+      "profile_mode": "joint_intervals",
+      "mass_mode": "none",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 0,
+      "pair_attempts": 0,
+      "derived_status_counts": {},
+      "finite_ray_points_constructed": 0
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 2,
+      "profile_mode": "fixed_profile",
+      "mass_mode": "historical_80_120_band",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 0,
+      "pair_attempts": 0,
+      "derived_status_counts": {},
+      "finite_ray_points_constructed": 0
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 2,
+      "profile_mode": "fixed_profile",
+      "mass_mode": "none",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 0,
+      "pair_attempts": 0,
+      "derived_status_counts": {},
+      "finite_ray_points_constructed": 0
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 2,
+      "profile_mode": "joint_intervals",
+      "mass_mode": "historical_80_120_band",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 0,
+      "pair_attempts": 0,
+      "derived_status_counts": {},
+      "finite_ray_points_constructed": 0
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 2,
+      "profile_mode": "joint_intervals",
+      "mass_mode": "none",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 0,
+      "pair_attempts": 0,
+      "derived_status_counts": {},
+      "finite_ray_points_constructed": 0
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 3,
+      "profile_mode": "fixed_profile",
+      "mass_mode": "historical_80_120_band",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 0,
+      "pair_attempts": 0,
+      "derived_status_counts": {},
+      "finite_ray_points_constructed": 0
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 3,
+      "profile_mode": "fixed_profile",
+      "mass_mode": "none",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 0,
+      "pair_attempts": 0,
+      "derived_status_counts": {},
+      "finite_ray_points_constructed": 0
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 3,
+      "profile_mode": "joint_intervals",
+      "mass_mode": "historical_80_120_band",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 0,
+      "pair_attempts": 0,
+      "derived_status_counts": {},
+      "finite_ray_points_constructed": 0
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 3,
+      "profile_mode": "joint_intervals",
+      "mass_mode": "none",
+      "initial_samples": 35,
+      "samples_with_attempted_ray_completion": 35,
+      "pair_attempts": 202,
+      "derived_status_counts": {
+        "NO_OPPOSITE_SIGN_IN_STORED_PROOFS": 59,
+        "EXACT_BOTH_ORDERINGS_COMPLETED": 143
+      },
+      "finite_ray_points_constructed": 202
+    }
+  ],
+  "mass_only_order_gap_completion": [
+    {
+      "universe": "central_retained_bridge",
+      "k": 1,
+      "profile_mode": "fixed_profile",
+      "initial_samples": 35
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 1,
+      "profile_mode": "joint_intervals",
+      "initial_samples": 35
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 2,
+      "profile_mode": "fixed_profile",
+      "initial_samples": 35
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 2,
+      "profile_mode": "joint_intervals",
+      "initial_samples": 35
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 3,
+      "profile_mode": "fixed_profile",
+      "initial_samples": 35
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 3,
+      "profile_mode": "joint_intervals",
+      "initial_samples": 35,
+      "mass_only_orders_originally_gap_labeled": 57,
+      "gap_labels_not_resolved_by_this_audit": 56,
+      "gap_labels_with_exact_no_mass_ambiguity_completed_from_stored_rays": 1
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 1,
+      "profile_mode": "fixed_profile",
+      "initial_samples": 35
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 1,
+      "profile_mode": "joint_intervals",
+      "initial_samples": 35
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 2,
+      "profile_mode": "fixed_profile",
+      "initial_samples": 35
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 2,
+      "profile_mode": "joint_intervals",
+      "initial_samples": 35
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 3,
+      "profile_mode": "fixed_profile",
+      "initial_samples": 35
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 3,
+      "profile_mode": "joint_intervals",
+      "initial_samples": 35,
+      "mass_only_orders_originally_gap_labeled": 60,
+      "gap_labels_not_resolved_by_this_audit": 59,
+      "gap_labels_with_exact_no_mass_ambiguity_completed_from_stored_rays": 1
+    }
+  ],
+  "limits": "Original gap labels and reports are unchanged. Completion is conditional on the original independent boxes. Paired mass-band points are reused only after every original no-mass inequality is verified, not by imposing the mass band on that model. Constructing a witness from an exact recession ray is not additional data or a new uncertainty choice."
+}

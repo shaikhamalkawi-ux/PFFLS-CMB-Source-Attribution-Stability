@@ -1,0 +1,584 @@
+{
+  "stage": 2,
+  "status": "COMPLETE",
+  "started_utc": "2026-09-26T20:22:54.436691+00:00",
+  "completed_utc": "2026-09-26T20:32:26.424970+00:00",
+  "configuration_sha256": "9ad8d7a42075fe3c4821336dfcbea9ae545daa05d70dd85ce5668eceb5aa6f5a",
+  "script_sha256": "ecb4e8f01f4028eb0a43d85870b3f458b75fce91d8bad9bdddaa815c3597da93",
+  "stage1": {
+    "status": "PASS",
+    "script_sha256": "ecb4e8f01f4028eb0a43d85870b3f458b75fce91d8bad9bdddaa815c3597da93",
+    "tests_sha256": "777862955c40b41a147886e701914840ff8eae6a061cd96a510f9e4de5e25033",
+    "completed_utc": "2026-09-26T20:21:58.226475+00:00"
+  },
+  "metadata": {
+    "status": "PASS",
+    "identity_verification": {
+      "status": "PASS",
+      "archives_checked": 4,
+      "members_checked": 39,
+      "recovery_record_sha256": "4f60826ae3e564af7b16bc07ca64a3cd7df2d89aa99e554ef239a1dcb844d6f2",
+      "performed_before_fitting": true
+    },
+    "input_summary": {
+      "receptor_rows_in_archive": 206,
+      "fine_profiles_in_archive": 55,
+      "fresno_fine_samples": 35,
+      "species": [
+        "N3IC",
+        "S4IC",
+        "N4TC",
+        "KPAC",
+        "NAAC",
+        "ECTC",
+        "OCTC",
+        "ALXC",
+        "SIXC",
+        "CLXC",
+        "KPXC",
+        "CAXC",
+        "TIXC",
+        "VAXC",
+        "CRXC",
+        "MNXC",
+        "FEXC",
+        "NIXC",
+        "BRXC",
+        "PBXC"
+      ],
+      "initial_source_ids": [
+        "SOIL03",
+        "BAMAJC",
+        "SFCRUC",
+        "MOVES2",
+        "AMSUL",
+        "AMNIT",
+        "NANO3"
+      ],
+      "alternatives": {
+        "SOIL03": [
+          "SOIL08",
+          "SOIL12",
+          "SOIL29"
+        ],
+        "BAMAJC": [
+          "MAFISC",
+          "MAMAJC"
+        ],
+        "SFCRUC": [
+          "CHCRUC"
+        ],
+        "MOVES2": [
+          "MOVES1",
+          "MOVES3",
+          "MOVES4",
+          "MOVES5"
+        ]
+      },
+      "species_arrays_2_and_4_identical": true
+    },
+    "validation_counts": {
+      "ambient_species_pairs": 700,
+      "profile_species_pairs": 140,
+      "zero_profile_uncertainty": 70,
+      "zero_profile_abundance": 74,
+      "profile_upper_above_one_k1": 0,
+      "profile_upper_above_one_k2": 0,
+      "profile_upper_above_one_k3": 3
+    },
+    "physical_profile_columns_complete_disjoint": "NOT ESTABLISHED; no column-sum constraints",
+    "uncertainty_semantics": "released uncertainty fields; k multiples are sensitivity bounds, not coverage probabilities",
+    "manual_source": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1009R4F.TXT",
+    "physical_mass_upper_panel": "NOT RUN",
+    "stage3_full_profile_grid": "NOT RUN"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.18.1"
+  },
+  "unique_models": 492,
+  "private_index_sha256": "381d20db9a35e1e8a725b535b588a60291def382a6f3196a10ef4a4302b66d40",
+  "aggregate": {
+    "panels": [
+      {
+        "universe": "central_retained_bridge",
+        "k": 1,
+        "profile_mode": "fixed_profile",
+        "mass_mode": "historical_80_120_band",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_INFEASIBLE": 35
+        },
+        "unique_leader_samples": 0,
+        "at_least_two_exact_possible_co_leaders_samples": 0,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {},
+        "source_bound_status_counts": {}
+      },
+      {
+        "universe": "central_retained_bridge",
+        "k": 1,
+        "profile_mode": "fixed_profile",
+        "mass_mode": "none",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_INFEASIBLE": 35
+        },
+        "unique_leader_samples": 0,
+        "at_least_two_exact_possible_co_leaders_samples": 0,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {},
+        "source_bound_status_counts": {}
+      },
+      {
+        "universe": "central_retained_bridge",
+        "k": 1,
+        "profile_mode": "joint_intervals",
+        "mass_mode": "historical_80_120_band",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_INFEASIBLE": 31,
+          "EXACT_COMPATIBLE": 4
+        },
+        "unique_leader_samples": 2,
+        "at_least_two_exact_possible_co_leaders_samples": 2,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {
+          "VERIFIED_B_GREATER_A": 33,
+          "EXACT_BOTH_ORDERINGS_WITNESSED": 17,
+          "VERIFIED_A_GREATER_B": 28
+        },
+        "source_bound_status_counts": {
+          "VERIFIED_BOUND_AND_WITNESS": 54
+        }
+      },
+      {
+        "universe": "central_retained_bridge",
+        "k": 1,
+        "profile_mode": "joint_intervals",
+        "mass_mode": "none",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_INFEASIBLE": 30,
+          "EXACT_COMPATIBLE": 5
+        },
+        "unique_leader_samples": 0,
+        "at_least_two_exact_possible_co_leaders_samples": 5,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {
+          "VERIFIED_B_GREATER_A": 39,
+          "EXACT_BOTH_ORDERINGS_WITNESSED": 25,
+          "VERIFIED_A_GREATER_B": 35
+        },
+        "source_bound_status_counts": {
+          "VERIFIED_BOUND_AND_WITNESS": 68
+        }
+      },
+      {
+        "universe": "central_retained_bridge",
+        "k": 2,
+        "profile_mode": "fixed_profile",
+        "mass_mode": "historical_80_120_band",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_INFEASIBLE": 35
+        },
+        "unique_leader_samples": 0,
+        "at_least_two_exact_possible_co_leaders_samples": 0,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {},
+        "source_bound_status_counts": {}
+      },
+      {
+        "universe": "central_retained_bridge",
+        "k": 2,
+        "profile_mode": "fixed_profile",
+        "mass_mode": "none",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_INFEASIBLE": 35
+        },
+        "unique_leader_samples": 0,
+        "at_least_two_exact_possible_co_leaders_samples": 0,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {},
+        "source_bound_status_counts": {}
+      },
+      {
+        "universe": "central_retained_bridge",
+        "k": 2,
+        "profile_mode": "joint_intervals",
+        "mass_mode": "historical_80_120_band",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_INFEASIBLE": 2,
+          "EXACT_COMPATIBLE": 33
+        },
+        "unique_leader_samples": 2,
+        "at_least_two_exact_possible_co_leaders_samples": 31,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {
+          "EXACT_BOTH_ORDERINGS_WITNESSED": 358,
+          "VERIFIED_A_GREATER_B": 170,
+          "VERIFIED_B_GREATER_A": 129
+        },
+        "source_bound_status_counts": {
+          "VERIFIED_BOUND_AND_WITNESS": 450
+        }
+      },
+      {
+        "universe": "central_retained_bridge",
+        "k": 2,
+        "profile_mode": "joint_intervals",
+        "mass_mode": "none",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_INFEASIBLE": 2,
+          "EXACT_COMPATIBLE": 33
+        },
+        "unique_leader_samples": 2,
+        "at_least_two_exact_possible_co_leaders_samples": 31,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {
+          "EXACT_BOTH_ORDERINGS_WITNESSED": 374,
+          "VERIFIED_A_GREATER_B": 164,
+          "VERIFIED_B_GREATER_A": 119
+        },
+        "source_bound_status_counts": {
+          "VERIFIED_BOUND_AND_WITNESS": 450
+        }
+      },
+      {
+        "universe": "central_retained_bridge",
+        "k": 3,
+        "profile_mode": "fixed_profile",
+        "mass_mode": "historical_80_120_band",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_INFEASIBLE": 32,
+          "EXACT_COMPATIBLE": 3
+        },
+        "unique_leader_samples": 2,
+        "at_least_two_exact_possible_co_leaders_samples": 1,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {
+          "EXACT_BOTH_ORDERINGS_WITNESSED": 17,
+          "VERIFIED_A_GREATER_B": 17,
+          "VERIFIED_B_GREATER_A": 29
+        },
+        "source_bound_status_counts": {
+          "VERIFIED_BOUND_AND_WITNESS": 42
+        }
+      },
+      {
+        "universe": "central_retained_bridge",
+        "k": 3,
+        "profile_mode": "fixed_profile",
+        "mass_mode": "none",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_INFEASIBLE": 30,
+          "EXACT_COMPATIBLE": 5
+        },
+        "unique_leader_samples": 3,
+        "at_least_two_exact_possible_co_leaders_samples": 2,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {
+          "VERIFIED_A_GREATER_B": 32,
+          "EXACT_BOTH_ORDERINGS_WITNESSED": 38,
+          "VERIFIED_B_GREATER_A": 35
+        },
+        "source_bound_status_counts": {
+          "VERIFIED_BOUND_AND_WITNESS": 70
+        }
+      },
+      {
+        "universe": "central_retained_bridge",
+        "k": 3,
+        "profile_mode": "joint_intervals",
+        "mass_mode": "historical_80_120_band",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_COMPATIBLE": 35
+        },
+        "unique_leader_samples": 0,
+        "at_least_two_exact_possible_co_leaders_samples": 35,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {
+          "EXACT_BOTH_ORDERINGS_WITNESSED": 512,
+          "VERIFIED_A_GREATER_B": 98,
+          "VERIFIED_B_GREATER_A": 89
+        },
+        "source_bound_status_counts": {
+          "VERIFIED_BOUND_AND_WITNESS": 478
+        }
+      },
+      {
+        "universe": "central_retained_bridge",
+        "k": 3,
+        "profile_mode": "joint_intervals",
+        "mass_mode": "none",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_COMPATIBLE": 35
+        },
+        "unique_leader_samples": 0,
+        "at_least_two_exact_possible_co_leaders_samples": 35,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {
+          "EXACT_BOTH_ORDERINGS_WITNESSED": 495,
+          "NUMERICALLY_UNRESOLVED_OR_CERTIFICATION_GAP": 197,
+          "VERIFIED_B_GREATER_A": 5,
+          "VERIFIED_A_GREATER_B": 2
+        },
+        "source_bound_status_counts": {
+          "VERIFIED_BOUND_AND_WITNESS": 412,
+          "NUMERICALLY_UNRESOLVED": 31,
+          "EXACT_UNBOUNDED": 35
+        }
+      },
+      {
+        "universe": "full_seven_primary",
+        "k": 1,
+        "profile_mode": "fixed_profile",
+        "mass_mode": "historical_80_120_band",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_INFEASIBLE": 35
+        },
+        "unique_leader_samples": 0,
+        "at_least_two_exact_possible_co_leaders_samples": 0,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {},
+        "source_bound_status_counts": {}
+      },
+      {
+        "universe": "full_seven_primary",
+        "k": 1,
+        "profile_mode": "fixed_profile",
+        "mass_mode": "none",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_INFEASIBLE": 35
+        },
+        "unique_leader_samples": 0,
+        "at_least_two_exact_possible_co_leaders_samples": 0,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {},
+        "source_bound_status_counts": {}
+      },
+      {
+        "universe": "full_seven_primary",
+        "k": 1,
+        "profile_mode": "joint_intervals",
+        "mass_mode": "historical_80_120_band",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_INFEASIBLE": 31,
+          "EXACT_COMPATIBLE": 4
+        },
+        "unique_leader_samples": 2,
+        "at_least_two_exact_possible_co_leaders_samples": 2,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {
+          "VERIFIED_B_GREATER_A": 37,
+          "VERIFIED_A_GREATER_B": 30,
+          "EXACT_BOTH_ORDERINGS_WITNESSED": 17
+        },
+        "source_bound_status_counts": {
+          "VERIFIED_BOUND_AND_WITNESS": 56
+        }
+      },
+      {
+        "universe": "full_seven_primary",
+        "k": 1,
+        "profile_mode": "joint_intervals",
+        "mass_mode": "none",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_INFEASIBLE": 30,
+          "EXACT_COMPATIBLE": 5
+        },
+        "unique_leader_samples": 0,
+        "at_least_two_exact_possible_co_leaders_samples": 5,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {
+          "VERIFIED_B_GREATER_A": 43,
+          "VERIFIED_A_GREATER_B": 37,
+          "EXACT_BOTH_ORDERINGS_WITNESSED": 25
+        },
+        "source_bound_status_counts": {
+          "VERIFIED_BOUND_AND_WITNESS": 70
+        }
+      },
+      {
+        "universe": "full_seven_primary",
+        "k": 2,
+        "profile_mode": "fixed_profile",
+        "mass_mode": "historical_80_120_band",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_INFEASIBLE": 35
+        },
+        "unique_leader_samples": 0,
+        "at_least_two_exact_possible_co_leaders_samples": 0,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {},
+        "source_bound_status_counts": {}
+      },
+      {
+        "universe": "full_seven_primary",
+        "k": 2,
+        "profile_mode": "fixed_profile",
+        "mass_mode": "none",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_INFEASIBLE": 35
+        },
+        "unique_leader_samples": 0,
+        "at_least_two_exact_possible_co_leaders_samples": 0,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {},
+        "source_bound_status_counts": {}
+      },
+      {
+        "universe": "full_seven_primary",
+        "k": 2,
+        "profile_mode": "joint_intervals",
+        "mass_mode": "historical_80_120_band",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_INFEASIBLE": 2,
+          "EXACT_COMPATIBLE": 33
+        },
+        "unique_leader_samples": 2,
+        "at_least_two_exact_possible_co_leaders_samples": 31,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {
+          "EXACT_BOTH_ORDERINGS_WITNESSED": 373,
+          "VERIFIED_A_GREATER_B": 181,
+          "VERIFIED_B_GREATER_A": 139
+        },
+        "source_bound_status_counts": {
+          "VERIFIED_BOUND_AND_WITNESS": 462
+        }
+      },
+      {
+        "universe": "full_seven_primary",
+        "k": 2,
+        "profile_mode": "joint_intervals",
+        "mass_mode": "none",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_INFEASIBLE": 2,
+          "EXACT_COMPATIBLE": 33
+        },
+        "unique_leader_samples": 2,
+        "at_least_two_exact_possible_co_leaders_samples": 31,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {
+          "EXACT_BOTH_ORDERINGS_WITNESSED": 391,
+          "VERIFIED_A_GREATER_B": 175,
+          "VERIFIED_B_GREATER_A": 127
+        },
+        "source_bound_status_counts": {
+          "VERIFIED_BOUND_AND_WITNESS": 462
+        }
+      },
+      {
+        "universe": "full_seven_primary",
+        "k": 3,
+        "profile_mode": "fixed_profile",
+        "mass_mode": "historical_80_120_band",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_INFEASIBLE": 32,
+          "EXACT_COMPATIBLE": 3
+        },
+        "unique_leader_samples": 2,
+        "at_least_two_exact_possible_co_leaders_samples": 1,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {
+          "EXACT_BOTH_ORDERINGS_WITNESSED": 17,
+          "VERIFIED_A_GREATER_B": 17,
+          "VERIFIED_B_GREATER_A": 29
+        },
+        "source_bound_status_counts": {
+          "VERIFIED_BOUND_AND_WITNESS": 42
+        }
+      },
+      {
+        "universe": "full_seven_primary",
+        "k": 3,
+        "profile_mode": "fixed_profile",
+        "mass_mode": "none",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_INFEASIBLE": 30,
+          "EXACT_COMPATIBLE": 5
+        },
+        "unique_leader_samples": 3,
+        "at_least_two_exact_possible_co_leaders_samples": 2,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {
+          "VERIFIED_A_GREATER_B": 32,
+          "EXACT_BOTH_ORDERINGS_WITNESSED": 38,
+          "VERIFIED_B_GREATER_A": 35
+        },
+        "source_bound_status_counts": {
+          "VERIFIED_BOUND_AND_WITNESS": 70
+        }
+      },
+      {
+        "universe": "full_seven_primary",
+        "k": 3,
+        "profile_mode": "joint_intervals",
+        "mass_mode": "historical_80_120_band",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_COMPATIBLE": 35
+        },
+        "unique_leader_samples": 0,
+        "at_least_two_exact_possible_co_leaders_samples": 35,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {
+          "EXACT_BOTH_ORDERINGS_WITNESSED": 536,
+          "VERIFIED_A_GREATER_B": 106,
+          "VERIFIED_B_GREATER_A": 93
+        },
+        "source_bound_status_counts": {
+          "VERIFIED_BOUND_AND_WITNESS": 490
+        }
+      },
+      {
+        "universe": "full_seven_primary",
+        "k": 3,
+        "profile_mode": "joint_intervals",
+        "mass_mode": "none",
+        "initial_samples": 35,
+        "compatibility_status": {
+          "EXACT_COMPATIBLE": 35
+        },
+        "unique_leader_samples": 0,
+        "at_least_two_exact_possible_co_leaders_samples": 35,
+        "unresolved_co_leader_samples": 0,
+        "pair_status_counts": {
+          "EXACT_BOTH_ORDERINGS_WITNESSED": 525,
+          "NUMERICALLY_UNRESOLVED_OR_CERTIFICATION_GAP": 202,
+          "VERIFIED_B_GREATER_A": 5,
+          "VERIFIED_A_GREATER_B": 3
+        },
+        "source_bound_status_counts": {
+          "VERIFIED_BOUND_AND_WITNESS": 424,
+          "NUMERICALLY_UNRESOLVED": 31,
+          "EXACT_UNBOUNDED": 35
+        }
+      }
+    ],
+    "records": 840,
+    "all_initial_samples_per_panel_expected": 35
+  },
+  "public_scope": "Aggregate compatibility counts and certificate-status counts only; per-sample matrices, contributions and certificates private.",
+  "limits": "known interval/set-membership mathematics; independent entrywise boxes; no statistical coverage or physical attainability of every box member; per-sample latent profiles may differ; no manuscript/baseline promotion"
+}

@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-09-26T21:34:30.500293+00:00",
+  "elapsed_seconds": 23.015,
+  "verifier_sha256": "e71f43fd865e2b657109f32bd76f9f47786ab4d1a732315fdb0391c63ad17521",
+  "configuration_sha256": "eb76edf1493a94e7aae172039ea636f47557f0e98f102865036e702a9d6a005b",
+  "private_ledger_sha256": "b4148121cec2e76b91a6ed4ec8f5818c9d2118b2eaac9f80e56df7bf61854c80",
+  "original_stage3_index_sha256": "383b73ca7b0ebdb79b04008adff2085acbca48f2be8b5355062ec73d86452d92",
+  "all_initial_samples": 35,
+  "inherited_nonunique": 34,
+  "original_models_reconstructed": 120,
+  "exact_base_infeasibilities": 72,
+  "exact_base_and_W_witness_pairs": 48,
+  "exact_competitor_exclusions": 288,
+  "strictly_positive_augmented_residual_vectors": 61,
+  "universal_leader_family": [
+    "vehicle"
+  ],
+  "threshold_relations": {
+    "ABOVE": 288
+  },
+  "separate_proof_layer_outcome": "POSTHOC_CERTIFIED_UNIQUE_UNION_LEADER_ABOVE_ORIGINAL_MARGIN",
+  "minimum_lower_margin_exact": "6707647819/84938406600",
+  "original_delta_exact": "85181/50000000000",
+  "minimum_margin_over_delta_exact": "1676911954750000000/36175692062973",
+  "minimum_margin_over_delta_approximate": 46354.66135190746,
+  "original_Stage3_HOLD_preserved": true,
+  "LPs_rerun": 0,
+  "limits": "Post-hoc exact proof reuse under unchanged deterministic boxes and finite profile systems; not new data, a new theorem, statistical coverage, physical realizability or environmental validation."
+}

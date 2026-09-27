@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "candidates": [
+    "SUXC",
+    "CUXC",
+    "ZNXC"
+  ],
+  "cutoffs": [
+    1.0,
+    2.0,
+    3.0
+  ],
+  "cutoff_boundary": "retain when absolute residual / heuristic scale <= cutoff",
+  "scenario_screen": "central and scenario converged and basic eligible; all scenario contributions nonnegative",
+  "candidate_validity": "complete finite nonnegative profile means and uncertainties across every physical scenario; strictly positive finite receptor uncertainty",
+  "candidate_invalidity": "exclude candidate, not individual scenarios; disclose reason",
+  "prediction": "sum(profile mean * fixed fitted contribution)",
+  "scale": "sqrt(receptor uncertainty^2 + sum((profile uncertainty * fixed fitted contribution)^2))",
+  "score": "minimum absolute predicted separation / sum of two heuristic scales over pairs with different unique top labels",
+  "tie_break": "lexicographic candidate name on exact score tie",
+  "negligible_score_threshold": 1e-12,
+  "negligible_handling": "retain frozen selection but explicitly label low separation; no hindsight replacement",
+  "no_cross_top_pairs": "not applicable; no selected candidate",
+  "native_missing_receptor_value": -99.0,
+  "selection_access": "receptor identifiers and candidate uncertainties only; candidate receptor concentration columns excluded",
+  "limitations": [
+    "Heuristic scale omits fitted-contribution uncertainty, all covariance and model discrepancy.",
+    "Cutoffs 1, 2 and 3 are sensitivity scenarios, not confidence levels.",
+    "Model-set screening is not identification of the environmentally true source.",
+    "Unresolved joint fits prevent complete-universe guarantees.",
+    "Sulfur is related to fitted sulfate and is not an independent accuracy endpoint.",
+    "Historical Cartesian profile combinations are not independently validated as jointly environmentally plausible.",
+    "No assay cost, independent source truth, or conditioning-design comparator is available in this experiment."
+  ]
+}

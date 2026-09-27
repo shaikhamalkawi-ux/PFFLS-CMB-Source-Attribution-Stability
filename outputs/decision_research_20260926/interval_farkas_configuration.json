@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "frozen_utc": "2026-09-26T21:25:55.482372+00:00",
+  "frozen_before_first_field_gamma_over_B_evaluation": true,
+  "root_approval": "Root read the complete proposed protocol and approved its exact SHA-256 before field evaluation.",
+  "protocol_sha256": "f67d9288b8ed6e546c01f7a24af1993b37bb4a95b78a7bd1b5b4222a69391783",
+  "script_sha256": "b5a95a583c533e9dd28cccd6a2737de1bf4b06425b986cad2b20510fe84f54a0",
+  "tests_sha256": "88f1dd649e9bc8bda30da3535e056d9972d20b50380e93ec226dd8ba5c421b78",
+  "manifest_sha256": "d03a1f60ffcdd940b65362e26a7d6ec4175e86b06adbbe46a7f64fe1714d2ced",
+  "original_union_index_sha256": "383b73ca7b0ebdb79b04008adff2085acbca48f2be8b5355062ec73d86452d92",
+  "original_union_configuration_sha256": "33f10f141aad7d8dc5f72bf7cfd06e89c7a2f61c839f1fd8f3b50477f086331a",
+  "original_union_results_sha256": "15b52d584de7f45919d3a16a0fe41bc9d7d2f9699c9ad24a169c3aee00dff855",
+  "original_union_report_sha256": "bf4de0baa9a903e2fd6cc3c3ebf751480ca2f6da68c2dae035daadca564fdd1d",
+  "scope": {
+    "all_samples": 35,
+    "inherited_nonunique": 34,
+    "targeted_union": 1,
+    "systems": 120,
+    "expected_exact_feasible": 48,
+    "expected_exact_infeasible": 72,
+    "bounds": 288,
+    "k": 2,
+    "full_seven_families": true,
+    "mass_constraint": "none"
+  },
+  "threshold": "delta=1e-7*max(1,TMAC); strict greater-than required; unchanged",
+  "solver_calls_permitted": 0,
+  "randomness": "none",
+  "multiplier_selection": "existing stored certificates only; no optimization, scaling search or substitution",
+  "synthetic_gate": {
+    "status": "PASS",
+    "output": "test_dimension_mismatch_rejected (test_interval_farkas_margin.ExactMarginTests.test_dimension_mismatch_rejected) ... ok\ntest_duplicate_family_names_rejected (test_interval_farkas_margin.ExactMarginTests.test_duplicate_family_names_rejected) ... ok\ntest_exact_margin_from_two_source_certificate (test_interval_farkas_margin.ExactMarginTests.test_exact_margin_from_two_source_certificate) ... ok\ntest_inexact_base_witness_rejected (test_interval_farkas_margin.ExactMarginTests.test_inexact_base_witness_rejected) ... ok\ntest_inputs_not_mutated (test_interval_farkas_margin.ExactMarginTests.test_inputs_not_mutated) ... ok\ntest_missing_W_witness_rejected (test_interval_farkas_margin.ExactMarginTests.test_missing_W_witness_rejected) ... ok\ntest_missing_competitor_blocks_every_margin_before_arithmetic (test_interval_farkas_margin.ExactMarginTests.test_missing_competitor_blocks_every_margin_before_arithmetic) ... ok\ntest_negative_column_residual_rejected (test_interval_farkas_margin.ExactMarginTests.test_negative_column_residual_rejected) ... ok\ntest_negative_multiplier_rejected (test_interval_farkas_margin.ExactMarginTests.test_negative_multiplier_rejected) ... ok\ntest_nonnegative_contradiction_rejected (test_interval_farkas_margin.ExactMarginTests.test_nonnegative_contradiction_rejected) ... ok\ntest_second_invalid_competitor_blocks_first_margin (test_interval_farkas_margin.ExactMarginTests.test_second_invalid_competitor_blocks_first_margin) ... ok\ntest_stored_multiplier_scaling_invariance (test_interval_farkas_margin.ExactMarginTests.test_stored_multiplier_scaling_invariance) ... ok\ntest_three_source_all_competitors_checked (test_interval_farkas_margin.ExactMarginTests.test_three_source_all_competitors_checked) ... ok\ntest_threshold_above_bound_is_hold (test_interval_farkas_margin.ExactMarginTests.test_threshold_above_bound_is_hold) ... ok\ntest_threshold_below_bound_passes (test_interval_farkas_margin.ExactMarginTests.test_threshold_below_bound_passes) ... ok\ntest_threshold_equality_not_pass (test_interval_farkas_margin.ExactMarginTests.test_threshold_equality_not_pass) ... ok\ntest_two_possible_coleaders_fail_universal_max_premise (test_interval_farkas_margin.ExactMarginTests.test_two_possible_coleaders_fail_universal_max_premise) ... ok\ntest_unknown_competitor_mapping_rejected (test_interval_farkas_margin.ExactMarginTests.test_unknown_competitor_mapping_rejected) ... ok\ntest_unverified_base_witness_rejected (test_interval_farkas_margin.ExactMarginTests.test_unverified_base_witness_rejected) ... ok\ntest_wrong_augmented_row_order_rejected (test_interval_farkas_margin.ExactMarginTests.test_wrong_augmented_row_order_rejected) ... ok\ntest_wrong_expected_W_rejected (test_interval_farkas_margin.ExactMarginTests.test_wrong_expected_W_rejected) ... ok\ntest_wrong_multiplier_length_rejected (test_interval_farkas_margin.ExactMarginTests.test_wrong_multiplier_length_rejected) ... ok\ntest_wrong_source_mapping_rejected (test_interval_farkas_margin.ExactMarginTests.test_wrong_source_mapping_rejected) ... ok\ntest_zero_B_rejected_even_when_infeasible_base_has_farkas (test_interval_farkas_margin.ExactMarginTests.test_zero_B_rejected_even_when_infeasible_base_has_farkas) ... ok\ntest_any_bound_at_threshold_blocks_positive (test_interval_farkas_margin.UnionCompletionTests.test_any_bound_at_threshold_blocks_positive) ... ok\ntest_base_infeasibility_rechecked (test_interval_farkas_margin.UnionCompletionTests.test_base_infeasibility_rechecked) ... ok\ntest_different_W_across_components_blocks_positive (test_interval_farkas_margin.UnionCompletionTests.test_different_W_across_components_blocks_positive) ... ok\ntest_empty_union_does_not_certify_leader (test_interval_farkas_margin.UnionCompletionTests.test_empty_union_does_not_certify_leader) ... ok\ntest_infeasible_components_and_nonempty_valid_component_can_certify (test_interval_farkas_margin.UnionCompletionTests.test_infeasible_components_and_nonempty_valid_component_can_certify) ... ok\ntest_missing_component_blocks_positive (test_interval_farkas_margin.UnionCompletionTests.test_missing_component_blocks_positive) ... ok\ntest_standard_library_only_no_numerical_solver_import (test_interval_farkas_margin.UnionCompletionTests.test_standard_library_only_no_numerical_solver_import) ... ok\ntest_unresolved_component_blocks_positive (test_interval_farkas_margin.UnionCompletionTests.test_unresolved_component_blocks_positive) ... ok\ntest_unresolved_status_not_treated_as_infeasible (test_interval_farkas_margin.UnionCompletionTests.test_unresolved_status_not_treated_as_infeasible) ... ok\n\n----------------------------------------------------------------------\nRan 33 tests in 0.192s\n\nOK\n"
+  },
+  "interpretation_gate": "Independent original-input and actual-record proof replay required before positive claims; original Stage3 HOLD unchanged."
+}

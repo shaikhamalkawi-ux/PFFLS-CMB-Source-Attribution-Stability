@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "configuration_sha256": "33f10f141aad7d8dc5f72bf7cfd06e89c7a2f61c839f1fd8f3b50477f086331a",
+  "script_sha256": "d02e65ad5799f82b8960276d3c9eeee1e43c31cbcc78faddc22924d7431ff21b",
+  "tests_sha256": "1370b1c1f6576548de09b16cd14df151f395c50349453cf0c7d467cc661e50c9",
+  "candidate_manifest_sha256": "5cba87cf6be25cc8b44a0881227952338944399e8d0c1ef2a8b82c6105065923",
+  "frozen_utc": "2026-09-26T21:04:25.523293+00:00"
+}

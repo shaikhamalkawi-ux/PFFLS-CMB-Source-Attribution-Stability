@@ -1,0 +1,60 @@
+{
+  "all_15_added_vehicle_lower_bounds_zero": true,
+  "archive_sha256": "3ca5bb3d4273e40f9c0f65a11f60e86fadafb525a086a046a9ef29a171fd229f",
+  "completed_utc": "2026-09-26T23:12:38.395312+00:00",
+  "historical_input_systems": 120,
+  "historical_private_records_read": false,
+  "input_systems_retaining_zero_vehicle_lower_column": 96,
+  "limits": "Post-outcome metadata replay only. Count96 is input geometry, not feasible receptors or profile systems. A ray persists only in a nonempty branch. Added observations may eliminate branches; that was not tested. No held-out, source-truth, coverage or superiority claim.",
+  "members_sha256": {
+    "ADsjvf.txt": "49db3300d44991b10c4fc1d041daa7d97428e58d9e2fc9e7bb10036bffe760f0",
+    "PRsjvf.txt": "d46ba365514a99cd394207a94a4413dc10f6da368a4cb01f6ba39a1b653eb0ac"
+  },
+  "method": "Independent standard-library native-table parse with explicit uncertainty-field map and exact decimal sign comparisons",
+  "new_field_LPs": 0,
+  "new_field_fits": 0,
+  "positive_lower_counts": {
+    "MOVES1": {
+      "added_3_positive": 0,
+      "original_20_positive": 0
+    },
+    "MOVES2": {
+      "added_3_positive": 0,
+      "original_20_positive": 0
+    },
+    "MOVES3": {
+      "added_3_positive": 0,
+      "original_20_positive": 4
+    },
+    "MOVES4": {
+      "added_3_positive": 0,
+      "original_20_positive": 0
+    },
+    "MOVES5": {
+      "added_3_positive": 0,
+      "original_20_positive": 0
+    }
+  },
+  "producer_imported": false,
+  "status": "PASS",
+  "systems_per_vehicle": 24,
+  "tests_sha256": "e172456403f4cff6eb5d1deba854a639d3f0d303928539756d875c6d279e5784",
+  "tracer_validity": {
+    "CUXC": {
+      "nonnegative_receptor_upper_endpoints": 35,
+      "valid_receptor_pairs": 35,
+      "valid_source_pairs": 17
+    },
+    "SUXC": {
+      "nonnegative_receptor_upper_endpoints": 35,
+      "valid_receptor_pairs": 35,
+      "valid_source_pairs": 17
+    },
+    "ZNXC": {
+      "nonnegative_receptor_upper_endpoints": 35,
+      "valid_receptor_pairs": 35,
+      "valid_source_pairs": 17
+    }
+  },
+  "verifier_sha256": "ca4d834c78d33188f55fb7987ebef46a9d6ac303e93dbd42e050ad6c13d0469b"
+}

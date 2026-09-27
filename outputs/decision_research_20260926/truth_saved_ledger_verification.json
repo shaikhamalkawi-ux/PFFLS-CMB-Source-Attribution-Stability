@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "new_fits_or_parameter_changes": false,
+  "verification_script": "truth_saved_ledger_verification.py",
+  "scope": "Independent vectorized reconstruction of saved Q/covariance identities, admission, winners, point/contrast candidate sets, truth ties and aggregate denominators",
+  "verified_rows": 4944,
+  "verified_numerical_fits": 44496,
+  "verified_panels": 7,
+  "method_endpoints_per_panel": 14,
+  "all_point_and_finite_union_masks_identical": true,
+  "all_rows_have_at_most_one_admitted_profile": true,
+  "only_admitted_profile_index": 0,
+  "tiny_negative_count_all_panels": 0,
+  "truth_results_sha256": "e4bf45de87335c853edc15170e3a8706a1540797069766fed552fe5ead49362b"
+}

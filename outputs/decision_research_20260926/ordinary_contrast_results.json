@@ -1,0 +1,526 @@
+{
+  "status": "COMPLETED_POST_HOC_PLUGIN_BASELINE_NOT_COVERAGE_VALIDATION",
+  "completed_utc": "2026-09-26T20:34:59.911964+00:00",
+  "configuration": {
+    "created_utc": "2026-09-26T20:34:59.314503+00:00",
+    "status": "POST_HOC_PLAN_BEFORE_THIS_BASELINE_SCORES",
+    "plan_sha256": "3bdb140ff571c179c4dd31eae71d703738405d4b815a5451be622d64315690b3",
+    "script_sha256": "02582945e9eda03d9706501febfa013f38ae89a189eeb2165a496036b3bb1def",
+    "test_sha256": "bc4d6d5679b1f4aeefdd009fed776d955a77059d75bd92ef8fe0d055ca837c94",
+    "native_script_sha256": "42c327b7ef629077bf1f11d1562ccee500a9192b236a1add771ff522070d1c09",
+    "joint_ledger_sha256": "ba73f7f41de50d4b40edf1fe5be0513120dfb109c9a10730f1007e7f6c3143a2",
+    "alphas": [
+      0.1,
+      0.05,
+      0.01
+    ],
+    "primary_descriptive_alpha": 0.05,
+    "sigma_scaling": "absolute supplied variances; no residual-Q rescaling",
+    "scope": "selected retained-source central model; fixed final EVLS weights; nominal plugin only"
+  },
+  "sample_count": 35,
+  "max_replay_contribution_difference": 0.0,
+  "valid_covariances": 35,
+  "private_ledger_sha256": "a631420b2eb349715aba2fcc61da1f4a1094813432f3dddf68f298c3d3ce528f",
+  "aggregates": {
+    "0.1": {
+      "all35/basic/joint_changed_count": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 29,
+        "conditional_singleton_and_joint_witness": 4,
+        "no_conditional_singleton_and_joint_witness": 25
+      },
+      "all35/basic/observed_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 7,
+        "conditional_singleton_and_joint_witness": 4,
+        "no_conditional_singleton_and_joint_witness": 3
+      },
+      "all35/basic/complete_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 2,
+        "conditional_singleton_and_joint_witness": 1,
+        "no_conditional_singleton_and_joint_witness": 1
+      },
+      "all35/strict/joint_changed_count": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 1,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 1
+      },
+      "all35/strict/observed_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      },
+      "all35/strict/complete_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      },
+      "central_basic/basic/joint_changed_count": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 29,
+        "conditional_singleton_and_joint_witness": 4,
+        "no_conditional_singleton_and_joint_witness": 25
+      },
+      "central_basic/basic/observed_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 7,
+        "conditional_singleton_and_joint_witness": 4,
+        "no_conditional_singleton_and_joint_witness": 3
+      },
+      "central_basic/basic/complete_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 2,
+        "conditional_singleton_and_joint_witness": 1,
+        "no_conditional_singleton_and_joint_witness": 1
+      },
+      "central_basic/strict/joint_changed_count": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 1,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 1
+      },
+      "central_basic/strict/observed_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      },
+      "central_basic/strict/complete_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      },
+      "central_strict/basic/joint_changed_count": {
+        "denominator": 4,
+        "covariance_valid": 4,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 2,
+        "existing_joint_witness": 1,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 1
+      },
+      "central_strict/basic/observed_local_stable_joint_witness": {
+        "denominator": 4,
+        "covariance_valid": 4,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 2,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      },
+      "central_strict/basic/complete_local_stable_joint_witness": {
+        "denominator": 4,
+        "covariance_valid": 4,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 2,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      },
+      "central_strict/strict/joint_changed_count": {
+        "denominator": 4,
+        "covariance_valid": 4,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 2,
+        "existing_joint_witness": 1,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 1
+      },
+      "central_strict/strict/observed_local_stable_joint_witness": {
+        "denominator": 4,
+        "covariance_valid": 4,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 2,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      },
+      "central_strict/strict/complete_local_stable_joint_witness": {
+        "denominator": 4,
+        "covariance_valid": 4,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 2,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      }
+    },
+    "0.05": {
+      "all35/basic/joint_changed_count": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 29,
+        "conditional_singleton_and_joint_witness": 4,
+        "no_conditional_singleton_and_joint_witness": 25
+      },
+      "all35/basic/observed_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 7,
+        "conditional_singleton_and_joint_witness": 4,
+        "no_conditional_singleton_and_joint_witness": 3
+      },
+      "all35/basic/complete_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 2,
+        "conditional_singleton_and_joint_witness": 1,
+        "no_conditional_singleton_and_joint_witness": 1
+      },
+      "all35/strict/joint_changed_count": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 1,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 1
+      },
+      "all35/strict/observed_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      },
+      "all35/strict/complete_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      },
+      "central_basic/basic/joint_changed_count": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 29,
+        "conditional_singleton_and_joint_witness": 4,
+        "no_conditional_singleton_and_joint_witness": 25
+      },
+      "central_basic/basic/observed_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 7,
+        "conditional_singleton_and_joint_witness": 4,
+        "no_conditional_singleton_and_joint_witness": 3
+      },
+      "central_basic/basic/complete_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 2,
+        "conditional_singleton_and_joint_witness": 1,
+        "no_conditional_singleton_and_joint_witness": 1
+      },
+      "central_basic/strict/joint_changed_count": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 1,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 1
+      },
+      "central_basic/strict/observed_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      },
+      "central_basic/strict/complete_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 9,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      },
+      "central_strict/basic/joint_changed_count": {
+        "denominator": 4,
+        "covariance_valid": 4,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 2,
+        "existing_joint_witness": 1,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 1
+      },
+      "central_strict/basic/observed_local_stable_joint_witness": {
+        "denominator": 4,
+        "covariance_valid": 4,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 2,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      },
+      "central_strict/basic/complete_local_stable_joint_witness": {
+        "denominator": 4,
+        "covariance_valid": 4,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 2,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      },
+      "central_strict/strict/joint_changed_count": {
+        "denominator": 4,
+        "covariance_valid": 4,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 2,
+        "existing_joint_witness": 1,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 1
+      },
+      "central_strict/strict/observed_local_stable_joint_witness": {
+        "denominator": 4,
+        "covariance_valid": 4,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 2,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      },
+      "central_strict/strict/complete_local_stable_joint_witness": {
+        "denominator": 4,
+        "covariance_valid": 4,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 2,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      }
+    },
+    "0.01": {
+      "all35/basic/joint_changed_count": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 6,
+        "existing_joint_witness": 29,
+        "conditional_singleton_and_joint_witness": 2,
+        "no_conditional_singleton_and_joint_witness": 27
+      },
+      "all35/basic/observed_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 6,
+        "existing_joint_witness": 7,
+        "conditional_singleton_and_joint_witness": 2,
+        "no_conditional_singleton_and_joint_witness": 5
+      },
+      "all35/basic/complete_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 6,
+        "existing_joint_witness": 2,
+        "conditional_singleton_and_joint_witness": 1,
+        "no_conditional_singleton_and_joint_witness": 1
+      },
+      "all35/strict/joint_changed_count": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 6,
+        "existing_joint_witness": 1,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 1
+      },
+      "all35/strict/observed_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 6,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      },
+      "all35/strict/complete_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 6,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      },
+      "central_basic/basic/joint_changed_count": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 6,
+        "existing_joint_witness": 29,
+        "conditional_singleton_and_joint_witness": 2,
+        "no_conditional_singleton_and_joint_witness": 27
+      },
+      "central_basic/basic/observed_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 6,
+        "existing_joint_witness": 7,
+        "conditional_singleton_and_joint_witness": 2,
+        "no_conditional_singleton_and_joint_witness": 5
+      },
+      "central_basic/basic/complete_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 6,
+        "existing_joint_witness": 2,
+        "conditional_singleton_and_joint_witness": 1,
+        "no_conditional_singleton_and_joint_witness": 1
+      },
+      "central_basic/strict/joint_changed_count": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 6,
+        "existing_joint_witness": 1,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 1
+      },
+      "central_basic/strict/observed_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 6,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      },
+      "central_basic/strict/complete_local_stable_joint_witness": {
+        "denominator": 35,
+        "covariance_valid": 35,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 6,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      },
+      "central_strict/basic/joint_changed_count": {
+        "denominator": 4,
+        "covariance_valid": 4,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 2,
+        "existing_joint_witness": 1,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 1
+      },
+      "central_strict/basic/observed_local_stable_joint_witness": {
+        "denominator": 4,
+        "covariance_valid": 4,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 2,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      },
+      "central_strict/basic/complete_local_stable_joint_witness": {
+        "denominator": 4,
+        "covariance_valid": 4,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 2,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      },
+      "central_strict/strict/joint_changed_count": {
+        "denominator": 4,
+        "covariance_valid": 4,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 2,
+        "existing_joint_witness": 1,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 1
+      },
+      "central_strict/strict/observed_local_stable_joint_witness": {
+        "denominator": 4,
+        "covariance_valid": 4,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 2,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      },
+      "central_strict/strict/complete_local_stable_joint_witness": {
+        "denominator": 4,
+        "covariance_valid": 4,
+        "covariance_unresolved": 0,
+        "conditional_singleton": 2,
+        "existing_joint_witness": 0,
+        "conditional_singleton_and_joint_witness": 0,
+        "no_conditional_singleton_and_joint_witness": 0
+      }
+    }
+  },
+  "limitations": [
+    "No field source truth or nominal coverage guarantee",
+    "Estimated effective weights and central source pruning treated as fixed",
+    "Covariance ignores correlations/systematic errors and profile-family selection",
+    "Joint grid retains unresolved alternatives; no full-grid certificate",
+    "Post-hoc diagnostic overlap, not a new uncertainty method"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "created_utc": "2026-09-26T19:51:42.655481+00:00",
+  "selection_sha256": "74bcc1403d63d123ee122b8fdea7315c84ef20f497caeb8f60ea20f42a9fa551",
+  "configuration_sha256": "5a4ac50d31de131cba8317a6596571220e086a526e8762e5c7fa047144defc8e",
+  "configuration": {
+    "version": "1.0.0",
+    "candidates": [
+      "SUXC",
+      "CUXC",
+      "ZNXC"
+    ],
+    "cutoffs": [
+      1.0,
+      2.0,
+      3.0
+    ],
+    "cutoff_boundary": "retain when absolute residual / heuristic scale <= cutoff",
+    "scenario_screen": "central and scenario converged and basic eligible; all scenario contributions nonnegative",
+    "candidate_validity": "complete finite nonnegative profile means and uncertainties across every physical scenario; strictly positive finite receptor uncertainty",
+    "candidate_invalidity": "exclude candidate, not individual scenarios; disclose reason",
+    "prediction": "sum(profile mean * fixed fitted contribution)",
+    "scale": "sqrt(receptor uncertainty^2 + sum((profile uncertainty * fixed fitted contribution)^2))",
+    "score": "minimum absolute predicted separation / sum of two heuristic scales over pairs with different unique top labels",
+    "tie_break": "lexicographic candidate name on exact score tie",
+    "negligible_score_threshold": 1e-12,
+    "negligible_handling": "retain frozen selection but explicitly label low separation; no hindsight replacement",
+    "no_cross_top_pairs": "not applicable; no selected candidate",
+    "native_missing_receptor_value": -99.0,
+    "selection_access": "receptor identifiers and candidate uncertainties only; candidate receptor concentration columns excluded",
+    "limitations": [
+      "Heuristic scale omits fitted-contribution uncertainty, all covariance and model discrepancy.",
+      "Cutoffs 1, 2 and 3 are sensitivity scenarios, not confidence levels.",
+      "Model-set screening is not identification of the environmentally true source.",
+      "Unresolved joint fits prevent complete-universe guarantees.",
+      "Sulfur is related to fitted sulfate and is not an independent accuracy endpoint.",
+      "Historical Cartesian profile combinations are not independently validated as jointly environmentally plausible.",
+      "No assay cost, independent source truth, or conditioning-design comparator is available in this experiment."
+    ]
+  },
+  "provenance": {
+    "measurement_script_sha256": "da0a02667aa379ff8e484d0fb8da4efae4495617f362e689a35f0e2de2d56a54",
+    "native_script_sha256": "42c327b7ef629077bf1f11d1562ccee500a9192b236a1add771ff522070d1c09",
+    "plan_sha256": "15b5cc93c466fdd12e1bdc7f973bc2c10e32434ad915be396c83d6bf4629cb7f",
+    "joint_ledger_sha256": "ba73f7f41de50d4b40edf1fe5be0513120dfb109c9a10730f1007e7f6c3143a2",
+    "joint_configuration_file_sha256": "f6aebb0bca2ef417ef6e8bff892ac2286b0a61e0fe47c62a5ae3608ab3c97314",
+    "sjvf_archive_sha256": "3ca5bb3d4273e40f9c0f65a11f60e86fadafb525a086a046a9ef29a171fd229f",
+    "receptor_member_sha256": "49db3300d44991b10c4fc1d041daa7d97428e58d9e2fc9e7bb10036bffe760f0",
+    "profile_member_sha256": "d46ba365514a99cd394207a94a4413dc10f6da368a4cb01f6ba39a1b653eb0ac"
+  },
+  "aggregate": {
+    "samples": 35,
+    "attrition_totals": {
+      "grid_rows": 3900,
+      "unresolved_rows": 1102,
+      "central_basic_eligible": 35,
+      "basic_rows": 2177,
+      "negative_rows": 59,
+      "invalid_contribution_rows": 0,
+      "physical_rows": 2118,
+      "tied_top_rows": 0
+    },
+    "statuses": {
+      "NO_CROSS_TOP_PAIRS": 6,
+      "SELECTED": 29
+    },
+    "selection_counts": {
+      "SUXC": 17,
+      "ZNXC": 12
+    },
+    "candidate_status_counts": {
+      "SUXC": {
+        "VALID": 35
+      },
+      "CUXC": {
+        "VALID": 35
+      },
+      "ZNXC": {
+        "VALID": 35
+      }
+    }
+  },
+  "heldout_concentrations_accessed": false
+}

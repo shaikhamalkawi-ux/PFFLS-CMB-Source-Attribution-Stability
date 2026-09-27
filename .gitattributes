@@ -14,3 +14,9 @@
 /tasks/CODEX_CYCLE_03_REMAINING_EVIDENCE.md text eol=crlf
 /outputs/cycle03/admission_audit.json text eol=crlf
 /tasks/CODEX_OUTREACH_THREE_EVIDENCE_REQUESTS.md text eol=crlf
+
+# Research protocols, configurations and proof summaries are hash-frozen before
+# execution. Preserve their original bytes instead of normalizing line endings.
+/outputs/decision_research_20260926/** -text
+/scripts/.gitattributes text eol=lf
+/tests/.gitattributes text eol=lf
