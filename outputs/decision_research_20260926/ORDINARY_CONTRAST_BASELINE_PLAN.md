@@ -1,0 +1,17 @@
+# Ordinary joint-contrast baseline: post-hoc explanatory audit
+
+Written2026-09-26 before this baseline's covariance/ranking scores are computed. The joint-profile and measurement results are already known. This is a POST-HOC explanatory audit, not an independent validation or preregistered primary endpoint.
+
+Question: do conventional joint source-contrast uncertainty summaries already warn against declaring a unique central-fit source leader in cases with witnessed profile-choice reversals? Useful overlap would weaken a claim that the decision-set construction newly discovers uncertainty. Absence of a warning would not establish environmental accuracy or valid coverage of the proposed construction.
+
+Use all35 existing EPA FRESNO/FINE samples, central retained source universe, original20 species, frozen native solver and exact input hashes. Read the immutable joint ledger (SHA256ba73f7f41de50d4b40edf1fe5be0513120dfb109c9a10730f1007e7f6c3143a2). Reconstruct each central fit's FINAL-SOLVE effective weights by replaying exactly its frozen iteration count from zero in its retained source universe. Verify contributions match the stored central estimate; no refitting to tighter tolerance, source changes or rank-driven selection. No new profile choices.
+
+Conditional plug-in WLS covariance: V=(A'WA)^-1, computed via the weighted design SVD, where W is the last solve's effective-variance weight matrix. Report condition numbers and singularities. Do not multiply V by fitted residual chi-square; supplied uncertainty scales stay absolute. This treats effective weights as fixed and does NOT account for estimated-weight uncertainty, profile-system selection, source pruning, correlated measurement errors or systematic model error. It is not a claim of equivalence to every EPA-CMB estimability output.
+
+For all retained source pairs, compute Var(s_j-s_k)=V_jj+V_kk-2V_jk and a two-sided normal Bonferroni interval across p(p-1)/2 pairs. Freeze alpha={0.10,0.05,0.01};0.05 is the descriptive primary panel. These are nominal plug-in summaries, NOT verified confidence guarantees for this selected/estimated-weight field analysis.
+
+Candidate set: retain source j if no pairwise lower contrast bound proves another source larger. A sole candidate is the conventional conditional unique-leader declaration. Preserve ties and zero SE explicitly. Invalid or singular covariance is unresolved, not evidence for/against a leader. Report minimum standardized central-leader separation and candidate set size privately; publish only aggregate counts.
+
+Cross-tabulate conditional singleton declarations versus the already fixed joint-ledger flags, on all35 samples and separately central-basic/central-strict eligible denominators: any admitted basic/strict joint top witness, observed-local-stable witness, complete-local-stable witness. The strict paired-screen subgroup stays distinct. All grids have unresolved alternatives; do not reinterpret these cross-tabs as full-grid certificates, probabilistic performance, or source-truth validation.
+
+Tests before run: diagonal known covariance; positive/negative covariance effect on contrasts; permutation invariance; unit common rescaling; source ties; one-source degenerate decision; SVD versus direct inverse; invalid/singular inputs; fixed-weight replay versus the unchanged native solver on a synthetic case. Save configuration, script/test hashes and private ledger checksum. No manuscript edit or previous-output replacement.

@@ -1,0 +1,34 @@
+{
+  "base_manifest_sha256": "38f4a8e9935896aa6bc5b71776ede465a8bdbb47ed39c58ac8b3473745b55118",
+  "base_release_commit": "46de6cc5efc788af3c5cf9f4c5c05d9160642f4c",
+  "base_release_files_unchanged": 135,
+  "created_utc": "2026-09-27T00:24:17.607209+00:00",
+  "entry_point": "outputs/decision_research_20260926/REVIEW_LITERATURE_UPDATE.md",
+  "excluded": [
+    "article fulltexts",
+    "institution-session details",
+    "private ledgers",
+    "raw inputs",
+    "manuscripts"
+  ],
+  "files": {
+    "outputs/decision_research_20260926/EVLS_FULLTEXT_ACCESS_ADDENDUM.md": {
+      "bytes": 2019,
+      "sha256": "d14c17b0b02cf4579c552320f15e043e8f3107fabdcd3ef6777638980cef7efd"
+    },
+    "outputs/decision_research_20260926/HEMANN_PRIOR_ART_ADDENDUM.md": {
+      "bytes": 1594,
+      "sha256": "3ce1d0c82ee2a9d1ee8c330223b2d2b2f132468abaee1c0a4bf1f04dc5196023"
+    },
+    "outputs/decision_research_20260926/REVIEW_LITERATURE_UPDATE.md": {
+      "bytes": 1941,
+      "sha256": "674d080fee0fe867bbc7faee48d14f75e96f25cbc6a93bfd8ee7da657a8fd6ef"
+    }
+  },
+  "licence": "CC-BY-4.0 for original notes and this manifest only; cited article rights remain separate.",
+  "payload_files": 3,
+  "qa_scope": "Read-only scientific/privacy/source review. No numerical rerun or changed numerical output.",
+  "schema": "pffls_literature_addendum_v1",
+  "self_exclusion": "Manifest digest is identified by its containing Git commit and owner selection; excluded from recursive payload hash.",
+  "total_addition_including_this_manifest": 4
+}

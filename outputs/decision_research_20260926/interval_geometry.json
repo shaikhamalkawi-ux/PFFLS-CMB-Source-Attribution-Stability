@@ -1,0 +1,369 @@
+{
+  "status": "PASS",
+  "analysis_type": "post-hoc descriptive geometry/proof-record audit; no new fits or LPs",
+  "producer_script_sha256": "ecb4e8f01f4028eb0a43d85870b3f458b75fce91d8bad9bdddaa815c3597da93",
+  "configuration_sha256": "9ad8d7a42075fe3c4821336dfcbea9ae545daa05d70dd85ce5668eceb5aa6f5a",
+  "private_index_sha256": "381d20db9a35e1e8a725b535b588a60291def382a6f3196a10ef4a4302b66d40",
+  "audit_script_sha256": "776c5f083e30f623e6e2691a9de115991f6d065925b467a3d2ef16bf45f262ea",
+  "labeled_records_checked": 840,
+  "unique_cases_checked": 492,
+  "no_mass_geometry": [
+    {
+      "universe": "central_retained_bridge",
+      "k": 1,
+      "profile_mode": "fixed_profile",
+      "initial_samples": 35,
+      "exactly_compatible_samples": 0,
+      "zero_lower_column_occurrences_all35": {},
+      "nonempty_samples_with_zero_lower_column": 0,
+      "expected_unbounded_source_occurrences_nonempty_sets": {},
+      "exact_ray_verified_source_occurrences": {},
+      "zero_column_unbounded_directions_without_stored_exact_ray": 0
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 1,
+      "profile_mode": "joint_intervals",
+      "initial_samples": 35,
+      "exactly_compatible_samples": 5,
+      "zero_lower_column_occurrences_all35": {},
+      "nonempty_samples_with_zero_lower_column": 0,
+      "expected_unbounded_source_occurrences_nonempty_sets": {},
+      "exact_ray_verified_source_occurrences": {},
+      "zero_column_unbounded_directions_without_stored_exact_ray": 0
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 2,
+      "profile_mode": "fixed_profile",
+      "initial_samples": 35,
+      "exactly_compatible_samples": 0,
+      "zero_lower_column_occurrences_all35": {},
+      "nonempty_samples_with_zero_lower_column": 0,
+      "expected_unbounded_source_occurrences_nonempty_sets": {},
+      "exact_ray_verified_source_occurrences": {},
+      "zero_column_unbounded_directions_without_stored_exact_ray": 0
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 2,
+      "profile_mode": "joint_intervals",
+      "initial_samples": 35,
+      "exactly_compatible_samples": 33,
+      "zero_lower_column_occurrences_all35": {},
+      "nonempty_samples_with_zero_lower_column": 0,
+      "expected_unbounded_source_occurrences_nonempty_sets": {},
+      "exact_ray_verified_source_occurrences": {},
+      "zero_column_unbounded_directions_without_stored_exact_ray": 0
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 3,
+      "profile_mode": "fixed_profile",
+      "initial_samples": 35,
+      "exactly_compatible_samples": 5,
+      "zero_lower_column_occurrences_all35": {},
+      "nonempty_samples_with_zero_lower_column": 0,
+      "expected_unbounded_source_occurrences_nonempty_sets": {},
+      "exact_ray_verified_source_occurrences": {},
+      "zero_column_unbounded_directions_without_stored_exact_ray": 0
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 3,
+      "profile_mode": "joint_intervals",
+      "initial_samples": 35,
+      "exactly_compatible_samples": 35,
+      "zero_lower_column_occurrences_all35": {
+        "vehicle": 35
+      },
+      "nonempty_samples_with_zero_lower_column": 35,
+      "expected_unbounded_source_occurrences_nonempty_sets": {
+        "vehicle": 35
+      },
+      "exact_ray_verified_source_occurrences": {
+        "vehicle": 35
+      },
+      "zero_column_unbounded_directions_without_stored_exact_ray": 0
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 1,
+      "profile_mode": "fixed_profile",
+      "initial_samples": 35,
+      "exactly_compatible_samples": 0,
+      "zero_lower_column_occurrences_all35": {},
+      "nonempty_samples_with_zero_lower_column": 0,
+      "expected_unbounded_source_occurrences_nonempty_sets": {},
+      "exact_ray_verified_source_occurrences": {},
+      "zero_column_unbounded_directions_without_stored_exact_ray": 0
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 1,
+      "profile_mode": "joint_intervals",
+      "initial_samples": 35,
+      "exactly_compatible_samples": 5,
+      "zero_lower_column_occurrences_all35": {},
+      "nonempty_samples_with_zero_lower_column": 0,
+      "expected_unbounded_source_occurrences_nonempty_sets": {},
+      "exact_ray_verified_source_occurrences": {},
+      "zero_column_unbounded_directions_without_stored_exact_ray": 0
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 2,
+      "profile_mode": "fixed_profile",
+      "initial_samples": 35,
+      "exactly_compatible_samples": 0,
+      "zero_lower_column_occurrences_all35": {},
+      "nonempty_samples_with_zero_lower_column": 0,
+      "expected_unbounded_source_occurrences_nonempty_sets": {},
+      "exact_ray_verified_source_occurrences": {},
+      "zero_column_unbounded_directions_without_stored_exact_ray": 0
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 2,
+      "profile_mode": "joint_intervals",
+      "initial_samples": 35,
+      "exactly_compatible_samples": 33,
+      "zero_lower_column_occurrences_all35": {},
+      "nonempty_samples_with_zero_lower_column": 0,
+      "expected_unbounded_source_occurrences_nonempty_sets": {},
+      "exact_ray_verified_source_occurrences": {},
+      "zero_column_unbounded_directions_without_stored_exact_ray": 0
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 3,
+      "profile_mode": "fixed_profile",
+      "initial_samples": 35,
+      "exactly_compatible_samples": 5,
+      "zero_lower_column_occurrences_all35": {},
+      "nonempty_samples_with_zero_lower_column": 0,
+      "expected_unbounded_source_occurrences_nonempty_sets": {},
+      "exact_ray_verified_source_occurrences": {},
+      "zero_column_unbounded_directions_without_stored_exact_ray": 0
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 3,
+      "profile_mode": "joint_intervals",
+      "initial_samples": 35,
+      "exactly_compatible_samples": 35,
+      "zero_lower_column_occurrences_all35": {
+        "vehicle": 35
+      },
+      "nonempty_samples_with_zero_lower_column": 35,
+      "expected_unbounded_source_occurrences_nonempty_sets": {
+        "vehicle": 35
+      },
+      "exact_ray_verified_source_occurrences": {
+        "vehicle": 35
+      },
+      "zero_column_unbounded_directions_without_stored_exact_ray": 0
+    }
+  ],
+  "paired_mass_band_audit": [
+    {
+      "universe": "central_retained_bridge",
+      "k": 1,
+      "profile_mode": "fixed_profile",
+      "initial_samples": 35,
+      "both_sets_exactly_compatible_samples": 0,
+      "feasibility_pair_counts": {
+        "EXACT_INFEASIBLE -> EXACT_INFEASIBLE": 35
+      },
+      "decision_counts": {}
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 1,
+      "profile_mode": "joint_intervals",
+      "initial_samples": 35,
+      "both_sets_exactly_compatible_samples": 4,
+      "feasibility_pair_counts": {
+        "EXACT_INFEASIBLE -> EXACT_INFEASIBLE": 30,
+        "EXACT_COMPATIBLE -> EXACT_COMPATIBLE": 4,
+        "EXACT_COMPATIBLE -> EXACT_INFEASIBLE": 1
+      },
+      "decision_counts": {
+        "mass_verified_pair_orders": 61,
+        "pair_orders_verified_in_both": 58,
+        "pair_orders_verified_only_after_mass_band": 3,
+        "mass_only_pair_orders_from_exact_no_mass_ambiguity": 3,
+        "unique_leader_verified_only_after_mass_band_samples": 2,
+        "mass_only_unique_leader_from_exact_no_mass_multiple_co_leaders_samples": 2,
+        "no_mass_possible_co_leaders_proved_impossible_after_mass": 3,
+        "compatible_without_mass_but_mass_band_incompatible_samples": 1
+      }
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 2,
+      "profile_mode": "fixed_profile",
+      "initial_samples": 35,
+      "both_sets_exactly_compatible_samples": 0,
+      "feasibility_pair_counts": {
+        "EXACT_INFEASIBLE -> EXACT_INFEASIBLE": 35
+      },
+      "decision_counts": {}
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 2,
+      "profile_mode": "joint_intervals",
+      "initial_samples": 35,
+      "both_sets_exactly_compatible_samples": 33,
+      "feasibility_pair_counts": {
+        "EXACT_INFEASIBLE -> EXACT_INFEASIBLE": 2,
+        "EXACT_COMPATIBLE -> EXACT_COMPATIBLE": 33
+      },
+      "decision_counts": {
+        "mass_verified_pair_orders": 299,
+        "pair_orders_verified_in_both": 283,
+        "pair_orders_verified_only_after_mass_band": 16,
+        "mass_only_pair_orders_from_exact_no_mass_ambiguity": 16,
+        "no_mass_possible_co_leaders_proved_impossible_after_mass": 6,
+        "same_unique_leader_verified_in_both_samples": 2
+      }
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 3,
+      "profile_mode": "fixed_profile",
+      "initial_samples": 35,
+      "both_sets_exactly_compatible_samples": 3,
+      "feasibility_pair_counts": {
+        "EXACT_INFEASIBLE -> EXACT_INFEASIBLE": 30,
+        "EXACT_COMPATIBLE -> EXACT_INFEASIBLE": 2,
+        "EXACT_COMPATIBLE -> EXACT_COMPATIBLE": 3
+      },
+      "decision_counts": {
+        "compatible_without_mass_but_mass_band_incompatible_samples": 2,
+        "mass_verified_pair_orders": 46,
+        "pair_orders_verified_in_both": 46,
+        "same_unique_leader_verified_in_both_samples": 2
+      }
+    },
+    {
+      "universe": "central_retained_bridge",
+      "k": 3,
+      "profile_mode": "joint_intervals",
+      "initial_samples": 35,
+      "both_sets_exactly_compatible_samples": 35,
+      "feasibility_pair_counts": {
+        "EXACT_COMPATIBLE -> EXACT_COMPATIBLE": 35
+      },
+      "decision_counts": {
+        "mass_verified_pair_orders": 187,
+        "pair_orders_verified_only_after_mass_band": 180,
+        "mass_only_pair_orders_from_exact_no_mass_ambiguity": 123,
+        "mass_only_pair_orders_from_no_mass_verification_gap_or_near_zero": 57,
+        "no_mass_possible_co_leaders_proved_impossible_after_mass": 12,
+        "pair_orders_verified_in_both": 7
+      }
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 1,
+      "profile_mode": "fixed_profile",
+      "initial_samples": 35,
+      "both_sets_exactly_compatible_samples": 0,
+      "feasibility_pair_counts": {
+        "EXACT_INFEASIBLE -> EXACT_INFEASIBLE": 35
+      },
+      "decision_counts": {}
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 1,
+      "profile_mode": "joint_intervals",
+      "initial_samples": 35,
+      "both_sets_exactly_compatible_samples": 4,
+      "feasibility_pair_counts": {
+        "EXACT_INFEASIBLE -> EXACT_INFEASIBLE": 30,
+        "EXACT_COMPATIBLE -> EXACT_COMPATIBLE": 4,
+        "EXACT_COMPATIBLE -> EXACT_INFEASIBLE": 1
+      },
+      "decision_counts": {
+        "mass_verified_pair_orders": 67,
+        "pair_orders_verified_in_both": 64,
+        "pair_orders_verified_only_after_mass_band": 3,
+        "mass_only_pair_orders_from_exact_no_mass_ambiguity": 3,
+        "unique_leader_verified_only_after_mass_band_samples": 2,
+        "mass_only_unique_leader_from_exact_no_mass_multiple_co_leaders_samples": 2,
+        "no_mass_possible_co_leaders_proved_impossible_after_mass": 3,
+        "compatible_without_mass_but_mass_band_incompatible_samples": 1
+      }
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 2,
+      "profile_mode": "fixed_profile",
+      "initial_samples": 35,
+      "both_sets_exactly_compatible_samples": 0,
+      "feasibility_pair_counts": {
+        "EXACT_INFEASIBLE -> EXACT_INFEASIBLE": 35
+      },
+      "decision_counts": {}
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 2,
+      "profile_mode": "joint_intervals",
+      "initial_samples": 35,
+      "both_sets_exactly_compatible_samples": 33,
+      "feasibility_pair_counts": {
+        "EXACT_INFEASIBLE -> EXACT_INFEASIBLE": 2,
+        "EXACT_COMPATIBLE -> EXACT_COMPATIBLE": 33
+      },
+      "decision_counts": {
+        "mass_verified_pair_orders": 320,
+        "pair_orders_verified_in_both": 302,
+        "pair_orders_verified_only_after_mass_band": 18,
+        "mass_only_pair_orders_from_exact_no_mass_ambiguity": 18,
+        "no_mass_possible_co_leaders_proved_impossible_after_mass": 6,
+        "same_unique_leader_verified_in_both_samples": 2
+      }
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 3,
+      "profile_mode": "fixed_profile",
+      "initial_samples": 35,
+      "both_sets_exactly_compatible_samples": 3,
+      "feasibility_pair_counts": {
+        "EXACT_INFEASIBLE -> EXACT_INFEASIBLE": 30,
+        "EXACT_COMPATIBLE -> EXACT_INFEASIBLE": 2,
+        "EXACT_COMPATIBLE -> EXACT_COMPATIBLE": 3
+      },
+      "decision_counts": {
+        "compatible_without_mass_but_mass_band_incompatible_samples": 2,
+        "mass_verified_pair_orders": 46,
+        "pair_orders_verified_in_both": 46,
+        "same_unique_leader_verified_in_both_samples": 2
+      }
+    },
+    {
+      "universe": "full_seven_primary",
+      "k": 3,
+      "profile_mode": "joint_intervals",
+      "initial_samples": 35,
+      "both_sets_exactly_compatible_samples": 35,
+      "feasibility_pair_counts": {
+        "EXACT_COMPATIBLE -> EXACT_COMPATIBLE": 35
+      },
+      "decision_counts": {
+        "mass_verified_pair_orders": 199,
+        "pair_orders_verified_only_after_mass_band": 191,
+        "mass_only_pair_orders_from_exact_no_mass_ambiguity": 131,
+        "mass_only_pair_orders_from_no_mass_verification_gap_or_near_zero": 60,
+        "no_mass_possible_co_leaders_proved_impossible_after_mass": 12,
+        "pair_orders_verified_in_both": 8
+      }
+    }
+  ],
+  "claim_limit": "Conditional independent-box geometry; source profile-system fixed; massband is an assumption, not added evidence or physical conservation."
+}

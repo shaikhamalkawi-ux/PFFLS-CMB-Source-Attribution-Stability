@@ -1,0 +1,202 @@
+{
+  "audit_date": "2026-09-26",
+  "status": "bounded_primary_source_novelty_audit",
+  "novelty_verdict": "Consensus partial orders, set-valued leaders and abstention alone are not a major new method; a CMB-specific joint-uncertainty and validated decision-targeted measurement contribution remains a research hypothesis.",
+  "scope_warning": "Absence of a search match does not establish novelty. Access levels below distinguish full text from publisher-indexed abstract evidence.",
+  "sources": [
+    {
+      "id": "laberge2023",
+      "title": "Partial Order in Chaos: Consensus on Feature Attributions in the Rashomon Set",
+      "authors": ["Gabriel Laberge", "Yann Pequignot", "Alexandre Mathieu", "Foutse Khomh", "Mario Marchand"],
+      "year": 2023,
+      "venue": "Journal of Machine Learning Research 24(364):1-50",
+      "doi": null,
+      "url": "https://www.jmlr.org/papers/v24/23-0149.html",
+      "full_text_url": "https://jmlr.org/papers/volume24/23-0149/23-0149.pdf",
+      "access": "Primary publisher page and 50-page PDF opened; section 4.1 inspected",
+      "verified_result": "Perfect consensus over a Rashomon set yields partial order relations, incomparable feature pairs and optimization-based bounds.",
+      "relevance": "Closest mathematical prior art for proposed consensus source-order certificates."
+    },
+    {
+      "id": "fisher2019",
+      "title": "All Models are Wrong, but Many are Useful: Learning a Variable's Importance by Studying an Entire Class of Prediction Models Simultaneously",
+      "authors": ["Aaron Fisher", "Cynthia Rudin", "Francesca Dominici"],
+      "year": 2019,
+      "venue": "Journal of Machine Learning Research 20(177):1-81",
+      "doi": null,
+      "url": "https://www.jmlr.org/papers/v20/18-760.html",
+      "full_text_url": "https://www.jmlr.org/papers/volume20/18-760/18-760.pdf",
+      "access": "Primary publisher abstract opened; primary PDF indexed text inspected",
+      "verified_result": "Model class reliance ranges variable importance across well-performing models in a prespecified class."
+    },
+    {
+      "id": "epa_cmb82_manual",
+      "title": "EPA-CMB8.2 Users Manual",
+      "year": 2004,
+      "doi": null,
+      "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1009R4F.TXT",
+      "access": "Official full manual opened; sections 3.6.1 and 6.1.2 inspected",
+      "verified_result": "Reports source estimability, eligible space and estimable linear combinations of inestimable sources.",
+      "relevance": "Mandatory native diagnostic baseline."
+    },
+    {
+      "id": "quail_roost1987",
+      "title": "Effects of systematic error, estimates and uncertainties in chemical mass balance apportionments: Quail Roost II revisited",
+      "year": 1987,
+      "doi": "10.1016/0004-6981(87)90033-3",
+      "url": "https://www.sciencedirect.com/science/article/pii/0004698187900333",
+      "access": "Publisher-indexed abstract and DOI inspected; direct open failed; no paywall bypass",
+      "verified_result": "Studies collinearity, systematic source errors and covariance effects on CMB source uncertainty."
+    },
+    {
+      "id": "christensen_gunst2004",
+      "title": "Measurement error models in chemical mass balance analysis of air quality data",
+      "authors": ["William F. Christensen", "Richard F. Gunst"],
+      "year": 2004,
+      "doi": "10.1016/j.atmosenv.2003.10.018",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1352231003008811",
+      "access": "Primary publisher-indexed abstract, introduction and DOI inspected; direct open failed",
+      "verified_result": "Compares CMB inference methods under measurement-error and source-profile assumption violations; includes Fresno PM2.5 analysis."
+    },
+    {
+      "id": "lee_russell2007",
+      "title": "Estimating uncertainties and uncertainty contributors of CMB PM2.5 source apportionment results",
+      "authors": ["Sangil Lee", "Armistead G. Russell"],
+      "year": 2007,
+      "doi": "10.1016/j.atmosenv.2007.08.022",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1352231007007406",
+      "access": "Primary abstract indexed within publisher article results; DOI cross-checked in primary journal reference lists; direct open returned 403",
+      "verified_result": "Monte Carlo Latin-hypercube analysis estimates source-impact uncertainty contributions from ambient measurements and source profiles."
+    },
+    {
+      "id": "keats2009",
+      "title": "Bayesian treatment of a chemical mass balance receptor model with multiplicative error structure",
+      "authors": ["Andrew Keats", "Man-Ting Cheng", "Eugene Yee", "Fue-Sang Lien"],
+      "year": 2009,
+      "doi": "10.1016/j.atmosenv.2008.10.031",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1352231008009722",
+      "author_thesis_chapter_url": "https://dspacemainprd01.lib.uwaterloo.ca/server/api/core/bitstreams/9237f195-602c-42a1-bb8d-5f178adabb4f/content",
+      "access": "Primary publisher-indexed abstract and author's thesis chapter opening inspected; publisher direct open failed and thesis direct open timed out",
+      "verified_result": "Bayesian multiplicative-error CMB compared with EPA CMB using Fresno PM data."
+    },
+    {
+      "id": "lee2009",
+      "title": "Ensemble-trained PM2.5 source apportionment approach for health studies",
+      "year": 2009,
+      "doi": "10.1021/es9004703",
+      "url": "https://pubs.acs.org/doi/10.1021/es9004703",
+      "index_url": "https://pubmed.ncbi.nlm.nih.gov/19806737/",
+      "access": "Primary article abstract in PubMed indexed result and DOI inspected; direct publisher open failed",
+      "verified_result": "Develops ensemble-trained CMB source apportionment."
+    },
+    {
+      "id": "balachandran2012",
+      "title": "Ensemble-trained source apportionment of fine particulate matter and method uncertainty analysis",
+      "year": 2012,
+      "doi": "10.1016/j.atmosenv.2012.07.031",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1352231012007030",
+      "access": "Extensive primary publisher-indexed abstract and article sections inspected; direct open failed",
+      "verified_result": "Combines two CMB approaches, PMF and CMAQ, and updates source-impact uncertainty across methods."
+    },
+    {
+      "id": "balachandran2013",
+      "title": "Bayesian-Based Ensemble Source Apportionment of PM2.5",
+      "year": 2013,
+      "doi": "10.1021/es4020647",
+      "url": "https://pubs.acs.org/doi/full/10.1021/es4020647",
+      "access": "Full primary publisher-indexed abstract and DOI inspected; direct open failed",
+      "verified_result": "Samples source profiles and repeatedly applies CMB to obtain daily impact distributions."
+    },
+    {
+      "id": "paatero2014",
+      "title": "Methods for estimating uncertainty in factor analytic solutions",
+      "authors": ["Pentti Paatero", "Shelly Eberly", "Steven G. Brown", "Gary A. Norris"],
+      "year": 2014,
+      "doi": "10.5194/amt-7-781-2014",
+      "url": "https://amt.copernicus.org/articles/7/781/2014/",
+      "full_text_url": "https://amt.copernicus.org/articles/7/781/2014/amt-7-781-2014.pdf",
+      "access": "Primary 17-page full-text PDF opened",
+      "verified_result": "Develops uncertainty methods for factor-analytic solutions including displacement and bootstrap approaches."
+    },
+    {
+      "id": "brown2015",
+      "title": "Methods for estimating uncertainty in PMF solutions: examples with ambient air and water quality data and guidance on reporting PMF results",
+      "authors": ["Steven G. Brown", "Shelly Eberly", "Pentti Paatero", "Gary A. Norris"],
+      "year": 2015,
+      "doi": "10.1016/j.scitotenv.2015.01.022",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25776202/",
+      "access": "Primary article abstract and metadata in PubMed opened",
+      "verified_result": "EPA PMF 5.0 bootstrap, displacement and combined procedures address random uncertainty and rotational ambiguity."
+    },
+    {
+      "id": "bamf2024",
+      "title": "A novel probabilistic source apportionment approach: Bayesian auto-correlated matrix factorization",
+      "year": 2024,
+      "doi": "10.5194/amt-17-1251-2024",
+      "url": "https://amt.copernicus.org/articles/17/1251/2024/",
+      "access": "Primary full article HTML opened",
+      "verified_result": "Probabilistic matrix-factorization approach for source apportionment with profile uncertainty."
+    },
+    {
+      "id": "bhardwaj2026",
+      "title": "Identifiability-Aware Source Apportionment in City-Scale Advection-Diffusion Systems",
+      "authors": ["Ankit Bhardwaj", "Lakshminarayanan Subramanian"],
+      "year": 2026,
+      "submitted_date_as_displayed_by_arxiv": "2026-07-25",
+      "publication_status": "preprint, version 1; no peer-review status asserted",
+      "doi": "10.48550/arXiv.2608.00050",
+      "url": "https://arxiv.org/abs/2608.00050",
+      "full_text_url": "https://arxiv.org/html/2608.00050v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.00050",
+      "access": "Primary arXiv abstract, HTML and 19-page PDF opened",
+      "verified_result": "Proposes identifiability diagnostics, ambiguity certificates and conservative grouping for a transport-based source inverse problem.",
+      "limitation": "Claims of numerical superiority not independently audited; different forward model from chemical-profile CMB."
+    },
+    {
+      "id": "stark1992",
+      "title": "Inference in infinite-dimensional inverse problems: Discretization and duality",
+      "authors": ["Philip B. Stark"],
+      "year": 1992,
+      "doi": "10.1029/92JB00739",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/92JB00739",
+      "access": "Primary publisher abstract opened",
+      "verified_result": "Strict-bound inference and dual formulations address coverage limitations induced by discretization."
+    },
+    {
+      "id": "farzanah1985",
+      "title": "Condition numbers as criteria for evaluation of atmospheric aerosol measurement techniques",
+      "authors": ["Fariba F. Farzanah", "Carolyn R. Kaplan", "Po Y. Yu", "Juan Hong", "James W. Gentry"],
+      "year": 1985,
+      "doi": "10.1021/es00132a001",
+      "url": "https://pubs.acs.org/doi/10.1021/es00132a001",
+      "access": "Primary publisher metadata and indexed primary-paper abstract inspected; publisher full text inaccessible",
+      "verified_result": "Uses conditioning to evaluate aerosol experimental design including source-receptor indicator-element choice."
+    },
+    {
+      "id": "atkinson_fedorov1975",
+      "title": "The design of experiments for discriminating between two rival models",
+      "authors": ["A. C. Atkinson", "V. V. Fedorov"],
+      "year": 1975,
+      "doi": "10.1093/biomet/62.1.57",
+      "url": "https://doi.org/10.1093/biomet/62.1.57",
+      "access": "Primary publisher-indexed abstract and DOI inspected; direct open failed",
+      "verified_result": "Sequential and nonsequential experiment designs for discrimination between competing regression models."
+    },
+    {
+      "id": "soil2024_tracers",
+      "title": "Sensitivity of source sediment fingerprinting to tracer selection methods",
+      "year": 2024,
+      "doi": "10.5194/soil-10-109-2024",
+      "url": "https://soil.copernicus.org/articles/10/109/2024/",
+      "access": "Primary full article HTML opened",
+      "verified_result": "Compares tracer-selection methods and virtual-mixture validation, including limits to transfer onto actual sediment samples."
+    }
+  ],
+  "followup_priorities": [
+    "Compare source-order certificates directly with CMB eligible-space and joint contrast uncertainty diagnostics.",
+    "Audit joint substitutions and within-profile uncertainty before using identification or coverage terminology.",
+    "Evaluate decision-targeted tracer selection against established conditioning and discrimination-design baselines.",
+    "Secure independent truth-bearing validation; the historical EPA reconstruction alone is not source-truth validation."
+  ],
+  "restrictions_observed": ["No external writes or outreach", "No paywall bypass", "No restricted JRC downloads", "No manuscript edits", "No git operations"]
+}

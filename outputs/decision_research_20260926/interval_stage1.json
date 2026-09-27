@@ -1,0 +1,96 @@
+{
+  "stage": 1,
+  "completed_utc": "2026-09-26T20:21:58.226475+00:00",
+  "status": "PASS",
+  "configuration_sha256": "9ad8d7a42075fe3c4821336dfcbea9ae545daa05d70dd85ce5668eceb5aa6f5a",
+  "script_sha256": "ecb4e8f01f4028eb0a43d85870b3f458b75fce91d8bad9bdddaa815c3597da93",
+  "tests_sha256": "777862955c40b41a147886e701914840ff8eae6a061cd96a510f9e4de5e25033",
+  "metadata": {
+    "status": "PASS",
+    "identity_verification": {
+      "status": "PASS",
+      "archives_checked": 4,
+      "members_checked": 39,
+      "recovery_record_sha256": "4f60826ae3e564af7b16bc07ca64a3cd7df2d89aa99e554ef239a1dcb844d6f2",
+      "performed_before_fitting": true
+    },
+    "input_summary": {
+      "receptor_rows_in_archive": 206,
+      "fine_profiles_in_archive": 55,
+      "fresno_fine_samples": 35,
+      "species": [
+        "N3IC",
+        "S4IC",
+        "N4TC",
+        "KPAC",
+        "NAAC",
+        "ECTC",
+        "OCTC",
+        "ALXC",
+        "SIXC",
+        "CLXC",
+        "KPXC",
+        "CAXC",
+        "TIXC",
+        "VAXC",
+        "CRXC",
+        "MNXC",
+        "FEXC",
+        "NIXC",
+        "BRXC",
+        "PBXC"
+      ],
+      "initial_source_ids": [
+        "SOIL03",
+        "BAMAJC",
+        "SFCRUC",
+        "MOVES2",
+        "AMSUL",
+        "AMNIT",
+        "NANO3"
+      ],
+      "alternatives": {
+        "SOIL03": [
+          "SOIL08",
+          "SOIL12",
+          "SOIL29"
+        ],
+        "BAMAJC": [
+          "MAFISC",
+          "MAMAJC"
+        ],
+        "SFCRUC": [
+          "CHCRUC"
+        ],
+        "MOVES2": [
+          "MOVES1",
+          "MOVES3",
+          "MOVES4",
+          "MOVES5"
+        ]
+      },
+      "species_arrays_2_and_4_identical": true
+    },
+    "validation_counts": {
+      "ambient_species_pairs": 700,
+      "profile_species_pairs": 140,
+      "zero_profile_uncertainty": 70,
+      "zero_profile_abundance": 74,
+      "profile_upper_above_one_k1": 0,
+      "profile_upper_above_one_k2": 0,
+      "profile_upper_above_one_k3": 3
+    },
+    "physical_profile_columns_complete_disjoint": "NOT ESTABLISHED; no column-sum constraints",
+    "uncertainty_semantics": "released uncertainty fields; k multiples are sensitivity bounds, not coverage probabilities",
+    "manual_source": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1009R4F.TXT",
+    "physical_mass_upper_panel": "NOT RUN",
+    "stage3_full_profile_grid": "NOT RUN"
+  },
+  "test_exit_code": 0,
+  "test_output": "test_box_vs_composition_can_change_leader (test_interval_decisions.IntervalExactTests.test_box_vs_composition_can_change_leader) ... ok\ntest_constructive_box_projection_and_zero_contribution (test_interval_decisions.IntervalExactTests.test_constructive_box_projection_and_zero_contribution) ... ok\ntest_dual_residual_corrected_bound_with_justified_cap (test_interval_decisions.IntervalExactTests.test_dual_residual_corrected_bound_with_justified_cap) ... ok\ntest_dual_residual_without_valid_cap_is_unresolved (test_interval_decisions.IntervalExactTests.test_dual_residual_without_valid_cap_is_unresolved) ... ok\ntest_exact_repair_rejects_tolerance_only_infeasibility (test_interval_decisions.IntervalExactTests.test_exact_repair_rejects_tolerance_only_infeasibility) ... ok\ntest_exact_unbounded_requires_base_point_and_improving_ray (test_interval_decisions.IntervalExactTests.test_exact_unbounded_requires_base_point_and_improving_ray) ... ok\ntest_exact_zero_width_interval_solution (test_interval_decisions.IntervalExactTests.test_exact_zero_width_interval_solution) ... ok\ntest_farkas_certificate_for_contradictory_interval (test_interval_decisions.IntervalExactTests.test_farkas_certificate_for_contradictory_interval) ... ok\ntest_feasible_tie_not_arbitrarily_broken (test_interval_decisions.IntervalExactTests.test_feasible_tie_not_arbitrarily_broken) ... ok\ntest_frozen_configuration_dependency_identity (test_interval_decisions.IntervalExactTests.test_frozen_configuration_dependency_identity) ... ok\ntest_known_true_vector_and_interval_nesting (test_interval_decisions.IntervalExactTests.test_known_true_vector_and_interval_nesting) ... ok\ntest_missing_profile_and_negative_uncertainty_fail_closed (test_interval_decisions.IntervalExactTests.test_missing_profile_and_negative_uncertainty_fail_closed) ... ok\ntest_near_zero_positive_margin_is_explicit_hold (test_interval_decisions.IntervalExactTests.test_near_zero_positive_margin_is_explicit_hold) ... ok\ntest_nominal_zero_source_removal_changes_interval_bounds (test_interval_decisions.IntervalExactTests.test_nominal_zero_source_removal_changes_interval_bounds) ... ok\ntest_nonempty_compatibility_needed_for_winner (test_interval_decisions.IntervalExactTests.test_nonempty_compatibility_needed_for_winner) ... ok\ntest_nonfinite_dual_cannot_be_verified (test_interval_decisions.IntervalExactTests.test_nonfinite_dual_cannot_be_verified) ... ok\ntest_nonpositive_lower_bound_does_not_prove_reversal (test_interval_decisions.IntervalExactTests.test_nonpositive_lower_bound_does_not_prove_reversal) ... ok\ntest_numerical_exception_status_not_hidden (test_interval_decisions.IntervalExactTests.test_numerical_exception_status_not_hidden) ... ok\ntest_one_sided_strict_order_survives_opposite_unboundedness (test_interval_decisions.IntervalExactTests.test_one_sided_strict_order_survives_opposite_unboundedness) ... ok\ntest_original_decimal_rational_input_not_float_endpoint (test_interval_decisions.IntervalExactTests.test_original_decimal_rational_input_not_float_endpoint) ... ok\ntest_positive_dual_marginals_clipped_and_rechecked (test_interval_decisions.IntervalExactTests.test_positive_dual_marginals_clipped_and_rechecked) ... ok\ntest_possible_co_leader_requires_joint_feasibility (test_interval_decisions.IntervalExactTests.test_possible_co_leader_requires_joint_feasibility) ... ok\ntest_profile_union_does_not_equal_entrywise_envelope (test_interval_decisions.IntervalExactTests.test_profile_union_does_not_equal_entrywise_envelope) ... ok\ntest_projected_and_explicit_lifted_lp_bounds_agree (test_interval_decisions.IntervalExactTests.test_projected_and_explicit_lifted_lp_bounds_agree) ... ok\ntest_repair_failure_does_not_fabricate_point (test_interval_decisions.IntervalExactTests.test_repair_failure_does_not_fabricate_point) ... ok\ntest_retained_universe_embedding_in_full_by_zeros (test_interval_decisions.IntervalExactTests.test_retained_universe_embedding_in_full_by_zeros) ... ok\ntest_two_verified_opposite_witnesses_establish_both_orderings (test_interval_decisions.IntervalExactTests.test_two_verified_opposite_witnesses_establish_both_orderings) ... ok\ntest_unapproved_scenarios_fail_closed (test_interval_decisions.IntervalExactTests.test_unapproved_scenarios_fail_closed) ... ok\ntest_unverified_farkas_is_not_infeasible_certificate (test_interval_decisions.IntervalExactTests.test_unverified_farkas_is_not_infeasible_certificate) ... ok\n\n----------------------------------------------------------------------\nRan 29 tests in 2.100s\n\nOK\n",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.18.1"
+  }
+}

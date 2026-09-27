@@ -1,0 +1,176 @@
+{
+  "archive_sha256": "e4f6e055a3db15e22f7c0c449a84d2d23a1f86270d658ff3f1a63fc435367501",
+  "arrays": {
+    "M0": {
+      "dtype": "<f8",
+      "sha256": "30814f6dd2d216ea496afd1febf9ab4d0d7ba62afec9ecb6ad5f1257372277f7",
+      "shape": [
+        336,
+        5
+      ]
+    },
+    "P0": {
+      "dtype": "<f8",
+      "sha256": "64659da5237bf2721b6c8a812f5cba5bad58a919d7829c8779895d40566e53e7",
+      "shape": [
+        5,
+        82
+      ]
+    },
+    "candidates": {
+      "dtype": "<f8",
+      "sha256": "d29290f47deb53049e1be3ca25376544c0403a74edaeb81944c2ae51c55ee8f0",
+      "shape": [
+        9,
+        5,
+        82
+      ]
+    },
+    "channels": {
+      "dtype": "<f8",
+      "sha256": "23573d469913a0aea3e4015662819fc2d53ee13152bdb780e9a0552d1d1a36aa",
+      "shape": [
+        82
+      ]
+    },
+    "excluded_direction": {
+      "dtype": "<f8",
+      "sha256": "ac599d47749421445c160025669a5c65af64d397037d09519a70061372c01f12",
+      "shape": [
+        5,
+        82
+      ]
+    },
+    "excluded_profile": {
+      "dtype": "<f8",
+      "sha256": "71fc4a56b45f5e37613037e620e52eb994eba268217523e5d74259ecf0418e9e",
+      "shape": [
+        5,
+        82
+      ]
+    },
+    "generated_rows": {
+      "dtype": "<i8",
+      "sha256": "1434815293c7e43b30f18a3c8f2fcbc5c0ac3f2b826677d5cda4a5b6c4bbbd2b",
+      "shape": [
+        24
+      ]
+    },
+    "generated_sigma": {
+      "dtype": "<f8",
+      "sha256": "7e41bc6002c7157402edb8595610db80e92c18ebdd34f5288edb7cbb75f23651",
+      "shape": [
+        6,
+        32,
+        24,
+        82
+      ]
+    },
+    "generated_truth": {
+      "dtype": "<f8",
+      "sha256": "d399495401572c7aa13fe8ef23451b84562aa4a1aa31c1cb48e1365db4e27a93",
+      "shape": [
+        6,
+        32,
+        24,
+        5
+      ]
+    },
+    "generated_x": {
+      "dtype": "<f8",
+      "sha256": "29de7d98f56d20068ecb8412c0d3f6e48f45148ee8f2047b7b3008449f76edd9",
+      "shape": [
+        6,
+        32,
+        24,
+        82
+      ]
+    },
+    "noise_a": {
+      "dtype": "<f8",
+      "sha256": "ccd635e09ef06f0c120d4f49d53778569971ec06eaf153236075f198581a01f0",
+      "shape": [
+        32,
+        24
+      ]
+    },
+    "noise_z": {
+      "dtype": "<f8",
+      "sha256": "a9c2c88ca41b6d31bcb3852a23b4e2749f61f4bc24960c121507f91a60fd6640",
+      "shape": [
+        32,
+        24,
+        82
+      ]
+    },
+    "profile_directions": {
+      "dtype": "<f8",
+      "sha256": "20af56c3ee023c9088650702c15933e972786dacaaee0fcfacb3e0747001eeb7",
+      "shape": [
+        4,
+        5,
+        82
+      ]
+    },
+    "released_sigma": {
+      "dtype": "<f8",
+      "sha256": "8940f965ff0922ac5c1d22b3d2b161bbe0d5881a4654b87e406c848d77d749ff",
+      "shape": [
+        336,
+        82
+      ]
+    },
+    "released_x": {
+      "dtype": "<f8",
+      "sha256": "c2b59437c0f870980254889dbcbda6ac3afe13e7c0520220737f7b6d208d6dec",
+      "shape": [
+        336,
+        82
+      ]
+    }
+  },
+  "configuration_sha256": "8b77f98045f0ffd608de37b357c65107bbdb333d119b13bc22b614fe25e048c9",
+  "created_at_utc": "2026-09-26T20:45:54.300989+00:00",
+  "frozen_array_file": "truth_frozen_arrays.npz",
+  "frozen_array_file_sha256": "78ec90aa3adb31c7d4e83237bcec79643579161d9e6407d9479995ed494581c1",
+  "member_sha256": "fa62a734a1dda779df572e0c975e3103a2c9ad06d2a3eaffc2ed8affd3d89d64",
+  "no_fit_or_scoring_performed": true,
+  "rng_states": {
+    "noise_after": {
+      "bit_generator": "PCG64",
+      "has_uint32": 0,
+      "state": {
+        "inc": 274297593279136859012528016846784489691,
+        "state": 214208555074547662640552264244534409222
+      },
+      "uinteger": 0
+    },
+    "noise_before": {
+      "bit_generator": "PCG64",
+      "has_uint32": 0,
+      "state": {
+        "inc": 274297593279136859012528016846784489691,
+        "state": 314080482146797907312215023383765446885
+      },
+      "uinteger": 0
+    },
+    "profile_after": {
+      "bit_generator": "PCG64",
+      "has_uint32": 0,
+      "state": {
+        "inc": 243110630269398971651103073659284551395,
+        "state": 125583947744915755371324827150331000214
+      },
+      "uinteger": 0
+    },
+    "profile_before": {
+      "bit_generator": "PCG64",
+      "has_uint32": 0,
+      "state": {
+        "inc": 243110630269398971651103073659284551395,
+        "state": 160407717077402407312281969331979767886
+      },
+      "uinteger": 0
+    }
+  }
+}

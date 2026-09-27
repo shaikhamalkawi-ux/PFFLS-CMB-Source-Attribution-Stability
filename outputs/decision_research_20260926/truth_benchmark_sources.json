@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "audit_date_utc": "2026-09-26",
+  "status": "numerical_construction_truth_verified_named_units_profile_uncertainty_limited_no_benchmark_run",
+  "selected_candidate": {
+    "selection_rule": "One present realistic online dataset chosen before reading any method outcomes; no performance-driven city or realization search",
+    "dataset_doi": "10.5281/zenodo.19223353",
+    "archive_filename": "datasets_bamf_horseshoe.zip",
+    "archive_url": "https://zenodo.org/api/records/19223353/files/datasets_bamf_horseshoe.zip/content",
+    "published_size_bytes": 14572677,
+    "observed_size_bytes": 14572677,
+    "published_md5": "f9865bf2c2259f1fdd32251c9560cf55",
+    "independent_hash_verified": true,
+    "archive_sha256": "e4f6e055a3db15e22f7c0c449a84d2d23a1f86270d658ff3f1a63fc435367501",
+    "metadata_snapshot_sha256": "eb86d8feb02c8c935529463602d30fca54e46bf7d44290232df19fe8eef785c7",
+    "member_path": "datasets/online_SDs/Zurich/Zurich_0.h5",
+    "member_size_bytes": 529520,
+    "member_sha256": "fa62a734a1dda779df572e0c975e3103a2c9ad06d2a3eaffc2ed8affd3d89d64",
+    "construction_truth_verified_in_machinefile": true,
+    "construction_truth_basis": "Released synthetic-data file contains generating F and G together with observations and errors; article defines this synthetic construction. Not field truth.",
+    "profile_uncertainty_status": "absent",
+    "units_status": "No physical unit metadata; released simulation-scale units only until provenance recovered",
+    "source_ids": [0, 1, 2, 3, 4],
+    "source_environmental_mapping": "not verified; do not infer order from article listing",
+    "primary_truth_endpoint": "Largest modeled 82-channel integrated signal M0[t,k]=G0[t,k]*sum_j F0[k,j]; not total atmospheric source mass",
+    "compensated_normalization": "P0[k,j]=F0[k,j]/sum_j F0[k,j]; M0 @ P0 equals G0 @ F0",
+    "raw_G_ranking": "Scale-dependent coefficient ranking; optional separately labelled secondary endpoint only",
+    "scale_sanity_checks": {
+      "compensated_normalization_preserves_GF": true,
+      "source_specific_rescaling_preserves_integrated_truth": true,
+      "source_specific_rescaling_preserves_integrated_truth_argmax": true,
+      "rescaling_factors": [0.5, 2.0, 3.0, 0.25, 4.0],
+      "numeric_tolerance_rtol_atol": 1e-12,
+      "method_fits_or_decisions_involved": false
+    },
+    "arrays": {
+      "profile": {"path": "F/block0_values", "shape": [5, 82], "row_ids": "F/axis1", "column_ids": "F/axis0"},
+      "contribution_truth": {"path": "G/block0_values", "shape": [336, 5], "row_ids": "G/axis1", "column_ids": "G/axis0"},
+      "observations": {"path": "data/block0_values", "shape": [336, 82], "row_ids": "data/axis1", "column_ids": "data/axis0"},
+      "receptor_uncertainty": {"path": "error/block0_values", "shape": [336, 82], "row_ids": "error/axis1", "column_ids": "error/axis0"}
+    },
+    "all_four_numeric_arrays_finite_strictly_positive": true,
+    "axis_alignment_verified": true,
+    "time_axis_is_row_index_not_verified_calendar_timestamp": true,
+    "profile_row_sums": [0.981926732, 0.903950324, 0.810483439, 0.773449161, 0.892754982],
+    "construction_standardized_residual_mean": -0.0016284139684174018,
+    "construction_standardized_residual_population_sd": 0.0264075004250403,
+    "noise_law_warning": "Released error matrix must not be assumed to be the actual independent Gaussian generation SD; no rescaling or reverse engineering to evaluated residuals",
+    "inspection_dependencies": {"h5py": "3.16.0", "numpy": "2.3.5", "location": "tmp/decision_research_hdf5_deps", "no_object_or_pickle_decoding": true},
+    "no_benchmark_fits_or_decisions_run": true
+  },
+  "frozen_generated_control_design": {
+    "version": 2,
+    "status": "frozen_before_outcomes_requires_root_review_before_execution",
+    "reference_document": "TRUTH_BENCHMARK_AUDIT.md",
+    "rows": "14*i for i=0..23",
+    "replicates": 32,
+    "noise_scale_factors": [1.0],
+    "amendment_before_method_outcomes": "Root review required scale-invariant integrated-channel-signal endpoint; removed extra noise-scale sweep to bound computation",
+    "profile_rng": {"algorithm": "PCG64", "seed": 2026092701},
+    "noise_rng": {"algorithm": "PCG64", "seed": 2026092702},
+    "bootstrap_rng": {"algorithm": "PCG64", "seed": 2026092703, "resamples": 2000},
+    "familywise_alpha_grid": [0.5, 0.2, 0.1, 0.05, 0.01, 0.001],
+    "candidate_profiles": "P0 and four plus/minus 0.15 lognormal direction alternatives; normalize rows to one on shared integrated-signal contribution scale",
+    "profile_within_candidate_error": 0,
+    "regimes": ["included_truth", "excluded_profile_truth", "correlated_receptor_error_rho_0.5", "uncertainty_underreported_by_half", "source_4_omitted", "near_tied_sources_0_and_1"],
+    "required_baselines": ["historical_EVLS_solver_minimum_Q", "winner_joint_contrast_covariance", "ensemble_union_of_joint_contrast_sets", "finite_point_ensemble_leader_union"],
+    "continuous_certificate": "Requires separate exact feasible-set and implementation freeze before any scoring"
+  },
+  "sources": [
+    {
+      "id": "via2026_article",
+      "title": "Chemical sparsity in Bayesian receptor models for aerosol source apportionment",
+      "authors": "Via et al.",
+      "year": 2026,
+      "doi": "10.5194/amt-19-2175-2026",
+      "url": "https://amt.copernicus.org/articles/19/2175/2026/",
+      "pdf_url": "https://amt.copernicus.org/articles/19/2175/2026/amt-19-2175-2026.pdf",
+      "access": "full primary HTML inspected",
+      "license": "CC BY 4.0",
+      "license_verification": "Article header explicitly declares Creative Commons Attribution 4.0 separately from dataset metadata",
+      "use": "Primary description of synthetic construction and data release; not evidence of independent field truth"
+    },
+    {
+      "id": "via2026_dataset",
+      "title": "Datasets used in the BAMF+horseshoe manuscripts",
+      "year": 2026,
+      "release_date": "2026-03-25",
+      "doi": "10.5281/zenodo.19223353",
+      "url": "https://zenodo.org/records/19223353",
+      "api_url": "https://zenodo.org/api/records/19223353",
+      "access": "Official API retrieved; ZIP downloaded in memory and full member inventory inspected",
+      "license": "CC BY 4.0",
+      "license_verification": "Official API metadata access_right=open and license.id=cc-by-4.0",
+      "use": "35 released HDF5 files; offline synthetic case not present in inspected archive"
+    },
+    {
+      "id": "via2026_repository",
+      "title": "BAMF-horseshoe primary author repository",
+      "url": "https://github.com/martavia0/BAMF-horseshoe",
+      "api_url": "https://api.github.com/repos/martavia0/BAMF-horseshoe/git/trees/main?recursive=1",
+      "access": "README and recursive file tree inspected",
+      "license": "Do not infer a repository-wide license from visibility; use licensed Zenodo release",
+      "use": "Cross-checks released file naming; README mentions offline case absent from file tree"
+    },
+    {
+      "id": "nist_quail_roost_catalog",
+      "title": "NIST Special Publication 305 Supplement 18: catalog entry for Review of the Quail Roost II Receptor Model Simulation Exercise",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication305supp18.pdf",
+      "access": "Primary indexed PDF catalog inspected",
+      "use": "Gerlach, Currie and Lewis 1982; SP48 pp96-109; NTIS PB86-207172; original computer-generated exercise",
+      "machine_data_status": "not located in bounded search"
+    },
+    {
+      "id": "epa_quail_roost_report",
+      "title": "Air Quality Models Pertaining To Particulate Matter",
+      "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=2000XDKH.TXT",
+      "access": "Primary EPA text inspected",
+      "use": "Quail Roost mixture and source-profile discussion",
+      "machine_data_status": "not located; selected printed tables are not a complete verified machine release"
+    },
+    {
+      "id": "lowenthal1987",
+      "title": "Effects of systematic error, estimates and uncertainties in chemical mass balance apportionments: Quail Roost II revisited",
+      "year": 1987,
+      "doi": "10.1016/0004-6981(87)90033-3",
+      "url": "https://doi.org/10.1016/0004-6981(87)90033-3",
+      "access": "Publisher metadata and abstract; full text not inspected",
+      "machine_data_status": "not located"
+    },
+    {
+      "id": "epa2000_workshop",
+      "title": "Workshop on UNMIX and PMF as Applied to PM2.5: Final Report",
+      "year": 2000,
+      "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=91010J2S.TXT",
+      "slides_url": "https://www3.epa.gov/ttnamti1/files/ambient/pm25/workshop/sa.pdf",
+      "access": "Primary EPA report and slides inspected",
+      "use": "Palookaville synthetic known-source exercise",
+      "machine_data_status": "exact inputs uncertainties and contribution truth files not located"
+    },
+    {
+      "id": "rivm2007_palookaville",
+      "title": "Implementation of source apportionment using Positive Matrix Factorization: Application of the Palookaville exercise",
+      "year": 2007,
+      "report_number": "863001006",
+      "url": "https://www.rivm.nl/bibliotheek/rapporten/863001006.pdf",
+      "alternate_url": "https://rivm.openrepository.com/bitstreams/5e4f5204-fc3d-460e-8966-efcfed2531a8/download",
+      "access": "Primary indexed report inspected",
+      "use": "Synthetic dispersion and uncertainty construction description",
+      "machine_data_status": "exact release not located"
+    }
+  ],
+  "excluded": [
+    {"dataset": "JRC DeltaSA restricted raw data", "reason": "Purpose restriction; not downloaded or used"},
+    {"dataset": "EPA SJVF PACS CMB8.2 native inputs", "reason": "No independently known per-sample source contributions"},
+    {"dataset": "EPA PMF Baltimore field examples", "reason": "Field input files are not known-source truth"},
+    {"dataset": "Prior Fairbanks NFRAQS school-bus ARM leads", "reason": "Existing recovery record inspected; no new independent-truth machine release identified"}
+  ]
+}

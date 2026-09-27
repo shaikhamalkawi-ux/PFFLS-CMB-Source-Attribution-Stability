@@ -1,0 +1,78 @@
+{
+  "schema": "cold_implementation_qa_v1",
+  "recorded_utc": "2026-09-26T23:22:02+00:00",
+  "status": "IMPLEMENTATION_AND_METADATA_GATES_PASS",
+  "field_execution_authorization": "NOT_GRANTED_BY_THIS_QA",
+  "field_lp_calls_in_this_gate": 0,
+  "historical_private_ledgers_used": false,
+  "scope": "Implementation, synthetic workflow/proof tests, and original-input metadata agreement only; not a completed field reproduction, environmental truth test, or new-method claim.",
+  "producer_tests": {
+    "execution": "EXECUTED_BY_PRODUCER_IMPLEMENTATION_AGENT",
+    "command": "python -m unittest discover -s tests -p test_cold_interval_union.py -v",
+    "status": "PASS",
+    "tests": 52,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "reported_unittest_runtime_seconds": 116.089,
+    "includes_synthetic_lp_calls": true,
+    "includes_actual_writer_to_independent_event_inventory_and_proof_replay": true
+  },
+  "independent_verifier_tests": {
+    "execution": "REPORTED_BY_INDEPENDENT_MATH_AUDITOR_NOT_RERUN_BY_PRODUCER_AGENT",
+    "command": "python -m unittest discover -s tests -p test_cold_interval_union_records.py -v",
+    "status": "PASS",
+    "tests": 54,
+    "reported_unittest_runtime_seconds": 169.246,
+    "field_lp_calls": 0
+  },
+  "native_metadata": {
+    "producer_status": "METADATA_ONLY_NO_LP",
+    "independent_reader_status": "MATCH_ALL_THREE_CANONICAL_DIGESTS",
+    "independent_reader_runtime_seconds_reported": 75.062,
+    "archives": 4,
+    "members": 39,
+    "samples": 35,
+    "species": 20,
+    "source_families": 7,
+    "tuples": 120,
+    "models": 4200,
+    "sample_order_sha256": "40ef641250f21051414ca5705aa8b4b47c83bd3694c5abb93d14d8f942c3110d",
+    "tuple_order_sha256": "fa7f43be39dc8532032e415f95c7bd7f4b6a58b4c0b97b7a5edb9ea49862db8d",
+    "ordered_model_sha256": "21d52f2300bc1b907f2470ecd2baf9a7b2d68854bb0904bcbe3e58378b6a4ee2"
+  },
+  "independent_static_review": {
+    "status": "PASS_NO_REMAINING_BLOCKER_IDENTIFIED",
+    "reviewer": "INDEPENDENT_JOINT_PROFILE_AGENT",
+    "path": "outputs/decision_research_20260926/COLD_PRODUCER_STATIC_REVIEW.md",
+    "sha256": "b6f4c82896e372380342955da107400727d328c3c27a6bd90dda4d1efa2bcc95",
+    "did_not_duplicate_test_execution": true
+  },
+  "required_next_gates": [
+    "A new isolated public-code snapshot and exclusively created private output directory",
+    "Fresh no-LP preflight and immutable pre-solve manifest",
+    "Independent review of that exact prepared manifest and explicit root execution approval",
+    "Independent no-LP proof replay of any subsequently generated field records"
+  ],
+  "dependency_count": 18,
+  "dependencies": {
+    "outputs/decision_research_20260926/COLD_RUN_RECORD_SCHEMA.md": "929e78ded6029bfa2f2130820629277ea89a7919c7724d0b37a020fdc197b710",
+    "outputs/decision_research_20260926/COLD_RUN_REPRODUCTION_PROPOSAL.md": "d83392e843e409aade87a3dfd050c0da81448fcf9720be3dc828cd17820f9dca",
+    "outputs/decision_research_20260926/COLD_RUN_ROOT_DECISION.md": "5e2c78c80cad04d8f28e39c4e35aea2aed8c608ab0bb31cde1dcdb2467a4d23a",
+    "outputs/decision_research_20260926/interval_configuration.json": "9ad8d7a42075fe3c4821336dfcbea9ae545daa05d70dd85ce5668eceb5aa6f5a",
+    "outputs/decision_research_20260926/joint_profile_configuration.json": "f6aebb0bca2ef417ef6e8bff892ac2286b0a61e0fe47c62a5ae3608ab3c97314",
+    "outputs/strengthening_20260926/source_recovery.json": "4f60826ae3e564af7b16bc07ca64a3cd7df2d89aa99e554ef239a1dcb844d6f2",
+    "scripts/audit_epa_native_strengthening.py": "42c327b7ef629077bf1f11d1562ccee500a9192b236a1add771ff522070d1c09",
+    "scripts/audit_interval_decisions.py": "ecb4e8f01f4028eb0a43d85870b3f458b75fce91d8bad9bdddaa815c3597da93",
+    "scripts/audit_interval_farkas_margin.py": "b5a95a583c533e9dd28cccd6a2737de1bf4b06425b986cad2b20510fe84f54a0",
+    "scripts/audit_interval_profile_union.py": "d02e65ad5799f82b8960276d3c9eeee1e43c31cbcc78faddc22924d7431ff21b",
+    "scripts/reproduce_interval_union.py": "2f96dd9629ea8093360596506e2b04aff4c40d6839e659f41c35518f20a27bb1",
+    "scripts/verify_cold_interval_union.py": "7f773617b04534c4b2cdaced211be70479f035a721c25e8762d3d08d5efd450f",
+    "scripts/verify_interval_certificate_records.py": "53d1682413236b394fc24adae1d2dea75c2a621799947111e9a835a5afea1fed",
+    "scripts/verify_interval_farkas_records.py": "e71f43fd865e2b657109f32bd76f9f47786ab4d1a732315fdb0391c63ad17521",
+    "scripts/verify_interval_union_records.py": "2c68cb669ceaff1d95b419e517be4f96f32c37425f2529cab2f2a4ee437dbd5b",
+    "tests/test_cold_interval_union.py": "48b211da94a5a4d3c0d3de02f059e1b4175757d9e88fc27e3204c9488ac859f8",
+    "tests/test_cold_interval_union_records.py": "5ec89710344122d92d67a86a48c620dbe39c805b2b73f09d237a827be031dc57",
+    "tests/test_interval_decisions.py": "777862955c40b41a147886e701914840ff8eae6a061cd96a510f9e4de5e25033"
+  }
+}

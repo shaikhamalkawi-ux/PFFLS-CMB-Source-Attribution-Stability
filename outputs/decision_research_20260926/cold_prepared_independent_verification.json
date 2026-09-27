@@ -1,0 +1,32 @@
+{
+  "status": "PASS_PREPARED_METADATA_ONLY_NOT_EXECUTION_APPROVAL",
+  "completed_utc": "2026-09-26T23:45:32.781144+00:00",
+  "manifest_sha256": "a857a7ca962cc1d23b0e6bf9a69a630a12ff46af40fe81734524f162ff07e6cd",
+  "preflight_sha256": "04b7c5178ed3082b2ae0ead9ceed52a76e6112f5f5664d3ce1a5b2930fd07c2c",
+  "verifier_sha256": "0709e1e8ab72b846c124d57c145e438d63f6ad90c80dbf4391ab9548d8057e49",
+  "dependencies_checked": 19,
+  "archives_checked": 4,
+  "members_checked": 39,
+  "samples_checked": 35,
+  "tuples_checked": 120,
+  "models_reconstructed_without_solving": 4200,
+  "metadata_digests": {
+    "ordered_model_sha256": "21d52f2300bc1b907f2470ecd2baf9a7b2d68854bb0904bcbe3e58378b6a4ee2",
+    "sample_order_sha256": "40ef641250f21051414ca5705aa8b4b47c83bd3694c5abb93d14d8f942c3110d",
+    "tuple_order_sha256": "fa7f43be39dc8532032e415f95c7bd7f4b6a58b4c0b97b7a5edb9ea49862db8d"
+  },
+  "actual_recovery_sha256": "32762085a73ee0b5ad703bc68ab8194303ca0769c49494202343b622e356c0e2",
+  "actual_recovery_bytes": 8817,
+  "prepared_files": ["manifest.json", "preflight.json"],
+  "case_directory_empty": true,
+  "maximum_path_characters": 105,
+  "budgets": {
+    "deadline_utc": "2026-09-27T05:00:00+00:00",
+    "elapsed_seconds": 7200.0,
+    "max_lp_calls": 20000,
+    "max_models": 4200
+  },
+  "LPs_run": 0,
+  "historical_private_inputs": 0,
+  "elapsed_seconds": 24.062
+}

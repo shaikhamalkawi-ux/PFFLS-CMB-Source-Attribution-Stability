@@ -1,0 +1,421 @@
+{
+  "configuration_sha256": "f6aebb0bca2ef417ef6e8bff892ac2286b0a61e0fe47c62a5ae3608ab3c97314",
+  "script_sha256": "ce22dbc47e25f7b2e71929c308e3bcc2fc70b213b2952c4f1bbdd8fbb55abcab",
+  "started_utc": "2026-09-26T19:43:31.276132+00:00",
+  "completed_utc": "2026-09-26T19:43:41.518461+00:00",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "randomness": "none"
+  },
+  "input_identity_verification": {
+    "status": "PASS",
+    "archives_checked": 4,
+    "members_checked": 39,
+    "recovery_record_sha256": "4f60826ae3e564af7b16bc07ca64a3cd7df2d89aa99e554ef239a1dcb844d6f2",
+    "performed_before_fitting": true
+  },
+  "input_archive_hashes": {
+    "sjvf_data.zip": "3ca5bb3d4273e40f9c0f65a11f60e86fadafb525a086a046a9ef29a171fd229f",
+    "pacs_data.zip": "e83d859f6a794504271ff4e84704787fe8b7a03e87940e6dcb105e560a7fef4f",
+    "epa-cmb82test.zip": "f653311c3b9d0b89611a337b625e77d82d35650c852f5df8d7cb10c76f86d7ff",
+    "sourcecmb82.zip": "44acea483c66cd5eb859340ecb7083fff18ab4b0401dde5d4f34972a22fbe8c9"
+  },
+  "input_summary": {
+    "receptor_rows_in_archive": 206,
+    "fine_profiles_in_archive": 55,
+    "fresno_fine_samples": 35,
+    "species": [
+      "N3IC",
+      "S4IC",
+      "N4TC",
+      "KPAC",
+      "NAAC",
+      "ECTC",
+      "OCTC",
+      "ALXC",
+      "SIXC",
+      "CLXC",
+      "KPXC",
+      "CAXC",
+      "TIXC",
+      "VAXC",
+      "CRXC",
+      "MNXC",
+      "FEXC",
+      "NIXC",
+      "BRXC",
+      "PBXC"
+    ],
+    "initial_source_ids": [
+      "SOIL03",
+      "BAMAJC",
+      "SFCRUC",
+      "MOVES2",
+      "AMSUL",
+      "AMNIT",
+      "NANO3"
+    ],
+    "alternatives": {
+      "SOIL03": [
+        "SOIL08",
+        "SOIL12",
+        "SOIL29"
+      ],
+      "BAMAJC": [
+        "MAFISC",
+        "MAMAJC"
+      ],
+      "SFCRUC": [
+        "CHCRUC"
+      ],
+      "MOVES2": [
+        "MOVES1",
+        "MOVES3",
+        "MOVES4",
+        "MOVES5"
+      ]
+    },
+    "species_arrays_2_and_4_identical": true
+  },
+  "aggregate": {
+    "initial_samples": 35,
+    "central_converged_samples": 35,
+    "central_unresolved_samples": 0,
+    "grid_size_histogram": {
+      "120": 30,
+      "60": 5
+    },
+    "total_grid_choices_including_central": 3900,
+    "attrition_by_distance": {
+      "0": {
+        "attempted": 35,
+        "converged_count": 35,
+        "unresolved": 0,
+        "numerical_failure": 0,
+        "converged": {
+          "central_and_alternative_eligible": 35,
+          "top_changed": 0,
+          "order_changed": 0
+        },
+        "basic": {
+          "central_and_alternative_eligible": 35,
+          "top_changed": 0,
+          "order_changed": 0
+        },
+        "strict": {
+          "central_and_alternative_eligible": 4,
+          "top_changed": 0,
+          "order_changed": 0
+        }
+      },
+      "1": {
+        "attempted": 345,
+        "converged_count": 323,
+        "unresolved": 22,
+        "numerical_failure": 0,
+        "converged": {
+          "central_and_alternative_eligible": 323,
+          "top_changed": 81,
+          "order_changed": 167
+        },
+        "basic": {
+          "central_and_alternative_eligible": 283,
+          "top_changed": 62,
+          "order_changed": 133
+        },
+        "strict": {
+          "central_and_alternative_eligible": 26,
+          "top_changed": 2,
+          "order_changed": 10
+        }
+      },
+      "2": {
+        "attempted": 1180,
+        "converged_count": 950,
+        "unresolved": 230,
+        "numerical_failure": 0,
+        "converged": {
+          "central_and_alternative_eligible": 950,
+          "top_changed": 401,
+          "order_changed": 707
+        },
+        "basic": {
+          "central_and_alternative_eligible": 764,
+          "top_changed": 283,
+          "order_changed": 535
+        },
+        "strict": {
+          "central_and_alternative_eligible": 56,
+          "top_changed": 7,
+          "order_changed": 26
+        }
+      },
+      "3": {
+        "attempted": 1620,
+        "converged_count": 1080,
+        "unresolved": 540,
+        "numerical_failure": 0,
+        "converged": {
+          "central_and_alternative_eligible": 1080,
+          "top_changed": 646,
+          "order_changed": 955
+        },
+        "basic": {
+          "central_and_alternative_eligible": 805,
+          "top_changed": 447,
+          "order_changed": 695
+        },
+        "strict": {
+          "central_and_alternative_eligible": 42,
+          "top_changed": 6,
+          "order_changed": 26
+        }
+      },
+      "4": {
+        "attempted": 720,
+        "converged_count": 410,
+        "unresolved": 310,
+        "numerical_failure": 0,
+        "converged": {
+          "central_and_alternative_eligible": 410,
+          "top_changed": 309,
+          "order_changed": 398
+        },
+        "basic": {
+          "central_and_alternative_eligible": 290,
+          "top_changed": 215,
+          "order_changed": 285
+        },
+        "strict": {
+          "central_and_alternative_eligible": 10,
+          "top_changed": 0,
+          "order_changed": 9
+        }
+      }
+    },
+    "rank_changes_disagreeing_after_5dp_rounding": 0,
+    "converged_rows_with_negative_contributions": 64,
+    "screens": {
+      "converged": {
+        "central_eligible_samples": 35,
+        "all_initial_samples": 35,
+        "top": {
+          "observed_local_stable_samples": 9,
+          "complete_local_stable_samples": 1,
+          "observed_local_stable_joint_witness_samples": 7,
+          "complete_local_stable_joint_witness_samples": 1,
+          "complete_joint_stable_samples": 0,
+          "complete_joint_stable_nonvacuous_samples": 0,
+          "statuses": {
+            "UNRESOLVED": 2,
+            "WITNESSED_UNSTABLE": 33
+          },
+          "minimum_observed_witness_distance_histogram": {
+            "1": 26,
+            "2": 7
+          },
+          "exact_minimum_witness_distance_histogram": {
+            "1": 26,
+            "2": 1
+          },
+          "central_eligible_without_admitted_local_alternative_samples": 0
+        },
+        "ordering": {
+          "observed_local_stable_samples": 0,
+          "complete_local_stable_samples": 0,
+          "observed_local_stable_joint_witness_samples": 0,
+          "complete_local_stable_joint_witness_samples": 0,
+          "complete_joint_stable_samples": 0,
+          "complete_joint_stable_nonvacuous_samples": 0,
+          "statuses": {
+            "WITNESSED_UNSTABLE": 35
+          },
+          "minimum_observed_witness_distance_histogram": {
+            "1": 35
+          },
+          "exact_minimum_witness_distance_histogram": {
+            "1": 35
+          },
+          "central_eligible_without_admitted_local_alternative_samples": 0
+        },
+        "partial_order": {
+          "resolved_grid_samples": 0,
+          "total_observed_fixed_pair_relations": 453,
+          "total_certified_pair_relations": 0,
+          "observed_top_set_size_histogram": {
+            "1": 2,
+            "2": 18,
+            "3": 14,
+            "4": 1
+          }
+        }
+      },
+      "basic": {
+        "central_eligible_samples": 35,
+        "all_initial_samples": 35,
+        "top": {
+          "observed_local_stable_samples": 13,
+          "complete_local_stable_samples": 4,
+          "observed_local_stable_joint_witness_samples": 7,
+          "complete_local_stable_joint_witness_samples": 2,
+          "complete_joint_stable_samples": 0,
+          "complete_joint_stable_nonvacuous_samples": 0,
+          "statuses": {
+            "UNRESOLVED": 6,
+            "WITNESSED_UNSTABLE": 29
+          },
+          "minimum_observed_witness_distance_histogram": {
+            "1": 22,
+            "2": 7
+          },
+          "exact_minimum_witness_distance_histogram": {
+            "1": 22,
+            "2": 2
+          },
+          "central_eligible_without_admitted_local_alternative_samples": 0
+        },
+        "ordering": {
+          "observed_local_stable_samples": 0,
+          "complete_local_stable_samples": 0,
+          "observed_local_stable_joint_witness_samples": 0,
+          "complete_local_stable_joint_witness_samples": 0,
+          "complete_joint_stable_samples": 0,
+          "complete_joint_stable_nonvacuous_samples": 0,
+          "statuses": {
+            "WITNESSED_UNSTABLE": 35
+          },
+          "minimum_observed_witness_distance_histogram": {
+            "1": 35
+          },
+          "exact_minimum_witness_distance_histogram": {
+            "1": 35
+          },
+          "central_eligible_without_admitted_local_alternative_samples": 0
+        },
+        "partial_order": {
+          "resolved_grid_samples": 0,
+          "total_observed_fixed_pair_relations": 462,
+          "total_certified_pair_relations": 0,
+          "observed_top_set_size_histogram": {
+            "1": 6,
+            "2": 15,
+            "3": 14
+          }
+        }
+      },
+      "strict": {
+        "central_eligible_samples": 4,
+        "all_initial_samples": 35,
+        "top": {
+          "observed_local_stable_samples": 3,
+          "complete_local_stable_samples": 0,
+          "observed_local_stable_joint_witness_samples": 0,
+          "complete_local_stable_joint_witness_samples": 0,
+          "complete_joint_stable_samples": 0,
+          "complete_joint_stable_nonvacuous_samples": 0,
+          "statuses": {
+            "CENTRAL_INELIGIBLE": 31,
+            "UNRESOLVED": 3,
+            "WITNESSED_UNSTABLE": 1
+          },
+          "minimum_observed_witness_distance_histogram": {
+            "1": 1
+          },
+          "exact_minimum_witness_distance_histogram": {
+            "1": 1
+          },
+          "central_eligible_without_admitted_local_alternative_samples": 0
+        },
+        "ordering": {
+          "observed_local_stable_samples": 0,
+          "complete_local_stable_samples": 0,
+          "observed_local_stable_joint_witness_samples": 0,
+          "complete_local_stable_joint_witness_samples": 0,
+          "complete_joint_stable_samples": 0,
+          "complete_joint_stable_nonvacuous_samples": 0,
+          "statuses": {
+            "CENTRAL_INELIGIBLE": 31,
+            "WITNESSED_UNSTABLE": 4
+          },
+          "minimum_observed_witness_distance_histogram": {
+            "1": 4
+          },
+          "exact_minimum_witness_distance_histogram": {
+            "1": 4
+          },
+          "central_eligible_without_admitted_local_alternative_samples": 0
+        },
+        "partial_order": {
+          "resolved_grid_samples": 0,
+          "total_observed_fixed_pair_relations": 55,
+          "total_certified_pair_relations": 0,
+          "observed_top_set_size_histogram": {
+            "1": 3,
+            "3": 1
+          }
+        }
+      }
+    }
+  },
+  "private_ledger_sha256": "ba73f7f41de50d4b40edf1fe5be0513120dfb109c9a10730f1007e7f6c3143a2",
+  "configuration": {
+    "version": "1.0.0",
+    "freeze_time_utc": "2026-09-26T19:36:50Z",
+    "frozen_before_first_joint_fit": true,
+    "purpose": "Exploratory finite-ensemble joint-profile interaction and conditional decision audit; not external accuracy validation.",
+    "native_solver_script_sha256": "42c327b7ef629077bf1f11d1562ccee500a9192b236a1add771ff522070d1c09",
+    "native_configuration_sha256": "6d3b10b2090526e3f15e987cc1b796fb02736570e2b3284738001956cacadc39",
+    "samples": "All 35 native FRESNO FINE samples; no date selection.",
+    "central_controller": "Unchanged frozen native reconstruction; sequential converged-fit removal of most negative source.",
+    "ensemble_controller": "Use each sample's final central retained slots. Cartesian product of listed profiles for present variable slots; all other retained slots fixed. No fresh pruning, nonnegative constraints or clipping in alternative fits.",
+    "families": {
+      "SOIL03": [
+        "SOIL03",
+        "SOIL08",
+        "SOIL12",
+        "SOIL29"
+      ],
+      "BAMAJC": [
+        "BAMAJC",
+        "MAFISC",
+        "MAMAJC"
+      ],
+      "SFCRUC": [
+        "SFCRUC",
+        "CHCRUC"
+      ],
+      "MOVES2": [
+        "MOVES2",
+        "MOVES1",
+        "MOVES3",
+        "MOVES4",
+        "MOVES5"
+      ]
+    },
+    "labels": {
+      "SOIL03": "soil",
+      "BAMAJC": "wood",
+      "SFCRUC": "oil",
+      "MOVES2": "vehicle",
+      "AMSUL": "ammonium_sulfate",
+      "AMNIT": "ammonium_nitrate",
+      "NANO3": "sodium_nitrate"
+    },
+    "maximum_grid_per_sample": 120,
+    "distance": "Number of retained variable slots whose chosen profile differs from its central profile.",
+    "screens": {
+      "converged": "Both central and alternative converged, no diagnostic screen.",
+      "basic": "Both central and alternative converged and have 0.8 <= R2 <= 1 and 0 <= reduced chi-square <= 4.",
+      "strict": "Basic conditions plus 80 <= percent mass <= 120 for both."
+    },
+    "unresolved": "Any nonconverged fit or numerical ValueError is unresolved regardless of its terminal diagnostics. It is not assigned an admissibility or ranking outcome and prevents a complete-grid stability certificate.",
+    "decisions": "Compare family-slot pairwise signs and exact set of top-ranked source families. Ties are retained, not broken. Assess rounding to five decimals separately.",
+    "local": "All grid choices of distance <= 1. Local resolved stability requires all local choices resolved, at least one passing distance-1 alternative, and no admissible changed decision. Observed local stability with unresolved choices is explicitly weaker.",
+    "joint": "All enumerated choices. Report witnessed instability and minimum observed witness distance; if smaller distances contain unresolved choices, do not call the minimum exact.",
+    "conditional_certificate": "Only conditional on this finite grid, fixed central retained source universe, historical species and numerical solver. No coverage probability, confidence interval, causality, truth or out-of-grid guarantee.",
+    "public_scope": "Aggregate counts, configuration and code only. Full sample/date contribution vectors and witnesses remain in ignored private output.",
+    "randomness": "none; exhaustive deterministic enumeration; no tuning after outcomes"
+  },
+  "scope": "Exploratory conditional finite-grid attribution decisions; no external accuracy or novelty claim."
+}

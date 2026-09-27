@@ -4,3 +4,19 @@ audit_*_strengthening.py text eol=lf
 audit_reference_robustness.py text eol=lf
 recover_strengthening_sources.py text eol=lf
 build_strengthening_package.py text eol=lf
+
+# Hash-pinned decision research. Do not reformat these frozen implementations.
+audit_decision_measurements.py -text
+audit_joint_profile_decisions.py -text
+audit_ordinary_contrasts.py -text
+audit_truth_decisions.py -text
+audit_interval_*.py -text
+test_decision_certificate_counterexamples.py -text
+verify_interval_certificate_records.py -text
+verify_interval_union_records.py -text
+reconstruct_truth_inputs.py -text
+verify_interval_farkas_records.py -text
+verify_truth_bootstrap.py -text
+reproduce_interval_union.py -text
+verify_cold_interval_union.py -text
+verify_tracer_recession_metadata.py -text

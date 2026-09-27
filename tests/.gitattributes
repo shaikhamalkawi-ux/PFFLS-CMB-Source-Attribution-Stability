@@ -3,3 +3,15 @@ test_strengthening_*.py text eol=lf
 test_*_strengthening.py text eol=lf
 test_reference_robustness.py text eol=lf
 test_source_recovery.py text eol=lf
+
+# Tests participate in the pre-experiment hash gates.
+test_decision_measurements.py -text
+test_joint_profile_decisions.py -text
+test_ordinary_contrasts.py -text
+test_truth_decisions.py -text
+test_interval_*.py -text
+test_reconstruct_truth_inputs.py -text
+test_truth_bootstrap_records.py -text
+test_cold_interval_union.py -text
+test_cold_interval_union_records.py -text
+test_tracer_recession_metadata.py -text

@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-09-26T22:53:22.239140+00:00",
+  "truth_results_sha256": "e4bf45de87335c853edc15170e3a8706a1540797069766fed552fe5ead49362b",
+  "configuration_sha256": "8b77f98045f0ffd608de37b357c65107bbdb333d119b13bc22b614fe25e048c9",
+  "verifier_sha256": "e2bbe4b5eca29eedbc3f25ed9d21c3b1892c6bb16ba4933428108ad28b92cb12",
+  "tests_sha256": "61a42672cf92e2efae4949f18d72f75115f6a6fe71e940dcd03786b6b4ed6558",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "new_model_fits": 0,
+  "producer_imported": false,
+  "method": "Rowwise bit-mask counts, integer cluster multiplicities, explicit type-7 interpolation",
+  "endpoint_rounding_absolute_tolerance": 4e-15,
+  "intervals_verified": 504,
+  "panels": [
+    {
+      "panel": "released_descriptive",
+      "status": "PASS_NO_BOOTSTRAP_BY_DESIGN",
+      "intervals": 0,
+      "ledger_sha256": "9998b84dd1edfd96069122329f5f6c73b202d972c7d30432b810afd41725845a"
+    },
+    {
+      "panel": "included_truth",
+      "status": "PASS",
+      "intervals": 84,
+      "replicates": 32,
+      "paired_resamples": 2000,
+      "maximum_absolute_endpoint_difference": 0.0,
+      "ledger_sha256": "8f2467602f63e32d98f25ea7484ad3b65555cea47d7a61c16769ed2829562f54"
+    },
+    {
+      "panel": "excluded_profile_truth",
+      "status": "PASS",
+      "intervals": 84,
+      "replicates": 32,
+      "paired_resamples": 2000,
+      "maximum_absolute_endpoint_difference": 0.0,
+      "ledger_sha256": "84cced00c8296933ac4f4cb556640d09c677498b744089b74ca7000cb9c26288"
+    },
+    {
+      "panel": "correlated_receptor_error",
+      "status": "PASS",
+      "intervals": 84,
+      "replicates": 32,
+      "paired_resamples": 2000,
+      "maximum_absolute_endpoint_difference": 0.0,
+      "ledger_sha256": "1e7a8629941cf8136b59c5a020e984e10ce14a8f92c43f5eff072f727409aa35"
+    },
+    {
+      "panel": "underreported_uncertainty",
+      "status": "PASS",
+      "intervals": 84,
+      "replicates": 32,
+      "paired_resamples": 2000,
+      "maximum_absolute_endpoint_difference": 0.0,
+      "ledger_sha256": "543e2a5820195f7c3182336678509b05d602289abd02fdc41bc7eca7960ee3ea"
+    },
+    {
+      "panel": "omitted_source_4",
+      "status": "PASS",
+      "intervals": 84,
+      "replicates": 32,
+      "paired_resamples": 2000,
+      "maximum_absolute_endpoint_difference": 0.0,
+      "ledger_sha256": "9d1b598a01ba3c043cf6e70997d4a3f93d0e5dbc8a5e670a973141afec760242"
+    },
+    {
+      "panel": "near_tied_leaders",
+      "status": "PASS",
+      "intervals": 84,
+      "replicates": 32,
+      "paired_resamples": 2000,
+      "maximum_absolute_endpoint_difference": 0.0,
+      "ledger_sha256": "506fd5efa465189b9641363850e85a58fc56f46c8eafdb74d7587c8e2af89cf0"
+    }
+  ],
+  "limits": "Saved-decision arithmetic replay only; no added samples, calibrated population coverage, matched reporting coverage or zero-risk guarantee. All original null results and failures preserved."
+}

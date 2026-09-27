@@ -1,0 +1,47 @@
+{
+  "purpose": "Public attribution for construction-truth benchmark input and our derived controls; no raw arrays included",
+  "source_record_url": "https://zenodo.org/records/19223353",
+  "source_api_url": "https://zenodo.org/api/records/19223353",
+  "source_metadata_file_sha256": "eb86d8feb02c8c935529463602d30fca54e46bf7d44290232df19fe8eef785c7",
+  "provenance": "Transcribed from preserved original API metadata without a new network request. The original_metadata object preserves original field values and creator spellings; it is not an independently corrected bibliographic author list.",
+  "license_name": "Creative Commons Attribution 4.0 International",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "article_license_is_separate_from_dataset_license": true,
+  "original_metadata": {
+    "title": "Datasets used in the BAMF+horseshoe manuscripts",
+    "doi": "10.5281/zenodo.19223353",
+    "publication_date": "2026-03-25",
+    "description": "<p>Toy dataset, megacity datasets and synthetic online datasets.</p>",
+    "access_right": "open",
+    "creators": [
+      {"name": "Via, Marta", "affiliation": "Center for Atmospheric Research, University of Nova Gorica, Ajdovščina 5270, Slovenia", "orcid": "0000-0002-5766-3484"},
+      {"name": "Demšar, Jure", "affiliation": null, "orcid": "0000-0001-6080-149X"},
+      {"name": "Manousakas, Manousos", "affiliation": "National Centre of Scientific Research \"Demokritos\"", "orcid": "0000-0003-1111-0881"},
+      {"name": "Rusanen, Anton", "affiliation": "University of Helsinki", "orcid": "0000-0002-4523-9889"},
+      {"name": "Jiang, Jianhui", "affiliation": "East China Normal University", "orcid": "0000-0003-3557-3311"},
+      {"name": "Grange, Stuart", "affiliation": "University of Bern", "orcid": "0000-0003-4093-3596"},
+      {"name": "Jafrezzo, Jean-Louis", "affiliation": "Climate and Environmental Physics, Physics Institute, University of Bern, Sidlerstrasse 5, 3012 Bern, Switzerland", "orcid": "0000-0002-6921-5160"},
+      {"name": "Dinh Ngoc, Thuy Vy", "affiliation": "University of Grenoble Alpes, CNRS, INRAE, IRD, Grenoble INP, IGE, Grenoble 38000, France", "orcid": "0000-0001-5685-0993"},
+      {"name": "UZU, Gaëlle", "affiliation": "University of Grenoble Alpes, CNRS, INRAE, IRD, Grenoble INP, IGE, Grenoble 38000, France", "orcid": "0000-0002-7720-0233"},
+      {"name": "Griša, Močnik", "affiliation": "Center for Atmospheric Research, University of Nova Gorica, Ajdovščina 5270, Slovenia", "orcid": "0000-0001-6379-2381"},
+      {"name": "Dällenbach, Kaspar Rudolf", "affiliation": "Paul Scherrer Institute", "orcid": "0000-0003-1246-6396"}
+    ],
+    "custom": {"code:codeRepository": "https://github.com/martavia0/BAMF-horseshoe/tree/main/datasets"},
+    "resource_type": {"title": "Dataset", "type": "dataset"},
+    "license": {"id": "cc-by-4.0"},
+    "relations": {"version": [{"index": 0, "is_last": true, "parent": {"pid_type": "recid", "pid_value": "19223352"}}]}
+  },
+  "original_archive": {
+    "filename": "datasets_bamf_horseshoe.zip",
+    "url": "https://zenodo.org/api/records/19223353/files/datasets_bamf_horseshoe.zip/content",
+    "bytes": 14572677,
+    "md5": "f9865bf2c2259f1fdd32251c9560cf55",
+    "sha256": "e4f6e055a3db15e22f7c0c449a84d2d23a1f86270d658ff3f1a63fc435367501",
+    "selected_member": "datasets/online_SDs/Zurich/Zurich_0.h5",
+    "selected_member_sha256": "fa62a734a1dda779df572e0c975e3103a2c9ad06d2a3eaffc2ed8affd3d89d64",
+    "original_archive_redistributed_in_this_return": false
+  },
+  "our_modifications": "Selected one prespecified released panel; compensated row normalization of F with corresponding G scaling to preserve GF; generated prespecified profile/noise/misspecification controls; fitted and summarized the declared decision comparisons. These derivative artifacts are our research analysis, not original release-author results or endorsement.",
+  "endpoint_limit": "Known constructed 82-channel integrated-signal leadership, not independent environmental source-mass truth",
+  "related_article": {"title": "Chemical sparsity in Bayesian receptor models for aerosol source apportionment", "doi": "10.5194/amt-19-2175-2026", "url": "https://amt.copernicus.org/articles/19/2175/2026/", "license": "CC BY 4.0 separately verified"}
+}

@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "scope": "All final central-system Stage2 records; exact input reconstruction and saved-proof replay; no LP reruns, no statistical or environmental validation.",
+  "started_utc": "2026-09-26T20:38:32.622365+00:00",
+  "completed_utc": "2026-09-26T20:39:20.487817+00:00",
+  "elapsed_seconds": 47.875,
+  "python": "3.12.14",
+  "configuration_sha256": "9ad8d7a42075fe3c4821336dfcbea9ae545daa05d70dd85ce5668eceb5aa6f5a",
+  "private_index_sha256": "381d20db9a35e1e8a725b535b588a60291def382a6f3196a10ef4a4302b66d40",
+  "verified_model_hash_set_sha256": "e52fd7fe23d55b252118b08c75521ec1deef7a45b8a943abbd70dffae7b67087",
+  "verifier_sha256": "53d1682413236b394fc24adae1d2dea75c2a621799947111e9a835a5afea1fed",
+  "reviewed_dependencies": {
+    "scripts/audit_epa_native_strengthening.py": "42c327b7ef629077bf1f11d1562ccee500a9192b236a1add771ff522070d1c09",
+    "scripts/audit_interval_decisions.py": "ecb4e8f01f4028eb0a43d85870b3f458b75fce91d8bad9bdddaa815c3597da93",
+    "tests/test_interval_decisions.py": "777862955c40b41a147886e701914840ff8eae6a061cd96a510f9e4de5e25033",
+    "outputs/decision_research_20260926/interval_configuration.json": "9ad8d7a42075fe3c4821336dfcbea9ae545daa05d70dd85ce5668eceb5aa6f5a",
+    "outputs/strengthening_20260926/source_recovery.json": "4f60826ae3e564af7b16bc07ca64a3cd7df2d89aa99e554ef239a1dcb844d6f2"
+  },
+  "native_archives_verified": 4,
+  "native_members_verified": 39,
+  "counts": {
+    "farkas_certificates": 985,
+    "unique_models": 492,
+    "panel_records": 840,
+    "primal_points": 10113,
+    "dual_bounds": 9133,
+    "co_leader_decisions": 1227,
+    "recession_certificates": 281,
+    "pair_decisions": 3603
+  },
+  "all_24_public_panels_reconciled": true,
+  "all_panels_retain_35_samples": true,
+  "historical_mass_unbounded_claims": 0
+}

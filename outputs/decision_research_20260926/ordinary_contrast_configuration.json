@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-09-26T20:34:59.314503+00:00",
+  "status": "POST_HOC_PLAN_BEFORE_THIS_BASELINE_SCORES",
+  "plan_sha256": "3bdb140ff571c179c4dd31eae71d703738405d4b815a5451be622d64315690b3",
+  "script_sha256": "02582945e9eda03d9706501febfa013f38ae89a189eeb2165a496036b3bb1def",
+  "test_sha256": "bc4d6d5679b1f4aeefdd009fed776d955a77059d75bd92ef8fe0d055ca837c94",
+  "native_script_sha256": "42c327b7ef629077bf1f11d1562ccee500a9192b236a1add771ff522070d1c09",
+  "joint_ledger_sha256": "ba73f7f41de50d4b40edf1fe5be0513120dfb109c9a10730f1007e7f6c3143a2",
+  "alphas": [
+    0.1,
+    0.05,
+    0.01
+  ],
+  "primary_descriptive_alpha": 0.05,
+  "sigma_scaling": "absolute supplied variances; no residual-Q rescaling",
+  "scope": "selected retained-source central model; fixed final EVLS weights; nominal plugin only"
+}
