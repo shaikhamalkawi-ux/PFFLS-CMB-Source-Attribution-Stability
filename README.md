@@ -8,8 +8,11 @@ EPA rank-margin summaries. Its sole release creator is **Ghassan O. Malkawi**.
 This is the authorship of the new software/data release only: the paper's author
 list and all previous contributors' attribution remain unchanged.
 
-Reserved Zenodo DOI: [10.5281/zenodo.23019083](https://doi.org/10.5281/zenodo.23019083).
-The published landing page, once available, is authoritative for deposit status.
+Published on [Zenodo (10.5281/zenodo.23019083)](https://zenodo.org/records/23019083)
+and as a [GitHub release](https://github.com/shaikhamalkawi-ux/PFFLS-CMB-Source-Attribution-Stability/releases/tag/diagnostics-v1.0.0).
+All three files were downloaded from both platforms and matched by SHA-256.
+Use the direct Zenodo record while the DOI resolver propagates. See the
+[publication receipt](outputs/public_diagnostics_release_20260928/PUBLICATION_RECEIPT.md).
 This is a separate companion to the unchanged earlier
 [four-author publication-derived archive](https://doi.org/10.5281/zenodo.22976190).
 See the increment's scope, licenses, exact provenance, verification instructions,
