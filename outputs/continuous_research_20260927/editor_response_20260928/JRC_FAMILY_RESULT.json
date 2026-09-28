@@ -1,0 +1,651 @@
+{
+  "input_sha256": {
+    "jrc_12set_landscape.csv": "b1f0081b9e8943b1e13a09a9ece7c79aca373bff4b4f2e702eb65a1689333356",
+    "jrc_profile_choice_edges_reconstructed.csv": "9695d1d70ae7f48bc14ee7e51dcd49c99ee82f13ffb7f7529072b18107adca36"
+  },
+  "mode": "exploratory publication-summary postprocessing",
+  "source_native_reproduction": false,
+  "native_fits": 0,
+  "random_draws": 0,
+  "signed_delta_definition": "EL1(lower-chi2 endpoint) minus EL1(other endpoint), percentage points",
+  "limitations": [
+    "Displayed summary values, not original full-precision vectors",
+    "Dependent finite comparisons; no population probability or p-value",
+    "Family association does not identify chemical or weighting mechanism",
+    "Point-reference distance is not established environmental accuracy"
+  ],
+  "all": {
+    "n": 30,
+    "discordant": 9,
+    "concordant": 21,
+    "reference_ties": 0,
+    "signed_delta_pp_min_median_max": [
+      "-19.48",
+      "-1.98",
+      "4.46"
+    ],
+    "chi2_gap_min_median_max": [
+      "0.0004",
+      "0.0057",
+      "0.0304"
+    ],
+    "discordant_delta_pp_median_max": [
+      "2.18",
+      "4.46"
+    ],
+    "edge_ids": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E06",
+      "E07",
+      "E08",
+      "E09",
+      "E10",
+      "E11",
+      "E12",
+      "E13",
+      "E14",
+      "E15",
+      "E16",
+      "E17",
+      "E18",
+      "E19",
+      "E20",
+      "E21",
+      "E22",
+      "E23",
+      "E24",
+      "E25",
+      "E26",
+      "E27",
+      "E28",
+      "E29",
+      "E30"
+    ]
+  },
+  "families": {
+    "Wood": {
+      "n": 18,
+      "discordant": 9,
+      "concordant": 9,
+      "reference_ties": 0,
+      "signed_delta_pp_min_median_max": [
+        "-5.45",
+        "-0.015",
+        "4.46"
+      ],
+      "chi2_gap_min_median_max": [
+        "0.0004",
+        "0.0016",
+        "0.0110"
+      ],
+      "discordant_delta_pp_median_max": [
+        "2.18",
+        "4.46"
+      ],
+      "edge_ids": [
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E05",
+        "E06",
+        "E07",
+        "E08",
+        "E09",
+        "E10",
+        "E11",
+        "E12",
+        "E13",
+        "E14",
+        "E15",
+        "E16",
+        "E17",
+        "E18"
+      ]
+    },
+    "Vehicle": {
+      "n": 12,
+      "discordant": 0,
+      "concordant": 12,
+      "reference_ties": 0,
+      "signed_delta_pp_min_median_max": [
+        "-19.48",
+        "-11.535",
+        "-4.23"
+      ],
+      "chi2_gap_min_median_max": [
+        "0.0027",
+        "0.0211",
+        "0.0304"
+      ],
+      "discordant_delta_pp_median_max": null,
+      "edge_ids": [
+        "E19",
+        "E20",
+        "E21",
+        "E22",
+        "E23",
+        "E24",
+        "E25",
+        "E26",
+        "E27",
+        "E28",
+        "E29",
+        "E30"
+      ]
+    }
+  },
+  "strata": {
+    "Wood; fixed V2": {
+      "n": 6,
+      "discordant": 4,
+      "concordant": 2,
+      "reference_ties": 0,
+      "signed_delta_pp_min_median_max": [
+        "-1.51",
+        "0.61",
+        "2.49"
+      ],
+      "chi2_gap_min_median_max": [
+        "0.0004",
+        "0.0010",
+        "0.0020"
+      ],
+      "discordant_delta_pp_median_max": [
+        "1.615",
+        "2.49"
+      ],
+      "edge_ids": [
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E05",
+        "E06"
+      ]
+    },
+    "Wood; fixed V3": {
+      "n": 6,
+      "discordant": 4,
+      "concordant": 2,
+      "reference_ties": 0,
+      "signed_delta_pp_min_median_max": [
+        "-2.45",
+        "0.665",
+        "2.98"
+      ],
+      "chi2_gap_min_median_max": [
+        "0.0006",
+        "0.00315",
+        "0.0063"
+      ],
+      "discordant_delta_pp_median_max": [
+        "1.49",
+        "2.98"
+      ],
+      "edge_ids": [
+        "E07",
+        "E08",
+        "E09",
+        "E10",
+        "E11",
+        "E12"
+      ]
+    },
+    "Wood; fixed V4": {
+      "n": 6,
+      "discordant": 1,
+      "concordant": 5,
+      "reference_ties": 0,
+      "signed_delta_pp_min_median_max": [
+        "-5.45",
+        "-0.855",
+        "4.46"
+      ],
+      "chi2_gap_min_median_max": [
+        "0.0005",
+        "0.0055",
+        "0.0110"
+      ],
+      "discordant_delta_pp_median_max": [
+        "4.46",
+        "4.46"
+      ],
+      "edge_ids": [
+        "E13",
+        "E14",
+        "E15",
+        "E16",
+        "E17",
+        "E18"
+      ]
+    },
+    "Vehicle; fixed W3": {
+      "n": 3,
+      "discordant": 0,
+      "concordant": 3,
+      "reference_ties": 0,
+      "signed_delta_pp_min_median_max": [
+        "-15.54",
+        "-11.31",
+        "-4.23"
+      ],
+      "chi2_gap_min_median_max": [
+        "0.0027",
+        "0.0176",
+        "0.0203"
+      ],
+      "discordant_delta_pp_median_max": null,
+      "edge_ids": [
+        "E19",
+        "E20",
+        "E21"
+      ]
+    },
+    "Vehicle; fixed W4": {
+      "n": 3,
+      "discordant": 0,
+      "concordant": 3,
+      "reference_ties": 0,
+      "signed_delta_pp_min_median_max": [
+        "-17.24",
+        "-11.76",
+        "-5.48"
+      ],
+      "chi2_gap_min_median_max": [
+        "0.0057",
+        "0.0219",
+        "0.0276"
+      ],
+      "discordant_delta_pp_median_max": null,
+      "edge_ids": [
+        "E22",
+        "E23",
+        "E24"
+      ]
+    },
+    "Vehicle; fixed W5": {
+      "n": 3,
+      "discordant": 0,
+      "concordant": 3,
+      "reference_ties": 0,
+      "signed_delta_pp_min_median_max": [
+        "-15.26",
+        "-10.31",
+        "-4.95"
+      ],
+      "chi2_gap_min_median_max": [
+        "0.0080",
+        "0.0224",
+        "0.0304"
+      ],
+      "discordant_delta_pp_median_max": null,
+      "edge_ids": [
+        "E25",
+        "E26",
+        "E27"
+      ]
+    },
+    "Vehicle; fixed W6": {
+      "n": 3,
+      "discordant": 0,
+      "concordant": 3,
+      "reference_ties": 0,
+      "signed_delta_pp_min_median_max": [
+        "-19.48",
+        "-12.25",
+        "-7.23"
+      ],
+      "chi2_gap_min_median_max": [
+        "0.0078",
+        "0.0219",
+        "0.0297"
+      ],
+      "discordant_delta_pp_median_max": null,
+      "edge_ids": [
+        "E28",
+        "E29",
+        "E30"
+      ]
+    }
+  },
+  "edges": [
+    {
+      "edge_id": "E01",
+      "family": "Wood",
+      "fixed": "V2",
+      "a": "W3-V2",
+      "b": "W4-V2",
+      "fit_favored": "W3-V2",
+      "reference_closer": "W4-V2",
+      "signed_EL1_delta_pp": "0.98",
+      "chi2_gap": "0.0020"
+    },
+    {
+      "edge_id": "E02",
+      "family": "Wood",
+      "fixed": "V2",
+      "a": "W3-V2",
+      "b": "W5-V2",
+      "fit_favored": "W3-V2",
+      "reference_closer": "W3-V2",
+      "signed_EL1_delta_pp": "-1.27",
+      "chi2_gap": "0.0009"
+    },
+    {
+      "edge_id": "E03",
+      "family": "Wood",
+      "fixed": "V2",
+      "a": "W3-V2",
+      "b": "W6-V2",
+      "fit_favored": "W3-V2",
+      "reference_closer": "W3-V2",
+      "signed_EL1_delta_pp": "-1.51",
+      "chi2_gap": "0.0004"
+    },
+    {
+      "edge_id": "E04",
+      "family": "Wood",
+      "fixed": "V2",
+      "a": "W4-V2",
+      "b": "W5-V2",
+      "fit_favored": "W5-V2",
+      "reference_closer": "W4-V2",
+      "signed_EL1_delta_pp": "2.25",
+      "chi2_gap": "0.0011"
+    },
+    {
+      "edge_id": "E05",
+      "family": "Wood",
+      "fixed": "V2",
+      "a": "W4-V2",
+      "b": "W6-V2",
+      "fit_favored": "W6-V2",
+      "reference_closer": "W4-V2",
+      "signed_EL1_delta_pp": "2.49",
+      "chi2_gap": "0.0016"
+    },
+    {
+      "edge_id": "E06",
+      "family": "Wood",
+      "fixed": "V2",
+      "a": "W5-V2",
+      "b": "W6-V2",
+      "fit_favored": "W6-V2",
+      "reference_closer": "W5-V2",
+      "signed_EL1_delta_pp": "0.24",
+      "chi2_gap": "0.0005"
+    },
+    {
+      "edge_id": "E07",
+      "family": "Wood",
+      "fixed": "V3",
+      "a": "W3-V3",
+      "b": "W4-V3",
+      "fit_favored": "W3-V3",
+      "reference_closer": "W4-V3",
+      "signed_EL1_delta_pp": "0.53",
+      "chi2_gap": "0.0063"
+    },
+    {
+      "edge_id": "E08",
+      "family": "Wood",
+      "fixed": "V3",
+      "a": "W3-V3",
+      "b": "W5-V3",
+      "fit_favored": "W3-V3",
+      "reference_closer": "W3-V3",
+      "signed_EL1_delta_pp": "-0.27",
+      "chi2_gap": "0.0057"
+    },
+    {
+      "edge_id": "E09",
+      "family": "Wood",
+      "fixed": "V3",
+      "a": "W3-V3",
+      "b": "W6-V3",
+      "fit_favored": "W3-V3",
+      "reference_closer": "W3-V3",
+      "signed_EL1_delta_pp": "-2.45",
+      "chi2_gap": "0.0047"
+    },
+    {
+      "edge_id": "E10",
+      "family": "Wood",
+      "fixed": "V3",
+      "a": "W4-V3",
+      "b": "W5-V3",
+      "fit_favored": "W5-V3",
+      "reference_closer": "W4-V3",
+      "signed_EL1_delta_pp": "0.80",
+      "chi2_gap": "0.0006"
+    },
+    {
+      "edge_id": "E11",
+      "family": "Wood",
+      "fixed": "V3",
+      "a": "W4-V3",
+      "b": "W6-V3",
+      "fit_favored": "W6-V3",
+      "reference_closer": "W4-V3",
+      "signed_EL1_delta_pp": "2.98",
+      "chi2_gap": "0.0016"
+    },
+    {
+      "edge_id": "E12",
+      "family": "Wood",
+      "fixed": "V3",
+      "a": "W5-V3",
+      "b": "W6-V3",
+      "fit_favored": "W6-V3",
+      "reference_closer": "W5-V3",
+      "signed_EL1_delta_pp": "2.18",
+      "chi2_gap": "0.0010"
+    },
+    {
+      "edge_id": "E13",
+      "family": "Wood",
+      "fixed": "V4",
+      "a": "W3-V4",
+      "b": "W4-V4",
+      "fit_favored": "W3-V4",
+      "reference_closer": "W3-V4",
+      "signed_EL1_delta_pp": "-0.72",
+      "chi2_gap": "0.0093"
+    },
+    {
+      "edge_id": "E14",
+      "family": "Wood",
+      "fixed": "V4",
+      "a": "W3-V4",
+      "b": "W5-V4",
+      "fit_favored": "W3-V4",
+      "reference_closer": "W3-V4",
+      "signed_EL1_delta_pp": "-0.99",
+      "chi2_gap": "0.0110"
+    },
+    {
+      "edge_id": "E15",
+      "family": "Wood",
+      "fixed": "V4",
+      "a": "W3-V4",
+      "b": "W6-V4",
+      "fit_favored": "W3-V4",
+      "reference_closer": "W3-V4",
+      "signed_EL1_delta_pp": "-5.45",
+      "chi2_gap": "0.0098"
+    },
+    {
+      "edge_id": "E16",
+      "family": "Wood",
+      "fixed": "V4",
+      "a": "W4-V4",
+      "b": "W5-V4",
+      "fit_favored": "W4-V4",
+      "reference_closer": "W4-V4",
+      "signed_EL1_delta_pp": "-0.27",
+      "chi2_gap": "0.0017"
+    },
+    {
+      "edge_id": "E17",
+      "family": "Wood",
+      "fixed": "V4",
+      "a": "W4-V4",
+      "b": "W6-V4",
+      "fit_favored": "W4-V4",
+      "reference_closer": "W4-V4",
+      "signed_EL1_delta_pp": "-4.73",
+      "chi2_gap": "0.0005"
+    },
+    {
+      "edge_id": "E18",
+      "family": "Wood",
+      "fixed": "V4",
+      "a": "W5-V4",
+      "b": "W6-V4",
+      "fit_favored": "W6-V4",
+      "reference_closer": "W5-V4",
+      "signed_EL1_delta_pp": "4.46",
+      "chi2_gap": "0.0012"
+    },
+    {
+      "edge_id": "E19",
+      "family": "Vehicle",
+      "fixed": "W3",
+      "a": "W3-V2",
+      "b": "W3-V3",
+      "fit_favored": "W3-V2",
+      "reference_closer": "W3-V2",
+      "signed_EL1_delta_pp": "-11.31",
+      "chi2_gap": "0.0176"
+    },
+    {
+      "edge_id": "E20",
+      "family": "Vehicle",
+      "fixed": "W3",
+      "a": "W3-V2",
+      "b": "W3-V4",
+      "fit_favored": "W3-V2",
+      "reference_closer": "W3-V2",
+      "signed_EL1_delta_pp": "-15.54",
+      "chi2_gap": "0.0203"
+    },
+    {
+      "edge_id": "E21",
+      "family": "Vehicle",
+      "fixed": "W3",
+      "a": "W3-V3",
+      "b": "W3-V4",
+      "fit_favored": "W3-V3",
+      "reference_closer": "W3-V3",
+      "signed_EL1_delta_pp": "-4.23",
+      "chi2_gap": "0.0027"
+    },
+    {
+      "edge_id": "E22",
+      "family": "Vehicle",
+      "fixed": "W4",
+      "a": "W4-V2",
+      "b": "W4-V3",
+      "fit_favored": "W4-V2",
+      "reference_closer": "W4-V2",
+      "signed_EL1_delta_pp": "-11.76",
+      "chi2_gap": "0.0219"
+    },
+    {
+      "edge_id": "E23",
+      "family": "Vehicle",
+      "fixed": "W4",
+      "a": "W4-V2",
+      "b": "W4-V4",
+      "fit_favored": "W4-V2",
+      "reference_closer": "W4-V2",
+      "signed_EL1_delta_pp": "-17.24",
+      "chi2_gap": "0.0276"
+    },
+    {
+      "edge_id": "E24",
+      "family": "Vehicle",
+      "fixed": "W4",
+      "a": "W4-V3",
+      "b": "W4-V4",
+      "fit_favored": "W4-V3",
+      "reference_closer": "W4-V3",
+      "signed_EL1_delta_pp": "-5.48",
+      "chi2_gap": "0.0057"
+    },
+    {
+      "edge_id": "E25",
+      "family": "Vehicle",
+      "fixed": "W5",
+      "a": "W5-V2",
+      "b": "W5-V3",
+      "fit_favored": "W5-V2",
+      "reference_closer": "W5-V2",
+      "signed_EL1_delta_pp": "-10.31",
+      "chi2_gap": "0.0224"
+    },
+    {
+      "edge_id": "E26",
+      "family": "Vehicle",
+      "fixed": "W5",
+      "a": "W5-V2",
+      "b": "W5-V4",
+      "fit_favored": "W5-V2",
+      "reference_closer": "W5-V2",
+      "signed_EL1_delta_pp": "-15.26",
+      "chi2_gap": "0.0304"
+    },
+    {
+      "edge_id": "E27",
+      "family": "Vehicle",
+      "fixed": "W5",
+      "a": "W5-V3",
+      "b": "W5-V4",
+      "fit_favored": "W5-V3",
+      "reference_closer": "W5-V3",
+      "signed_EL1_delta_pp": "-4.95",
+      "chi2_gap": "0.0080"
+    },
+    {
+      "edge_id": "E28",
+      "family": "Vehicle",
+      "fixed": "W6",
+      "a": "W6-V2",
+      "b": "W6-V3",
+      "fit_favored": "W6-V2",
+      "reference_closer": "W6-V2",
+      "signed_EL1_delta_pp": "-12.25",
+      "chi2_gap": "0.0219"
+    },
+    {
+      "edge_id": "E29",
+      "family": "Vehicle",
+      "fixed": "W6",
+      "a": "W6-V2",
+      "b": "W6-V4",
+      "fit_favored": "W6-V2",
+      "reference_closer": "W6-V2",
+      "signed_EL1_delta_pp": "-19.48",
+      "chi2_gap": "0.0297"
+    },
+    {
+      "edge_id": "E30",
+      "family": "Vehicle",
+      "fixed": "W6",
+      "a": "W6-V3",
+      "b": "W6-V4",
+      "fit_favored": "W6-V3",
+      "reference_closer": "W6-V3",
+      "signed_EL1_delta_pp": "-7.23",
+      "chi2_gap": "0.0078"
+    }
+  ],
+  "python": "3.12.14",
+  "script_sha256": "9429a4b32ed0dbe0ad2db68f57636db078efaa803f69941898a527f26212f186",
+  "active_postprocessing_seconds": 0.003956399996241089
+}

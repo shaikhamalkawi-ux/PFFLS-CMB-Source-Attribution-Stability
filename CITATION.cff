@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "This citation describes only the 2026-09-28 diagnostics code-and-derived-data release, not the manuscript or all historical repository contributions. Preserve upstream attribution in outputs/public_diagnostics_release_20260928/UPSTREAM_ATTRIBUTION.md."
+type: software
+title: "PFFLS source-profile sensitivity diagnostics: JRC family structure and EPA rank margins"
+authors:
+  - family-names: Malkawi
+    given-names: Ghassan O.
+    orcid: "https://orcid.org/0000-0002-5320-7561"
+version: 1.0.0
+date-released: 2026-09-28
+doi: 10.5281/zenodo.23019083
+repository-code: "https://github.com/shaikhamalkawi-ux/PFFLS-CMB-Source-Attribution-Stability"
+license: "MIT AND CC-BY-4.0"
