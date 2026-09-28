@@ -1,5 +1,22 @@
 # PFFLS-CMB Source Attribution Stability
 
+## New diagnostics companion — 28 September 2026
+
+The [public diagnostics increment](outputs/public_diagnostics_release_20260928/README.md)
+adds source-family structure for the fixed JRC comparison grid and descriptive
+EPA rank-margin summaries. Its sole release creator is **Ghassan O. Malkawi**.
+This is the authorship of the new software/data release only: the paper's author
+list and all previous contributors' attribution remain unchanged.
+
+Reserved Zenodo DOI: [10.5281/zenodo.23019083](https://doi.org/10.5281/zenodo.23019083).
+The published landing page, once available, is authoritative for deposit status.
+This is a separate companion to the unchanged earlier
+[four-author publication-derived archive](https://doi.org/10.5281/zenodo.22976190).
+See the increment's scope, licenses, exact provenance, verification instructions,
+and [upstream attribution](outputs/public_diagnostics_release_20260928/UPSTREAM_ATTRIBUTION.md).
+It is not a manuscript publication, baseline promotion, independent field-truth
+validation, or self-contained reproduction of all native EPA/JRC calculations.
+
 This repository is the computational and audit workspace for the research program:
 
 **Source Attribution Can Change Despite Favorable Fit Diagnostics: Evidence from Source-Profile Choice in Chemical Mass Balance**

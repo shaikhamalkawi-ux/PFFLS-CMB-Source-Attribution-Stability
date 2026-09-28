@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite this release for the new diagnostics increment and preserve the separate upstream attribution in UPSTREAM_ATTRIBUTION.md."
+type: software
+title: "PFFLS source-profile sensitivity diagnostics: JRC family structure and EPA rank margins"
+authors:
+  - family-names: Malkawi
+    given-names: Ghassan O.
+    orcid: "https://orcid.org/0000-0002-5320-7561"
+version: 1.0.0
+doi: 10.5281/zenodo.23019083
+date-released: 2026-09-28
+repository-code: "https://github.com/shaikhamalkawi-ux/PFFLS-CMB-Source-Attribution-Stability"
+license: "MIT AND CC-BY-4.0"
+keywords:
+  - chemical mass balance
+  - source attribution
+  - source-profile sensitivity
+  - retrospective diagnostics

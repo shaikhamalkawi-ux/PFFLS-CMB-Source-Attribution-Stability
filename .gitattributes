@@ -20,3 +20,10 @@
 /outputs/decision_research_20260926/** -text
 /scripts/.gitattributes text eol=lf
 /tests/.gitattributes text eol=lf
+
+# The diagnostics release hashes these new source/result bytes exactly.
+# Do not renormalize any earlier publication archive or upstream CSV.
+/outputs/public_diagnostics_release_20260928/** -text
+/outputs/continuous_research_20260927/editor_response_20260928/** -text
+/scripts/summarize_epa_rank_margins.py -text
+/tests/test_epa_rank_margins.py -text
